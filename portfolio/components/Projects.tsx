@@ -38,17 +38,11 @@ const titleEnd: string = "</projects>"
       >
         <div>
           <p className="font-playfair font-semibold text-4xl">
-            <span className="text-red">PRO</span>JECTS
+            <span className="text-app-green">PRO</span>JECTS
           </p>
           <div className="flex justify-center mt-5">
-            <LineGradient width="w-2/3" />
           </div>
         </div>
-        <p className="mt-10 mb-10">
-          Aliquam, amet dui feugiat facilisi dui. Aliquam aliquet integer ut
-          fames odio in at. At magna ornare dictum lectus. Purus massa morbi
-          purus nec eget eleifend ut elit.
-        </p>
       </motion.div>
 
       {/* PROJECTS */}
@@ -60,6 +54,15 @@ const titleEnd: string = "</projects>"
           whileInView="visible"
           viewport={{ once: true, amount: 0.2 }}
         >
+
+          {/**project 1 */}
+
+          <div>
+            <div className="grid-container">
+               <img src="/airman1.png" alt="" className="a" />
+               <img src="/airman3.png" alt="" className="c" />
+            </div>
+          </div>
         
         </motion.div>
       </div>

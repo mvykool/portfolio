@@ -32,7 +32,7 @@ const Navbar = ({topPage, setSelectedPage, selectedPage}: Props) => {
 
     const [menuToggle, setMenuToggle] = useState(false);
     const isAboveSmallScreens = useMediaQuery("(min-width: 768px)");
-    const navBg = topPage ? "" : "bg-red";
+    const navBg = topPage ? "bg-deep-blue" : "bg-red";
 
 
   return (

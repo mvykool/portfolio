@@ -4,6 +4,8 @@ import Footer from './Footer'
 import Navbar from './Navbar'
 import useMediaQuery from '../hooks/useMediaQuery';
 import { useEffect } from 'react';
+import SideRight from './SideRight';
+import SideLeft from './SideLeft';
 
 interface Props{
     children: any
@@ -21,7 +23,7 @@ const Layout = ({children}: Props) => {
       if(window.screenY === 0)setTopPage(true);
       if(window.screenY !== 0)setTopPage(false);
 
-    }
+    };
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, [])
@@ -34,11 +36,17 @@ const Layout = ({children}: Props) => {
     <meta name="theme-color" content="#2CBCE9" />
   </Head>
 
-  <Navbar selectedPage={selectedPage} setSelectedPage={setSelectedPage} page={undefined} topPage={undefined}/>
+  <Navbar selectedPage={selectedPage} setSelectedPage={setSelectedPage} page={undefined} topPage={topPage}/>
 
-  <main>
-    {children}
-  </main>
+  <div className='w-5/6 mx-auto md:h-full'>
+   {isAboveMediumScreens && (
+     <main>
+      <SideRight/>
+      <SideLeft/>
+       {children}
+     </main>
+   )}
+  </div>
 
   <footer>
     <Footer/>

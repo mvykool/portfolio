@@ -6,6 +6,9 @@ import useMediaQuery from '../hooks/useMediaQuery';
 import { useEffect } from 'react';
 import SideRight from './SideRight';
 import SideLeft from './SideLeft';
+import LineGradient from './LineGradient';
+import MySkills from './MySkills';
+import Projects from './Projects';
 
 interface Props{
     children: any
@@ -36,17 +39,34 @@ const Layout = ({children}: Props) => {
     <meta name="theme-color" content="#2CBCE9" />
   </Head>
 
-  <Navbar selectedPage={selectedPage} setSelectedPage={setSelectedPage} page={undefined} topPage={topPage}/>
+  <Navbar 
+  selectedPage={selectedPage} 
+  setSelectedPage={setSelectedPage} 
+  page={undefined} 
+  topPage={topPage}/>
 
   <div className='w-5/6 mx-auto md:h-full'>
    {isAboveMediumScreens && (
-     <main>
+    <div>
       <SideRight/>
       <SideLeft/>
-       {children}
-     </main>
-   )}
+    </div>
+     )}
   </div>
+
+  <main className='w-5/6 mx-auto md:h-screen'>
+  {children}
+  </main>
+  <LineGradient/>
+
+<div className='w-5/6 mx-auto md:h-screen'>
+<MySkills/>
+</div>
+<LineGradient/>
+<div className='w-5/6 mx-auto md:h-screen'>
+<Projects/>
+</div>
+
 
   <footer>
     <Footer/>

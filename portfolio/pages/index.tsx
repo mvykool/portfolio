@@ -2,6 +2,8 @@ import Head from 'next/head'
 import Image from 'next/image'
 import { Inter } from '@next/font/google'
 import { useState } from 'react';
+import Hero from '@/components/Hero';
+import LineGradient from '@/components/LineGradient';
 
 
 const inter = Inter({ subsets: ['latin'] })
@@ -20,6 +22,9 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
+      {/**landing/ hero */}
+
+      <Hero setSelectedPage={setSelectedPage}/>
      
     </main>
   )

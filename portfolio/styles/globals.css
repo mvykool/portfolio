@@ -10,3 +10,9 @@ body,
   background-color: #010026;
   @apply text-white;
 }
+
+.container{
+  height: 500px;
+  width: 500px;
+  z-index: 100;
+}

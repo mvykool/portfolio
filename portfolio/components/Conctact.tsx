@@ -1,8 +1,5 @@
-import Head from 'next/head'
-import { useRouter } from 'next/router'
 import React, { useState, useRef} from 'react'
 import emailjs from '@emailjs/browser';
-import { MdOutlineKeyboardBackspace } from 'react-icons/md'
 import { motion} from 'framer-motion'
 import LineGradient from './LineGradient';
 

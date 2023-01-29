@@ -1,3 +1,7 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -8,6 +12,8 @@ body,
 .app {
   height: 100%;
   background-color: #03001C;
+  font-family: 'Orbitron', sans-serif;
+  letter-spacing: 2px;
   @apply text-white;
 }
 

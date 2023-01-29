@@ -28,7 +28,7 @@ const Link = ({ page, selectedPage, setSelectedPage}: Props) => {
 
     return(
         <AnchorLink
-        className={`${selectedPage === lowerCasePage ? "text-app-green" : ""} hover:text-app-green transition duration-500 `}
+        className={`${selectedPage === lowerCasePage ? "text-app-green" : ""} hover:text-app-blue transition duration-500 `}
         href={`#${lowerCasePage}`}
         onClick={() => setSelectedPage(lowerCasePage)}
         >
@@ -136,7 +136,7 @@ const Navbar = ({topPage, setSelectedPage, selectedPage}: Props) => {
              </div>
              <div onClick={() => setMenuToggle(!menuToggle)}>
              <Link
-                 page="Contact"
+                 page="Contact me"
                 selectedPage={selectedPage}
                 setSelectedPage={setSelectedPage}topPage={undefined} />
              </div>

@@ -128,11 +128,11 @@ setTimeout(() => {
           id='message'
           placeholder='Message' 
           className='px-2 pt-2 pb-36 text-black rounded-md outline-none'/>
-          <button className='my-5 rounded-md cursor-pointer bg-app-green text-white font-bold p-1 hover:bg-gray-800 hover:scale-105 duration-300' type='submit'  value='send'>Submit</button>
+          <button className='my-5 py-2 rounded-md cursor-pointer bg-app-green text-white font-bold p-1 hover:bg-gray-800 hover:scale-105 duration-300' type='submit'  value='send'>Submit</button>
     </form>
       </motion.div>
 
-   </div>
+   </div> 
 </section>
 <span className='text-app-green text-sm' >{titleEnd}</span>
 </>

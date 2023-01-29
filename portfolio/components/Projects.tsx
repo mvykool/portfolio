@@ -12,8 +12,18 @@ const container = {
 
 
 const Projects = () => {
+
+        //**tags */    
+
+const title: string = "<projects>"
+const titleEnd: string = "</projects>"
+
+
+
   return (
-    <section id="projects" className="pt-48 pb-48">
+    <>
+        <span className='text-app-green text-sm' >{title}</span>
+    <section id="projects" className="py-10">
       {/* HEADINGS */}
       <motion.div
         className="md:w-2/5 mx-auto text-center"
@@ -54,6 +64,8 @@ const Projects = () => {
         </motion.div>
       </div>
     </section>
+    <span className='text-app-green text-sm' >{titleEnd}</span>
+    </>
   );
 };
 

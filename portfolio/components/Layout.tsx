@@ -49,7 +49,7 @@ const Layout = ({children}: Props) => {
   page={undefined} 
   topPage={topPage}/>
 
-  <div className='w-5/6 mx-auto md:h-full'>
+  <div className='w-3/6 mx-auto md:h-full'>
    {isAboveMediumScreens && (
     <div>
       <SideRight/>
@@ -58,25 +58,25 @@ const Layout = ({children}: Props) => {
      )}
   </div>
 
-  <main className='w-4/6 mx-auto md:h-screen'>
+  <main className='w-4/6 md:w-3/6 mx-auto md:h-screen'>
   {children}
   </main>
 
 
-<div className='w-4/6 mx-auto mt-16'>
+<div className='w-4/6 md:w-3/6  mx-auto mt-20'>
 <About setSelectedPage={setSelectedPage}/>
 </div>
 
-<div className='w-4/6 mx-auto mt-32'>
+<div className='w-4/6 md:w-3/6  mx-auto mt-40'>
 <MySkills/>
 </div>
 
-<div className='w-4/6 mx-auto md:h-screen'>
+<div className='w-4/6 md:w-3/6  mx-auto mt-40'>
 <Projects/>
 </div>
 
 
-<div className='w-4/6 mx-auto md:h-screen'>
+<div className='w-4/6 md:w-3/6  mx-auto  mt-40'>
 <Contact/>
 </div>
 

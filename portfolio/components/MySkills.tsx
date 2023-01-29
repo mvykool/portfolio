@@ -32,9 +32,9 @@ const titleEnd: string = "</skills>"
      <span className='text-app-green text-sm ' >{title}</span>
     <section id="skills" className="pt-10 pb-10">
       {/* HEADER AND IMAGE SECTION */}
-      <div className="md:flex md:justify-between md:gap-16 ">
+      <div className=" ">
         <motion.div
-          className="md:w-1/3 "
+          className="flex justify-center flex-col "
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.5 }}
@@ -47,13 +47,13 @@ const titleEnd: string = "</skills>"
           <p className=" text-4xl flex justify-center mb-5">
             MY <span className="text-app-green">SKILLS</span>
           </p>
-          <p className="mt-10 mb-20">
+          <p className="mt-10 mb-20 md:flex justify-center">
             Tools, Libraries, & Programming languages that I use:
           </p>
         </motion.div>
 
         <motion.div
-          className="flex flex-wrap flex-col gap-5"
+          className="flex flex-wrap md:grid md:grid-cols-3 flex-col gap-5"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.5 }}
@@ -107,6 +107,11 @@ const titleEnd: string = "</skills>"
               Vite
               <SiVite className="text-purple-400"/>
             </div>
+            <div className="p-2 h-20  border-2 border-white justify-between  flex items-center">
+              Astro JS
+              <FaUserAstronaut className="text-orange-400"/>
+            </div>
+         
          
         </motion.div>
 

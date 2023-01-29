@@ -9,6 +9,8 @@ import SideLeft from './SideLeft';
 import LineGradient from './LineGradient';
 import MySkills from './MySkills';
 import Projects from './Projects';
+import Contact from './Conctact';
+import About from './About';
 
 interface Props{
     children: any
@@ -60,6 +62,10 @@ const Layout = ({children}: Props) => {
   <LineGradient/>
 
 <div className='w-5/6 mx-auto md:h-screen'>
+<About setSelectedPage={setSelectedPage}/>
+</div>
+
+<div className='w-5/6 mx-auto md:h-screen'>
 <MySkills/>
 </div>
 <LineGradient/>
@@ -67,6 +73,10 @@ const Layout = ({children}: Props) => {
 <Projects/>
 </div>
 
+
+<div className='w-5/6 mx-auto md:h-screen'>
+<Contact/>
+</div>
 
   <footer>
     <Footer/>

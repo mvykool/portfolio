@@ -60,7 +60,16 @@ const titleEnd: string = "</projects>"
           {/**project 1 */}
 
 
-            <div className="mt-10 border-2 rounded-sm border-app-green p-3">
+            <motion.div
+        initial="hidden"
+        className="mt-10 border-2 rounded-sm border-app-green p-3"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.5 }}
+        transition={{ duration: 0.5 }}
+        variants={{
+          hidden: { opacity: 0, x: -50 },
+          visible: { opacity: 1, x: 0 },
+        }}>
                <img src="./project1.png" alt="airman" className="object-left object-cover rounded-sm  h-[40vh]" />
                <p className="my-5 flex justify-center font-bold text-2xl">Airman-<span className="text-app-green">23</span> </p>
 
@@ -86,8 +95,209 @@ const titleEnd: string = "</projects>"
                  <TbBrandGithub className="mx-2"/>
                 </a>
               </div>
-            </div>
+            </motion.div>
 
+           {/**project 2 */}
+
+
+           <motion.div
+        initial="hidden"
+        className="mt-10 border-2 rounded-sm border-app-green p-3"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.5 }}
+        transition={{ duration: 0.5 }}
+        variants={{
+          hidden: { opacity: 0, x: -50 },
+          visible: { opacity: 1, x: 0 },
+        }}>
+               <img src="./project2.png" alt="airman" className=" object-cover rounded-sm  object-left h-[40vh]" />
+               <p className="my-5 flex justify-center font-bold text-2xl">Lib<span className="text-app-green">ello</span> </p>
+
+               <div className="flex flex-col
+               my-5 ml-2">
+                 <small>-React</small>
+                 <small>-Vite</small>
+                 <small>-Firebase</small>
+                 <small>-Chakra UI</small>
+               </div>
+
+               <p className="text-sm mb-2 text-gray-500 mx-2">Web app to take notes, with  <span className="text-app-green font-semibold">different themes.</span> </p>
+
+              <p className="text-sm mb-2 text-gray-500 mx-2">Totally responsive Web app, with functionaity to create, erase notes. Authentication handled with Firebase, <span className="text-app-green font-semibold">and inlcudes six different themes.</span></p>
+
+              <div className="flex justify-center mt-5">
+                <a href="https://libello.netlify.app/" target="_blank" className="flex items-center m-5 border-2 border-white rounded-sm justify-center py-2 px-3">
+                  Live
+                 <HiOutlineExternalLink className="mx-2"/>
+                </a>
+                <a href="https://github.com/mvykool/Libello" target="_blank" className="flex items-center m-5 border-2 border-white rounded-sm justify-center py-2 px-3">
+                  Code
+                 <TbBrandGithub className="mx-2"/>
+                </a>
+              </div>
+            </motion.div>
+
+          {/**project 3 */}
+
+
+          <motion.div
+        initial="hidden"
+        className="mt-10 border-2 rounded-sm border-app-green p-3"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.5 }}
+        transition={{ duration: 0.5 }}
+        variants={{
+          hidden: { opacity: 0, x: -50 },
+          visible: { opacity: 1, x: 0 },
+        }}>
+               <img src="./project3.png" alt="airman" className=" object-cover rounded-sm object-right h-[40vh]" />
+               <p className="my-5 flex justify-center font-bold text-2xl">Oh M<span className="text-app-green">y Dog</span> </p>
+
+               <div className="flex flex-col
+               my-5 ml-2">
+                 <small>-AstroJS</small>
+                 <small>-React</small>
+                 <small>-Tailwind</small>
+               </div>
+
+               <p className="text-sm mb-2 text-gray-500 mx-2">Brochure static website dedicated to <span className="text-app-green font-semibold">dog's care.</span></p>
+
+              <p className="text-sm mb-2 text-gray-500 mx-2">Responsive Website, <span className="text-app-green font-semibold">with soft color palette</span>, and smooth animations.</p>
+
+              <div className="flex justify-center mt-5">
+                <a href="https://oh-my-dog.netlify.app/" target="_blank" className="flex items-center m-5 border-2 border-white rounded-sm justify-center py-2 px-3">
+                  Live
+                 <HiOutlineExternalLink className="mx-2"/>
+                </a>
+                <a href="https://github.com/mvykool/omd/tree/main/oh-my-dog" target="_blank" className="flex items-center m-5 border-2 border-white rounded-sm justify-center py-2 px-3">
+                  Code
+                 <TbBrandGithub className="mx-2"/>
+                </a>
+              </div>
+            </motion.div>
+
+
+          {/**project 4 */}
+
+
+          <motion.div
+        initial="hidden"
+        className="mt-10 border-2 rounded-sm border-app-green p-3"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.5 }}
+        transition={{ duration: 0.5 }}
+        variants={{
+          hidden: { opacity: 0, x: -50 },
+          visible: { opacity: 1, x: 0 },
+        }}>
+               <img src="./project4.png" alt="airman" className=" object-cover rounded-sm  h-[40vh]" />
+               <p className="my-5 flex justify-center font-bold text-2xl">For<span className="text-app-green">êt</span> </p>
+
+               <div className="flex flex-col
+               my-5 ml-2">
+                 <small>-AstroJS</small>
+                 <small>-React</small>
+                 <small>-Tailwind</small>
+               </div>
+
+               <p className="text-sm mb-2 text-gray-500 mx-2">Static website dedicated to <span className="text-app-green font-semibold">nature & forests</span></p>
+
+              <p className="text-sm mb-2 text-gray-500 mx-2">Responsive Website, that includes<span className="text-app-green font-semibold"> a lot of beautiful pictures, as grid-layouts</span>, and smooth animations.</p>
+
+              <div className="flex justify-center mt-5">
+                <a href="https://foret.netlify.app/" target="_blank" className="flex items-center m-5 border-2 border-white rounded-sm justify-center py-2 px-3">
+                  Live
+                 <HiOutlineExternalLink className="mx-2"/>
+                </a>
+                <a href="https://github.com/mvykool/foret/tree/main/astro" target="_blank" className="flex items-center m-5 border-2 border-white rounded-sm justify-center py-2 px-3">
+                  Code
+                 <TbBrandGithub className="mx-2"/>
+                </a>
+              </div>
+            </motion.div>
+
+
+         {/**project 5 */}
+
+
+          <motion.div
+        initial="hidden"
+        className="mt-10 border-2 rounded-sm border-app-green p-3"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.5 }}
+        transition={{ duration: 0.5 }}
+        variants={{
+          hidden: { opacity: 0, x: -50 },
+          visible: { opacity: 1, x: 0 },
+        }}>
+               <img src="./project5.png" alt="airman" className=" object-cover rounded-sm object-left h-[40vh]" />
+               <p className="my-5 flex justify-center font-bold text-2xl">Reso<span className="text-app-green">naty</span> </p>
+
+               <div className="flex flex-col
+               my-5 ml-2">
+                 <small>-React</small>
+                 <small>-Redux</small>
+                 <small>-Tailwind</small>
+                 <small>-RapidApi</small>
+               </div>
+
+               <p className="text-sm mb-2 text-gray-500 mx-2">Spotify UI inspired web app, <span className="font-semibold text-app-green">with music player.</span></p>
+
+              <p className="text-sm mb-2 text-gray-500 mx-2">Responsive Web app, inspired from Spotify, <span className="font-semibold text-app-green">I added my own UI to my liking</span>, the app state management is handled <span className="text-app-green font-semibold">with Redux</span></p>
+
+              <div className="flex justify-center mt-5">
+                <a href="https://resonaty.netlify.app/" target="_blank" className="flex items-center m-5 border-2 border-white rounded-sm justify-center py-2 px-3">
+                  Live
+                 <HiOutlineExternalLink className="mx-2"/>
+                </a>
+                <a href="https://github.com/mvykool/Resonaty" target="_blank" className="flex items-center m-5 border-2 border-white rounded-sm justify-center py-2 px-3">
+                  Code
+                 <TbBrandGithub className="mx-2"/>
+                </a>
+              </div>
+            </motion.div>
+
+
+        {/**project 6 */}
+
+
+                  <motion.div
+        initial="hidden"
+        className="mt-10 border-2 rounded-sm border-app-green p-3"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.5 }}
+        transition={{ duration: 0.5 }}
+        variants={{
+          hidden: { opacity: 0, x: -50 },
+          visible: { opacity: 1, x: 0 },
+        }}>
+               <img src="./project6.png" alt="airman" className=" object-cover rounded-sm object-right h-[40vh]" />
+               <p className="my-5 flex justify-center font-bold text-2xl">Ze<span className="text-app-green">al</span> </p>
+
+               <div className="flex flex-col
+               my-5 ml-2">
+                 <small>-NextJS</small>
+                 <small>-Vercel</small>
+                 <small>-Tailwind</small>
+                 <small>-Framer-Motion</small>
+               </div>
+
+               <p className="text-sm mb-2 text-gray-500 mx-2">Static website, with a <span className="font-semibold text-app-green">beautiful & modern design.</span></p>
+
+              <p className="text-sm mb-2 text-gray-500 mx-2">Responsive Website, with different mordern UI components, <span className="text-app-green font-semibold">including a graphic dashboard</span></p>
+
+              <div className="flex justify-center mt-5">
+                <a href="https://zeal-eight.vercel.app/" target="_blank" className="flex items-center m-5 border-2 border-white rounded-sm justify-center py-2 px-3">
+                  Live
+                 <HiOutlineExternalLink className="mx-2"/>
+                </a>
+                <a href="https://github.com/mvykool/Zeal" target="_blank" className="flex items-center m-5 border-2 border-white rounded-sm justify-center py-2 px-3">
+                  Code
+                 <TbBrandGithub className="mx-2"/>
+                </a>
+              </div>
+            </motion.div>
+    
         
         </motion.div>
       </div>

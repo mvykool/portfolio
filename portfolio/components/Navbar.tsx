@@ -81,7 +81,7 @@ const Navbar = ({topPage, setSelectedPage, selectedPage}: Props) => {
 
             </div>
          ) : (
-           <button className='rounded-lg bg-app-green p-2'
+           <button className='rounded-lg bg-app-menu p-2'
            onClick={() => setMenuToggle(!menuToggle)}
            >
              <TiThMenu/>

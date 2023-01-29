@@ -50,13 +50,13 @@ const Navbar = ({topPage, setSelectedPage, selectedPage}: Props) => {
     <nav className="bg-deep-blue fixed  z-40 w-full top-0 py-6">
         <div className='flex items-center justify-between mx-auto w-5/6'>
         <a href="/">
-        <img src="/logo.png" alt="logo" className='h-10 w-10 md:h-16 md:w-16' />
+        <img src="/logo.png" alt="logo" className='h-10 w-10 ' />
         </a>
 
          {/** desktop view */}
 
          {isAboveSmallScreens ? (
-            <div className='flex text-app-blue justify-between gap-16 font-opensans font-semibold'>
+            <div className='flex text-app-blue justify-between gap-10 font-opensans font-semibold'>
                <Link
                 page="Home"
                 selectedPage={selectedPage}

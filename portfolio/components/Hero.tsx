@@ -8,7 +8,7 @@ import Office from "../public/office2.json";
 
 interface Props{
     setSelectedPage: any
-}
+} 
 
 
 const Hero = ({setSelectedPage}: Props) => {
@@ -77,11 +77,11 @@ const titleEnd: string = "</title>"
           }}
         >
         <span className='text-app-green text-sm' >{title}</span>
-         <p className="text-3xl mt-5 font-semibold z-10 text-center md:text-start">
+         <p className="text-3xl md:text-6xl mt-5 font-semibold z-10 text-center md:text-start">
           Maicol Hernandez
           </p>
 
-          <p className="mt-2 text-app-blue mb-5 font-semibold text-lg text-center md:text-start">
+          <p className="mt-2 text-app-blue mb-5 font-semibold text-lg md:text-4xl text-center md:text-start">
            Front-end Developer.
           </p>
 

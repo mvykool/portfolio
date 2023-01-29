@@ -58,25 +58,25 @@ const Layout = ({children}: Props) => {
      )}
   </div>
 
-  <main className='w-3/6 mx-auto md:h-screen'>
+  <main className='w-4/6 mx-auto md:h-screen'>
   {children}
   </main>
 
 
-<div className='w-3/6 mx-auto mt-8'>
+<div className='w-4/6 mx-auto mt-16'>
 <About setSelectedPage={setSelectedPage}/>
 </div>
 
-<div className='w-3/6 mx-auto mt-32'>
+<div className='w-4/6 mx-auto mt-32'>
 <MySkills/>
 </div>
-<LineGradient/>
-<div className='w-5/6 mx-auto md:h-screen'>
+
+<div className='w-4/6 mx-auto md:h-screen'>
 <Projects/>
 </div>
 
 
-<div className='w-5/6 mx-auto md:h-screen'>
+<div className='w-4/6 mx-auto md:h-screen'>
 <Contact/>
 </div>
 

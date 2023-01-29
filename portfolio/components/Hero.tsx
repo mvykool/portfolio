@@ -56,7 +56,7 @@ const titleEnd: string = "</title>"
             hidden: { opacity: 0, x: 50 },
             visible: { opacity: 1, x: 0 },
           }}
-          className="mt-20"
+          className="mt-14"
         >
             <Lottie loop={true} animationData={Office}/>
           </motion.div>
@@ -84,7 +84,7 @@ const titleEnd: string = "</title>"
           <p className="mt-2 text-app-blue mb-5 font-semibold text-lg text-center md:text-start">
            Front-end Developer.
           </p>
-          <span className='text-app-green text-sm'>{titleEnd}</span>
+
         </motion.div>
 
          {/* CALL TO ACTIONS */}
@@ -123,7 +123,7 @@ const titleEnd: string = "</title>"
         >
      
         </motion.div>
-
+        <span className='text-app-green text-sm'>{titleEnd}</span>
 
       </div>
 

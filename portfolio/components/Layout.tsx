@@ -11,6 +11,7 @@ import MySkills from './MySkills';
 import Projects from './Projects';
 import Contact from './Conctact';
 import About from './About';
+import ScrollToTop from './ScrollTop';
 
 interface Props{
     children: any
@@ -78,6 +79,8 @@ const Layout = ({children}: Props) => {
 <div className='w-5/6 mx-auto md:h-screen'>
 <Contact/>
 </div>
+
+<ScrollToTop/>
 
   <footer>
     <Footer/>

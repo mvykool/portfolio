@@ -2,6 +2,17 @@ import React, { useState } from 'react'
 import AnchorLink from "react-anchor-link-smooth-scroll";
 import useMediaQuery from '@/hooks/useMediaQuery';
 import {TiThMenu, TiTimes} from "react-icons/ti"
+import { motion} from 'framer-motion'
+
+/**framer motion variants */
+ 
+const sectionVariant = {
+  hidden : { opacity: 0, x: 10},
+  show: { opacity: 1, x:0,
+  transition: { duration: 0.5, delay: 0.1}
+  }
+} 
+
 
 interface Props {
     selectedPage: any
@@ -17,7 +28,7 @@ const Link = ({ page, selectedPage, setSelectedPage}: Props) => {
 
     return(
         <AnchorLink
-        className={`${selectedPage === lowerCasePage ? "text-app-blue" : ""} hover:text-app-blue transition duration-500 `}
+        className={`${selectedPage === lowerCasePage ? "text-app-green" : ""} hover:text-app-blue transition duration-500 `}
         href={`#${lowerCasePage}`}
         onClick={() => setSelectedPage(lowerCasePage)}
         >
@@ -45,7 +56,7 @@ const Navbar = ({topPage, setSelectedPage, selectedPage}: Props) => {
          {/** desktop view */}
 
          {isAboveSmallScreens ? (
-            <div className='flex justify-between gap-16 font-opensans font-semibold'>
+            <div className='flex text-app-blue justify-between gap-16 font-opensans font-semibold'>
                <Link
                 page="Home"
                 selectedPage={selectedPage}
@@ -70,7 +81,7 @@ const Navbar = ({topPage, setSelectedPage, selectedPage}: Props) => {
 
             </div>
          ) : (
-           <button className='rounded-full bg-red p-2'
+           <button className='rounded-lg bg-app-green p-2'
            onClick={() => setMenuToggle(!menuToggle)}
            >
              <TiThMenu/>
@@ -80,7 +91,16 @@ const Navbar = ({topPage, setSelectedPage, selectedPage}: Props) => {
          {/**mobile menu */}
 
          {!isAboveSmallScreens && menuToggle && (
-            <div className='fixed right-0 bottom-0 h-full bg-blue w-[300px]'>
+          <>
+        <div className='fixed w-full bg-wrapper z-[20] top-0 left-0 h-screen' onClick={() => setMenuToggle(false)} /> 
+
+
+            <motion.div 
+        variants={sectionVariant}
+       initial="hidden"
+       animate='show'
+            
+            className='fixed z-[50] right-0 bottom-0 h-full bg-app-menu w-[55vw]'>
              {/**close icon */}
              <div className='flex justify-end p-5'>
                 <button onClick={() => setMenuToggle(!menuToggle)}>
@@ -88,31 +108,43 @@ const Navbar = ({topPage, setSelectedPage, selectedPage}: Props) => {
                 </button>
              </div>
              {/** menu mobile */}
-             <div className='flex flex-col gap-10 ml-[33%] text-xl text-deep-blue mt-20'>
+             <div className='flex flex-col gap-5 ml-[33%] text-xl text-deep-blue mt-40'>
+
+             <div onClick={() => setMenuToggle(!menuToggle)}>
              <Link
                  page="Home"
                 selectedPage={selectedPage}
-                setSelectedPage={setSelectedPage}topPage={undefined}               />
-               <Link
-                page="About"
-                 selectedPage={selectedPage}
-                setSelectedPage={setSelectedPage} topPage={undefined}               />
-               <Link
-                page="Skills"
-                selectedPage={selectedPage}
-                setSelectedPage={setSelectedPage} topPage={undefined}               />
-               <Link
-                page="Projects"
-                selectedPage={selectedPage}
-                setSelectedPage={setSelectedPage} topPage={undefined}               />
-               <Link
-                page="Contact"
-                selectedPage={selectedPage}
-                setSelectedPage={setSelectedPage} topPage={undefined}               />
+                setSelectedPage={setSelectedPage}topPage={undefined} />
              </div>
-            </div>
+              <div onClick={() => setMenuToggle(!menuToggle)}>
+             <Link
+                 page="About"
+                selectedPage={selectedPage}
+                setSelectedPage={setSelectedPage}topPage={undefined} />
+             </div>
+             <div onClick={() => setMenuToggle(!menuToggle)}>
+             <Link
+                 page="Skills"
+                selectedPage={selectedPage}
+                setSelectedPage={setSelectedPage}topPage={undefined} />
+             </div>
+             <div onClick={() => setMenuToggle(!menuToggle)}>
+             <Link
+                 page="Projects"
+                selectedPage={selectedPage}
+                setSelectedPage={setSelectedPage}topPage={undefined} />
+             </div>
+             <div onClick={() => setMenuToggle(!menuToggle)}>
+             <Link
+                 page="Contact"
+                selectedPage={selectedPage}
+                setSelectedPage={setSelectedPage}topPage={undefined} />
+             </div>
+             </div>
+            </motion.div>
+            </>
          )}
-
+          
         </div>
 
     </nav>

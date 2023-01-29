@@ -3,7 +3,7 @@ import useMediaQuery from '@/hooks/useMediaQuery'
 import { motion } from 'framer-motion'
 import AnchorLink from 'react-anchor-link-smooth-scroll'
 import Lottie from "lottie-react"
-import Office from "../public/office.json";
+import Office from "../public/office2.json";
 
 
 interface Props{
@@ -41,11 +41,20 @@ const Hero = ({setSelectedPage}: Props) => {
     
 
         ) : (
-          <img
-            alt="profile"
-            className="z-10 w-full max-w-[400px] md:max-w-[600px]"
-            src="assets/profile-image.png"
-          />
+          <motion.div
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.5 }}
+          transition={{ duration: 0.5 }}
+          variants={{
+            hidden: { opacity: 0, x: 50 },
+            visible: { opacity: 1, x: 0 },
+          }}
+          className="container"
+        >
+            <Lottie loop={true} animationData={Office}/>
+          </motion.div>
+            
         )}
       </div>
 

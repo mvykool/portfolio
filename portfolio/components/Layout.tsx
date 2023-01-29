@@ -76,7 +76,7 @@ const Layout = ({children}: Props) => {
 </div>
 
 
-<div className='w-4/6 md:w-3/6  mx-auto  mt-40'>
+<div className='w-4/6 md:w-3/6  mx-auto  mt-20'>
 <Contact/>
 </div>
 

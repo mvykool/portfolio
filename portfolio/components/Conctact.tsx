@@ -59,7 +59,7 @@ setTimeout(() => {
   return (
     <>
     <span className='text-app-green text-sm' >{title}</span>
-    <section id="contact" className="contact py-10">
+    <section id="contact" className="contact pt-10">
 
 
    <div className='md:flex md:justify-center'>

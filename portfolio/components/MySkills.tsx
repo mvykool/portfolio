@@ -63,51 +63,51 @@ const titleEnd: string = "</skills>"
             visible: { opacity: 1, x: 0 },
           }}>
 
-            <div className="p-2 h-20  border-2 border-white justify-between  flex items-center">
+            <div className="p-2 h-20  border-2 border-white justify-between rounded-sm  flex items-center">
               HTML 
               <SiHtml5 className="text-orange-600"/>
             </div>
-            <div className="p-2 h-20  border-2 border-white justify-between flex items-center">
+            <div className="p-2 h-20  border-2 border-white justify-between rounded-sm  flex items-center">
               CSS
               <SiCss3 className="text-blue-500"/>
             </div>
-            <div className="p-2 h-20  border-2 border-white justify-between  flex items-center">
+            <div className="p-2 h-20  border-2 border-white justify-between rounded-sm  flex items-center">
               Javascript
               <SiJavascript className="text-yellow"/>
             </div>
-            <div className="p-2 h-20 border-2 border-white justify-between  flex items-center">
+            <div className="p-2 h-20 border-2 border-white justify-between rounded-sm  flex items-center">
               React
               <SiReact className="text-cyan-400"/>
             </div>
-            <div className="p-2 h-20  border-2 border-white justify-between flex items-center">
+            <div className="p-2 h-20  border-2 border-white justify-between rounded-sm  flex items-center">
               Typescript 
               <SiTypescript className="text-blue-600"/>
             </div>
-            <div className="p-2 h-20  border-2 border-white justify-between  flex items-center">
+            <div className="p-2 h-20  border-2 border-white justify-between rounded-sm  flex items-center">
               Redux
               <SiRedux className="text-purple-500"/>
             </div>
-            <div className="p-2 h-20  border-2 border-white justify-between  flex items-center">
+            <div className="p-2 h-20  border-2 border-white justify-between rounded-sm   flex items-center">
               NextJS
               <SiNextdotjs/>
             </div>
-            <div className="p-2 h-20 border-2 border-white justify-between  flex items-center">
+            <div className="p-2 h-20 border-2 border-white justify-between rounded-sm  flex items-center">
               TailwindCSS
               <SiTailwindcss className="text-cyan-500"/>
             </div>
-            <div className="p-2 h-20  border-2 border-white justify-between flex items-center">
+            <div className="p-2 h-20  border-2 border-white justify-between rounded-sm  flex items-center">
               Firebase 
               <SiFirebase className="text-yellow"/>
             </div>
-            <div className="p-2 h-20  border-2 border-white justify-between  flex items-center">
+            <div className="p-2 h-20  border-2 border-white justify-between rounded-sm  flex items-center">
               Git/Github
               <SiGit className="text-orange-400"/>
             </div>
-            <div className="p-2 h-20  border-2 border-white justify-between  flex items-center">
+            <div className="p-2 h-20  border-2 border-white justify-between  rounded-sm  flex items-center">
               Vite
               <SiVite className="text-purple-400"/>
             </div>
-            <div className="p-2 h-20  border-2 border-white justify-between  flex items-center">
+            <div className="p-2 h-20  border-2 border-white justify-between rounded-sm   flex items-center">
               Astro JS
               <FaUserAstronaut className="text-orange-400"/>
             </div>

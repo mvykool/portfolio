@@ -1,7 +1,8 @@
 import Head from 'next/head'
-import React from 'react'
+import React, { useState } from 'react'
 import Footer from './Footer'
 import Navbar from './Navbar'
+import useMediaQuery from '../hooks/useMediaQuery';
 
 interface Props{
     children: any
@@ -9,6 +10,10 @@ interface Props{
 
 
 const Layout = ({children}: Props) => {
+
+  const [selectedPage, setSelectedPage] = useState("home");
+  const isAboveMediumScreens = useMediaQuery("(min-width: 1060px)");
+
   return (
     <div>
     <Head>
@@ -17,7 +22,7 @@ const Layout = ({children}: Props) => {
     <meta name="theme-color" content="#2CBCE9" />
   </Head>
 
-  <Navbar/>
+  <Navbar selectedPage={selectedPage} setSelectedPage={setSelectedPage} page={undefined}/>
 
   <main>
     {children}

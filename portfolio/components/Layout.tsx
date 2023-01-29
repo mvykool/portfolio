@@ -3,6 +3,7 @@ import React, { useState } from 'react'
 import Footer from './Footer'
 import Navbar from './Navbar'
 import useMediaQuery from '../hooks/useMediaQuery';
+import { useEffect } from 'react';
 
 interface Props{
     children: any
@@ -13,6 +14,17 @@ const Layout = ({children}: Props) => {
 
   const [selectedPage, setSelectedPage] = useState("home");
   const isAboveMediumScreens = useMediaQuery("(min-width: 1060px)");
+  const [topPage, setTopPage] = useState(true);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if(window.screenY === 0)setTopPage(true);
+      if(window.screenY !== 0)setTopPage(false);
+
+    }
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, [])
 
   return (
     <div>
@@ -22,7 +34,7 @@ const Layout = ({children}: Props) => {
     <meta name="theme-color" content="#2CBCE9" />
   </Head>
 
-  <Navbar selectedPage={selectedPage} setSelectedPage={setSelectedPage} page={undefined}/>
+  <Navbar selectedPage={selectedPage} setSelectedPage={setSelectedPage} page={undefined} topPage={undefined}/>
 
   <main>
     {children}

@@ -17,7 +17,7 @@ const Link = ({ page, selectedPage, setSelectedPage}: Props) => {
 
     return(
         <AnchorLink
-        className={`${selectedPage === lowerCasePage ? "text-yellow" : ""} hover:text-yellow transition duration-500 `}
+        className={`${selectedPage === lowerCasePage ? "text-app-blue" : ""} hover:text-app-blue transition duration-500 `}
         href={`#${lowerCasePage}`}
         onClick={() => setSelectedPage(lowerCasePage)}
         >
@@ -38,9 +38,9 @@ const Navbar = ({topPage, setSelectedPage, selectedPage}: Props) => {
   return (
     <nav className="bg-deep-blue fixed  z-40 w-full top-0 py-6">
         <div className='flex items-center justify-between mx-auto w-5/6'>
-        <h4 className='font-playfair text-3xl font-bold'>
-          MH
-        </h4>
+        <a href="/">
+        <img src="/logo.png" alt="logo" className='h-10 w-10 md:h-16 md:w-16' />
+        </a>
 
          {/** desktop view */}
 

@@ -13,7 +13,7 @@ module.exports = {
       colors: {
         "deep-blue": "#03001C",
         "app-green": "#B6EADA",
-        "hover": "5B8FB9",
+        "app-blue": "#5B8FB9",
         blue: "#5B8FB9",
         red: "#DC4492",
         yellow: "#FDCC49",

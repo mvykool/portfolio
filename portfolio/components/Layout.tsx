@@ -67,7 +67,7 @@ const Layout = ({children}: Props) => {
 <About setSelectedPage={setSelectedPage}/>
 </div>
 
-<div className='w-5/6 mx-auto md:h-screen'>
+<div className='w-3/6 mx-auto mt-32'>
 <MySkills/>
 </div>
 <LineGradient/>

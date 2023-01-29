@@ -61,10 +61,10 @@ const titleEnd: string = "</about>"
         }}
       >
         <div className='flex space-x-4 mx-auto justify-center'>
-        <p className="text-5xl font-playfair z-10 text-center md:text-start">
+        <p className="text-4xl font-playfair z-10 text-center md:text-start">
           About
         </p>
-        <p className="text-5xl font-playfair z-10 text-center md:text-start text-app-green">
+        <p className="text-4xl font-playfair z-10 text-center md:text-start text-app-green">
           Me
         </p>
         </div>

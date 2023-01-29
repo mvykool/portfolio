@@ -15,7 +15,6 @@ module.exports = {
         "app-green": "#59CE8F",
         "app-blue": "#AEFEFF",
         "app-menu": "#5B8FB9",
-        blue: "#5B8FB9",
         red: "#DC4492",
         yellow: "#FDCC49",
         grey: "#ededed",

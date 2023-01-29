@@ -82,7 +82,7 @@ const Layout = ({children}: Props) => {
 
 <ScrollToTop/>
 
-  <footer>
+  <footer className='mt-16'>
     <Footer/>
   </footer>
 </div>

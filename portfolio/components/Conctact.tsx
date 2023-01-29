@@ -14,6 +14,13 @@ const sectionVariant = {
 
  
 const contact = () => {
+
+      //**tags */    
+
+const title: string = "<contact>"
+const titleEnd: string = "</contact>"
+
+
  
   //email js
 
@@ -50,7 +57,9 @@ setTimeout(() => {
  
 
   return (
-    <section id="contact" className="contact py-48">
+    <>
+    <span className='text-app-green text-sm' >{title}</span>
+    <section id="contact" className="contact py-10">
 
 
    <div className='md:flex md:justify-center'>
@@ -125,6 +134,8 @@ setTimeout(() => {
 
    </div>
 </section>
+<span className='text-app-green text-sm' >{titleEnd}</span>
+</>
   )
 }
 

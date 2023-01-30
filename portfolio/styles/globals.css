@@ -15,6 +15,7 @@ body,
   background-color: #03001C;
   font-family: 'Poppins', sans-serif;
   letter-spacing: 1px;
+  scroll-behavior: smooth;
   @apply text-white;
 }
 

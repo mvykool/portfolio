@@ -3,6 +3,7 @@ import useMediaQuery from '@/hooks/useMediaQuery'
 import { motion } from 'framer-motion'
 import AnchorLink from 'react-anchor-link-smooth-scroll'
 import Image from 'next/image'
+
 interface Props{
     setSelectedPage: any
 }
@@ -75,7 +76,7 @@ const titleEnd: string = "</about>"
         </div>
 
         <p className="mt-10 mb-7 text-sm md:text-base text-center md:text-start">
-        Hi there! I'm Maicol, and I'm a highly driven, front-end focused 
+        Hi there! I&apos;m Maicol, and I&apos;m a highly driven, front&rsquo;end focused 
          web developer, with emphasis in accessibility, and responsive
          design.
         </p>

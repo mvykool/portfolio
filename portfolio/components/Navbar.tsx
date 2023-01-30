@@ -44,6 +44,25 @@ const Navbar = ({topPage, setSelectedPage, selectedPage}: Props) => {
 
     const [menuToggle, setMenuToggle] = useState(false);
     const isAboveSmallScreens = useMediaQuery("(min-width: 768px)");
+
+
+
+
+  //lock scrolling when modals are opened 
+
+
+if (typeof window !== "undefined") {
+  let body = window.document.body;
+
+  if (menuToggle === true) {
+    body.classList.add("overflowHidden");
+    body.classList.add("overflowHidden")
+} else if (menuToggle === false) {
+   body.classList.remove("overflowHidden");
+   body.classList.remove("overflowHidden");
+}
+
+}
   
 
 

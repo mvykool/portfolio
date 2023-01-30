@@ -70,7 +70,7 @@ const About = ({setSelectedPage}: Props) => {
         </div>
 
         <p className="mt-10 mb-2 text-sm md:text-xs text-center md:text-start">
-        Hi there! I&apos;m Maicol, and I&apos;m a highly driven, front&rsquo;end focused 
+        Hi there! I&apos;m Maicol, and I&apos;m a highly driven, frontend focused 
          web developer, with emphasis in accessibility, and responsive
          design.
         </p>

@@ -84,7 +84,7 @@ const titleEnd: string = "</projects>"
 
                <p className="text-sm md:text-xs mb-2 text-gray-500 mx-2">Modern eCommerce store built with the <span className="text-app-green font-semibold">latest technology</span>.</p>
 
-              <p className="text-sm md:text-xs mb-2 text-gray-500 mx-2">Fully functional shoppoing cart, <span className="text-app-green font-semibold">payments with Stripe</span>, authentication handled with Fireauth, blog posts, built&rsquo;in chat, & functional email service.</p>
+              <p className="text-sm md:text-xs mb-2 text-gray-500 mx-2">Fully functional shoppoing cart, <span className="text-app-green font-semibold">payments with Stripe</span>, authentication handled with Fireauth, blog posts, functional chat &  email service.</p>
 
               <div className="flex justify-center mt-5 md:absolute md:bottom-0 md:w-full">
                 <a href="https://airman-23.vercel.app/" target="_blank" rel="noreferrer" className="flex items-center m-5 border-2 border-white rounded-sm justify-center md:text-sm py-1 px-2 hover:scale-125 duration-200 transition hover:bg-white hover:text-deep-blue">

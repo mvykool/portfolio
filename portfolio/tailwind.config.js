@@ -11,7 +11,7 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        "deep-blue": "#03001C",
+        "deep-blue": "#0a0d11",
         "app-green": "#59CE8F",
         "app-blue": "#AEFEFF",
         "app-menu": "#5B8FB9",

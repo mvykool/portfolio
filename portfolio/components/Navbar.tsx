@@ -69,10 +69,10 @@ if (typeof window !== "undefined") {
 
 
   return (
-    <nav className="bg-deep-blue fixed  z-40 w-full top-0 py-2">
-        <div className='flex items-center justify-between mx-auto px-9'>
+    <nav className="bg-deep-blue fixed  z-40 w-full top-0">
+        <div className='flex items-center justify-between mx-auto px-2 md:px-9'>
         <Link href={`/`} >
-        <img src="/logo.png" alt="logo" className='h-20 md:h-16 md:w-16 w-20' />
+        <img src="/logo.png" alt="logo" className='h-20 md:h-16 md:w-16 w-20 p-1' />
         
         </Link>
 
@@ -104,10 +104,10 @@ if (typeof window !== "undefined") {
                         
             </div>
          ) : (
-           <button className='rounded-lg bg-app-menu p-2'
+           <button className='rounded-lg bg-app-menu'
            onClick={() => setMenuToggle(!menuToggle)}
            >
-             <TiThMenu/>
+             <TiThMenu className='h-10 p-2 w-10'/>
            </button>
          )}
 

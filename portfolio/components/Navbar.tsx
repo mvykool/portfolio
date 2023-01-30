@@ -3,6 +3,8 @@ import AnchorLink from "react-anchor-link-smooth-scroll";
 import useMediaQuery from '@/hooks/useMediaQuery';
 import {TiThMenu, TiTimes} from "react-icons/ti"
 import { motion} from 'framer-motion';
+import {TbBrandGithub, TbBrandGmail, TbBrandWhatsapp, TbBrandDiscord} from "react-icons/tb"
+
 import Link from 'next/link';
 
 /**framer motion variants */
@@ -159,6 +161,11 @@ if (typeof window !== "undefined") {
                  page="Contact"
                 selectedPage={selectedPage}
                 setSelectedPage={setSelectedPage}topPage={undefined} />
+             </div>
+
+             <div>
+             <a  href="https://github.com/mvykool" rel="noreferrer" target="_blank">
+              Github</a>
              </div>
              </div>
             </motion.div>

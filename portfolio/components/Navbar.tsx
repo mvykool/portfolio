@@ -77,8 +77,7 @@ const Navbar = ({topPage, setSelectedPage, selectedPage}: Props) => {
                  page="Contact"
                 selectedPage={selectedPage}
                 setSelectedPage={setSelectedPage} topPage={undefined}               />
-               <a href="/login">login</a>
-
+             
             </div>
          ) : (
            <button className='rounded-lg bg-app-menu p-2'

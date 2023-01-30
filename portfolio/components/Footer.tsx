@@ -2,8 +2,8 @@
 
 const Footer = () => {
   return (
-    <footer className=" bg-app-menu py-10">
-      <div className="w-10/12 mx-auto">
+    <footer className=" border-t-2 mt-36 py-10">
+      <div className="w-8/12 mx-auto">
    
         <div className="md:flex justify-center md:items-center md:justify-evenly text-center ">
           <img src="/logo.png" alt="log" className="h-10 w-10 hidden md:block" />

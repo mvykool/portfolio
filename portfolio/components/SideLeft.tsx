@@ -18,7 +18,7 @@ const SideRight = () => {
       </a>
     </div>
   )
-}
+} 
 
 export default SideRight
 

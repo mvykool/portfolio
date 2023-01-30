@@ -14,16 +14,10 @@ const About = ({setSelectedPage}: Props) => {
 
     const isAboveLarge = useMediaQuery("(min-width: 1060px)");
 
-    //**tags */    
-
-const title: string = "<about>"
-const titleEnd: string = "</about>"
-
 
 
   return (
     <>
-    <span className='text-app-green text-sm' >{title}</span>
     <section id='about' className='md:flex md:justify-between md:items-center md:h-full gap-8 py-5'>
       
  
@@ -88,7 +82,6 @@ const titleEnd: string = "</about>"
 
     </div>
   </section>
-   <span className='text-app-green text-sm' >{titleEnd}</span>
    </>
   )
 }

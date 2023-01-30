@@ -25,7 +25,6 @@ const titleEnd: string = "</projects>"
 
   return (
     <>
-        <span className='text-app-green text-sm ml-9 md:ml-0' >{title}</span>
     <section id="projects" className="py-10 mx-5">
       {/* HEADINGS */}
       <motion.div
@@ -314,7 +313,6 @@ const titleEnd: string = "</projects>"
         </motion.div>
       </div>
     </section>
-    <span className='text-app-green text-sm ml-9 md:ml-0' >{titleEnd}</span>
     </>
   );
 };

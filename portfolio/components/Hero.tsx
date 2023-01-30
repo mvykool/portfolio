@@ -16,10 +16,7 @@ const Hero = ({setSelectedPage}: Props) => {
     const isAboveLarge = useMediaQuery("(min-width: 1060px)");
 
 
-//**tags */    
 
-const title: string = "<title>"
-const titleEnd: string = "</title>"
 
 
   return (
@@ -76,7 +73,7 @@ const titleEnd: string = "</title>"
             visible: { opacity: 1, x: 0 },
           }}
         >
-        <span className='text-app-green text-sm' >{title}</span>
+     
          <p className="text-3xl md:text-5xl mt-5 font-semibold z-10 text-center md:text-start">
           Maicol Hernandez
           </p>
@@ -126,7 +123,6 @@ const titleEnd: string = "</title>"
         >
      
         </motion.div>
-        <span className='text-app-green text-sm '>{titleEnd}</span>
 
       </div>
 

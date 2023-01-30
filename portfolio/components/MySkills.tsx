@@ -20,16 +20,10 @@ import {
 const MySkills = () => {
   const isAboveLarge = useMediaQuery("(min-width: 1060px)");
 
-      //**tags */    
-
-const title: string = "<skills>"
-const titleEnd: string = "</skills>"
-
 
 
   return (
     <>
-     <span className='text-app-green text-sm ' >{title}</span>
     <section id="skills" className="pt-10 pb-10">
       {/* HEADER AND IMAGE SECTION */}
       <div className=" ">
@@ -117,7 +111,6 @@ const titleEnd: string = "</skills>"
 
       </div>
     </section>
-    <span className='text-app-green text-sm' >{titleEnd}</span>
     </>
   );
 };

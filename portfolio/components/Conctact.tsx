@@ -14,11 +14,6 @@ const sectionVariant = {
  
 const Contact = () => {
 
-      //**tags */    
-
-const title: string = "<contact>"
-const titleEnd: string = "</contact>"
-
 
  
   //email js
@@ -57,7 +52,6 @@ setTimeout(() => {
 
   return (
     <>
-    <span className='text-app-green text-sm' >{title}</span>
     <section id="contact" className="contact pt-10">
 
 
@@ -133,7 +127,6 @@ setTimeout(() => {
 
    </div> 
 </section>
-<span className='text-app-green text-sm' >{titleEnd}</span>
 </>
   )
 }

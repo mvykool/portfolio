@@ -39,8 +39,8 @@ const titleEnd: string = "</about>"
             width={800}
             height={800}
             alt="profile"
-            className="hover:filter hover:saturate-200 transition duration-500 z-10 w-full max-w-[400px] md:w-[15vw] md:h-[35vh] "
-            src="/profile.jpeg"
+            className="hover:filter hover:saturate-200 transition duration-500 z-10 w-full max-w-[400px] md:w-[18vw] md:h-[35vh] "
+            src="/profile.png"
           />
         </div>
       ) : (
@@ -49,7 +49,7 @@ const titleEnd: string = "</about>"
           height={500}
           alt="profile"
           className="z-10 w-full max-w-[400px] md:max-w-[600px]"
-          src="/profile.jpeg"
+          src="/profile.png"
         />
       )}
     </div>

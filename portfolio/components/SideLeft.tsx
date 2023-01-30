@@ -7,7 +7,7 @@ const SideRight = () => {
   <div className='fixed top-[40%] left-14'>
     <img src="/blob.svg" alt="" className='h-16 w-16' />
   </div>
-  <div className='fixed top-[20%] left-[30%]'>
+  <div className='fixed top-[12%] left-[30%]'>
     <img src="/blob2.svg" alt="" className='h-24 w-24' />
   </div>
   <div className='fixed bottom-[20%] left-[10%]'>

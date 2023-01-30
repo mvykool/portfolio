@@ -32,7 +32,7 @@ const titleEnd: string = "</about>"
     <div className="basis-3/5 z-10 mt-5 flex justify-center md:order-2">
       {isAboveLarge ? (
         <div
-          className="relative z-0 ml-20 before:absolute before:-top-10 before:-left-10 
+          className="relative z-0 ml-40 before:absolute before:-top-10 before:-left-10 
           before:w-full before:max-w-[400px] md:before:max-w-[600px] before:h-full before:border-2 before:border-app-green before:z-[-1] "
         >
           <Image
@@ -54,7 +54,7 @@ const titleEnd: string = "</about>"
       )}
     </div>
 
-    <div className="z-30 basis-2/5 mt-12 md:ml-10 md:mt-5">
+    <div className="z-30 basis-2/5 md:ml-10 mt-12 md:mt-5">
       {/* HEADINGS */}
       <motion.div
         initial="hidden"

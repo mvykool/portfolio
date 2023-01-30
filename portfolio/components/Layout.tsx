@@ -6,7 +6,6 @@ import useMediaQuery from '../hooks/useMediaQuery';
 import { useEffect } from 'react';
 import SideRight from './SideRight';
 import SideLeft from './SideLeft';
-import LineGradient from './LineGradient';
 import MySkills from './MySkills';
 import Projects from './Projects';
 import Contact from './Conctact';

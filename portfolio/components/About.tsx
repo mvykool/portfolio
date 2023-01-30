@@ -2,6 +2,7 @@ import React from 'react'
 import useMediaQuery from '@/hooks/useMediaQuery'
 import { motion } from 'framer-motion'
 import AnchorLink from 'react-anchor-link-smooth-scroll'
+import Image from 'next/image'
 interface Props{
     setSelectedPage: any
 }
@@ -33,17 +34,21 @@ const titleEnd: string = "</about>"
           className="relative z-0 ml-52 before:absolute before:-top-10 before:-left-10 
           before:w-full before:max-w-[400px] md:before:max-w-[600px] before:h-full before:border-2 before:border-app-green before:z-[-1] "
         >
-          <img
+          <Image
+            width={500}
+            height={500}
             alt="profile"
             className="hover:filter hover:saturate-200 transition duration-500 z-10 w-full max-w-[400px] md:max-w-[600px] "
-            src="assets/person-3.jpeg"
+            src="/person-3.jpeg"
           />
         </div>
       ) : (
-        <img
+        <Image
+          width={500}
+          height={500}
           alt="profile"
           className="z-10 w-full max-w-[400px] md:max-w-[600px]"
-          src="assets/person-3.jpeg"
+          src="/person-3.jpeg"
         />
       )}
     </div>

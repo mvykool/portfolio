@@ -1,7 +1,6 @@
 import React, { useState, useRef} from 'react'
 import emailjs from '@emailjs/browser';
 import { motion} from 'framer-motion'
-import LineGradient from './LineGradient';
 
 /**framer motion variants */
 
@@ -13,7 +12,7 @@ const sectionVariant = {
 }
 
  
-const contact = () => {
+const Contact = () => {
 
       //**tags */    
 
@@ -139,4 +138,4 @@ setTimeout(() => {
   )
 }
 
-export default contact
+export default Contact

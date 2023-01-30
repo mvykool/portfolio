@@ -2,7 +2,8 @@ import React, { useState } from 'react'
 import AnchorLink from "react-anchor-link-smooth-scroll";
 import useMediaQuery from '@/hooks/useMediaQuery';
 import {TiThMenu, TiTimes} from "react-icons/ti"
-import { motion} from 'framer-motion'
+import { motion} from 'framer-motion';
+import Link from 'next/link';
 
 /**framer motion variants */
  
@@ -23,7 +24,7 @@ interface Props {
 
 
 {/**pass paramers to links */}
-const Link = ({ page, selectedPage, setSelectedPage}: Props) => {
+const Links = ({ page, selectedPage, setSelectedPage}: Props) => {
     const lowerCasePage = page.toLowerCase();
 
     return(
@@ -49,31 +50,31 @@ const Navbar = ({topPage, setSelectedPage, selectedPage}: Props) => {
   return (
     <nav className="bg-deep-blue fixed  z-40 w-full top-0 py-6">
         <div className='flex items-center justify-between mx-auto w-5/6'>
-        <a href="/">
+        <Link href={`/`} >
         <img src="/logo.png" alt="logo" className='h-10 w-10 ' />
-        </a>
+        </Link>
 
          {/** desktop view */}
 
          {isAboveSmallScreens ? (
             <div className='flex text-app-blue justify-between gap-10 font-opensans font-semibold'>
-               <Link
+               <Links
                 page="Home"
                 selectedPage={selectedPage}
                  setSelectedPage={setSelectedPage} topPage={undefined}               />
-               <Link
+               <Links
                 page="About"
                 selectedPage={selectedPage}
                 setSelectedPage={setSelectedPage} topPage={undefined}               />
-               <Link
+               <Links
                  page="Skills"
                 selectedPage={selectedPage}
                  setSelectedPage={setSelectedPage} topPage={undefined}               />
-               <Link
+               <Links
                 page="Projects"
                  selectedPage={selectedPage}
                 setSelectedPage={setSelectedPage} topPage={undefined}               />
-               <Link
+               <Links
                  page="Contact"
                 selectedPage={selectedPage}
                 setSelectedPage={setSelectedPage} topPage={undefined}               />
@@ -111,31 +112,31 @@ const Navbar = ({topPage, setSelectedPage, selectedPage}: Props) => {
              <div className='flex flex-col gap-5 ml-[33%] text-xl text-deep-blue mt-40'>
 
              <div onClick={() => setMenuToggle(!menuToggle)}>
-             <Link
+             <Links
                  page="Home"
                 selectedPage={selectedPage}
                 setSelectedPage={setSelectedPage}topPage={undefined} />
              </div>
               <div onClick={() => setMenuToggle(!menuToggle)}>
-             <Link
+             <Links
                  page="About"
                 selectedPage={selectedPage}
                 setSelectedPage={setSelectedPage}topPage={undefined} />
              </div>
              <div onClick={() => setMenuToggle(!menuToggle)}>
-             <Link
+             <Links
                  page="Skills"
                 selectedPage={selectedPage}
                 setSelectedPage={setSelectedPage}topPage={undefined} />
              </div>
              <div onClick={() => setMenuToggle(!menuToggle)}>
-             <Link
+             <Links
                  page="Projects"
                 selectedPage={selectedPage}
                 setSelectedPage={setSelectedPage}topPage={undefined} />
              </div>
              <div onClick={() => setMenuToggle(!menuToggle)}>
-             <Link
+             <Links
                  page="Contact"
                 selectedPage={selectedPage}
                 setSelectedPage={setSelectedPage}topPage={undefined} />

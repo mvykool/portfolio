@@ -53,7 +53,7 @@ const titleEnd: string = "</skills>"
         </motion.div>
 
         <motion.div
-          className="flex flex-wrap md:grid md:grid-cols-3 flex-col gap-5"
+          className="flex flex-wrap md:grid md:grid-cols-3 flex-col gap-5 md:mx-5"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.5 }}

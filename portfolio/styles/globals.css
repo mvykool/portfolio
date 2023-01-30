@@ -53,3 +53,10 @@ body,
   border: 2px solid var(--app-second-col);
 }
 
+.loader{
+  width: 100% !important;
+  height: 100vh !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

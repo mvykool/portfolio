@@ -14,6 +14,8 @@ export default function Home() {
   const [selectedPage, setSelectedPage] = useState("home");
 
   return (
+
+
     <main >
       <Head>
         <title>Maicol H | Portfolio</title>

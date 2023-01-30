@@ -67,10 +67,10 @@ if (typeof window !== "undefined") {
 
 
   return (
-    <nav className="bg-deep-blue fixed  z-40 w-full top-0 py-6">
-        <div className='flex items-center justify-between mx-auto w-5/6'>
+    <nav className="bg-deep-blue fixed  z-40 w-full top-0 py-2">
+        <div className='flex items-center justify-between mx-auto px-5'>
         <Link href={`/`} >
-        <img src="/logo.png" alt="logo" className='h-10 w-10 ' />
+        <img src="/logo.png" alt="logo" className='h-20 md:h-16 md:w-16 w-20' />
         </Link>
 
          {/** desktop view */}

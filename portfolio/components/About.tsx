@@ -23,8 +23,8 @@ const titleEnd: string = "</about>"
 
   return (
     <>
-    <span className='text-app-green text-sm md:text-base' >{title}</span>
-    <section id='about' className='md:flex md:justify-between md:items-center md:h-full gap-16 py-5'>
+    <span className='text-app-green text-sm' >{title}</span>
+    <section id='about' className='md:flex md:justify-between md:items-center md:h-full gap-8 py-5'>
       
  
       
@@ -36,10 +36,10 @@ const titleEnd: string = "</about>"
           before:w-full before:max-w-[400px] md:before:max-w-[600px] before:h-full before:border-2 before:border-app-green before:z-[-1] "
         >
           <Image
-            width={500}
-            height={500}
+            width={800}
+            height={800}
             alt="profile"
-            className="hover:filter hover:saturate-200 transition duration-500 z-10 w-full max-w-[400px] md:max-w-[600px] "
+            className="hover:filter hover:saturate-200 transition duration-500 z-10 w-full max-w-[400px] md:w-[15vw] md:h-[35vh] "
             src="/profile.jpeg"
           />
         </div>
@@ -75,12 +75,12 @@ const titleEnd: string = "</about>"
         </p>
         </div>
 
-        <p className="mt-10 mb-7 text-sm md:text-base text-center md:text-start">
+        <p className="mt-10 mb-7 text-sm md:text-sm text-center md:text-start">
         Hi there! I&apos;m Maicol, and I&apos;m a highly driven, front&rsquo;end focused 
          web developer, with emphasis in accessibility, and responsive
          design.
         </p>
-        <p className="mt-10 mb-7 text-sm md:text-base text-center md:text-start">
+        <p className="mt-10 mb-7 text-sm md:text-sm text-center md:text-start">
         I enjoy building amazing UIs, working with APIs, learning new things all the time,
          and keeping myself up to date with the new tendencies of web development.
         </p>
@@ -88,7 +88,7 @@ const titleEnd: string = "</about>"
 
     </div>
   </section>
-   <span className='text-app-green text-sm md:text-base' >{titleEnd}</span>
+   <span className='text-app-green text-sm' >{titleEnd}</span>
    </>
   )
 }

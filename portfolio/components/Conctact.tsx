@@ -87,7 +87,7 @@ setTimeout(() => {
     <div className='flex flex-col mx-auto justify-center md:flex md:justify-center'>  
     <div>
       {result ? 
-      <div className='absolute bg-[var(--bg-wrapper)] z-40 w-full h-full top-0 left-0 flex justify-center items-center'>
+      <div className='absolute bg-wrapper z-40 w-full h-full top-0 left-0 flex justify-center items-center'>
         <div className='mx-4 md:w-[30vw] md:py-20 top-40 flex flex-col bg-deep-blue rounded-sm border-2 border-app-green p-8 fixed text-green-500 font-semibold'>
          <p className='md:flex md:justify-center text-sm'>Your message has been successfully sent.</p> 
          <hr className='w-full my-4'/>
@@ -104,14 +104,14 @@ setTimeout(() => {
        whileInView="show"
        viewport={{ once: true }}
       className='md:flex md:justify-center'>
-      <form ref={form} className='flex flex-col justify-center p-3 my-2 md:w-[35vw]' onSubmit={sendEmail}>
+      <form ref={form} className='flex flex-col justify-center p-3 my-2 md:w-[30vw]' onSubmit={sendEmail}>
           <label className=' w-20 font-semibold rounded-md flex justify-center p-1 my-4 text-white'>Name</label>
           <input
           type="text"
           name='name'
           id='name'
           placeholder='Your Name'
-          className='p-2 rounded-md outline-none'/>
+          className='p-1 pl-2 rounded-md outline-none'/>
           <label className=' w-20 font-semibold rounded-md flex justify-center p-1 my-4 text-white'>Email</label>
           <input
           type="text"
@@ -119,14 +119,14 @@ setTimeout(() => {
           name='email'
           id='email'
           placeholder='Email Address'
-          className='p-2 rounded-md outline-none'/>
+          className='p-1 pl-2 rounded-md outline-none'/>
           <label className=' w-20 font-semibold rounded-md flex justify-center p-1 my-4 text-white'>Message</label>
           <input
           type="text"
           name='message'
           id='message'
           placeholder='Message' 
-          className='px-2 pt-2 pb-36 text-black rounded-md outline-none'/>
+          className='px-2 pt-2 pb-28 text-black rounded-md outline-none'/>
           <button className='my-5 py-2 rounded-md cursor-pointer bg-app-green text-white font-bold p-1 hover:bg-gray-800 hover:scale-105 duration-300' type='submit'  value='send'>Submit</button>
     </form>
       </motion.div>

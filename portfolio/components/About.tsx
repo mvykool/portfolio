@@ -75,12 +75,12 @@ const titleEnd: string = "</about>"
         </p>
         </div>
 
-        <p className="mt-10 mb-7 text-sm md:text-sm text-center md:text-start">
+        <p className="mt-10 mb-2 text-sm md:text-sm text-center md:text-start">
         Hi there! I&apos;m Maicol, and I&apos;m a highly driven, front&rsquo;end focused 
          web developer, with emphasis in accessibility, and responsive
          design.
         </p>
-        <p className="mt-10 mb-7 text-sm md:text-sm text-center md:text-start">
+        <p className="mt-5 mb-7 text-sm md:text-sm text-center md:text-start">
         I enjoy building amazing UIs, working with APIs, learning new things all the time,
          and keeping myself up to date with the new tendencies of web development.
         </p>

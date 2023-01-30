@@ -2,7 +2,7 @@
 
 const Footer = () => {
   return (
-    <footer className=" border-t-2 mt-36 py-10">
+    <footer className=" border-t-2 mt-36 py-10 ">
       <div className="w-8/12 mx-auto">
    
         <div className="md:flex justify-center md:items-center md:justify-evenly text-center ">
@@ -10,7 +10,7 @@ const Footer = () => {
           <p className="font-playfair font-semibold text-xl text-white">
            Made By Maicol Hernandez
           </p>
-          <p className="mt-5 text-md text-white">
+          <p className="mt-0 text-md text-white">
             ©2023 | All Rights Reserved.
           </p>
         </div>

@@ -88,11 +88,11 @@ const titleEnd: string = "</projects>"
               <p className="text-sm mb-2 text-gray-500 mx-2">Fully functional shoppoing cart, <span className="text-app-green font-semibold">payments with Stripe</span>, authentication handled with Fireauth, blog posts, built-in chat, & functional email service.</p>
 
               <div className="flex justify-center mt-5 md:absolute md:bottom-0 md:w-full">
-                <a href="https://airman-23.vercel.app/" target="_blank" className="flex items-center m-5 border-2 border-white rounded-sm justify-center py-2 px-3 hover:scale-125 duration-200 transition hover:bg-white hover:text-deep-blue">
+                <a href="https://airman-23.vercel.app/" target="_blank" rel="noreferrer" className="flex items-center m-5 border-2 border-white rounded-sm justify-center py-2 px-3 hover:scale-125 duration-200 transition hover:bg-white hover:text-deep-blue">
                   Live
                  <HiOutlineExternalLink className="mx-2"/>
                 </a>
-                <a href="https://github.com/mvykool/Airman-23/tree/main/airman-23" target="_blank" className="flex items-center m-5 border-2 border-white rounded-sm justify-center py-2 px-3 hover:scale-125 duration-200 transition hover:bg-white hover:text-deep-blue">
+                <a href="https://github.com/mvykool/Airman-23/tree/main/airman-23" target="_blank" rel="noreferrer" className="flex items-center m-5 border-2 border-white rounded-sm justify-center py-2 px-3 hover:scale-125 duration-200 transition hover:bg-white hover:text-deep-blue">
                   Code
                  <TbBrandGithub className="mx-2"/>
                 </a>
@@ -130,11 +130,11 @@ const titleEnd: string = "</projects>"
               <p className="text-sm mb-2 text-gray-500 mx-2">Totally responsive Web app, with functionaity to create, erase notes. Authentication handled with Firebase, <span className="text-app-green font-semibold">and inlcudes six different themes.</span></p>
 
               <div className="flex justify-center mt-5 md:absolute md:bottom-0 md:w-full">
-                <a href="https://libello.netlify.app/" target="_blank" className="flex items-center m-5 border-2 border-white rounded-sm justify-center py-2 px-3 hover:scale-125 duration-200 transition hover:bg-white hover:text-deep-blue">
+                <a href="https://libello.netlify.app/" target="_blank" rel="noreferrer" className="flex items-center m-5 border-2 border-white rounded-sm justify-center py-2 px-3 hover:scale-125 duration-200 transition hover:bg-white hover:text-deep-blue">
                   Live
                  <HiOutlineExternalLink className="mx-2"/>
                 </a>
-                <a href="https://github.com/mvykool/Libello" target="_blank" className="flex items-center m-5 border-2 border-white rounded-sm justify-center py-2 px-3 hover:scale-125 duration-200 transition hover:bg-white hover:text-deep-blue">
+                <a href="https://github.com/mvykool/Libello" target="_blank" rel="noreferrer" className="flex items-center m-5 border-2 border-white rounded-sm justify-center py-2 px-3 hover:scale-125 duration-200 transition hover:bg-white hover:text-deep-blue">
                   Code
                  <TbBrandGithub className="mx-2"/>
                 </a>
@@ -171,11 +171,11 @@ const titleEnd: string = "</projects>"
               <p className="text-sm mb-2 text-gray-500 mx-2">Responsive Website, <span className="text-app-green font-semibold">with soft color palette</span>, and smooth animations.</p>
 
               <div className="flex justify-center mt-5 md:absolute md:bottom-0 md:w-full">
-                <a href="https://oh-my-dog.netlify.app/" target="_blank" className="flex items-center m-5 border-2 border-white rounded-sm justify-center py-2 px-3 hover:scale-125 duration-200 transition hover:bg-white hover:text-deep-blue">
+                <a href="https://oh-my-dog.netlify.app/" target="_blank" rel="noreferrer" className="flex items-center m-5 border-2 border-white rounded-sm justify-center py-2 px-3 hover:scale-125 duration-200 transition hover:bg-white hover:text-deep-blue">
                   Live
                  <HiOutlineExternalLink className="mx-2"/>
                 </a>
-                <a href="https://github.com/mvykool/omd/tree/main/oh-my-dog" target="_blank" className="flex items-center m-5 border-2 border-white rounded-sm justify-center py-2 px-3 hover:scale-125 duration-200 transition hover:bg-white hover:text-deep-blue">
+                <a href="https://github.com/mvykool/omd/tree/main/oh-my-dog" target="_blank" rel="noreferrer" className="flex items-center m-5 border-2 border-white rounded-sm justify-center py-2 px-3 hover:scale-125 duration-200 transition hover:bg-white hover:text-deep-blue">
                   Code
                  <TbBrandGithub className="mx-2"/>
                 </a>
@@ -213,11 +213,11 @@ const titleEnd: string = "</projects>"
               <p className="text-sm mb-2 text-gray-500 mx-2">Responsive Website, that includes<span className="text-app-green font-semibold"> a lot of beautiful pictures, as grid-layouts</span>, and smooth animations.</p>
 
               <div className="flex justify-center mt-5 md:absolute md:bottom-0 md:w-full">
-                <a href="https://foret.netlify.app/" target="_blank" className="flex items-center m-5 border-2 border-white rounded-sm justify-center py-2 px-3 hover:scale-125 duration-200 transition hover:bg-white hover:text-deep-blue">
+                <a href="https://foret.netlify.app/" target="_blank" rel="noreferrer" className="flex items-center m-5 border-2 border-white rounded-sm justify-center py-2 px-3 hover:scale-125 duration-200 transition hover:bg-white hover:text-deep-blue">
                   Live
                  <HiOutlineExternalLink className="mx-2"/>
                 </a>
-                <a href="https://github.com/mvykool/foret/tree/main/astro" target="_blank" className="flex items-center m-5 border-2 border-white rounded-sm justify-center py-2 px-3 hover:scale-125 duration-200 transition hover:bg-white hover:text-deep-blue">
+                <a href="https://github.com/mvykool/foret/tree/main/astro" target="_blank" rel="noreferrer" className="flex items-center m-5 border-2 border-white rounded-sm justify-center py-2 px-3 hover:scale-125 duration-200 transition hover:bg-white hover:text-deep-blue">
                   Code
                  <TbBrandGithub className="mx-2"/>
                 </a>
@@ -256,11 +256,11 @@ const titleEnd: string = "</projects>"
               <p className="text-sm mb-2 text-gray-500 mx-2">Responsive Web app, inspired from Spotify, <span className="font-semibold text-app-green">I added my own UI to my liking</span>, the app state management is handled <span className="text-app-green font-semibold">with Redux</span></p>
 
               <div className="flex justify-center mt-5 md:absolute md:bottom-0 md:w-full">
-                <a href="https://resonaty.netlify.app/" target="_blank" className="flex items-center m-5 border-2 border-white rounded-sm justify-center py-2 px-3 hover:scale-125 duration-200 transition hover:bg-white hover:text-deep-blue">
+                <a href="https://resonaty.netlify.app/" target="_blank" rel="noreferrer" className="flex items-center m-5 border-2 border-white rounded-sm justify-center py-2 px-3 hover:scale-125 duration-200 transition hover:bg-white hover:text-deep-blue">
                   Live
                  <HiOutlineExternalLink className="mx-2"/>
                 </a>
-                <a href="https://github.com/mvykool/Resonaty" target="_blank" className="flex items-center m-5 border-2 border-white rounded-sm justify-center py-2 px-3 hover:scale-125 duration-200 transition hover:bg-white hover:text-deep-blue">
+                <a href="https://github.com/mvykool/Resonaty" target="_blank" rel="noreferrer" className="flex items-center m-5 border-2 border-white rounded-sm justify-center py-2 px-3 hover:scale-125 duration-200 transition hover:bg-white hover:text-deep-blue">
                   Code
                  <TbBrandGithub className="mx-2"/>
                 </a>
@@ -299,11 +299,11 @@ const titleEnd: string = "</projects>"
               <p className="text-sm mb-2 text-gray-500 mx-2">Responsive Website, with different mordern UI components, <span className="text-app-green font-semibold">including a graphic dashboard</span></p>
 
               <div className="flex justify-center mt-5 md:absolute md:bottom-0 md:w-full">
-                <a href="https://zeal-eight.vercel.app/" target="_blank" className="flex items-center m-5 border-2 border-white rounded-sm justify-center py-2 px-3 hover:scale-125 duration-200 transition hover:bg-white hover:text-deep-blue">
+                <a href="https://zeal-eight.vercel.app/" target="_blank" rel="noreferrer" className="flex items-center m-5 border-2 border-white rounded-sm justify-center py-2 px-3 hover:scale-125 duration-200 transition hover:bg-white hover:text-deep-blue">
                   Live
                  <HiOutlineExternalLink className="mx-2"/>
                 </a>
-                <a href="https://github.com/mvykool/Zeal" target="_blank" className="flex items-center m-5 border-2 border-white rounded-sm justify-center py-2 px-3 hover:scale-125 duration-200 transition hover:bg-white hover:text-deep-blue">
+                <a href="https://github.com/mvykool/Zeal" target="_blank" rel="noreferrer" className="flex items-center m-5 border-2 border-white rounded-sm justify-center py-2 px-3 hover:scale-125 duration-200 transition hover:bg-white hover:text-deep-blue">
                   Code
                  <TbBrandGithub className="mx-2"/>
                 </a>

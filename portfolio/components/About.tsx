@@ -39,7 +39,7 @@ const titleEnd: string = "</about>"
             height={500}
             alt="profile"
             className="hover:filter hover:saturate-200 transition duration-500 z-10 w-full max-w-[400px] md:max-w-[600px] "
-            src="/person-3.jpeg"
+            src=""
           />
         </div>
       ) : (
@@ -48,7 +48,7 @@ const titleEnd: string = "</about>"
           height={500}
           alt="profile"
           className="z-10 w-full max-w-[400px] md:max-w-[600px]"
-          src="/person-3.jpeg"
+          src=""
         />
       )}
     </div>

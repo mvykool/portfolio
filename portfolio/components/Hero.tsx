@@ -23,7 +23,7 @@ const titleEnd: string = "</title>"
 
 
   return (
-    <section id='home' className='md:flex md:justify-between md:items-center md:h-full gap-36 pt-10 md:pt-28 pb-10'>
+    <section id='home' className='md:flex md:justify-between md:items-center md:h-full gap-16 pt-10 md:pt-5 pb-10'>
       
       
       {/* IMAGE SECTION */}
@@ -76,12 +76,12 @@ const titleEnd: string = "</title>"
             visible: { opacity: 1, x: 0 },
           }}
         >
-        <span className='text-app-green text-sm md:text-base' >{title}</span>
-         <p className="text-3xl md:text-7xl mt-5 font-semibold z-10 text-center md:text-start">
+        <span className='text-app-green text-sm' >{title}</span>
+         <p className="text-3xl md:text-5xl mt-5 font-semibold z-10 text-center md:text-start">
           Maicol Hernandez
           </p>
 
-          <p className="mt-2 text-app-blue mb-5 font-semibold text-lg md:text-5xl text-center md:text-start">
+          <p className="mt-2 text-app-blue mb-5 font-semibold text-lg md:text-3xl text-center md:text-start">
            Front-end Developer.
           </p>
 
@@ -100,7 +100,7 @@ const titleEnd: string = "</title>"
           }}
         >
           <AnchorLink
-            className="bg-app-green text-white rounded-sm py-3 px-7 font-semibold md:text-lg
+            className="bg-app-green text-white rounded-sm py-2 px-5 font-semibold md:text-sm
               hover:bg-app-menu hover:text-white transition duration-200 hover:scale-105"
             onClick={() => setSelectedPage("contact")}
             href="#contact"
@@ -108,7 +108,7 @@ const titleEnd: string = "</title>"
             Contact Me
           </AnchorLink>
 
-          <a href="CV.pdf" target="_blank" rel="noreferrer"  className="border-2 border-app-menu text-app-menu rounded-sm py-3 px-4 font-semibold md:text-lg
+          <a href="CV.pdf" target="_blank" rel="noreferrer"  className="border-2 border-app-menu text-app-menu rounded-sm py-2 px-5 font-semibold md:text-sm
               hover:border-app-green hover:scale-105 duration-200 transition hover:text-white " >Résumé</a>   
         
         </motion.div>
@@ -126,7 +126,7 @@ const titleEnd: string = "</title>"
         >
      
         </motion.div>
-        <span className='text-app-green text-sm md:text-base'>{titleEnd}</span>
+        <span className='text-app-green text-sm '>{titleEnd}</span>
 
       </div>
 

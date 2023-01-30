@@ -44,8 +44,8 @@ const titleEnd: string = "</skills>"
             visible: { opacity: 1, x: 0 },
           }}
         >
-          <p className=" text-4xl md:text-5xl  flex justify-center mb-5">
-            My <span className="text-app-green md:text-5xl mx-2">Skills</span>
+          <p className=" text-4xl md:text-4xl  flex justify-center mb-5">
+            My <span className="text-app-green md:text-4xl mx-2">Skills</span>
           </p>
           <p className="mt-10 mb-20 md:flex justify-center">
             Tools, Libraries, & Programming languages that I use:

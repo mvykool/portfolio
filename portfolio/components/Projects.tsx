@@ -71,12 +71,12 @@ const titleEnd: string = "</projects>"
           hidden: { opacity: 0, x: -50 },
           visible: { opacity: 1, x: 0 },
         }}>
-              <div className="hover:scale-95 duration-200 transition border-2 rounded-sm border-app-green p-3 relative md:h-[90vh]  cursor-pointer">
-              <Image width={700} height={500} src="/project1.png" alt="airman" className="object-left object-cover rounded-sm  h-[40vh] md:h-[30vh]" />
+              <div className="hover:scale-95 duration-200 transition border-2 rounded-sm border-app-green p-3 relative md:h-[70vh]  cursor-pointer">
+              <Image width={700} height={500} src="/project1.png" alt="airman" className="object-left object-cover rounded-sm  h-[40vh] md:h-[20vh]" />
                <p className="my-5 flex justify-center font-bold text-2xl">Airman-<span className="text-app-green">23</span> </p>
 
-               <div className="flex flex-col
-               my-5 ml-2 md:text-xs">
+               <div className="flex flex-col md:flex-row md:space-x-3
+               my-5 ml-2 md:text-xs md:justify-center">
                  <small>-Nextjs</small>
                  <small>-Sanity.io</small>
                  <small>-Tailwind</small>
@@ -113,12 +113,12 @@ const titleEnd: string = "</projects>"
           hidden: { opacity: 0, x: -50 },
           visible: { opacity: 1, x: 0 },
         }}>
-           <div className="hover:scale-95 duration-200 transition border-2 rounded-sm border-app-green p-3 relative md:h-[90vh]  cursor-pointer">
-           <Image width={700} height={500} src="/project2.png" alt="airman" className=" object-cover rounded-sm  object-left h-[40vh] md:h-[30vh] md:w-full" />
+           <div className="hover:scale-95 duration-200 transition border-2 rounded-sm border-app-green p-3 relative md:h-[70vh]  cursor-pointer">
+           <Image width={700} height={500} src="/project2.png" alt="airman" className=" object-cover rounded-sm  object-left h-[40vh] md:h-[20vh] md:w-full" />
                <p className="my-5 flex justify-center font-bold text-2xl">Lib<span className="text-app-green">ello</span> </p>
 
-               <div className="flex flex-col
-               my-5 ml-2 md:text-xs">
+               <div className="flex flex-col md:flex-row space-x-3
+               my-5 ml-2 md:text-xs md:justify-center">
                  <small>-React</small>
                  <small>-Vite</small>
                  <small>-Firebase</small>
@@ -155,12 +155,12 @@ const titleEnd: string = "</projects>"
           hidden: { opacity: 0, x: -50 },
           visible: { opacity: 1, x: 0 },
         }}>
-             <div className="hover:scale-95 duration-200 transition border-2 rounded-sm border-app-green p-3 relative md:h-[90vh]  cursor-pointer">
-             <Image width={700} height={500} src="/project3.png" alt="airman" className=" object-cover rounded-sm object-right h-[40vh] md:h-[30vh]" />
+             <div className="hover:scale-95 duration-200 transition border-2 rounded-sm border-app-green p-3 relative md:h-[70vh]  cursor-pointer">
+             <Image width={700} height={500} src="/project3.png" alt="airman" className=" object-cover rounded-sm object-right h-[40vh] md:h-[20vh]" />
                <p className="my-5 flex justify-center font-bold text-2xl">Oh M<span className="text-app-green">y Dog</span> </p>
 
-               <div className="flex flex-col
-               my-5 ml-2 md:text-xs">
+               <div className="flex flex-col md:flex-row space-x-3
+               my-5 ml-2 md:text-xs md:justify-center">
                  <small>-AstroJS</small>
                  <small>-React</small>
                  <small>-Tailwind</small>
@@ -197,12 +197,12 @@ const titleEnd: string = "</projects>"
           hidden: { opacity: 0, x: -50 },
           visible: { opacity: 1, x: 0 },
         }}>
-             <div className="hover:scale-95 duration-200 transition border-2 rounded-sm border-app-green p-3 relative md:h-[90vh]  cursor-pointer">
-             <Image width={700} height={500} src="/project4.png" alt="airman" className=" object-cover rounded-sm  h-[40vh] md:h-[30vh]" />
+             <div className="hover:scale-95 duration-200 transition border-2 rounded-sm border-app-green p-3 relative md:h-[70vh]  cursor-pointer">
+             <Image width={700} height={500} src="/project4.png" alt="airman" className=" object-cover rounded-sm  h-[40vh] md:h-[20vh]" />
                <p className="my-5 flex justify-center font-bold text-2xl">For<span className="text-app-green">êt</span> </p>
 
-               <div className="flex flex-col
-               my-5 ml-2 md:text-xs">
+               <div className="flex md:flex-row space-x-3 flex-col
+               my-5 ml-2 md:text-xs md:justify-center">
                  <small>-AstroJS</small>
                  <small>-React</small>
                  <small>-Tailwind</small>
@@ -239,12 +239,12 @@ const titleEnd: string = "</projects>"
           hidden: { opacity: 0, x: -50 },
           visible: { opacity: 1, x: 0 },
         }}>
-             <div className="hover:scale-95 duration-200 transition border-2 rounded-sm border-app-green p-3 relative md:h-[90vh]  cursor-pointer">
-             <Image width={700} height={500} src="/project5.png" alt="airman" className=" object-cover rounded-sm object-left h-[40vh] md:h-[30vh]" />
+             <div className="hover:scale-95 duration-200 transition border-2 rounded-sm border-app-green p-3 relative md:h-[70vh]  cursor-pointer">
+             <Image width={700} height={500} src="/project5.png" alt="airman" className=" object-cover rounded-sm object-left h-[40vh] md:h-[20vh]" />
                <p className="my-5 flex justify-center font-bold text-2xl">Reso<span className="text-app-green">naty</span> </p>
 
-               <div className="flex flex-col
-               my-5 ml-2 md:text-xs">
+               <div className="flex flex-col md:flex-row space-x-3
+               my-5 ml-2 md:text-xs md:justify-center">
                  <small>-React</small>
                  <small>-Redux</small>
                  <small>-Tailwind</small>
@@ -282,14 +282,13 @@ const titleEnd: string = "</projects>"
           hidden: { opacity: 0, x: -50 },
           visible: { opacity: 1, x: 0 },
         }}>
-              <div className="hover:scale-95 duration-200 transition border-2 rounded-sm border-app-green p-3 relative md:h-[90vh]  cursor-pointer">
-              <Image width={700} height={500} src="/project6.png" alt="airman" className=" object-cover rounded-sm object-right h-[40vh] md:h-[30vh]" />
+              <div className="hover:scale-95 duration-200 transition border-2 rounded-sm border-app-green p-3 relative md:h-[70vh]  cursor-pointer">
+              <Image width={700} height={500} src="/project6.png" alt="airman" className=" object-cover rounded-sm object-right h-[40vh] md:h-[20vh]" />
                <p className="my-5 flex justify-center font-bold text-2xl">Ze<span className="text-app-green">al</span> </p>
 
                <div className="flex flex-col
-               my-5 ml-2 md:text-xs">
+               my-5 ml-2 md:text-xs md:flex-row space-x-3 md:justify-center">
                  <small>-NextJS</small>
-                 <small>-Vercel</small>
                  <small>-Tailwind</small>
                  <small>-Framer-Motion</small>
                </div>

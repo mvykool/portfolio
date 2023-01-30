@@ -130,7 +130,7 @@ if (typeof window !== "undefined") {
                 </button>
              </div>
              {/** menu mobile */}
-             <div className='flex flex-col gap-5 ml-[33%] text-xl text-deep-blue mt-40'>
+             <div className='flex flex-col gap-5 ml-[33%] text-xl text-deep-blue mt-20'>
 
              <div onClick={() => setMenuToggle(!menuToggle)}>
              <Links

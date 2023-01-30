@@ -76,12 +76,12 @@ const titleEnd: string = "</title>"
             visible: { opacity: 1, x: 0 },
           }}
         >
-        <span className='text-app-green text-sm' >{title}</span>
-         <p className="text-3xl md:text-6xl mt-5 font-semibold z-10 text-center md:text-start">
+        <span className='text-app-green text-sm md:text-base' >{title}</span>
+         <p className="text-3xl md:text-7xl mt-5 font-semibold z-10 text-center md:text-start">
           Maicol Hernandez
           </p>
 
-          <p className="mt-2 text-app-blue mb-5 font-semibold text-lg md:text-4xl text-center md:text-start">
+          <p className="mt-2 text-app-blue mb-5 font-semibold text-lg md:text-5xl text-center md:text-start">
            Front-end Developer.
           </p>
 
@@ -100,8 +100,8 @@ const titleEnd: string = "</title>"
           }}
         >
           <AnchorLink
-            className="bg-app-green text-white rounded-sm py-3 px-7 font-semibold
-              hover:bg-blue hover:text-white transition duration-500"
+            className="bg-app-green text-white rounded-sm py-3 px-7 font-semibold md:text-lg
+              hover:bg-app-menu hover:text-white transition duration-500"
             onClick={() => setSelectedPage("contact")}
             href="#contact"
           >
@@ -123,7 +123,7 @@ const titleEnd: string = "</title>"
         >
      
         </motion.div>
-        <span className='text-app-green text-sm'>{titleEnd}</span>
+        <span className='text-app-green text-sm md:text-base'>{titleEnd}</span>
 
       </div>
 

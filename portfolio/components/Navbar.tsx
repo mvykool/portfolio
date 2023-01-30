@@ -73,6 +73,7 @@ if (typeof window !== "undefined") {
         <div className='flex items-center justify-between mx-auto px-9'>
         <Link href={`/`} >
         <img src="/logo.png" alt="logo" className='h-20 md:h-16 md:w-16 w-20' />
+        
         </Link>
 
          {/** desktop view */}

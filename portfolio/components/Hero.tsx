@@ -89,7 +89,7 @@ const titleEnd: string = "</title>"
 
          {/* CALL TO ACTIONS */}
          <motion.div
-          className="flex mt-10 justify-center md:justify-start"
+          className="flex mt-10 justify-center space-x-2 md:justify-start"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.5 }}
@@ -101,17 +101,20 @@ const titleEnd: string = "</title>"
         >
           <AnchorLink
             className="bg-app-green text-white rounded-sm py-3 px-7 font-semibold md:text-lg
-              hover:bg-app-menu hover:text-white transition duration-500"
+              hover:bg-app-menu hover:text-white transition duration-200 hover:scale-105"
             onClick={() => setSelectedPage("contact")}
             href="#contact"
           >
             Contact Me
           </AnchorLink>
+
+          <a href=""  className="border-2 border-app-menu text-app-menu rounded-sm py-3 px-4 font-semibold md:text-lg
+              hover:border-app-green hover:scale-105 duration-200 transition hover:text-white " >Résumé</a>   
         
         </motion.div>
 
         <motion.div
-          className="flex mt-5 justify-center md:justify-start"
+          className="flex mt-5 mb-5 justify-center md:justify-start"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.5 }}

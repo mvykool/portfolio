@@ -108,7 +108,7 @@ const titleEnd: string = "</title>"
             Contact Me
           </AnchorLink>
 
-          <a href=""  className="border-2 border-app-menu text-app-menu rounded-sm py-3 px-4 font-semibold md:text-lg
+          <a href="CV.pdf" target="_blank" rel="noreferrer"  className="border-2 border-app-menu text-app-menu rounded-sm py-3 px-4 font-semibold md:text-lg
               hover:border-app-green hover:scale-105 duration-200 transition hover:text-white " >Résumé</a>   
         
         </motion.div>

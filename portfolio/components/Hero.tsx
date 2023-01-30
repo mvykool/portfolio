@@ -23,7 +23,7 @@ const titleEnd: string = "</title>"
 
 
   return (
-    <section id='home' className='md:flex md:justify-between md:items-center md:h-full gap-16 pt-10 md:pt-5 pb-10'>
+    <section id='home' className='md:flex md:justify-between md:items-center md:h-full gap-28 pt-10 md:pt-5 pb-10'>
       
       
       {/* IMAGE SECTION */}

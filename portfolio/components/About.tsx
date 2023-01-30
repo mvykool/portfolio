@@ -67,20 +67,20 @@ const titleEnd: string = "</about>"
         }}
       >
         <div className='flex space-x-4 mx-auto justify-center'>
-        <p className="text-4xl md:text-5xl font-playfair z-10 text-center md:text-start">
+        <p className="text-4xl font-playfair z-10 text-center md:text-start">
           About
         </p>
-        <p className="text-4xl md:text-5xl font-playfair z-10 text-center md:text-start text-app-green">
+        <p className="text-4xl font-playfair z-10 text-center md:text-start text-app-green">
           Me
         </p>
         </div>
 
-        <p className="mt-10 mb-2 text-sm md:text-sm text-center md:text-start">
+        <p className="mt-10 mb-2 text-sm md:text-xs text-center md:text-start">
         Hi there! I&apos;m Maicol, and I&apos;m a highly driven, front&rsquo;end focused 
          web developer, with emphasis in accessibility, and responsive
          design.
         </p>
-        <p className="mt-5 mb-7 text-sm md:text-sm text-center md:text-start">
+        <p className="mt-5 mb-7 text-sm md:text-xs text-center md:text-start">
         I enjoy building amazing UIs, working with APIs, learning new things all the time,
          and keeping myself up to date with the new tendencies of web development.
         </p>

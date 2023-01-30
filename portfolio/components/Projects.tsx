@@ -76,16 +76,16 @@ const titleEnd: string = "</projects>"
                <p className="my-5 flex justify-center font-bold text-2xl">Airman-<span className="text-app-green">23</span> </p>
 
                <div className="flex flex-col
-               my-5 ml-2">
+               my-5 ml-2 md:text-xs">
                  <small>-Nextjs</small>
                  <small>-Sanity.io</small>
                  <small>-Tailwind</small>
                  <small>-TypeScript</small>
                </div>
 
-               <p className="text-sm mb-2 text-gray-500 mx-2">Modern eCommerce store built with the <span className="text-app-green font-semibold">latest technology</span>.</p>
+               <p className="text-sm md:text-xs mb-2 text-gray-500 mx-2">Modern eCommerce store built with the <span className="text-app-green font-semibold">latest technology</span>.</p>
 
-              <p className="text-sm mb-2 text-gray-500 mx-2">Fully functional shoppoing cart, <span className="text-app-green font-semibold">payments with Stripe</span>, authentication handled with Fireauth, blog posts, built&rsquo;in chat, & functional email service.</p>
+              <p className="text-sm md:text-xs mb-2 text-gray-500 mx-2">Fully functional shoppoing cart, <span className="text-app-green font-semibold">payments with Stripe</span>, authentication handled with Fireauth, blog posts, built&rsquo;in chat, & functional email service.</p>
 
               <div className="flex justify-center mt-5 md:absolute md:bottom-0 md:w-full">
                 <a href="https://airman-23.vercel.app/" target="_blank" rel="noreferrer" className="flex items-center m-5 border-2 border-white rounded-sm justify-center md:text-sm py-1 px-2 hover:scale-125 duration-200 transition hover:bg-white hover:text-deep-blue">
@@ -118,16 +118,16 @@ const titleEnd: string = "</projects>"
                <p className="my-5 flex justify-center font-bold text-2xl">Lib<span className="text-app-green">ello</span> </p>
 
                <div className="flex flex-col
-               my-5 ml-2">
+               my-5 ml-2 md:text-xs">
                  <small>-React</small>
                  <small>-Vite</small>
                  <small>-Firebase</small>
                  <small>-Chakra UI</small>
                </div>
 
-               <p className="text-sm mb-2 text-gray-500 mx-2">Web app to take notes, with  <span className="text-app-green font-semibold">different themes.</span> </p>
+               <p className="text-sm md:text-xs mb-2 text-gray-500 mx-2">Web app to take notes, with  <span className="text-app-green font-semibold">different themes.</span> </p>
 
-              <p className="text-sm mb-2 text-gray-500 mx-2">Totally responsive Web app, with functionaity to create, erase notes. Authentication handled with Firebase, <span className="text-app-green font-semibold">and inlcudes six different themes.</span></p>
+              <p className="text-sm md:text-xs mb-2 text-gray-500 mx-2">Totally responsive Web app, with functionaity to create, erase notes. Authentication handled with Firebase, <span className="text-app-green font-semibold">and inlcudes six different themes.</span></p>
 
               <div className="flex justify-center mt-5 md:absolute md:bottom-0 md:w-full">
                 <a href="https://libello.netlify.app/" target="_blank" rel="noreferrer" className="flex items-center m-5 border-2 border-white rounded-sm justify-center md:text-sm py-1 px-2 hover:scale-125 duration-200 transition hover:bg-white hover:text-deep-blue">
@@ -160,15 +160,15 @@ const titleEnd: string = "</projects>"
                <p className="my-5 flex justify-center font-bold text-2xl">Oh M<span className="text-app-green">y Dog</span> </p>
 
                <div className="flex flex-col
-               my-5 ml-2">
+               my-5 ml-2 md:text-xs">
                  <small>-AstroJS</small>
                  <small>-React</small>
                  <small>-Tailwind</small>
                </div>
 
-               <p className="text-sm mb-2 text-gray-500 mx-2">Brochure static website dedicated to <span className="text-app-green font-semibold">dog&apos;s care.</span></p>
+               <p className="text-sm md:text-xs mb-2 text-gray-500 mx-2">Brochure static website dedicated to <span className="text-app-green font-semibold">dog&apos;s care.</span></p>
 
-              <p className="text-sm mb-2 text-gray-500 mx-2">Responsive Website, <span className="text-app-green font-semibold">with soft color palette</span>, and smooth animations.</p>
+              <p className="text-sm md:text-xs mb-2 text-gray-500 mx-2">Responsive Website, <span className="text-app-green font-semibold">with soft color palette</span>, and smooth animations.</p>
 
               <div className="flex justify-center mt-5 md:absolute md:bottom-0 md:w-full">
                 <a href="https://oh-my-dog.netlify.app/" target="_blank" rel="noreferrer" className="flex items-center m-5 border-2 border-white rounded-sm justify-center md:text-sm py-1 px-2 hover:scale-125 duration-200 transition hover:bg-white hover:text-deep-blue">
@@ -202,15 +202,15 @@ const titleEnd: string = "</projects>"
                <p className="my-5 flex justify-center font-bold text-2xl">For<span className="text-app-green">êt</span> </p>
 
                <div className="flex flex-col
-               my-5 ml-2">
+               my-5 ml-2 md:text-xs">
                  <small>-AstroJS</small>
                  <small>-React</small>
                  <small>-Tailwind</small>
                </div>
 
-               <p className="text-sm mb-2 text-gray-500 mx-2">Static website dedicated to <span className="text-app-green font-semibold">nature & forests</span></p>
+               <p className="text-sm md:text-xs mb-2 text-gray-500 mx-2">Static website dedicated to <span className="text-app-green font-semibold">nature & forests</span></p>
 
-              <p className="text-sm mb-2 text-gray-500 mx-2">Responsive Website, that includes<span className="text-app-green font-semibold"> a lot of beautiful pictures, as grid&rsquo;layouts</span>, and smooth animations.</p>
+              <p className="text-sm md:text-xs mb-2 text-gray-500 mx-2">Responsive Website, that includes<span className="text-app-green font-semibold"> a lot of beautiful pictures, as grid&rsquo;layouts</span>, and smooth animations.</p>
 
               <div className="flex justify-center mt-5 md:absolute md:bottom-0 md:w-full">
                 <a href="https://foret.netlify.app/" target="_blank" rel="noreferrer" className="flex items-center m-5 border-2 border-white rounded-sm justify-center md:text-sm py-1 px-2 hover:scale-125 duration-200 transition hover:bg-white hover:text-deep-blue">
@@ -244,16 +244,16 @@ const titleEnd: string = "</projects>"
                <p className="my-5 flex justify-center font-bold text-2xl">Reso<span className="text-app-green">naty</span> </p>
 
                <div className="flex flex-col
-               my-5 ml-2">
+               my-5 ml-2 md:text-xs">
                  <small>-React</small>
                  <small>-Redux</small>
                  <small>-Tailwind</small>
                  <small>-RapidApi</small>
                </div>
 
-               <p className="text-sm mb-2 text-gray-500 mx-2">Spotify UI inspired web app, <span className="font-semibold text-app-green">with music player.</span></p>
+               <p className="text-sm md:text-xs mb-2 text-gray-500 mx-2">Spotify UI inspired web app, <span className="font-semibold text-app-green">with music player.</span></p>
 
-              <p className="text-sm mb-2 text-gray-500 mx-2">Responsive Web app, inspired from Spotify, <span className="font-semibold text-app-green">I added my own UI to my liking</span>, the app state management is handled <span className="text-app-green font-semibold">with Redux</span></p>
+              <p className="text-sm md:text-xs mb-2 text-gray-500 mx-2">Responsive Web app, inspired from Spotify, <span className="font-semibold text-app-green">I added my own UI to my liking</span>, the app state management is handled <span className="text-app-green font-semibold">with Redux</span></p>
 
               <div className="flex justify-center mt-5 md:absolute md:bottom-0 md:w-full">
                 <a href="https://resonaty.netlify.app/" target="_blank" rel="noreferrer" className="flex items-center m-5 border-2 border-white rounded-sm justify-center md:text-sm py-1 px-2 hover:scale-125 duration-200 transition hover:bg-white hover:text-deep-blue">
@@ -287,16 +287,16 @@ const titleEnd: string = "</projects>"
                <p className="my-5 flex justify-center font-bold text-2xl">Ze<span className="text-app-green">al</span> </p>
 
                <div className="flex flex-col
-               my-5 ml-2">
+               my-5 ml-2 md:text-xs">
                  <small>-NextJS</small>
                  <small>-Vercel</small>
                  <small>-Tailwind</small>
                  <small>-Framer-Motion</small>
                </div>
 
-               <p className="text-sm mb-2 text-gray-500 mx-2">Static website, with a <span className="font-semibold text-app-green">beautiful & modern design.</span></p>
+               <p className="text-sm md:text-xs mb-2 text-gray-500 mx-2">Static website, with a <span className="font-semibold text-app-green">beautiful & modern design.</span></p>
 
-              <p className="text-sm mb-2 text-gray-500 mx-2">Responsive Website, with different mordern UI components, <span className="text-app-green font-semibold">including a graphic dashboard</span></p>
+              <p className="text-sm md:text-xs mb-2 text-gray-500 mx-2">Responsive Website, with different mordern UI components, <span className="text-app-green font-semibold">including a graphic dashboard</span></p>
 
               <div className="flex justify-center mt-5 md:absolute md:bottom-0 md:w-full">
                 <a href="https://zeal-eight.vercel.app/" target="_blank" rel="noreferrer" className="flex items-center m-5 border-2 border-white rounded-sm justify-center md:text-sm py-1 px-2 hover:scale-125 duration-200 transition hover:bg-white hover:text-deep-blue">

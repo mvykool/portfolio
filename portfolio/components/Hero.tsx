@@ -24,7 +24,7 @@ const Hero = ({setSelectedPage}: Props) => {
       
       
       {/* IMAGE SECTION */}
-      <div className="basis-3/5 z-10 mt-20 md:-mt-10 flex justify-center md:order-2">
+      <div className="basis-2/5 z-10 mt-20 md:-mt-10 flex justify-center md:order-2">
         {isAboveLarge ? (
           
           <motion.div
@@ -53,7 +53,7 @@ const Hero = ({setSelectedPage}: Props) => {
             hidden: { opacity: 0, x: 50 },
             visible: { opacity: 1, x: 0 },
           }}
-          className="mt-14"
+          className="mt-20"
         >
             <Lottie loop={true} animationData={Office}/>
           </motion.div>
@@ -61,7 +61,7 @@ const Hero = ({setSelectedPage}: Props) => {
         )}
       </div>
 
-      <div className="z-30 basis-2/5 mt-12 md:mt-40">
+      <div className="z-30 basis-3/5 mt-12 md:mt-40">
         {/* HEADINGS */}
         <motion.div
           initial="hidden"
@@ -78,8 +78,8 @@ const Hero = ({setSelectedPage}: Props) => {
           Maicol Hernandez
           </p>
 
-          <p className="mt-2 text-app-blue mb-5 font-semibold text-lg md:text-3xl text-center md:text-start">
-           Front-end Developer.
+          <p className="mt-2 text-app-blue mb-5 font-semibold text-lg md:text-2xl text-center md:text-start">
+           Front-end Developer
           </p>
 
         </motion.div>
@@ -97,7 +97,7 @@ const Hero = ({setSelectedPage}: Props) => {
           }}
         >
           <AnchorLink
-            className="bg-app-green text-white rounded-sm py-2 px-5 font-semibold md:text-sm
+            className="bg-app-green text-white rounded-sm py-2 px-5 font-semibold text-sm
               hover:bg-app-menu hover:text-white transition duration-200 hover:scale-105"
             onClick={() => setSelectedPage("contact")}
             href="#contact"
@@ -105,7 +105,7 @@ const Hero = ({setSelectedPage}: Props) => {
             Contact Me
           </AnchorLink>
 
-          <a href="CV.pdf" target="_blank" rel="noreferrer"  className="border-2 border-app-menu text-app-menu rounded-sm py-2 px-5 font-semibold md:text-sm
+          <a href="CV.pdf" target="_blank" rel="noreferrer"  className="border-2 border-app-menu text-app-menu rounded-sm py-2 px-5 font-semibold text-sm
               hover:border-app-green hover:scale-105 duration-200 transition hover:text-white " >Résumé</a>   
         
         </motion.div>

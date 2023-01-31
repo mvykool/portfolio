@@ -31,7 +31,7 @@ const Links = ({ page, selectedPage, setSelectedPage}: Props) => {
 
     return(
         <AnchorLink
-        className={`${selectedPage === lowerCasePage ? "text-app-green" : ""} hover:text-app-green transition duration-150 md:text-xs `}
+        className={`${selectedPage === lowerCasePage ? "text-app-green" : ""} hover:text-app-green transition duration-150 font-semibold md:text-xs `}
         href={`#${lowerCasePage}`}
         onClick={() => setSelectedPage(lowerCasePage)}
         >
@@ -69,7 +69,7 @@ if (typeof window !== "undefined") {
 
 
   return (
-    <nav className="bg-deep-blue fixed  z-40 w-full top-0">
+    <nav className="bg-app-gray fixed  z-40 w-full top-0">
         <div className='flex items-center justify-between mx-auto px-2 md:px-9'>
         <Link href={`/`} >
         <img src="/logo.png" alt="logo" className='h-20 md:h-16 md:w-16 w-20 p-1' />
@@ -165,7 +165,7 @@ if (typeof window !== "undefined") {
              </div>
 
              <div>
-             <a  href="https://github.com/mvykool" rel="noreferrer" target="_blank">
+             <a className='font-semibold hover:text-app-green' href="https://github.com/mvykool" rel="noreferrer" target="_blank">
               Github</a>
              </div>
              </div>

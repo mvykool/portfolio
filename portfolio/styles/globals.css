@@ -38,7 +38,7 @@ body,
 #root,
 .app {
   height: 100%;
-  background-color: #0D1117;
+  background-color: #0d1118;
   font-family: 'Poppins', sans-serif;
   letter-spacing: 1px;
   scroll-behavior: smooth;
@@ -62,9 +62,8 @@ body,
   z-index: 20;
 }
 .icon-style{
-  background-color: #59CE8F;
-  border: 2px solid #fff;
-  border-radius: 10%;
+  background-color: #31be73;
+  border-radius: 5%;
   height: 50px;
   width: 50px;
   color: #fff;
@@ -74,7 +73,7 @@ body,
 }
 .icon-style:hover{
   animation: none;
-  background: #fff;
+  background: #5B8FB9;
   color: var(--app-second-col);
   border: 2px solid var(--app-second-col);
 }
@@ -95,6 +94,3 @@ body,
   height: 100%;
 }
 
-#about {
-  scroll-margin-top: 20px;
-}

@@ -94,3 +94,7 @@ body,
   -ms-touch-action: none;
   height: 100%;
 }
+
+#about {
+  scroll-margin-top: 20px;
+}

@@ -18,7 +18,7 @@ const About = ({setSelectedPage}: Props) => {
 
   return (
     <>
-    <section id='about' className='md:flex md:justify-between md:items-center md:h-full gap-8 py-5'>
+    <section className='md:flex md:justify-between md:items-center md:h-full gap-8 py-5'>
       
  
       

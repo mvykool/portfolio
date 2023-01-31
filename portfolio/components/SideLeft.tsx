@@ -26,7 +26,7 @@ const SideRight = () => {
       <a target="_blank" rel="noreferrer" href="https://discordapp.com/users/844721056211927041">
       <TbBrandDiscord className='text-gray-400 h-5 w-5 cursor-pointer hover:scale-110 transition duration-200' />
       </a>
-      <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/maicol-hernandez-009a691a1/">
+      <a target="_blank" rel="noreferrer" href="www.linkedin.com/in/maicol-hernandez/">
       <TbBrandLinkedin className='text-gray-400 h-5 w-5 cursor-pointer hover:scale-110 transition duration-200' />
       </a>
     </div>

@@ -169,7 +169,7 @@ if (typeof window !== "undefined") {
               Github</a>
              </div>
              <div>
-             <a className='font-semibold hover:text-app-green' href="https://www.linkedin.com/in/maicol-hernandez-009a691a1/" rel="noreferrer" target="_blank">
+             <a className='font-semibold hover:text-app-green' href="www.linkedin.com/in/maicol-hernandez/" rel="noreferrer" target="_blank">
               Linkedin</a>
              </div>
              </div>

@@ -52,7 +52,7 @@ setTimeout(() => {
 
   return (
     <>
-    <section id="contact" className="contact pt-10">
+    <section id="contact" className="contact pt-5 ">
 
 
    <div className='md:flex md:justify-center'>
@@ -99,22 +99,22 @@ setTimeout(() => {
       className='md:flex md:justify-center md:py-5 rounded-sm md:mx-20 px-5 bg-app-gray '>
       <form ref={form} className='flex flex-col justify-center p-3 my-2 md:w-[30vw] relative' onSubmit={sendEmail}>
         <div className='flex flex-col md:flex-row md:m-3 justify-center'>
-        <label className=' w-20 font-semibold rounded-md flex justify-center p-1 my-4 text-white'></label>
+        <label className=' w-20 font-semibold rounded-md flex justify-center p-1 my-1  text-white'></label>
           <input
           type="text"
           name='name'
           id='name'
           placeholder='Your Name'
-          className='p-1 pl-3 bg-deep-blue md:w-[14vw] md:text-sm rounded-sm outline-none'/>
-          <label className=' w-20 font-semibold rounded-md flex justify-center p-1 my-4 text-white'></label>
+          className='p-2  pl-3 bg-deep-blue md:w-[14vw] md:text-sm rounded-sm outline-none'/>
+          <label className=' w-20 font-semibold rounded-md flex justify-center p-1 my-1 text-white'></label>
           <input
           type="text"
          
           name='email'
           id='email'
           placeholder='Email Address'
-          className='p-1 pl-3 bg-deep-blue md:w-[14vw] md:text-sm rounded-sm outline-none'/>
-          <label className=' w-20 font-semibold rounded-md flex justify-center p-1 my-4 text-white'></label>
+          className='p-2  pl-3 bg-deep-blue md:w-[14vw] md:text-sm rounded-sm outline-none'/>
+          <label className=' w-20 font-semibold rounded-md flex justify-center p-1 my-1 text-white'></label>
         </div>
           <input
           type="text"

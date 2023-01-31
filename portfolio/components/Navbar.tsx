@@ -168,6 +168,10 @@ if (typeof window !== "undefined") {
              <a className='font-semibold hover:text-app-green' href="https://github.com/mvykool" rel="noreferrer" target="_blank">
               Github</a>
              </div>
+             <div>
+             <a className='font-semibold hover:text-app-green' href="https://www.linkedin.com/in/maicol-hernandez-009a691a1/" rel="noreferrer" target="_blank">
+              Linkedin</a>
+             </div>
              </div>
             </motion.div>
             </>

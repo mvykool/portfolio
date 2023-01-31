@@ -25,7 +25,7 @@ const titleEnd: string = "</projects>"
 
   return (
     <>
-    <section id="projects" className="py-10 mx-5">
+    <section id="projects" className="py-5 mx-5">
       {/* HEADINGS */}
       <motion.div
         className="md:w-2/5 mx-auto text-center"

@@ -1,5 +1,5 @@
 import React from 'react'
-import {TbBrandGithub, TbBrandGmail, TbBrandWhatsapp, TbBrandDiscord} from "react-icons/tb"
+import {TbBrandGithub, TbBrandLinkedin, TbBrandGmail, TbBrandWhatsapp, TbBrandDiscord} from "react-icons/tb"
 
 const SideRight = () => {
   return (
@@ -25,6 +25,9 @@ const SideRight = () => {
       </a>
       <a target="_blank" rel="noreferrer" href="https://discordapp.com/users/844721056211927041">
       <TbBrandDiscord className='text-gray-400 h-5 w-5 cursor-pointer hover:scale-110 transition duration-200' />
+      </a>
+      <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/maicol-hernandez-009a691a1/">
+      <TbBrandLinkedin className='text-gray-400 h-5 w-5 cursor-pointer hover:scale-110 transition duration-200' />
       </a>
     </div>
     </>  

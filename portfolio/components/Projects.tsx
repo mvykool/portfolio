@@ -228,7 +228,7 @@ const titleEnd: string = "</projects>"
          {/**project 5 */}
 
 
-          <motion.div
+         {/*  <motion.div
         initial="hidden"
         className="mt-10"
         whileInView="visible"
@@ -265,7 +265,7 @@ const titleEnd: string = "</projects>"
                 </a>
               </div>
              </div>
-            </motion.div>
+            </motion.div> */}
 
 
         {/**project 6 */}

@@ -3,7 +3,7 @@ import AnchorLink from "react-anchor-link-smooth-scroll";
 import useMediaQuery from '@/hooks/useMediaQuery';
 import {TiThMenu, TiTimes} from "react-icons/ti"
 import { motion} from 'framer-motion';
-import {TbBrandGithub, TbBrandGmail, TbBrandWhatsapp, TbBrandDiscord} from "react-icons/tb"
+
 
 import Link from 'next/link';
 
@@ -31,7 +31,7 @@ const Links = ({ page, selectedPage, setSelectedPage}: Props) => {
 
     return(
         <AnchorLink
-        className={`${selectedPage === lowerCasePage ? "text-app-green" : ""} hover:text-app-green transition duration-150 font-semibold md:text-xs `}
+        className={`${selectedPage === lowerCasePage ? "text-menu-green" : ""} hover:text-menu-green transition duration-150  md:text-xs `}
         href={`#${lowerCasePage}`}
         onClick={() => setSelectedPage(lowerCasePage)}
         >
@@ -165,11 +165,11 @@ if (typeof window !== "undefined") {
              </div>
 
              <div>
-             <a className='font-semibold hover:text-app-green' href="https://github.com/mvykool" rel="noreferrer" target="_blank">
+             <a className=' hover:text-app-green' href="https://github.com/mvykool" rel="noreferrer" target="_blank">
               Github</a>
              </div>
              <div>
-             <a className='font-semibold hover:text-app-green' href="www.linkedin.com/in/maicol-hernandez/" rel="noreferrer" target="_blank">
+             <a className=' hover:text-app-green' href="https://www.linkedin.com/in/maicol-hernandez/" rel="noreferrer" target="_blank">
               Linkedin</a>
              </div>
              </div>

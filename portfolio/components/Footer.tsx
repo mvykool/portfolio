@@ -7,10 +7,10 @@ const Footer = () => {
    
         <div className="md:flex justify-center md:items-center md:justify-evenly text-center ">
           <img src="/logo.png" alt="log" className="h-10 w-10 hidden md:block" />
-          <p className="font-playfair text-xl md:text-sm text-white">
-           Made By Maicol Hernandez
+          <p className="font-playfair text-base my-2 md:text-sm text-white">
+           Made By <span className="text-app-green">Maicol Hernandez</span>
           </p>
-          <p className="mt-0 text-sm text-white">
+          <p className="mt-0 text-sm text-gray-400">
             ©2023 | All Rights Reserved.
           </p>
         </div>

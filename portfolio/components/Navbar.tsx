@@ -72,7 +72,7 @@ if (typeof window !== "undefined") {
     <nav className="bg-app-gray fixed  z-40 w-full top-0">
         <div className='flex items-center justify-between mx-auto px-2 md:px-9'>
         <Link href={`/`} >
-        <img src="/logo.png" alt="logo" className='h-20 md:h-16 md:w-16 w-20 p-1' />
+        <img src="/logo.png" alt="logo" className='h-20 object-cover md:h-16 md:w-16 w-20 p-1' />
         
         </Link>
 

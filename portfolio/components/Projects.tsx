@@ -116,7 +116,7 @@ const titleEnd: string = "</projects>"
            <Image width={700} height={500} src="/project2.png" alt="airman" className=" object-cover rounded-sm  object-left h-[40vh] md:h-[20vh] md:w-full" />
                <p className="my-5 flex justify-center font-bold text-2xl">Lib<span className="text-app-green">ello</span> </p>
 
-               <div className="flex flex-col md:flex-row space-x-3
+               <div className="flex flex-col md:flex-row md:space-x-3
                my-5 ml-2 md:text-xs md:justify-center">
                  <small>-React</small>
                  <small>-Vite</small>
@@ -158,7 +158,7 @@ const titleEnd: string = "</projects>"
              <Image width={700} height={500} src="/project3.png" alt="airman" className=" object-cover rounded-sm object-right h-[40vh] md:h-[20vh]" />
                <p className="my-5 flex justify-center font-bold text-2xl">Oh M<span className="text-app-green">y Dog</span> </p>
 
-               <div className="flex flex-col md:flex-row space-x-3
+               <div className="flex flex-col md:flex-row md:space-x-3
                my-5 ml-2 md:text-xs md:justify-center">
                  <small>-AstroJS</small>
                  <small>-React</small>
@@ -200,7 +200,7 @@ const titleEnd: string = "</projects>"
              <Image width={700} height={500} src="/project4.png" alt="airman" className=" object-cover rounded-sm  h-[40vh] md:h-[20vh]" />
                <p className="my-5 flex justify-center font-bold text-2xl">For<span className="text-app-green">êt</span> </p>
 
-               <div className="flex md:flex-row space-x-3 flex-col
+               <div className="flex flex-col md:flex-row md:space-x-3
                my-5 ml-2 md:text-xs md:justify-center">
                  <small>-AstroJS</small>
                  <small>-React</small>
@@ -242,7 +242,7 @@ const titleEnd: string = "</projects>"
              <Image width={700} height={500} src="/project5.png" alt="airman" className=" object-cover rounded-sm object-left h-[40vh] md:h-[20vh]" />
                <p className="my-5 flex justify-center font-bold text-2xl">Reso<span className="text-app-green">naty</span> </p>
 
-               <div className="flex flex-col md:flex-row space-x-3
+               <div className="flex flex-col md:flex-row md:space-x-3
                my-5 ml-2 md:text-xs md:justify-center">
                  <small>-React</small>
                  <small>-Redux</small>
@@ -286,7 +286,7 @@ const titleEnd: string = "</projects>"
                <p className="my-5 flex justify-center font-bold text-2xl">Ze<span className="text-app-green">al</span> </p>
 
                <div className="flex flex-col
-               my-5 ml-2 md:text-xs md:flex-row space-x-3 md:justify-center">
+               my-5 ml-2 md:text-xs md:flex-row md:space-x-3 md:justify-center">
                  <small>-NextJS</small>
                  <small>-Tailwind</small>
                  <small>-Framer-Motion</small>

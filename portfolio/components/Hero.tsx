@@ -20,7 +20,7 @@ const Hero = ({setSelectedPage}: Props) => {
 
 
   return (
-    <section id='home' className='md:flex md:justify-between md:items-center md:h-full gap-28 pt-10 md:pt-5 pb-10'>
+    <section id='home' className='md:flex md:justify-between md:items-center md:h-full gap-28 pt-5 pb-10'>
       
       
       {/* IMAGE SECTION */}
@@ -102,7 +102,7 @@ const Hero = ({setSelectedPage}: Props) => {
             onClick={() => setSelectedPage("contact")}
             href="#contact"
           >
-            Contact Me
+            Contact
           </AnchorLink>
 
           <a href="CV.pdf" target="_blank" rel="noreferrer"  className="border-2 border-app-menu text-app-menu rounded-sm py-2 px-5 font-semibold text-sm

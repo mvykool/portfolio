@@ -57,13 +57,13 @@ const Layout = ({children}: Props) => {
      )}
   </div>
 
-  <main className='w-5/6 md:w-3/6 mx-auto mt-5 md:mt-10 h-screen'>
+  <main className='w-4/6 md:w-3/6 mx-auto mt-2 md:mt-10 h-screen'>
   {children}
   </main>
 
 
 
-<div id='about' className='w-5/6 md:w-3/6 pt-20 mx-auto mt-5'>
+<div id='about' className='w-4/6 md:w-3/6 pt-20 mx-auto mt-5'>
 <About setSelectedPage={setSelectedPage}/>
 </div>
 

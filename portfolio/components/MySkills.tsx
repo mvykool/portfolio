@@ -57,53 +57,53 @@ const MySkills = () => {
             visible: { opacity: 1, x: 0 },
           }}>
 
-            <div className="p-2 h-20 bg-app-gray justify-between rounded-sm  flex items-center font-bold px-4 hover:scale-110 transition duration-200 md:text-sm cursor-pointer">
+            <div className="p-2 h-20 bg-app-gray justify-between rounded-sm  flex items-center font-bold px-2 md:px-4 hover:scale-110 transition duration-200 text-sm cursor-pointer">
               HTML 
-              <SiHtml5 className="text-orange-600 h-8 w-8"/>
+              <SiHtml5 className="text-orange-600 h-7 w-7 md:h-8 md:w-8"/>
             </div>
-            <div className="p-2 h-20 bg-app-gray justify-between rounded-sm md:text-sm flex items-center font-bold px-4 hover:scale-110 transition duration-200 cursor-pointer">
+            <div className="p-2 h-20 bg-app-gray justify-between rounded-sm text-sm flex items-center font-bold px-2 md:px-4  hover:scale-110 transition duration-200 cursor-pointer">
               CSS
-              <SiCss3 className="text-blue-500 h-8 w-8"/>
+              <SiCss3 className="text-blue-500 h-7 w-7 md:h-8 md:w-8"/>
             </div>
-            <div className="p-2 h-20 bg-app-gray justify-between rounded-sm md:text-sm flex items-center font-bold px-4 hover:scale-110 transition duration-200 cursor-pointer">
+            <div className="p-2 h-20 bg-app-gray justify-between rounded-sm text-sm flex items-center font-bold px-2 md:px-4  hover:scale-110 transition duration-200 cursor-pointer">
               Javascript
-              <SiJavascript className="text-yellow h-8 w-8"/>
+              <SiJavascript className="text-yellow h-7 w-7 md:h-8 md:w-8"/>
             </div>
-            <div className="p-2 h-20 bg-app-gray justify-between rounded-sm md:text-sm flex items-center font-bold px-4  hover:scale-110 transition duration-200 cursor-pointer">
+            <div className="p-2 h-20 bg-app-gray justify-between rounded-sm text-sm flex items-center font-bold px-2 md:px-4   hover:scale-110 transition duration-200 cursor-pointer">
               React
-              <SiReact className="text-cyan-400 h-8 w-8"/>
+              <SiReact className="text-cyan-400 h-7 w-7 md:h-8 md:w-8"/>
             </div>
-            <div className="p-2 h-20 bg-app-gray justify-between rounded-sm  flex items-center font-bold px-4 md:text-sm hover:scale-110 transition duration-200 cursor-pointer">
+            <div className="p-2 h-20 bg-app-gray justify-between rounded-sm  flex items-center font-bold px-2 md:px-4  text-sm hover:scale-110 transition duration-200 cursor-pointer">
               Typescript 
-              <SiTypescript className="text-blue-600 h-8 w-8"/>
+              <SiTypescript className="text-blue-600 h-7 w-7 md:h-8 md:w-8"/>
             </div>
-            <div className="p-2 h-20 bg-app-gray justify-between rounded-sm  flex items-center  font-bold px-4 md:text-sm hover:scale-110 transition duration-200 cursor-pointer">
+            <div className="p-2 h-20 bg-app-gray justify-between rounded-sm  flex items-center  font-bold px-2 md:px-4  text-sm hover:scale-110 transition duration-200 cursor-pointer">
               Redux
-              <SiRedux className="text-purple-500 h-8 w-8"/>
+              <SiRedux className="text-purple-500 h-7 w-7 md:h-8 md:w-8"/>
             </div>
-            <div className="p-2 h-20  bg-app-gray justify-between rounded-sm  flex items-center  font-bold px-4 md:text-sm hover:scale-110 transition duration-200 cursor-pointer">
+            <div className="p-2 h-20  bg-app-gray justify-between rounded-sm  flex items-center  font-bold px-2 md:px-4 text-sm hover:scale-110 transition duration-200 cursor-pointer">
               NextJS
-              <SiNextdotjs className="h-8 w-8 "/>
+              <SiNextdotjs className="h-7 w-7 md:h-8 md:w-8"/>
             </div>
-            <div className="p-2 h-20 bg-app-gray justify-between rounded-sm  flex items-center font-bold px-4 md:text-sm hover:scale-110 transition duration-200 cursor-pointer">
-              TailwindCSS
-              <SiTailwindcss className="text-cyan-500 h-8 w-8"/>
+            <div className="p-2 h-20 bg-app-gray justify-between rounded-sm  flex items-center font-bold px-2 md:px-4 text-sm hover:scale-110 transition duration-200 cursor-pointer">
+              Tailwind
+              <SiTailwindcss className="text-cyan-500 h-7 w-7 md:h-8 md:w-8"/>
             </div>
-            <div className="p-2 h-20 bg-app-gray justify-between rounded-sm  flex items-center  font-bold px-4 md:text-sm hover:scale-110 transition duration-200 cursor-pointer">
+            <div className="p-2 h-20 bg-app-gray justify-between rounded-sm  flex items-center  font-bold px-2 md:px-4  text-sm hover:scale-110 transition duration-200 cursor-pointer">
               Firebase 
-              <SiFirebase className="text-yellow h-8 w-8"/>
+              <SiFirebase className="text-yellow h-7 w-7 md:h-8 md:w-8"/>
             </div>
-            <div className="p-2 h-20 bg-app-gray justify-between rounded-sm  flex items-center font-bold px-4 md:text-sm hover:scale-110 transition duration-200 cursor-pointer">
+            <div className="p-2 h-20 bg-app-gray justify-between rounded-sm  flex items-center font-bold px-2 md:px-4 text-sm hover:scale-110 transition duration-200 cursor-pointer">
               Git/Github
-              <SiGit className="text-orange-400 h-8 w-8"/>
+              <SiGit className="text-orange-400 h-7 w-7 md:h-8 md:w-8"/>
             </div>
-            <div className="p-2 h-20 bg-app-gray justify-between rounded-sm  flex items-center  font-bold px-4 md:text-sm hover:scale-110 transition duration-200 cursor-pointer">
+            <div className="p-2 h-20 bg-app-gray justify-between rounded-sm  flex items-center  font-bold px-2 md:px-4  text-sm hover:scale-110 transition duration-200 cursor-pointer">
               Vite
-              <SiVite className="text-purple-400 h-8 w-8"/>
+              <SiVite className="text-purple-400 h-7 w-7 md:h-8 md:w-8"/>
             </div>
-            <div className="p-2 h-20 bg-app-gray justify-between rounded-sm  flex items-center  font-bold px-4 md:text-sm hover:scale-110 transition duration-200 cursor-pointer">
+            <div className="p-2 h-20 bg-app-gray justify-between rounded-sm  flex items-center  font-bold px-2 md:px-4 text-sm hover:scale-110 transition duration-200 cursor-pointer">
               Astro JS
-              <FaUserAstronaut className="text-orange-400 h-8 w-8"/>
+              <FaUserAstronaut className="text-orange-400 h-7 w-7 md:h-8 md:w-8"/>
             </div>
          
          

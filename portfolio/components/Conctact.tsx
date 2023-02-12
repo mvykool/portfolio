@@ -104,6 +104,7 @@ setTimeout(() => {
           type="text"
           name='name'
           id='name'
+          required
           placeholder='Your Name'
           className='p-2  pl-3 bg-deep-blue md:w-[14vw] md:text-sm rounded-sm outline-none'/>
           <label className=' w-20 font-semibold rounded-md flex justify-center p-1 my-1 text-white'></label>
@@ -112,6 +113,7 @@ setTimeout(() => {
          
           name='email'
           id='email'
+          required
           placeholder='Email Address'
           className='p-2  pl-3 bg-deep-blue md:w-[14vw] md:text-sm rounded-sm outline-none'/>
           <label className=' w-20 font-semibold rounded-md flex justify-center p-1 my-1 text-white'></label>
@@ -120,6 +122,7 @@ setTimeout(() => {
           type="text"
           name='message'
           id='message'
+          required
           placeholder='Message' 
           className='px-3 pt-2 bg-deep-blue pb-20 md:text-sm text-white rounded-sm outline-none'/>
           <button className='my-5 py-2 rounded-sm cursor-pointer border-app-green border-2 text-white font-bold p-1 hover:bg-gray-800 hover:scale-105 duration-300' type='submit'  value='send'>Submit</button>

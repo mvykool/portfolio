@@ -55,7 +55,7 @@ const Hero = ({setSelectedPage}: Props) => {
             
         )}
       </div>
-dsadsda
+dsadsdaasas
       <div className="z-30 basis-3/5 mt-12 md:mt-40">
         {/* HEADINGS */}
         <motion.div

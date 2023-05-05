@@ -9,7 +9,7 @@ import Office from "../public/office2.json";
 interface Props{
     setSelectedPage: any
 } 
-dasdas
+
 const Hero = ({setSelectedPage}: Props) => {
 
     const isAboveLarge = useMediaQuery("(min-width: 1060px)");

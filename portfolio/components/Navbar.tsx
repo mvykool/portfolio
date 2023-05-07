@@ -88,6 +88,10 @@ if (typeof window !== "undefined") {
             page="About"
             selectedPage={selectedPage}
             setSelectedPage={setSelectedPage} topPage={undefined}  />
+             <Links
+            page="Experience"
+            selectedPage={selectedPage}
+            setSelectedPage={setSelectedPage} topPage={undefined}  />
             <Links
               page="Skills"
             selectedPage={selectedPage}
@@ -141,6 +145,12 @@ if (typeof window !== "undefined") {
               <div onClick={() => setMenuToggle(!menuToggle)}>
             <Links
                 page="About"
+                selectedPage={selectedPage}
+                setSelectedPage={setSelectedPage}topPage={undefined} />
+            </div>
+            <div onClick={() => setMenuToggle(!menuToggle)}>
+            <Links
+                page="Experience"
                 selectedPage={selectedPage}
                 setSelectedPage={setSelectedPage}topPage={undefined} />
             </div>

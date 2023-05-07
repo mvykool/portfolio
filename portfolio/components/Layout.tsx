@@ -10,6 +10,7 @@ import MySkills from './MySkills';
 import Projects from './Projects';
 import Contact from './Conctact';
 import About from './About';
+import Experience from './Experience';
 import ScrollToTop from './ScrollTop';
 
 interface Props{
@@ -61,10 +62,12 @@ const Layout = ({children}: Props) => {
   {children}
   </main>
 
-
-
 <div id='about' className='w-4/6 md:w-3/6 pt-20 md:pt-1 mx-auto mt-5'>
 <About setSelectedPage={setSelectedPage}/>
+</div>
+
+<div id='experience' className='w-5/6 md:w-3/6 pt-20  mx-auto mt-5 md:mt-10'>
+<Experience setSelectedPage={setSelectedPage}/>
 </div>
 
 <div className='w-5/6 md:w-3/6 pt-20  mx-auto mt-5 md:mt-20'>

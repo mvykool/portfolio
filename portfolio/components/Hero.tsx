@@ -9,7 +9,7 @@ import Office from "../public/office2.json";
 interface Props{
     setSelectedPage: any
 } 
-
+dsadsa
 
 const Hero = ({setSelectedPage}: Props) => {
 

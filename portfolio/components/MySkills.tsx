@@ -13,9 +13,11 @@ import {
   SiGit,
   SiFirebase,
   SiTypescript,
+  SiJirasoftware,
+  SiChakraui
 
   } from "react-icons/si"
-  import {FaUserAstronaut, FaCcStripe} from "react-icons/fa"
+  import {FaUserAstronaut, FaCcStripe} from "react-icons/fa";
 
 const MySkills = () => {
   const isAboveLarge = useMediaQuery("(min-width: 1060px)");
@@ -105,8 +107,19 @@ const MySkills = () => {
               Astro JS
               <FaUserAstronaut className="text-orange-400 h-7 w-7 md:h-8 md:w-8"/>
             </div>
-         
-         
+            <div className="p-2 h-20 bg-app-gray justify-between rounded-sm  flex items-center  font-bold px-2 md:px-4 text-sm hover:scale-110 transition duration-200 cursor-pointer">
+              Jira
+              <SiJirasoftware className="text-blue-600 h-7 w-7 md:h-8 md:w-8"/>
+            </div>
+            <div className="p-2 h-20 bg-app-gray justify-between rounded-sm  flex items-center  font-bold px-2 md:px-4 text-sm hover:scale-110 transition duration-200 cursor-pointer">
+              Stripe
+              <FaCcStripe className="text-pink-500 h-7 w-7 md:h-8 md:w-8"/>
+            </div>
+            <div className="p-2 h-20 bg-app-gray justify-between rounded-sm  flex items-center  font-bold px-2 md:px-4 text-sm hover:scale-110 transition duration-200 cursor-pointer">
+              Chakra UI
+              <SiChakraui className=" text-teal-400 h-7 w-7 md:h-8 md:w-8"/>
+            </div>
+
         </motion.div>
 
       </div>

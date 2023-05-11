@@ -122,7 +122,6 @@ if (typeof window !== "undefined") {
         variants={sectionVariant}
       initial="hidden"
       animate='show'
-            
             className='fixed z-[50] right-0 bottom-0 h-full bg-app-menu w-[60vw]'>
             {/**close icon */}
             <div className='flex justify-end p-5'>

@@ -80,36 +80,36 @@ if (typeof window !== "undefined") {
 
          {isAboveSmallScreens ? (
             <div className='flex text-app-blue justify-between gap-10 font-opensans font-semibold'>
-               <Links
-                page="Home"
-                selectedPage={selectedPage}
-                 setSelectedPage={setSelectedPage} topPage={undefined}               />
-               <Links
-                page="About"
-                selectedPage={selectedPage}
-                setSelectedPage={setSelectedPage} topPage={undefined}               />
-               <Links
-                 page="Skills"
-                selectedPage={selectedPage}
-                 setSelectedPage={setSelectedPage} topPage={undefined}               />
-               <Links
-                page="Projects"
-                 selectedPage={selectedPage}
-                setSelectedPage={setSelectedPage} topPage={undefined}               />
-               <Links
-                 page="Contact"
-                selectedPage={selectedPage}
-                setSelectedPage={setSelectedPage} topPage={undefined}               />
+            <Links
+            page="Home"
+            selectedPage={selectedPage}
+              setSelectedPage={setSelectedPage} topPage={undefined} />
+            <Links
+            page="About"
+            selectedPage={selectedPage}
+            setSelectedPage={setSelectedPage} topPage={undefined}  />
+            <Links
+              page="Skills"
+            selectedPage={selectedPage}
+              setSelectedPage={setSelectedPage} topPage={undefined} />
+            <Links
+            page="Projects"
+              selectedPage={selectedPage}
+            setSelectedPage={setSelectedPage} topPage={undefined}  />
+            <Links
+              page="Contact"
+            selectedPage={selectedPage}
+            setSelectedPage={setSelectedPage} topPage={undefined}  />
 
                         
             </div>
-         ) : (
-           <button className='rounded-lg bg-app-menu'
-           onClick={() => setMenuToggle(!menuToggle)}
-           >
-             <TiThMenu className='h-10 p-2 w-10'/>
-           </button>
-         )}
+        ) : (
+          <button className='rounded-lg bg-app-menu'
+          onClick={() => setMenuToggle(!menuToggle)}
+          >
+            <TiThMenu className='h-10 p-2 w-10'/>
+          </button>
+        )}
 
          {/**mobile menu */}
 
@@ -120,62 +120,62 @@ if (typeof window !== "undefined") {
 
             <motion.div 
         variants={sectionVariant}
-       initial="hidden"
-       animate='show'
+      initial="hidden"
+      animate='show'
             
-            className='fixed z-[50] right-0 bottom-0 h-full bg-app-menu w-[55vw]'>
-             {/**close icon */}
-             <div className='flex justify-end p-5'>
+            className='fixed z-[50] right-0 bottom-0 h-full bg-app-menu w-[60vw]'>
+            {/**close icon */}
+            <div className='flex justify-end p-5'>
                 <button onClick={() => setMenuToggle(!menuToggle)}>
                 <TiTimes className='h-8 w-8'/>
                 </button>
-             </div>
-             {/** menu mobile */}
-             <div className='flex flex-col gap-5 ml-[33%] text-xl text-deep-blue mt-20'>
+            </div>
+            {/** menu mobile */}
+            <div className='flex flex-col gap-5 ml-[30%] text-xl text-deep-blue mt-20'>
 
-             <div onClick={() => setMenuToggle(!menuToggle)}>
-             <Links
-                 page="Home"
+            <div onClick={() => setMenuToggle(!menuToggle)}>
+            <Links
+                page="Home"
                 selectedPage={selectedPage}
                 setSelectedPage={setSelectedPage}topPage={undefined} />
-             </div>
+            </div>
               <div onClick={() => setMenuToggle(!menuToggle)}>
-             <Links
-                 page="About"
+            <Links
+                page="About"
                 selectedPage={selectedPage}
                 setSelectedPage={setSelectedPage}topPage={undefined} />
-             </div>
-             <div onClick={() => setMenuToggle(!menuToggle)}>
-             <Links
-                 page="Skills"
+            </div>
+            <div onClick={() => setMenuToggle(!menuToggle)}>
+            <Links
+                page="Skills"
                 selectedPage={selectedPage}
                 setSelectedPage={setSelectedPage}topPage={undefined} />
-             </div>
-             <div onClick={() => setMenuToggle(!menuToggle)}>
-             <Links
-                 page="Projects"
+            </div>
+            <div onClick={() => setMenuToggle(!menuToggle)}>
+            <Links
+                page="Projects"
                 selectedPage={selectedPage}
                 setSelectedPage={setSelectedPage}topPage={undefined} />
-             </div>
-             <div onClick={() => setMenuToggle(!menuToggle)}>
-             <Links
-                 page="Contact"
+            </div>
+            <div onClick={() => setMenuToggle(!menuToggle)}>
+            <Links
+                page="Contact"
                 selectedPage={selectedPage}
                 setSelectedPage={setSelectedPage}topPage={undefined} />
-             </div>
+            </div>
 
-             <div>
-             <a className=' hover:text-app-green' href="https://github.com/mvykool" rel="noreferrer" target="_blank">
+            <div>
+            <a className=' hover:text-app-green' href="https://github.com/mvykool" rel="noreferrer" target="_blank">
               Github</a>
-             </div>
-             <div>
-             <a className=' hover:text-app-green' href="https://www.linkedin.com/in/maicol-hernandez/" rel="noreferrer" target="_blank">
+            </div>
+            <div>
+            <a className=' hover:text-app-green' href="https://www.linkedin.com/in/maicol-hernandez/" rel="noreferrer" target="_blank">
               Linkedin</a>
-             </div>
-             </div>
+            </div>
+            </div>
             </motion.div>
             </>
-         )}
+        )}
           
         </div>
 

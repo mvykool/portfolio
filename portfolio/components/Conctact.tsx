@@ -44,19 +44,16 @@ const Contact = () => {
 //hide result
 
 setTimeout(() => {
-   setResult(false)
+  setResult(false)
 }, 4000);
- 
- 
- 
 
   return (
     <>
     <section id="contact" className="contact pt-5 w-full overflow-hidden">
 
 
-   <div className='md:flex md:justify-center'>
-   <motion.div
+  <div className='md:flex md:justify-center'>
+  <motion.div
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, amount: 0.5 }}
@@ -74,7 +71,7 @@ setTimeout(() => {
 
         </div>
       </motion.div>
-   </div>
+    </div>
 
 
     <div className='flex flex-col mx-auto justify-center md:flex md:justify-center'>  
@@ -93,38 +90,35 @@ setTimeout(() => {
 
       <motion.div
         variants={sectionVariant}
-       initial="hidden"
-       whileInView="show"
-       viewport={{ once: true }}
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: true }}
       className='md:flex md:justify-center md:py-5 rounded-sm md:mx-20 px-1 md:px-5 bg-app-gray'>
-      <form ref={form} className='flex flex-col justify-center p-3 my-2 md:w-[30vw] relative' onSubmit={sendEmail}>
-        <div className='flex flex-col md:flex-row md:m-3 justify-center'>
-        <label className=' w-20 font-semibold rounded-md flex justify-center p-1 my-1  text-white'></label>
+      <form ref={form} className='flex flex-col justify-center p-3 my-2 md:w-[30vw] relative gap-4 px-5 md:gap-0' onSubmit={sendEmail}>
+        <div className='flex relative overflow-hidden flex-col md:flex-row md:my-3 justify-center gap-3'>
           <input
           type="text"
           name='name'
           id='name'
           required
           placeholder='Your Name'
-          className='p-2  pl-3 bg-deep-blue md:w-[14vw] md:text-sm rounded-sm outline-none'/>
-          <label className=' w-20 font-semibold rounded-md flex justify-center p-1 my-1 text-white'></label>
+          className='px-3 py-3  w-full relative bg-deep-blue md:text-sm text-white rounded-sm outline-none'/>
           <input
           type="text"
-         
           name='email'
           id='email'
           required
           placeholder='Email Address'
-          className='p-2  pl-3 bg-deep-blue md:w-[14vw] md:text-sm rounded-sm outline-none'/>
-          <label className=' w-20 font-semibold rounded-md flex justify-center p-1 my-1 text-white'></label>
+          className='px-3 py-3 w-full  bg-deep-blue md:text-sm text-white rounded-sm outline-none'/>
         </div>
+        
           <input
           type="text"
           name='message'
           id='message'
           required
           placeholder='Message' 
-          className='px-3 pt-2 bg-deep-blue pb-20 md:text-sm text-white rounded-sm outline-none'/>
+          className='px-3 py-3  bg-deep-blue pb-20 md:text-sm text-white rounded-sm outline-none'/>
           <button className='my-5 py-2 rounded-sm cursor-pointer border-app-green border-2 text-white font-bold p-1 hover:bg-gray-800 hover:scale-105 duration-300' type='submit'  value='send'>Submit</button>
     </form>
       </motion.div>

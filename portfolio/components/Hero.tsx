@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react'
+import React from 'react'
 import useMediaQuery from '@/hooks/useMediaQuery'
 import { motion } from 'framer-motion'
 import AnchorLink from 'react-anchor-link-smooth-scroll'
@@ -14,10 +14,6 @@ interface Props{
 const Hero = ({setSelectedPage}: Props) => {
 
     const isAboveLarge = useMediaQuery("(min-width: 1060px)");
-
-
-
-
 
   return (
     <section id='home' className='md:flex md:justify-between md:items-center md:h-full gap-28 pt-5 pb-10'>

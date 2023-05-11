@@ -1,7 +1,6 @@
 import React from 'react'
 import useMediaQuery from '@/hooks/useMediaQuery'
 import { motion } from 'framer-motion'
-import AnchorLink from 'react-anchor-link-smooth-scroll'
 import Image from 'next/image'
 
 interface Props{
@@ -19,8 +18,6 @@ const About = ({setSelectedPage}: Props) => {
   return (
     <>
     <section className='md:flex md:justify-between md:items-center md:h-full gap-8 py-5'>
-      
- 
       
     {/* IMAGE SECTION */}
     <div className="basis-3/5 z-10 mt-5 flex justify-center md:order-2">
@@ -60,7 +57,7 @@ const About = ({setSelectedPage}: Props) => {
           visible: { opacity: 1, x: 0 },
         }}
       >
-        <div className='flex space-x-4 mx-auto justify-center'>
+        <div className='flex space-x-4 mx-auto'>
         <p className="text-4xl font-playfair z-10 text-center md:text-start">
           About
         </p>
@@ -69,14 +66,14 @@ const About = ({setSelectedPage}: Props) => {
         </p>
         </div>
 
-        <p className="mt-10 mb-2 text-sm md:text-xs text-center md:text-start">
+        <p className="mt-10 mb-2 text-sm md:text-sm text-center md:text-start">
         Hi there! I&apos;m Maicol, and I&apos;m a highly driven, frontend focused 
-         web developer, with emphasis in accessibility, and responsive
-         design.
+        web developer, with emphasis in accessibility, and responsive
+        design.
         </p>
-        <p className="mt-5 mb-7 text-sm md:text-xs text-center md:text-start">
+        <p className="mt-5 mb-7 text-sm md:text-sm text-center md:text-start">
         I enjoy building amazing UIs, working with APIs, learning new things all the time,
-         and keeping myself up to date with the new tendencies of web development.
+          and keeping myself up to date with the new tendencies of web development.
         </p>
       </motion.div>
 

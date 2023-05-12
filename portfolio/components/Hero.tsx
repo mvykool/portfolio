@@ -68,19 +68,19 @@ const Hero = ({setSelectedPage}: Props) => {
             visible: { opacity: 1, x: 0 },
           }}
         >
-     
-         <p className="text-3xl md:text-5xl mt-5 font-semibold z-10 text-center md:text-start">
+    
+        <p className="text-3xl md:text-5xl mt-5 font-semibold z-10 text-center md:text-start">
           Maicol Hernandez
           </p>
 
           <p className="mt-2 text-app-blue mb-5 font-semibold text-lg md:text-2xl text-center md:text-start">
-           Front-end Developer
+          Front-end Developer
           </p>
 
         </motion.div>
 
-         {/* CALL TO ACTIONS */}
-         <motion.div
+        {/* CALL TO ACTIONS */}
+        <motion.div
           className="flex mt-10 justify-center space-x-2 md:justify-start"
           initial="hidden"
           whileInView="visible"

@@ -11,7 +11,7 @@ const Footer = () => {
             Made By <span className="text-app-green">Maicol Hernandez</span>
           </p>
           <p className="mt-0 text-sm text-gray-400">
-            ©2023 | All Rights Reserved.ds
+            ©2023 | All Rights Reserved.
           </p>
         </div>
       </div>

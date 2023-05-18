@@ -60,8 +60,8 @@ if (typeof window !== "undefined") {
     body.classList.add("overflowHidden");
     body.classList.add("overflowHidden")
 } else if (menuToggle === false) {
-   body.classList.remove("overflowHidden");
-   body.classList.remove("overflowHidden");
+    body.classList.remove("overflowHidden");
+    body.classList.remove("overflowHidden");
 }
 
 }
@@ -72,13 +72,13 @@ if (typeof window !== "undefined") {
     <nav className="bg-app-gray fixed  z-40 w-full top-0">
         <div className='flex items-center justify-between mx-auto px-2 md:px-9'>
         <Link href={`/`} >
-        <img src="/logo.png" alt="logo" className='h-20 object-cover md:h-16 md:w-16 w-20 p-1' />
+        <img src="/logo.png" alt="logo" className='h-14 object-cover md:h-16 md:w-16 w-14 p-1' />
         
         </Link>
 
          {/** desktop view */}
 
-         {isAboveSmallScreens ? (
+        {isAboveSmallScreens ? (
             <div className='flex text-app-blue justify-between gap-10 font-opensans font-semibold'>
             <Links
             page="Home"
@@ -88,7 +88,7 @@ if (typeof window !== "undefined") {
             page="About"
             selectedPage={selectedPage}
             setSelectedPage={setSelectedPage} topPage={undefined}  />
-             <Links
+            <Links
             page="Experience"
             selectedPage={selectedPage}
             setSelectedPage={setSelectedPage} topPage={undefined}  />
@@ -111,7 +111,7 @@ if (typeof window !== "undefined") {
           <button className='rounded-lg bg-app-menu'
           onClick={() => setMenuToggle(!menuToggle)}
           >
-            <TiThMenu className='h-10 p-2 w-10'/>
+            <TiThMenu className='h-9 p-2 w-9'/>
           </button>
         )}
 

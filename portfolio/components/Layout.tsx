@@ -50,12 +50,12 @@ const Layout = ({children}: Props) => {
   topPage={topPage}/>
 
   <div className='w-3/6 mx-auto md:h-full'>
-   {isAboveMediumScreens && (
-    <div>
-      <SideRight/>
-      <SideLeft/>
-    </div>
-     )}
+  {isAboveMediumScreens && (
+  <div>
+    <SideRight/>
+    <SideLeft/>
+  </div>
+    )}
   </div>
 
   <main className='w-4/6 md:w-3/6 mx-auto mt-2 md:mt-10 h-screen'>

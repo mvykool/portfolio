@@ -62,7 +62,7 @@ const Layout = ({children}: Props) => {
   {children}
   </main>
 
-<div id='about' className='w-4/6 md:w-3/6 pt-20 md:pt-1 mx-auto mt-5'>
+<div id='about' className='w-4/6 md:w-3/6 pt-10 md:pt-1 mx-auto mt-5'>
 <About setSelectedPage={setSelectedPage}/>
 </div>
 

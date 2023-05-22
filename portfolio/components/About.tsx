@@ -57,7 +57,7 @@ const About = ({setSelectedPage}: Props) => {
           visible: { opacity: 1, x: 0 },
         }}
       >
-        <div className='flex space-x-4 mx-auto'>
+        <div className='flex justify-center md:justify-start space-x-4 mx-auto'>
         <p className="text-4xl font-playfair z-10 text-center md:text-start">
           About
         </p>

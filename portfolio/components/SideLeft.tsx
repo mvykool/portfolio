@@ -4,13 +4,13 @@ import {TbBrandGithub, TbBrandLinkedin, TbBrandGmail, TbBrandWhatsapp, TbBrandDi
 const SideRight = () => {
   return (
   <>
-  <div className='fixed top-[40%] left-14'>
+  {/* <div className='fixed top-[40%] left-14'>
     <img src="/blob.svg" alt="" className='h-10 w-10' />
-  </div>
-  <div className='fixed top-[12%] left-[15%]'>
+  </div> */}
+  <div className='fixed top-[20%] left-[10%] '>
     <img src="/blob2.svg" alt="" className='h-20 w-20' />
   </div>
-  <div className='fixed bottom-[17%] left-[6%]'>
+  <div className='fixed bottom-[27%] left-[6%] '>
     <img src="/blob3.svg" alt="" className='h-14 w-14' />
   </div>
     <div className='flex flex-col gap-2 fixed top-[50%] left-10 '>

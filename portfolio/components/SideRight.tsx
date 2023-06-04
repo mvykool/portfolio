@@ -4,7 +4,7 @@ import {TbBrandGithub} from "react-icons/tb"
 const SideRight = () => {
   return (
     <>
-    <div className='fixed bottom-[18%] right-[10%]'>
+    <div className='fixed bottom-[28%] right-[8%]'>
     <img src="/blob4.svg" alt="" className='h-20 w-20' />
   </div>
   <div className='fixed top-[8%] right-[1%]'>

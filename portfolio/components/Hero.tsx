@@ -74,7 +74,7 @@ const Hero = ({setSelectedPage}: Props) => {
           </p>
 
           <p className="mt-2 text-app-blue mb-5 font-semibold text-lg md:text-2xl text-center md:text-start">
-          Web Developer
+          Full-stack Developer
           </p>
 
         </motion.div>

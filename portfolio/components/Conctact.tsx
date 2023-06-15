@@ -49,7 +49,7 @@ setTimeout(() => {
 
   return (
     <>
-    <section id="contact" className="contact pt-5 w-full overflow-hidden">
+    <section id="contact" className="contact pt-5 w-full overflow-hidden px-5 md:px-0">
 
 
   <div className='md:flex md:justify-center'>

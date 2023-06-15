@@ -67,19 +67,18 @@ const About = ({setSelectedPage}: Props) => {
         </div>
 
         <p className="mt-10 mb-2 text-sm md:text-sm text-center md:text-start">
-        Hi there! I&apos;m Maicol, and I&apos;m a highly driven, frontend focused 
-        web developer, I have over a year of professional experience, with emphasis in accessibility, and responsive
+        Hi there! I&apos;m Maicol, and I&apos;m a highly driven, and focused 
+        web developer, I enjoy crafting stunning UIs and creates cool programs that make the digital world come alive.
         design.
         </p>
         <p className="mt-5 mb-7 text-sm md:text-sm text-center md:text-start">
-        I enjoy building amazing UIs, working with APIs, learning new things all the time,
-          and keeping myself up to date with the new tendencies of web development.
+        I blend artistry and technology to design immersive user experiences that leave a lasting impression. I like to explore new design trends, fueling my creativity and learning all kinds of crazy new stuff.
         </p>
       </motion.div>
 
     </div>
   </section>
-   </>
+  </>
   )
 }
 

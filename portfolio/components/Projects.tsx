@@ -1,4 +1,3 @@
-import LineGradient from "../components/LineGradient";
 import { motion } from "framer-motion";
 import {HiOutlineExternalLink} from "react-icons/hi"
 import {TbBrandGithub} from "react-icons/tb"
@@ -37,8 +36,8 @@ const titleEnd: string = "</projects>"
         }}
       >
         <div>
-          <p className="font-playfair font-semibold text-4xl">
-            <span className="text-app-green">PRO</span>JECTS
+          <p className="font-playfair font-semibold text-4xl flex gap-2">
+            <span className="text-app-green">Personal </span>Projects
           </p>
           <div className="flex justify-center mt-5">
           </div>
@@ -70,17 +69,17 @@ const titleEnd: string = "</projects>"
         }}>
               <div className="hover:scale-95 duration-200 transition bg-app-gray rounded-sm  p-3 relative md:h-[70vh]  cursor-pointer">
               <Image width={700} height={500} src="/project1.png" alt="airman" className="object-left object-cover rounded-sm  h-[40vh] md:h-[20vh]" />
-               <p className="my-5 flex justify-center font-bold text-2xl">Airman-<span className="text-app-green">23</span> </p>
+              <p className="my-5 flex justify-center font-bold text-2xl">Airman-<span className="text-app-green">23</span> </p>
 
-               <div className="flex flex-col md:flex-row md:space-x-3
-               my-5 ml-2 md:text-xs md:justify-center">
-                 <small>-Nextjs</small>
-                 <small>-Sanity.io</small>
-                 <small>-Tailwind</small>
-                 <small>-TypeScript</small>
-               </div>
+              <div className="flex flex-col md:flex-row md:space-x-3
+              my-5 ml-2 md:text-xs md:justify-center">
+                <small>-Nextjs</small>
+                <small>-Sanity.io</small>
+                <small>-Tailwind</small>
+                <small>-TypeScript</small>
+              </div>
 
-               <p className="text-sm mb-2 text-gray-300 mx-2">Modern eCommerce store built with the <span className="text-app-green font-semibold">latest technology</span>.</p>
+              <p className="text-sm mb-2 text-gray-300 mx-2">Modern eCommerce store built with the <span className="text-app-green font-semibold">latest technology</span>.</p>
 
               <p className="text-sm mb-2 text-gray-300 mx-2">Fully functional shopping cart, <span className="text-app-green font-semibold">payments with Stripe</span>, authentication handled with Fireauth, blog posts, functional chat &  email service.</p>
 
@@ -194,76 +193,34 @@ const titleEnd: string = "</projects>"
           hidden: { opacity: 0, x: -50 },
           visible: { opacity: 1, x: 0 },
         }}>
-             <div className="hover:scale-95 duration-200 transition  rounded-sm bg-app-gray p-3 relative md:h-[70vh]  cursor-pointer">
-             <Image width={700} height={500} src="/project4.png" alt="airman" className=" object-cover rounded-sm  h-[40vh] md:h-[20vh]" />
-               <p className="my-5 flex justify-center font-bold text-2xl">For<span className="text-app-green">êt</span> </p>
+            <div className="hover:scale-95 duration-200 transition  rounded-sm bg-app-gray p-3 relative md:h-[70vh]  cursor-pointer">
+            <Image width={700} height={500} src="/project4.png" alt="airman" className=" object-cover rounded-sm  h-[40vh] md:h-[20vh]" />
+              <p className="my-5 flex justify-center font-bold text-2xl">For<span className="text-app-green">êt</span> </p>
 
-               <div className="flex flex-col md:flex-row md:space-x-3
-               my-5 ml-2 md:text-xs md:justify-center">
-                 <small>-AstroJS</small>
-                 <small>-React</small>
-                 <small>-Tailwind</small>
-               </div>
+              <div className="flex flex-col md:flex-row md:space-x-3
+              my-5 ml-2 md:text-xs md:justify-center">
+                <small>-AstroJS</small>
+                <small>-React</small>
+                <small>-Tailwind</small>
+              </div>
 
-               <p className="text-sm mb-2 text-gray-300 mx-2">Static website dedicated to <span className="text-app-green font-semibold">nature & forests</span></p>
+              <p className="text-sm mb-2 text-gray-300 mx-2">Static website dedicated to <span className="text-app-green font-semibold">nature & forests</span></p>
 
               <p className="text-sm  mb-2 text-gray-300 mx-2">Responsive Website, that includes<span className="text-app-green font-semibold"> a lot of beautiful pictures, as grid&rsquo;layouts</span>, and smooth animations.</p>
 
               <div className="flex justify-center mt-5 md:absolute md:bottom-3 md:w-full">
                 <a href="https://foret.netlify.app/" target="_blank" rel="noreferrer" className="flex items-center m-5 border-2 border-white rounded-sm justify-center md:text-sm py-1 px-2 hover:scale-125 duration-200 transition hover:bg-white hover:text-deep-blue">
                   Live
-                 <HiOutlineExternalLink className="mx-2"/>
+                <HiOutlineExternalLink className="mx-2"/>
                 </a>
                 <a href="https://github.com/mvykool/foret/tree/main/astro" target="_blank" rel="noreferrer" className="flex items-center m-5 border-2 border-white rounded-sm justify-center md:text-sm py-1 px-2 hover:scale-125 duration-200 transition hover:bg-white hover:text-deep-blue">
                   Code
-                 <TbBrandGithub className="mx-2"/>
+                <TbBrandGithub className="mx-2"/>
                 </a>
               </div>
-             </div>
+            </div>
             </motion.div>
 
-
-        {/**project 6 */}
-
-
-                <motion.div
-      initial="hidden"
-      className="mt-10"
-      whileInView="visible"
-      viewport={{ once: true, amount: 0.5 }}
-      transition={{ duration: 0.5 }}
-      variants={{
-        hidden: { opacity: 0, x: -50 },
-        visible: { opacity: 1, x: 0 },
-      }}>
-            <div className="hover:scale-95 duration-200 transition rounded-sm bg-app-gray p-3 relative md:h-[70vh]  cursor-pointer">
-            <Image width={700} height={500} src="/project6.png" alt="airman" className=" object-cover rounded-sm object-right h-[40vh] md:h-[20vh]" />
-            <p className="my-5 flex justify-center font-bold text-2xl">Ze<span className="text-app-green">al</span> </p>
-
-            <div className="flex flex-col
-            my-5 ml-2 md:text-xs md:flex-row md:space-x-3 md:justify-center">
-              <small>-NextJS</small>
-              <small>-Tailwind</small>
-              <small>-Framer-Motion</small>
-            </div>
-
-            <p className="text-sm  mb-2 text-gray-300 mx-2">Static website, with a <span className="font-semibold text-app-green">beautiful & modern design.</span></p>
-
-            <p className="text-sm  mb-2 text-gray-300 mx-2">Responsive Website, with different mordern UI components, <span className="text-app-green font-semibold">including a graphic dashboard</span></p>
-
-            <div className="flex justify-center mt-5 md:absolute md:bottom-3 md:w-full">
-              <a href="https://zeal-eight.vercel.app/" target="_blank" rel="noreferrer" className="flex items-center m-5 border-2 border-white rounded-sm justify-center md:text-sm py-1 px-2 hover:scale-125 duration-200 transition hover:bg-white hover:text-deep-blue">
-                Live
-              <HiOutlineExternalLink className="mx-2"/>
-              </a>
-              <a href="https://github.com/mvykool/Zeal" target="_blank" rel="noreferrer" className="flex items-center m-5 border-2 border-white rounded-sm justify-center md:text-sm py-1 px-2 hover:scale-125 duration-200 transition hover:bg-white hover:text-deep-blue">
-                Code
-              <TbBrandGithub className="mx-2"/>
-              </a>
-            </div>
-          </div>
-          </motion.div>
-    
         
         </motion.div>
       </div>

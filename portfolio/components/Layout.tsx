@@ -66,7 +66,7 @@ const Layout = ({children}: Props) => {
 <About setSelectedPage={setSelectedPage}/>
 </div>
 
-<div id='experience' className='w-4/6 md:w-3/6 pt-10 md:pt-20  mx-auto mt-0 md:mt-10'>
+<div id='experience' className='w-5/6 md:w-3/6 pt-10 md:pt-20  mx-auto mt-0 md:mt-10'>
 <Experience setSelectedPage={setSelectedPage}/>
 </div>
 

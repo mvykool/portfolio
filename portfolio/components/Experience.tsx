@@ -136,7 +136,7 @@ return (
 			hidden: { opacity: 0, x: -50 },
 			visible: { opacity: 1, x: 0 },
 			}}
-			className='bg-app-gray rounded-sm p-4'>
+			className='bg-app-gray rounded-sm p-4 h-auto md:h-[80vh]'>
 					<h3 className='text-xl mb-2 ml-2'>Peac Soft<span className='text-app-green'>ware SA</span></h3>
 					<small className='mx-3 text-gray-300'>February 2021 - January 2023</small>
 					<h3 className='ml-2 my-2 text-app-green font-semibold'>Front-end Developer</h3>
@@ -155,6 +155,7 @@ return (
 					</ul>
 
 					<ul className='mt-6 ml-2 flex flex-wrap gap-4'>
+						<li className='text-sm py-1 px-3 bg-app-menu rounded-xl'>HTML/CSS</li>
 						<li className='text-sm py-1 px-3 bg-app-menu rounded-xl'>React</li>
 						<li className='text-sm py-1 px-3 bg-app-menu rounded-xl'>Tailwind CSS</li>
 						<li className='text-sm py-1 px-3 bg-app-menu rounded-xl'>Jira</li>
@@ -176,7 +177,7 @@ return (
 	viewport={{ once: true, amount: 0.5 }}
 	transition={{ duration: 0.5, delay: 1 }}
 	variants={{
-	hidden: { opacity: 0, x: 30 },
+	hidden: { opacity: 0, x: -30 },
 	visible: { opacity: 1, x: 0 },
 	}}
 	className=' object-scale-down w-full relative'
@@ -188,7 +189,7 @@ return (
 	viewport={{ once: true, amount: 0.5 }}
 	transition={{ duration: 0.5, delay: 1 }}
 	variants={{
-	hidden: { opacity: 0, x: 30 },
+	hidden: { opacity: 0, x: -30 },
 	visible: { opacity: 1, x: 0 },
 	}}
 	className=' object-scale-down w-full relative'
@@ -202,7 +203,7 @@ return (
 	viewport={{ once: true, amount: 0.5 }}
 	transition={{ duration: 0.5, delay: 1 }}
 	variants={{
-	hidden: { opacity: 0, x: 30 },
+	hidden: { opacity: 0, x: -30 },
 	visible: { opacity: 1, x: 0 },
 	}}
 	className=' object-scale-down w-full relative'

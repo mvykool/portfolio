@@ -206,7 +206,7 @@ const titleEnd: string = "</projects>"
 
               <p className="text-sm mb-2 text-gray-300 mx-2">Website that allows you <span className="text-app-green font-semibold">to save usernames and passwords.</span></p>
 
-              <p className="text-sm  mb-2 text-gray-300 mx-2">Password encyption, login using Fireauth<span className="text-app-green font-semibold">, totally responsive, secured</span>, and smooth animations.</p>
+              <p className="text-sm  mb-2 text-gray-300 mx-2">Password encyption, login using Fireauth<span className="text-app-green font-semibold">, totally responsive, & secured</span></p>
 
               <div className="flex justify-center mt-5 md:absolute md:bottom-3 md:w-full">
                 <button className="flex items-center m-5 border-2 border-gray-400 cursor-not-allowed rounded-sm justify-center md:text-sm py-1 px-2  duration-200 transition bg-gray-500">

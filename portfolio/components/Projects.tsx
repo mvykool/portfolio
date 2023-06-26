@@ -194,26 +194,25 @@ const titleEnd: string = "</projects>"
           visible: { opacity: 1, x: 0 },
         }}>
             <div className="hover:scale-95 duration-200 transition  rounded-sm bg-app-gray p-3 relative md:h-[70vh]  cursor-pointer">
-            <Image width={700} height={500} src="/project4.png" alt="airman" className=" object-cover rounded-sm  h-[40vh] md:h-[20vh]" />
-              <p className="my-5 flex justify-center font-bold text-2xl">For<span className="text-app-green">êt</span> </p>
+            <Image width={700} height={500} src="/open-sesamo.png" alt="airman" className=" object-fill rounded-sm  h-[40vh] md:h-[20vh]" />
+              <p className="my-5 flex justify-center font-bold text-2xl gap-2">Open<span className="text-app-green">Sesamo</span> </p>
 
               <div className="flex flex-col md:flex-row md:space-x-3
               my-5 ml-2 md:text-xs md:justify-center">
-                <small>-AstroJS</small>
-                <small>-React</small>
+                <small>-Angular</small>
+                <small>-Firebase</small>
                 <small>-Tailwind</small>
               </div>
 
-              <p className="text-sm mb-2 text-gray-300 mx-2">Static website dedicated to <span className="text-app-green font-semibold">nature & forests</span></p>
+              <p className="text-sm mb-2 text-gray-300 mx-2">Website that allows you <span className="text-app-green font-semibold">to save usernames and passwords.</span></p>
 
-              <p className="text-sm  mb-2 text-gray-300 mx-2">Responsive Website, that includes<span className="text-app-green font-semibold"> a lot of beautiful pictures, as grid&rsquo;layouts</span>, and smooth animations.</p>
+              <p className="text-sm  mb-2 text-gray-300 mx-2">Password encyption, login using Fireauth<span className="text-app-green font-semibold">, totally responsive, secured</span>, and smooth animations.</p>
 
               <div className="flex justify-center mt-5 md:absolute md:bottom-3 md:w-full">
-                <a href="https://foret.netlify.app/" target="_blank" rel="noreferrer" className="flex items-center m-5 border-2 border-white rounded-sm justify-center md:text-sm py-1 px-2 hover:scale-125 duration-200 transition hover:bg-white hover:text-deep-blue">
-                  Live
-                <HiOutlineExternalLink className="mx-2"/>
-                </a>
-                <a href="https://github.com/mvykool/foret/tree/main/astro" target="_blank" rel="noreferrer" className="flex items-center m-5 border-2 border-white rounded-sm justify-center md:text-sm py-1 px-2 hover:scale-125 duration-200 transition hover:bg-white hover:text-deep-blue">
+                <button className="flex items-center m-5 border-2 border-gray-400 cursor-not-allowed rounded-sm justify-center md:text-sm py-1 px-2  duration-200 transition bg-gray-500">
+                  In Development
+                </button>
+                <a href="https://github.com/mvykool/open-sesame" target="_blank" rel="noreferrer" className="flex items-center m-5 border-2 border-white rounded-sm justify-center md:text-sm py-1 px-2 hover:scale-125 duration-200 transition hover:bg-white hover:text-deep-blue">
                   Code
                 <TbBrandGithub className="mx-2"/>
                 </a>

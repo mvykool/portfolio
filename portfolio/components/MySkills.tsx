@@ -22,7 +22,9 @@ import {
   SiNodedotjs,
   SiExpress,
   SiDocker,
-  SiMicrosoftazure
+  SiMicrosoftazure,
+  SiAngular,
+  SiSqlite
 
   } from "react-icons/si"
 
@@ -88,11 +90,10 @@ const MySkills = () => {
               Typescript 
               <SiTypescript className="text-blue-600 h-7 w-7 md:h-8 md:w-8"/>
             </div>
-            <div className="p-2 h-20 bg-app-gray justify-between rounded-sm  flex items-center font-bold px-2 md:px-4  text-sm hover:scale-110 transition duration-200 cursor-pointer">
-              C# 
-              <SiCsharp className="text-purple-600 h-7 w-7 md:h-8 md:w-8"/>
+            <div className="p-2 h-20 bg-app-gray justify-between rounded-sm text-sm flex items-center font-bold px-2 md:px-4   hover:scale-110 transition duration-200 cursor-pointer">
+              Angular
+              <SiAngular className="text-rose-600 h-7 w-7 md:h-8 md:w-8"/>
             </div>
-          
             <div className="p-2 h-20  bg-app-gray justify-between rounded-sm  flex items-center  font-bold px-2 md:px-4 text-sm hover:scale-110 transition duration-200 cursor-pointer">
               NextJS
               <SiNextdotjs className="h-7 w-7 md:h-8 md:w-8"/>
@@ -105,10 +106,7 @@ const MySkills = () => {
               Firebase 
               <SiFirebase className="text-yellow h-7 w-7 md:h-8 md:w-8"/>
             </div>
-            <div className="p-2 h-20 bg-app-gray justify-between rounded-sm  flex items-center  font-bold px-2 md:px-4  text-sm hover:scale-110 transition duration-200 cursor-pointer">
-              .NET/ ASP.NET
-              <SiDotnet className=" text-white p-1 bg-violet-500 h-7 w-7 md:h-8 md:w-8"/>
-            </div>
+
             <div className="p-2 h-20 bg-app-gray justify-between rounded-sm  flex items-center font-bold px-2 md:px-4 text-sm hover:scale-110 transition duration-200 cursor-pointer">
               Git
               <SiGit className="text-orange-400 h-7 w-7 md:h-8 md:w-8"/>
@@ -117,14 +115,35 @@ const MySkills = () => {
               Vite
               <SiVite className="text-purple-400 h-7 w-7 md:h-8 md:w-8"/>
             </div>
+            
             <div className="p-2 h-20 bg-app-gray justify-between rounded-sm  flex items-center  font-bold px-2 md:px-4 text-sm hover:scale-110 transition duration-200 cursor-pointer">
               Astro JS
               <SiAstro className="text-orange-400 h-7 w-7 md:h-8 md:w-8"/>
+            </div>
+            <div className="p-2 h-20 bg-app-gray justify-between rounded-sm  flex items-center  font-bold px-2 md:px-4  text-sm hover:scale-110 transition duration-200 cursor-pointer">
+              Redux
+              <SiRedux className="text-purple-500 h-7 w-7 md:h-8 md:w-8"/>
             </div>
             <div className="p-2 h-20 bg-app-gray justify-between rounded-sm  flex items-center  font-bold px-2 md:px-4 text-sm hover:scale-110 transition duration-200 cursor-pointer">
               Jira
               <SiJirasoftware className="text-blue-600 h-7 w-7 md:h-8 md:w-8"/>
             </div>
+
+            <div className="p-2 h-20 bg-app-gray justify-between rounded-sm  flex items-center  font-bold px-2 md:px-4 text-sm hover:scale-110 transition duration-200 cursor-pointer">
+              SQLite
+              <SiSqlite className=" text-cyan-300 h-7 w-7 md:h-8 md:w-8"/>
+            </div>
+
+            <div className="p-2 h-20 bg-app-gray justify-between rounded-sm  flex items-center font-bold px-2 md:px-4  text-sm hover:scale-110 transition duration-200 cursor-pointer">
+              C# 
+              <SiCsharp className="text-purple-600 h-7 w-7 md:h-8 md:w-8"/>
+            </div>
+          
+            <div className="p-2 h-20 bg-app-gray justify-between rounded-sm  flex items-center  font-bold px-2 md:px-4  text-sm hover:scale-110 transition duration-200 cursor-pointer">
+              ASP.NET
+              <SiDotnet className=" text-white p-1 bg-violet-600 h-7 w-7 md:h-8 md:w-8"/>
+            </div>
+          
             <div className="p-2 h-20 bg-app-gray justify-between rounded-sm  flex items-center  font-bold px-2 md:px-4 text-sm hover:scale-110 transition duration-200 cursor-pointer">
               Microsoft SQL Server
               <SiMicrosoftsqlserver className=" text-rose-500 h-7 w-7 md:h-8 md:w-8"/>
@@ -149,10 +168,7 @@ const MySkills = () => {
               Docker
               <SiDocker className="t text-blue-700 h-7 w-7 md:h-8 md:w-8"/>
             </div>
-            <div className="p-2 h-20 bg-app-gray justify-between rounded-sm  flex items-center  font-bold px-2 md:px-4  text-sm hover:scale-110 transition duration-200 cursor-pointer">
-              Redux
-              <SiRedux className="text-purple-500 h-7 w-7 md:h-8 md:w-8"/>
-            </div>
+          
 
         </motion.div>
 

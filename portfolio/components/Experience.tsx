@@ -159,7 +159,6 @@ return (
 						<li className='text-sm py-1 px-3 bg-app-menu rounded-xl'>React</li>
 						<li className='text-sm py-1 px-3 bg-app-menu rounded-xl'>Tailwind CSS</li>
 						<li className='text-sm py-1 px-3 bg-app-menu rounded-xl'>Jira</li>
-						<li className='text-sm py-1 px-3 bg-app-menu rounded-xl'>GitLab</li>
 						<li className='text-sm py-1 px-3 bg-app-menu rounded-xl'>Axios</li>
 						<li className='text-sm py-1 px-3 bg-app-menu rounded-xl'>JavaScript</li>
 					</ul>

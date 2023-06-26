@@ -157,8 +157,9 @@ return (
 					<ul className='mt-6 ml-2 flex flex-wrap gap-4'>
 						<li className='text-sm py-1 px-3 bg-app-menu rounded-xl'>HTML/CSS</li>
 						<li className='text-sm py-1 px-3 bg-app-menu rounded-xl'>React</li>
-						<li className='text-sm py-1 px-3 bg-app-menu rounded-xl'>Tailwind CSS</li>
 						<li className='text-sm py-1 px-3 bg-app-menu rounded-xl'>Jira</li>
+						<li className='text-sm py-1 px-3 bg-app-menu rounded-xl'>Tailwind CSS</li>
+					
 						<li className='text-sm py-1 px-3 bg-app-menu rounded-xl'>Axios</li>
 						<li className='text-sm py-1 px-3 bg-app-menu rounded-xl'>JavaScript</li>
 					</ul>

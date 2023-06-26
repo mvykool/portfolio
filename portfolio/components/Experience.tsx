@@ -97,7 +97,7 @@ return (
 				hidden: { opacity: 0, x: 50 },
 				visible: { opacity: 1, x: 0 },
 				}}
-				className='bg-app-gray rounded-sm p-4 h-auto md:h-[80vh]'>
+				className='bg-app-gray rounded-sm p-4 h-auto md:h-auto relative'>
 				<h2 className='text-2xl mb-2 text-app-green ml-2'>Pres<span className='text-white'>ik SAS</span></h2>
 					<small className='mx-3 text-gray-300'>February 2023 - June 2023</small>
 					<h3 className='ml-2 my-2 text-app-green font-semibold'>Front-end Developer</h3>
@@ -136,7 +136,7 @@ return (
 			hidden: { opacity: 0, x: -50 },
 			visible: { opacity: 1, x: 0 },
 			}}
-			className='bg-app-gray rounded-sm p-4 h-auto md:h-[80vh]'>
+			className='bg-app-gray rounded-sm p-4 h-auto md:h-auto relative'>
 					<h3 className='text-xl mb-2 ml-2'>Peac Soft<span className='text-app-green'>ware SA</span></h3>
 					<small className='mx-3 text-gray-300'>February 2021 - January 2023</small>
 					<h3 className='ml-2 my-2 text-app-green font-semibold'>Front-end Developer</h3>

@@ -81,7 +81,7 @@ const titleEnd: string = "</projects>"
 
               <p className="text-sm mb-2 text-gray-300 mx-2">Modern eCommerce store built with the <span className="text-app-green font-semibold">latest technology</span>.</p>
 
-              <p className="text-sm mb-2 text-gray-300 mx-2">Fully functional shopping cart, <span className="text-app-green font-semibold">payments with Stripe</span>, authentication handled with Fireauth, blog posts, functional chat &  email service.</p>
+              <p className="text-sm mb-2 text-gray-300 mx-2">Fully functional shopping cart, <span className="text-app-green font-semibold">payments with Stripe</span>, authentication, blog posts, chat & email service.</p>
 
               <div className="flex justify-center mt-5 md:absolute md:bottom-3 md:w-full">
                 <a href="https://airman-23.vercel.app/" target="_blank" rel="noreferrer" className="flex items-center m-5 border-2 border-white rounded-sm justify-center md:text-sm py-1 px-2 hover:scale-125 duration-200 transition hover:bg-white hover:text-deep-blue">
@@ -210,7 +210,7 @@ const titleEnd: string = "</projects>"
 
               <div className="flex justify-center mt-5 md:absolute md:bottom-3 md:w-full">
                 <button className="flex items-center m-5 border-2 border-gray-400 cursor-not-allowed rounded-sm justify-center md:text-sm py-1 px-2  duration-200 transition bg-gray-500">
-                  In Development
+                  Development
                 </button>
                 <a href="https://github.com/mvykool/open-sesame" target="_blank" rel="noreferrer" className="flex items-center m-5 border-2 border-white rounded-sm justify-center md:text-sm py-1 px-2 hover:scale-125 duration-200 transition hover:bg-white hover:text-deep-blue">
                   Code

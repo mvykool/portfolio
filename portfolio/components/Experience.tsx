@@ -40,12 +40,11 @@ return (
 
 	{/**experience blocks */}
 
-	<div className='w-full h-auto my-5'>
-		<div className='relative px-5'> 
+	<div className='w-full h-auto my-5 flex flex-col gap-5'>
 
-	<div className='flex flex-col-reverse md:flex-row gap-2 h-auto relative '>
+	<div className='flex flex-col md:flex-row gap-2'>
 
-	<div className='py-2 w-full md:w-[50%] relative left-0 flex flex-col gap-3 justify-center md:h-[80vh]'>
+	<div className='w-full md:w-[50%] relative left-0 flex flex-col gap-3 justify-center md:justify-start md:h-auto'>
 	<motion.img
 	initial="hidden"
 	whileInView="visible"
@@ -55,7 +54,7 @@ return (
 	hidden: { opacity: 0, x: 30 },
 	visible: { opacity: 1, x: 0 },
 	}}
-	className=' object-scale-down w-full relative'
+	className=' object-cover h-auto md:h-[100%] w-full relative'
 	src="/presik-1.png" />
 
 <motion.img
@@ -67,27 +66,13 @@ return (
 	hidden: { opacity: 0, x: 30 },
 	visible: { opacity: 1, x: 0 },
 	}}
-	className=' object-scale-down w-full relative'
+	className=' object-cover h-auto md:h-[100%] w-full relative'
 	src="/presik-2.png"
-	alt="website" />
-
-	
-<motion.img
-	initial="hidden"
-	whileInView="visible"
-	viewport={{ once: true, amount: 0.5 }}
-	transition={{ duration: 0.5, delay: 1 }}
-	variants={{
-	hidden: { opacity: 0, x: 30 },
-	visible: { opacity: 1, x: 0 },
-	}}
-	className=' object-scale-down w-full relative'
-	src="/presik-3.png"
 	alt="website" />
 
 	</div>
 
-			<div className='py-2 w-full md:w-[50%] relative h-auto '>
+			<div className=' w-full md:w-[50%] relative left-0'>
 				<motion.div
 				initial="hidden"
 				whileInView="visible"
@@ -97,7 +82,7 @@ return (
 				hidden: { opacity: 0, x: 50 },
 				visible: { opacity: 1, x: 0 },
 				}}
-				className='bg-app-gray rounded-sm p-4 h-auto md:h-auto relative'>
+				className='bg-app-gray rounded-sm p-4 h-auto relative'>
 				<h2 className='text-2xl mb-2 text-app-green ml-2'>Pres<span className='text-white'>ik SAS</span></h2>
 					<small className='mx-3 text-gray-300'>February 2023 - June 2023</small>
 					<h3 className='ml-2 my-2 text-app-green font-semibold'>Front-end Developer</h3>
@@ -124,9 +109,12 @@ return (
 				</motion.div>
 			</div>
 	</div>
-	<div className='flex flex-col md:flex-row gap-2 h-auto relative '>
 
-			<div className='py-2 w-full md:w-[50%] relative left-0'>
+		
+
+	<div className='flex flex-col md:flex-row gap-2 relative'>
+
+			<div className=' w-full md:w-[50%] relative left-0'>
 			<motion.div
 			initial="hidden"
 			whileInView="visible"
@@ -170,7 +158,7 @@ return (
 				</motion.div>
 			</div>
 
-			<div className='py-2 w-full md:w-[50%] relative left-0 flex flex-col gap-3 justify-center md:h-[80vh]'>
+			<div className=' w-full md:w-[50%] relative left-0 flex flex-col gap-3 justify-center md:justify-start md:h-auto'>
 	<motion.img
 	initial="hidden"
 	whileInView="visible"
@@ -180,21 +168,8 @@ return (
 	hidden: { opacity: 0, x: -30 },
 	visible: { opacity: 1, x: 0 },
 	}}
-	className=' object-scale-down w-full relative'
+	className='w-full object-cover h-auto md:h-[100%]'
 	src="/peac-1.png" />
-
-<motion.img
-	initial="hidden"
-	whileInView="visible"
-	viewport={{ once: true, amount: 0.5 }}
-	transition={{ duration: 0.5, delay: 1 }}
-	variants={{
-	hidden: { opacity: 0, x: -30 },
-	visible: { opacity: 1, x: 0 },
-	}}
-	className=' object-scale-down w-full relative'
-	src="/peac-2.png"
-	alt="website" />
 
 	
 <motion.img
@@ -206,7 +181,7 @@ return (
 	hidden: { opacity: 0, x: -30 },
 	visible: { opacity: 1, x: 0 },
 	}}
-	className=' object-scale-down w-full relative'
+	className=' object-cover w-full h-auto md:h-[100%]'
 	src="/peac-3.png"
 	alt="website" />
 
@@ -214,9 +189,6 @@ return (
 
 	</div>
 
-
-
-		</div>
 	</div>
 </>
 )

@@ -12,19 +12,20 @@ import {
   SiGit,
   SiFirebase,
   SiTypescript,
-  SiJirasoftware,
-  SiChakraui,
-  SiCsharp,
+  SiMongodb, 
   SiAstro,
-  SiDotnet,
-  SiMicrosoftsqlserver,
   SiMysql,
   SiNodedotjs,
   SiExpress,
   SiDocker,
-  SiMicrosoftazure,
   SiAngular,
-  SiSqlite
+  SiSass,
+  SiStorybook,
+  SiNestjs,
+  SiFigma,
+  SiLinux,
+  SiPostman,
+  SiGnubash
 
   } from "react-icons/si"
 
@@ -59,6 +60,8 @@ const MySkills = () => {
           </p>
         </motion.div>
 
+      <div className="my-8">
+      <h3 className="md:mx-5 my-2">Front-end:</h3>
         <motion.div
           className="grid grid-cols-2 md:grid md:grid-cols-3 flex-col gap-5 md:mx-5"
           initial="hidden"
@@ -102,14 +105,10 @@ const MySkills = () => {
               Tailwind
               <SiTailwindcss className="text-cyan-500 h-7 w-7 md:h-8 md:w-8"/>
             </div>
-            <div className="p-2 h-20 bg-app-gray justify-between rounded-sm  flex items-center  font-bold px-2 md:px-4  text-sm hover:scale-110 transition duration-200 cursor-pointer">
-              Firebase 
-              <SiFirebase className="text-yellow h-7 w-7 md:h-8 md:w-8"/>
-            </div>
 
             <div className="p-2 h-20 bg-app-gray justify-between rounded-sm  flex items-center font-bold px-2 md:px-4 text-sm hover:scale-110 transition duration-200 cursor-pointer">
-              Git
-              <SiGit className="text-orange-400 h-7 w-7 md:h-8 md:w-8"/>
+              SCSS
+              <SiSass className="text-pink-400 h-7 w-7 md:h-8 md:w-8"/>
             </div>
             <div className="p-2 h-20 bg-app-gray justify-between rounded-sm  flex items-center  font-bold px-2 md:px-4  text-sm hover:scale-110 transition duration-200 cursor-pointer">
               Vite
@@ -124,53 +123,95 @@ const MySkills = () => {
               Redux
               <SiRedux className="text-purple-500 h-7 w-7 md:h-8 md:w-8"/>
             </div>
-            <div className="p-2 h-20 bg-app-gray justify-between rounded-sm  flex items-center  font-bold px-2 md:px-4 text-sm hover:scale-110 transition duration-200 cursor-pointer">
-              Jira
-              <SiJirasoftware className="text-blue-600 h-7 w-7 md:h-8 md:w-8"/>
-            </div>
-
-            <div className="p-2 h-20 bg-app-gray justify-between rounded-sm  flex items-center  font-bold px-2 md:px-4 text-sm hover:scale-110 transition duration-200 cursor-pointer">
-              SQLite
-              <SiSqlite className=" text-cyan-300 h-7 w-7 md:h-8 md:w-8"/>
-            </div>
-
-            <div className="p-2 h-20 bg-app-gray justify-between rounded-sm  flex items-center font-bold px-2 md:px-4  text-sm hover:scale-110 transition duration-200 cursor-pointer">
-              C# 
-              <SiCsharp className="text-purple-600 h-7 w-7 md:h-8 md:w-8"/>
-            </div>
-          
             <div className="p-2 h-20 bg-app-gray justify-between rounded-sm  flex items-center  font-bold px-2 md:px-4  text-sm hover:scale-110 transition duration-200 cursor-pointer">
-              ASP.NET
-              <SiDotnet className=" text-white p-1 bg-violet-600 h-7 w-7 md:h-8 md:w-8"/>
+              Storybook
+              <SiStorybook className="text-rose-500 h-7 w-7 md:h-8 md:w-8"/>
             </div>
-          
-            <div className="p-2 h-20 bg-app-gray justify-between rounded-sm  flex items-center  font-bold px-2 md:px-4 text-sm hover:scale-110 transition duration-200 cursor-pointer">
-              Microsoft SQL Server
-              <SiMicrosoftsqlserver className=" text-rose-500 h-7 w-7 md:h-8 md:w-8"/>
-            </div>
-            <div className="p-2 h-20 bg-app-gray justify-between rounded-sm  flex items-center  font-bold px-2 md:px-4 text-sm hover:scale-110 transition duration-200 cursor-pointer">
-              Node JS
-              <SiNodedotjs className=" text-green-600 h-7 w-7 md:h-8 md:w-8"/>
-            </div>
-            <div className="p-2 h-20 bg-app-gray justify-between rounded-sm  flex items-center  font-bold px-2 md:px-4 text-sm hover:scale-110 transition duration-200 cursor-pointer">
-              Express JS
-              <SiExpress className=" text-black bg-white p-1 rounded-full h-7 w-7 md:h-8 md:w-8"/>
-            </div>
-              <div className="p-2 h-20 bg-app-gray justify-between rounded-sm  flex items-center  font-bold px-2 md:px-4  text-sm hover:scale-110 transition duration-200 cursor-pointer">
-              Azure
-              <SiMicrosoftazure className="text-sky-500 h-7 w-7 md:h-8 md:w-8"/>
-            </div>
-            <div className="p-2 h-20 bg-app-gray justify-between rounded-sm  flex items-center  font-bold px-2 md:px-4  text-sm hover:scale-110 transition duration-200 cursor-pointer">
-              MySQL
-              <SiMysql className="text-orange-300 h-7 w-7 md:h-8 md:w-8"/>
-            </div>
-            <div className="p-2 h-20 bg-app-gray justify-between rounded-sm  flex items-center  font-bold px-2 md:px-4  text-sm hover:scale-110 transition duration-200 cursor-pointer">
-              Docker
-              <SiDocker className="t text-blue-700 h-7 w-7 md:h-8 md:w-8"/>
-            </div>
-          
-
+            
         </motion.div>
+      </div>
+
+      <div className="my-8">
+      <h3 className="md:mx-5 my-2">Back-end:</h3>
+
+<motion.div
+  className="grid grid-cols-2 md:grid md:grid-cols-3 flex-col gap-5 md:mx-5"
+  initial="hidden"
+  whileInView="visible"
+  viewport={{ once: true, amount: 0.5 }}
+  transition={{ duration: 0.2 }}
+  variants={{
+    hidden: { opacity: 0, x: -50 },
+    visible: { opacity: 1, x: 0 },
+  }}>
+          <div className="p-2 h-20 bg-app-gray justify-between rounded-sm  flex items-center  font-bold px-2 md:px-4  text-sm hover:scale-110 transition duration-200 cursor-pointer">
+      Firebase 
+      <SiFirebase className="text-yellow h-7 w-7 md:h-8 md:w-8"/>
+    </div>
+    <div className="p-2 h-20 bg-app-gray justify-between rounded-sm  flex items-center  font-bold px-2 md:px-4 text-sm hover:scale-110 transition duration-200 cursor-pointer">
+      MongoDB
+      <SiMongodb className=" text-green-300 h-7 w-7 md:h-8 md:w-8"/>
+    </div>
+    <div className="p-2 h-20 bg-app-gray justify-between rounded-sm  flex items-center  font-bold px-2 md:px-4 text-sm hover:scale-110 transition duration-200 cursor-pointer">
+      Node JS
+      <SiNodedotjs className=" text-green-600 h-7 w-7 md:h-8 md:w-8"/>
+    </div>
+    <div className="p-2 h-20 bg-app-gray justify-between rounded-sm  flex items-center  font-bold px-2 md:px-4 text-sm hover:scale-110 transition duration-200 cursor-pointer">
+      Express JS
+      <SiExpress className=" text-black bg-white p-1 rounded-full h-7 w-7 md:h-8 md:w-8"/>
+    </div>
+    <div className="p-2 h-20 bg-app-gray justify-between rounded-sm  flex items-center  font-bold px-2 md:px-4 text-sm hover:scale-110 transition duration-200 cursor-pointer">
+      Nest JS
+      <SiNestjs className="text-rose-600 h-7 w-7 md:h-8 md:w-8"/>
+    </div>
+    <div className="p-2 h-20 bg-app-gray justify-between rounded-sm  flex items-center  font-bold px-2 md:px-4  text-sm hover:scale-110 transition duration-200 cursor-pointer">
+      MySQL
+      <SiMysql className="text-orange-300 h-7 w-7 md:h-8 md:w-8"/>
+    </div>
+    <div className="p-2 h-20 bg-app-gray justify-between rounded-sm  flex items-center  font-bold px-2 md:px-4  text-sm hover:scale-110 transition duration-200 cursor-pointer">
+      Docker
+      <SiDocker className="t text-blue-700 h-7 w-7 md:h-8 md:w-8"/>
+    </div>
+</motion.div>
+      </div>
+
+      <div className="my-8">
+      <h3 className="md:mx-5 my-2">Tools, & More:</h3>
+
+<motion.div
+  className="grid grid-cols-2 md:grid md:grid-cols-3 flex-col gap-5 md:mx-5"
+  initial="hidden"
+  whileInView="visible"
+  viewport={{ once: true, amount: 0.5 }}
+  transition={{ duration: 0.2 }}
+  variants={{
+    hidden: { opacity: 0, x: -50 },
+    visible: { opacity: 1, x: 0 },
+  }}>
+    <div className="p-2 h-20 bg-app-gray justify-between rounded-sm  flex items-center  font-bold px-2 md:px-4  text-sm hover:scale-110 transition duration-200 cursor-pointer">
+      Git
+      <SiGit className="text-orange-500 h-7 w-7 md:h-8 md:w-8"/>
+    </div>
+    <div className="p-2 h-20 bg-app-gray justify-between rounded-sm  flex items-center  font-bold px-2 md:px-4  text-sm hover:scale-110 transition duration-200 cursor-pointer">
+      Figma
+      <SiFigma className="text-pink-500 h-7 w-7 md:h-8 md:w-8"/>
+    </div>
+    <div className="p-2 h-20 bg-app-gray justify-between rounded-sm  flex items-center  font-bold px-2 md:px-4  text-sm hover:scale-110 transition duration-200 cursor-pointer">
+      Linux
+      <SiLinux className="text-black h-7 w-7 md:h-8 md:w-8"/>
+    </div>
+    <div className="p-2 h-20 bg-app-gray justify-between rounded-sm  flex items-center  font-bold px-2 md:px-4  text-sm hover:scale-110 transition duration-200 cursor-pointer">
+      Postman
+      <SiPostman className="text-orange-800 h-7 w-7 md:h-8 md:w-8"/>
+    </div>
+    <div className="p-2 h-20 bg-app-gray justify-between rounded-sm  flex items-center  font-bold px-2 md:px-4  text-sm hover:scale-110 transition duration-200 cursor-pointer">
+      Bash
+      <SiGnubash className="text-white h-7 w-7 md:h-8 md:w-8"/>
+    </div>
+
+</motion.div>
+      </div>
+
 
       </div>
     </section>

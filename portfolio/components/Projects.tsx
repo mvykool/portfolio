@@ -67,7 +67,7 @@ const titleEnd: string = "</projects>"
           hidden: { opacity: 0, x: -50 },
           visible: { opacity: 1, x: 0 },
         }}>
-              <div className="hover:scale-95 duration-200 transition bg-app-gray rounded-sm  p-3 relative md:h-[65vh] lg:h-[55vh] cursor-pointer">
+              <div className="hover:scale-95 duration-200 transition bg-app-gray rounded-sm  p-3 relative md:h-[65vh] xl:h-[55vh] cursor-pointer">
               <Image width={700} height={500} src="/project1.png" alt="airman" className="object-left object-cover rounded-sm  h-[40vh] md:h-[20vh]" />
               <p className="my-5 flex justify-center font-bold text-2xl">Airman-<span className="text-app-green">23</span> </p>
 
@@ -109,9 +109,9 @@ const titleEnd: string = "</projects>"
           hidden: { opacity: 0, x: -50 },
           visible: { opacity: 1, x: 0 },
         }}>
-           <div className="hover:scale-95 duration-200 transition bg-app-gray rounded-sm p-3 relative md:h-[65vh] lg:h-[55vh] cursor-pointer">
-           <Image width={700} height={500} src="/project2.png" alt="airman" className=" object-cover rounded-sm  object-left h-[40vh] md:h-[20vh] md:w-full" />
-               <p className="my-5 flex justify-center font-bold text-2xl">Lib<span className="text-app-green">ello</span> </p>
+          <div className="hover:scale-95 duration-200 transition bg-app-gray rounded-sm p-3 relative md:h-[65vh] xl:h-[55vh] cursor-pointer">
+            <Image width={700} height={500} src="/project2.png" alt="airman" className=" object-cover rounded-sm  object-left h-[40vh] md:h-[20vh] md:w-full" />
+              <p className="my-5 flex justify-center font-bold text-2xl">Lib<span className="text-app-green">ello</span> </p>
 
               <div className="flex flex-col md:flex-row md:space-x-3
               my-5 ml-2 md:text-xs md:justify-center">
@@ -151,7 +151,7 @@ const titleEnd: string = "</projects>"
           hidden: { opacity: 0, x: -50 },
           visible: { opacity: 1, x: 0 },
         }}>
-             <div className="hover:scale-95 duration-200 transition  rounded-sm bg-app-gray p-3 relative md:h-[65vh] lg:h-[55vh] cursor-pointer">
+             <div className="hover:scale-95 duration-200 transition  rounded-sm bg-app-gray p-3 relative md:h-[65vh] xl:h-[55vh] cursor-pointer">
              <Image width={700} height={500} src="/project3.png" alt="airman" className=" object-cover rounded-sm object-right h-[40vh] md:h-[20vh]" />
                <p className="my-5 flex justify-center font-bold text-2xl">Oh M<span className="text-app-green">y Dog</span> </p>
 
@@ -193,7 +193,7 @@ const titleEnd: string = "</projects>"
           hidden: { opacity: 0, x: -50 },
           visible: { opacity: 1, x: 0 },
         }}>
-            <div className="hover:scale-95 duration-200 transition  rounded-sm bg-app-gray p-3 relative md:h-[65vh] lg:h-[55vh]  cursor-pointer">
+            <div className="hover:scale-95 duration-200 transition  rounded-sm bg-app-gray p-3 relative md:h-[65vh] xl:h-[55vh]  cursor-pointer">
             <Image width={700} height={500} src="/open-sesamo.png" alt="airman" className=" object-fill rounded-sm  h-[40vh] md:h-[20vh]" />
               <p className="my-5 flex justify-center font-bold text-2xl gap-2">Open<span className="text-app-green">Sesamo</span> </p>
 

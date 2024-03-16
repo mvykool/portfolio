@@ -23,7 +23,7 @@ return (
 		initial="hidden"
 		whileInView="visible"
 		viewport={{ once: true, amount: 0.5 }}
-		transition={{ duration: 0.5 }}
+		transition={{ duration: 0.3 }}
 		variants={{
 		hidden: { opacity: 0, x: -50 },
 		visible: { opacity: 1, x: 0 },
@@ -50,7 +50,7 @@ return (
 initial="hidden"
 whileInView="visible"
 viewport={{ once: true, amount: 0.5 }}
-transition={{ duration: 0.5 }}
+transition={{ duration: 0.3 }}
 variants={{
 hidden: { opacity: 0, x: -50 },
 visible: { opacity: 1, x: 0 },
@@ -98,7 +98,7 @@ className='bg-app-gray rounded-sm p-4 h-auto md:h-auto relative'>
 initial="hidden"
 whileInView="visible"
 viewport={{ once: true, amount: 0.5 }}
-transition={{ duration: 0.5, delay: 1 }}
+transition={{ duration: 0.3 }}
 variants={{
 hidden: { opacity: 0, x: -30 },
 visible: { opacity: 1, x: 0 },
@@ -111,7 +111,7 @@ src="/wazoku-1.png" />
 initial="hidden"
 whileInView="visible"
 viewport={{ once: true, amount: 0.5 }}
-transition={{ duration: 0.5, delay: 1 }}
+transition={{ duration: 0.3 }}
 variants={{
 hidden: { opacity: 0, x: -30 },
 visible: { opacity: 1, x: 0 },
@@ -131,7 +131,7 @@ alt="website" />
 	initial="hidden"
 	whileInView="visible"
 	viewport={{ once: true, amount: 0.5 }}
-	transition={{ duration: 0.5, delay: 1 }}
+	transition={{ duration: 0.3 }}
 	variants={{
 	hidden: { opacity: 0, x: 30 },
 	visible: { opacity: 1, x: 0 },
@@ -143,7 +143,7 @@ alt="website" />
 	initial="hidden"
 	whileInView="visible"
 	viewport={{ once: true, amount: 0.5 }}
-	transition={{ duration: 0.5, delay: 1 }}
+	transition={{ duration: 0.3}}
 	variants={{
 	hidden: { opacity: 0, x: 30 },
 	visible: { opacity: 1, x: 0 },
@@ -159,7 +159,7 @@ alt="website" />
 				initial="hidden"
 				whileInView="visible"
 				viewport={{ once: true, amount: 0.5 }}
-				transition={{ duration: 0.5 }}
+				transition={{ duration: 0.3 }}
 				variants={{
 				hidden: { opacity: 0, x: 50 },
 				visible: { opacity: 1, x: 0 },
@@ -208,7 +208,7 @@ alt="website" />
 			initial="hidden"
 			whileInView="visible"
 			viewport={{ once: true, amount: 0.5 }}
-			transition={{ duration: 0.5 }}
+			transition={{ duration: 0.3 }}
 			variants={{
 			hidden: { opacity: 0, x: -50 },
 			visible: { opacity: 1, x: 0 },
@@ -256,7 +256,7 @@ alt="website" />
 	initial="hidden"
 	whileInView="visible"
 	viewport={{ once: true, amount: 0.5 }}
-	transition={{ duration: 0.5, delay: 1 }}
+	transition={{ duration: 0.3 }}
 	variants={{
 	hidden: { opacity: 0, x: -30 },
 	visible: { opacity: 1, x: 0 },
@@ -269,7 +269,7 @@ alt="website" />
 	initial="hidden"
 	whileInView="visible"
 	viewport={{ once: true, amount: 0.5 }}
-	transition={{ duration: 0.5, delay: 1 }}
+	transition={{ duration: 0.3 }}
 	variants={{
 	hidden: { opacity: 0, x: -30 },
 	visible: { opacity: 1, x: 0 },

@@ -199,8 +199,6 @@ alt="website" />
 			</div>
 	</div>
 
-		
-
 	<div className='flex flex-col md:flex-row gap-2 relative'>
 
 			<div className=' w-full md:w-[50%] relative left-0'>
@@ -278,10 +276,8 @@ alt="website" />
 	src="/peac-3.png"
 	alt="website" />
 
-	</div>
-
-	</div>
-
+			</div>
+		</div>
 	</div>
 </>
 )

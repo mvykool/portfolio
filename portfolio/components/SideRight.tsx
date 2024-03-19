@@ -1,5 +1,4 @@
 import React from 'react'
-import {TbBrandGithub} from "react-icons/tb"
 
 const SideRight = () => {
   return (

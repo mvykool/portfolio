@@ -128,14 +128,14 @@ const titleEnd: string = "</projects>"
               <div className="flex justify-center mt-5 md:bottom-0 md:absolute md:w-full">
                 <a href="https://libello.netlify.app/" target="_blank" rel="noreferrer" className="flex items-center m-5 border-2 border-white rounded-sm justify-center md:text-sm py-1 px-2 hover:scale-125 duration-200 transition hover:bg-white hover:text-deep-blue">
                   Live
-                 <HiOutlineExternalLink className="mx-2"/>
+                <HiOutlineExternalLink className="mx-2"/>
                 </a>
                 <a href="https://github.com/mvykool/Libello" target="_blank" rel="noreferrer" className="flex items-center m-5 border-2 border-white rounded-sm justify-center md:text-sm py-1 px-2 hover:scale-125 duration-200 transition hover:bg-white hover:text-deep-blue">
                   Code
-                 <TbBrandGithub className="mx-2"/>
+                <TbBrandGithub className="mx-2"/>
                 </a>
               </div>
-           </div>
+          </div>
             </motion.div>
 
           {/**project 3 */}
@@ -151,9 +151,9 @@ const titleEnd: string = "</projects>"
           hidden: { opacity: 0, x: -50 },
           visible: { opacity: 1, x: 0 },
         }}>
-             <div className="hover:scale-95 duration-200 transition  rounded-sm bg-app-gray p-3 relative md:h-[65vh] xl:h-[55vh] cursor-pointer">
-             <Image width={700} height={500} src="/project3.png" alt="airman" className=" object-cover rounded-sm object-right h-[40vh] md:h-[20vh]" />
-               <p className="my-5 flex justify-center font-bold text-2xl">Oh M<span className="text-app-green">y Dog</span> </p>
+          <div className="hover:scale-95 duration-200 transition  rounded-sm bg-app-gray p-3 relative md:h-[65vh] xl:h-[55vh] cursor-pointer">
+            <Image width={700} height={500} src="/project3.png" alt="airman" className=" object-cover rounded-sm object-right h-[40vh] md:h-[20vh]" />
+              <p className="my-5 flex justify-center font-bold text-2xl">Oh M<span className="text-app-green">y Dog</span> </p>
 
               <div className="flex flex-col md:flex-row md:space-x-3
               my-5 ml-2 md:text-xs md:justify-center">

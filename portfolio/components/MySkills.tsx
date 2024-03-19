@@ -211,8 +211,6 @@ const MySkills = () => {
 
 </motion.div>
       </div>
-
-
       </div>
     </section>
     </>

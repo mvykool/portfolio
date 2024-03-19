@@ -16,14 +16,12 @@ const sectionVariant = {
   }
 } 
 
-
 interface Props {
     selectedPage: any
     setSelectedPage: any
     page: any
     topPage: any
 }
-
 
 {/**pass paramers to links */}
 const Links = ({ page, selectedPage, setSelectedPage}: Props) => {
@@ -40,18 +38,13 @@ const Links = ({ page, selectedPage, setSelectedPage}: Props) => {
     )
 }
 
-
 const Navbar = ({topPage, setSelectedPage, selectedPage}: Props) => {
 
 
     const [menuToggle, setMenuToggle] = useState(false);
     const isAboveSmallScreens = useMediaQuery("(min-width: 768px)");
 
-
-
-
   //lock scrolling when modals are opened 
-
 
 if (typeof window !== "undefined") {
   let body = window.document.body;
@@ -66,8 +59,6 @@ if (typeof window !== "undefined") {
 
 }
   
-
-
   return (
     <nav className="bg-app-gray fixed  z-40 w-full top-0">
         <div className='flex items-center justify-between mx-auto px-2 md:px-9'>

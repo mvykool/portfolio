@@ -162,26 +162,24 @@ const titleEnd: string = "</projects>"
                 <small>-Tailwind</small>
               </div>
 
-               <p className="text-sm  mb-2 text-gray-300 mx-2">Brochure static website dedicated to <span className="text-app-green font-semibold">dog&apos;s care.</span></p>
+              <p className="text-sm  mb-2 text-gray-300 mx-2">Brochure static website dedicated to <span className="text-app-green font-semibold">dog&apos;s care.</span></p>
 
               <p className="text-sm  mb-2 text-gray-300 mx-2">Responsive Website, <span className="text-app-green font-semibold">with soft color palette</span>, and smooth animations.</p>
 
               <div className="flex justify-center mt-5 md:bottom-3 md:absolute md:w-full">
                 <a href="https://oh-my-dog.netlify.app/" target="_blank" rel="noreferrer" className="flex items-center m-5 border-2 border-white rounded-sm justify-center md:text-sm py-1 px-2 hover:scale-125 duration-200 transition hover:bg-white hover:text-deep-blue">
                   Live
-                 <HiOutlineExternalLink className="mx-2"/>
+                <HiOutlineExternalLink className="mx-2"/>
                 </a>
                 <a href="https://github.com/mvykool/omd/tree/main/oh-my-dog" target="_blank" rel="noreferrer" className="flex items-center m-5 border-2 border-white rounded-sm justify-center md:text-sm py-1 px-2 hover:scale-125 duration-200 transition hover:bg-white hover:text-deep-blue">
                   Code
-                 <TbBrandGithub className="mx-2"/>
+                <TbBrandGithub className="mx-2"/>
                 </a>
               </div>
-             </div>
+            </div>
             </motion.div>
 
-
           {/**project 4 */}
-
 
           <motion.div
         initial="hidden"
@@ -207,7 +205,6 @@ const titleEnd: string = "</projects>"
               <p className="text-sm mb-2 text-gray-300 mx-2">Website that allows you <span className="text-app-green font-semibold">to save usernames and passwords.</span></p>
 
               <p className="text-sm  mb-2 text-gray-300 mx-2">Password encyption, login using Fireauth<span className="text-app-green font-semibold">, totally responsive, & secured</span></p>
-
               <div className="flex justify-center mt-5 md:bottom-3 md:absolute md:w-full">
                 <button className="flex items-center m-5 border-2 border-gray-400 cursor-not-allowed rounded-sm justify-center md:text-sm py-1 px-2  duration-200 transition bg-gray-500">
                   Development
@@ -219,8 +216,6 @@ const titleEnd: string = "</projects>"
               </div>
             </div>
             </motion.div>
-
-        
         </motion.div>
       </div>
     </section>

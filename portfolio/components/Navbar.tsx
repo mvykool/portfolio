@@ -108,10 +108,9 @@ if (typeof window !== "undefined") {
 
          {/**mobile menu */}
 
-         {!isAboveSmallScreens && menuToggle && (
+        {!isAboveSmallScreens && menuToggle && (
           <>
         <div className='fixed w-full bg-wrapper z-[20] top-0 left-0 h-screen' onClick={() => setMenuToggle(false)} /> 
-
 
             <motion.div 
         variants={sectionVariant}

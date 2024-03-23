@@ -11,11 +11,8 @@ const sectionVariant = {
   }
 }
 
- 
 const Contact = () => {
 
-
- 
   //email js
 
   const [result, setResult] = useState(false)
@@ -26,7 +23,6 @@ const Contact = () => {
 
   const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-
   
     if (form.current) {
       emailjs.sendForm('service_li998zs', 'template_owr2bld', form.current, 'YznX3U0AWopqVewR_')
@@ -79,8 +75,8 @@ setTimeout(() => {
       {result ? 
       <div className='fixed bg-wrapper z-[100] w-full h-full top-0 left-0 flex justify-center items-center'>
         <div className='mx-4 md:w-[30vw]  md:py-20 top-40 flex flex-col bg-deep-blue rounded-sm border-2 border-app-green p-8 fixed text-green-500 font-semibold'>
-         <p className='md:flex md:justify-center text-sm'>Your message has been successfully sent.</p> 
-         <hr className='w-full my-4'/>
+          <p className='md:flex md:justify-center text-sm'>Your message has been successfully sent.</p> 
+          <hr className='w-full my-4'/>
         <h3 className='md:flex md:justify-center text-sm' >I will be reaching you back within 24-48 hours</h3>
 
         </div>
@@ -122,8 +118,7 @@ setTimeout(() => {
           <button className='my-5 py-2 rounded-sm cursor-pointer border-app-green border-2 text-white font-bold p-1 hover:bg-gray-800 hover:scale-105 duration-300' type='submit'  value='send'>Submit</button>
     </form>
       </motion.div>
-
-   </div> 
+  </div> 
 </section>
 </>
   )

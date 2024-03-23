@@ -7,13 +7,9 @@ interface Props{
     setSelectedPage: any
 }
 
-
 const About = ({setSelectedPage}: Props) => {
 
-
     const isAboveLarge = useMediaQuery("(min-width: 1060px)");
-
-
 
   return (
     <>

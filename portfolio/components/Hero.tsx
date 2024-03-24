@@ -15,11 +15,11 @@ const Hero = ({setSelectedPage}: Props) => {
     const isAboveLarge = useMediaQuery("(min-width: 1060px)");
 
   return (
-    <section id='home' className='md:flex md:justify-between md:items-center md:h-full gap-28 pt-5 pb-10'>
+    <section id='home' className='md:flex md:justify-between md:items-center md:h-full gap-28 pt-5'>
       
       
       {/* IMAGE SECTION */}
-      <div className="basis-2/5 z-10 mt-20 md:-mt-10 flex justify-center md:order-2">
+      <div className="basis-2/5 z-10 mt-10 flex justify-center md:order-2">
         {isAboveLarge ? (
           
           <motion.div
@@ -48,7 +48,7 @@ const Hero = ({setSelectedPage}: Props) => {
             hidden: { opacity: 0, x: 50 },
             visible: { opacity: 1, x: 0 },
           }}
-          className="mt-20"
+          className="mt-10"
         >
             <Lottie loop={true} animationData={Office}/>
           </motion.div>
@@ -56,7 +56,7 @@ const Hero = ({setSelectedPage}: Props) => {
         )}
       </div>
 
-      <div className="z-30 basis-3/5 mt-12 md:mt-40">
+      <div className="z-30 basis-3/5 mt-12 md:mt-56">
         {/* HEADINGS */}
         <motion.div
           initial="hidden"

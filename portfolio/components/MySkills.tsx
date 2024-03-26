@@ -29,10 +29,7 @@ import {
 
   } from "react-icons/si"
 
-
-
 const MySkills = () => {
-
 
   const isAboveLarge = useMediaQuery("(min-width: 1060px)");
 

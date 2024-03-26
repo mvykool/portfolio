@@ -5,7 +5,6 @@ import AnchorLink from 'react-anchor-link-smooth-scroll'
 import Lottie from "lottie-react"
 import Office from "../public/office2.json";
 
-
 interface Props{
     setSelectedPage: any
 } 

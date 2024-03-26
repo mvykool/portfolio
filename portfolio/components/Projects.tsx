@@ -12,7 +12,6 @@ const container = {
   },
 };
 
-
 const Projects = () => {
 
         //**tags */    
@@ -56,7 +55,6 @@ const titleEnd: string = "</projects>"
 
           {/**project 1 */}
 
-
             <motion.div
         initial="hidden"
         className="mt-10"
@@ -98,7 +96,6 @@ const titleEnd: string = "</projects>"
 
            {/**project 2 */}
 
-
       <motion.div
         initial="hidden"
         className="mt-10 "
@@ -121,7 +118,7 @@ const titleEnd: string = "</projects>"
                 <small>-Chakra UI</small>
               </div>
 
-               <p className="text-sm mb-2 text-gray-300 mx-2">Web app to take notes, with  <span className="text-app-green font-semibold">different themes.</span> </p>
+              <p className="text-sm mb-2 text-gray-300 mx-2">Web app to take notes, with  <span className="text-app-green font-semibold">different themes.</span> </p>
 
               <p className="text-sm  mb-2 text-gray-300 mx-2">Totally responsive Web app, with functionaity to create, erase notes. Authentication, <span className="text-app-green font-semibold">and inlcudes six different themes.</span></p>
 
@@ -139,7 +136,6 @@ const titleEnd: string = "</projects>"
             </motion.div>
 
           {/**project 3 */}
-
 
           <motion.div
         initial="hidden"

@@ -17,7 +17,6 @@ interface Props{
     children: any
 }
 
-
 const Layout = ({children}: Props) => {
 
   const [selectedPage, setSelectedPage] = useState("home");

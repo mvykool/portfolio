@@ -35,8 +35,6 @@ const Hero = ({setSelectedPage}: Props) => {
             <Lottie loop={true} animationData={Office}/>
           </motion.div>
             
-    
-
         ) : (
           <motion.div
           initial="hidden"

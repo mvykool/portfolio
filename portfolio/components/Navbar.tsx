@@ -4,11 +4,10 @@ import useMediaQuery from '@/hooks/useMediaQuery';
 import {TiThMenu, TiTimes} from "react-icons/ti"
 import { motion} from 'framer-motion';
 
-
 import Link from 'next/link';
 
 /**framer motion variants */
- 
+
 const sectionVariant = {
   hidden : { opacity: 0, x: 10},
   show: { opacity: 1, x:0,
@@ -40,7 +39,6 @@ const Links = ({ page, selectedPage, setSelectedPage}: Props) => {
 
 const Navbar = ({topPage, setSelectedPage, selectedPage}: Props) => {
 
-
     const [menuToggle, setMenuToggle] = useState(false);
     const isAboveSmallScreens = useMediaQuery("(min-width: 768px)");
 
@@ -55,9 +53,7 @@ if (typeof window !== "undefined") {
 } else if (menuToggle === false) {
     body.classList.remove("overflowHidden");
     body.classList.remove("overflowHidden");
-}
-
-}
+}}
   
   return (
     <nav className="bg-app-gray fixed  z-40 w-full top-0">

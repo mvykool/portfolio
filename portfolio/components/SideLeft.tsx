@@ -4,9 +4,6 @@ import {TbBrandGithub, TbBrandLinkedin, TbBrandGmail, TbBrandWhatsapp, TbBrandDi
 const SideRight = () => {
   return (
   <>
-  {/* <div className='fixed top-[40%] left-14'>
-    <img src="/blob.svg" alt="" className='h-10 w-10' />
-  </div> */}
   <div className='fixed top-[20%] left-[10%] '>
     <img src="/blob2.svg" alt="" className='h-20 w-20' />
   </div>

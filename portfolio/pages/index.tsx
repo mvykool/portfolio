@@ -1,8 +1,8 @@
 import Head from "next/head";
 import Image from "next/image";
 import { useState } from "react";
-import Hero from "@/components/Hero";
-import LineGradient from "@/components/LineGradient";
+import Hero from "@/app/components/Hero";
+import LineGradient from "@/app/components/LineGradient";
 
 const inter = { subsets: ["latin"] };
 

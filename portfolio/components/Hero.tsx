@@ -1,55 +1,47 @@
-import React from 'react'
-import useMediaQuery from '@/hooks/useMediaQuery'
-import { motion } from 'framer-motion'
-import AnchorLink from 'react-anchor-link-smooth-scroll'
-import Lottie from "lottie-react"
+import React from "react";
+import useMediaQuery from "@/hooks/useMediaQuery";
+import { motion } from "framer-motion";
+import AnchorLink from "react-anchor-link-smooth-scroll";
 import Office from "../public/office2.json";
 
-interface Props{
-    setSelectedPage: any
-} 
+interface Props {
+  setSelectedPage: any;
+}
 
-const Hero = ({setSelectedPage}: Props) => {
-
-    const isAboveLarge = useMediaQuery("(min-width: 1060px)");
+const Hero = ({ setSelectedPage }: Props) => {
+  const isAboveLarge = useMediaQuery("(min-width: 1060px)");
 
   return (
-    <section id='home' className='md:flex md:justify-between md:items-center md:h-full gap-28 pt-5'>
-      
-      
+    <section
+      id="home"
+      className="md:flex md:justify-between md:items-center md:h-full gap-28 pt-5"
+    >
       {/* IMAGE SECTION */}
       <div className="basis-2/5 z-10 mt-10 flex justify-center md:order-2">
         {isAboveLarge ? (
-          
           <motion.div
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, amount: 0.5 }}
-          transition={{ duration: 0.5 }}
-          variants={{
-            hidden: { opacity: 0, x: 50 },
-            visible: { opacity: 1, x: 0 },
-          }}
-          className="h-[25vh] w-[25vw]"
-        >
-            <Lottie loop={true} animationData={Office}/>
-          </motion.div>
-            
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.5 }}
+            transition={{ duration: 0.5 }}
+            variants={{
+              hidden: { opacity: 0, x: 50 },
+              visible: { opacity: 1, x: 0 },
+            }}
+            className="h-[25vh] w-[25vw]"
+          ></motion.div>
         ) : (
           <motion.div
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, amount: 0.5 }}
-          transition={{ duration: 0.5 }}
-          variants={{
-            hidden: { opacity: 0, x: 50 },
-            visible: { opacity: 1, x: 0 },
-          }}
-          className="mt-10"
-        >
-            <Lottie loop={true} animationData={Office}/>
-          </motion.div>
-            
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.5 }}
+            transition={{ duration: 0.5 }}
+            variants={{
+              hidden: { opacity: 0, x: 50 },
+              visible: { opacity: 1, x: 0 },
+            }}
+            className="mt-10"
+          ></motion.div>
         )}
       </div>
 
@@ -65,15 +57,13 @@ const Hero = ({setSelectedPage}: Props) => {
             visible: { opacity: 1, x: 0 },
           }}
         >
-    
-        <p className="text-3xl md:text-5xl mt-5 font-semibold z-10 text-center md:text-start">
-          Maicol Hernandez
+          <p className="text-3xl md:text-5xl mt-5 font-semibold z-10 text-center md:text-start">
+            Maicol Hernandez
           </p>
 
           <p className="mt-2 text-app-blue mb-5 font-semibold text-lg md:text-2xl text-center md:text-start">
             Web Developer
           </p>
-
         </motion.div>
 
         {/* CALL TO ACTIONS */}
@@ -97,9 +87,15 @@ const Hero = ({setSelectedPage}: Props) => {
             Contact
           </AnchorLink>
 
-          <a href="CV.pdf" target="_blank" rel="noreferrer"  className="border-2 border-app-menu text-app-menu rounded-sm py-2 px-5 font-semibold text-sm
-              hover:border-app-green hover:scale-105 duration-200 transition hover:text-white " >Résumé</a>   
-        
+          <a
+            href="CV.pdf"
+            target="_blank"
+            rel="noreferrer"
+            className="border-2 border-app-menu text-app-menu rounded-sm py-2 px-5 font-semibold text-sm
+              hover:border-app-green hover:scale-105 duration-200 transition hover:text-white "
+          >
+            Résumé
+          </a>
         </motion.div>
 
         <motion.div
@@ -112,14 +108,11 @@ const Hero = ({setSelectedPage}: Props) => {
             hidden: { opacity: 0, x: -50 },
             visible: { opacity: 1, x: 0 },
           }}
-        >
-     
-        </motion.div>
-
+        ></motion.div>
       </div>
-
     </section>
-  )
-}
+  );
+};
 
-export default Hero
+export default Hero;
+

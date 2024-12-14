@@ -1,8 +1,8 @@
 import React from "react";
-import useMediaQuery from "@/hooks/useMediaQuery";
+import useMediaQuery from "../hooks/useMediaQuery";
 import { motion } from "framer-motion";
 import AnchorLink from "react-anchor-link-smooth-scroll";
-import Office from "../../public/office2.json";
+// import Office from "../../public/office2.json";
 
 interface Props {
   setSelectedPage: any;

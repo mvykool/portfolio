@@ -2,7 +2,7 @@ import Head from "next/head";
 import React, { useState } from "react";
 import Footer from "./Footer";
 import Navbar from "./Navbar";
-import useMediaQuery from "../../hooks/useMediaQuery";
+import useMediaQuery from "../hooks/useMediaQuery";
 import { useEffect } from "react";
 import SideRight from "./SideRight";
 import SideLeft from "./SideLeft";
@@ -93,4 +93,3 @@ const Layout = ({ children }: Props) => {
 };
 
 export default Layout;
-

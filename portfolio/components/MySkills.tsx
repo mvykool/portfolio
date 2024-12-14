@@ -1,4 +1,4 @@
-import useMediaQuery from "../../hooks/useMediaQuery";
+import useMediaQuery from "../hooks/useMediaQuery";
 import { motion } from "framer-motion";
 import {
   SiHtml5,
@@ -213,4 +213,3 @@ const MySkills = () => {
 };
 
 export default MySkills;
-

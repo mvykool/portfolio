@@ -12,6 +12,7 @@ import Contact from "./Conctact";
 import About from "./About";
 import Experience from "./Experience";
 import ScrollToTop from "./ScrollTop";
+import Hero from "@/app/components/layout/Hero";
 
 interface Props {
   children: any;
@@ -46,6 +47,8 @@ const Layout = ({ children }: Props) => {
         page={undefined}
         topPage={topPage}
       />
+
+      <Hero />
 
       <div className="w-3/6 mx-auto md:h-full">
         {isAboveMediumScreens && (

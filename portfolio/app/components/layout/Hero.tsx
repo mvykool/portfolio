@@ -1,14 +1,10 @@
 import React from "react";
-import useMediaQuery from "../hooks/useMediaQuery";
+import useMediaQuery from "@/hooks/useMediaQuery";
 import { motion } from "framer-motion";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 // import Office from "../../public/office2.json";
 
-interface Props {
-  setSelectedPage: any;
-}
-
-const Hero = ({ setSelectedPage }: Props) => {
+const Hero = () => {
   const isAboveLarge = useMediaQuery("(min-width: 1060px)");
 
   return (
@@ -81,7 +77,6 @@ const Hero = ({ setSelectedPage }: Props) => {
           <AnchorLink
             className="bg-app-green text-white rounded-sm py-2 px-5 font-semibold text-sm
               hover:bg-app-menu hover:text-white transition duration-200 hover:scale-105"
-            onClick={() => setSelectedPage("contact")}
             href="#contact"
           >
             Contact

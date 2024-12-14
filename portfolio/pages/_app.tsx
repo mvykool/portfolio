@@ -1,9 +1,9 @@
 import "@/styles/globals.css";
-import Layout from "@/app/components/Layout";
+import Layout from "../components/Layout";
 import type { AppProps } from "next/app";
 
 import { useState, useEffect } from "react";
-import Loader from "@/app/components/Loader";
+import Loader from "../components/Loader";
 
 export default function App({ Component, pageProps }: AppProps) {
   //Router event loading

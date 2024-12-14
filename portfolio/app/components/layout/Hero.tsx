@@ -1,17 +1,22 @@
-import React from "react";
-import useMediaQuery from "@/hooks/useMediaQuery";
+import React, { useState } from "react";
 import BentoBlock from "../ui/BentoBlock";
+import { Reorder } from "framer-motion";
 // import Office from "../../public/office2.json";
 
 const Hero = () => {
-  const isAboveLarge = useMediaQuery("(min-width: 1060px)");
+  const [items, setItems] = useState(["1", "2", "3"]);
 
   return (
-    <section className="flex border border-red w-9/12 gap-5 mx-auto mt-32">
-      <BentoBlock size="large">bento one</BentoBlock>
-      <BentoBlock size="small">bento two</BentoBlock>
-      <BentoBlock size="largeV">bento three</BentoBlock>
-    </section>
+    <Reorder.Group
+      axis="x"
+      values={items}
+      onReorder={setItems}
+      className="flex border border-red w-9/12  mx-auto mt-32"
+    >
+      {items.map((item, index) => (
+        <BentoBlock item={item} key={index} size="small" />
+      ))}
+    </Reorder.Group>
   );
 };
 

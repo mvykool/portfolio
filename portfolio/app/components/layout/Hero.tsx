@@ -8,6 +8,8 @@ import {
   TbBrandLinkedin,
   TbBrandTwitter,
 } from "react-icons/tb";
+import SkillRadio from "../ui/SkillsRadio";
+import ExpOverview from "../ui/ExpOverview";
 
 const Hero = () => {
   const [items, setItems] = useState();
@@ -47,13 +49,14 @@ const Hero = () => {
         <section className="flex w-full gap-[2%] relative flex-w h-[33%] ">
           {" "}
           <BentoBlock size="w-[30%]">
-            <p className="text-menu-green p-8 mt-5">{heroConstants.contact}</p>
+            <p className="text-menu-green p-8 mt-5">{heroConstants.projects}</p>
           </BentoBlock>
           <BentoBlock size="w-[33%]">
             <p className="text-menu-green p-8 mt-5">{heroConstants.skills}</p>
+            <SkillRadio />
           </BentoBlock>
           <BentoBlock size="w-[33%]">
-            <p className="text-menu-green p-8 mt-5">{heroConstants.projects}</p>
+            <ExpOverview />
           </BentoBlock>
         </section>
       </div>

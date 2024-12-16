@@ -1,8 +1,7 @@
 import React, { useState } from "react";
 import BentoBlock from "../ui/BentoBlock";
 import Image from "next/image";
-import { Reorder } from "framer-motion";
-// import Office from "../../public/office2.json";
+import { heroConstants } from "@/app/constants/hero-constants";
 
 const Hero = () => {
   const [items, setItems] = useState();
@@ -11,7 +10,12 @@ const Hero = () => {
       <div className="flex flex-col h-full w-9/12 gap-3  ">
         <section className="flex flex-wrap relative  gap-[2%] h-[33%] ">
           {" "}
-          <BentoBlock size="w-[68%] h-[full]">bento one</BentoBlock>
+          <BentoBlock size="w-[68%] h-[full]">
+            <div className="justify-center flex flex-col ml-10 text-4xl break-words items-start h-full">
+              <p> {heroConstants.hi}</p>
+              <p> {heroConstants.name}</p>
+            </div>
+          </BentoBlock>
           <BentoBlock size="w-[30%] h-full">bento one</BentoBlock>
         </section>
         <section className="flex  relative gap-[2%] h-[33%] mx-auto flex-wrap w-full  flex-w ">

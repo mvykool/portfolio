@@ -2,6 +2,12 @@ import React, { useState } from "react";
 import BentoBlock from "../ui/BentoBlock";
 import Image from "next/image";
 import { heroConstants } from "@/app/constants/hero-constants";
+import {
+  TbBrandGithub,
+  TbBrandGmail,
+  TbBrandLinkedin,
+  TbBrandTwitter,
+} from "react-icons/tb";
 
 const Hero = () => {
   const [items, setItems] = useState();
@@ -16,7 +22,9 @@ const Hero = () => {
               <p> {heroConstants.name}</p>
             </div>
           </BentoBlock>
-          <BentoBlock size="w-[30%] h-full">bento one</BentoBlock>
+          <BentoBlock size="w-[30%] h-full">
+            <div className="w-full h-full bg-red"></div>
+          </BentoBlock>
         </section>
         <section className="flex  relative gap-[2%] h-[33%] mx-auto flex-wrap w-full  flex-w ">
           {" "}
@@ -29,24 +37,48 @@ const Hero = () => {
               src="/profile.png"
             />
           </BentoBlock>
-          <BentoBlock size="h-full w-[68%]">bento two</BentoBlock>
+          <BentoBlock size="h-full w-[68%]">
+            <p className="text-menu-green p-8 mt-5">{heroConstants.about}</p>
+            <p className="px-8 break-words text-lg mt-2">
+              {heroConstants.aboutInfo}
+            </p>
+          </BentoBlock>
         </section>
-        <section className="flex w-full h-2/6 gap-[2%] relative flex-w h-[33%] ">
+        <section className="flex w-full gap-[2%] relative flex-w h-[33%] ">
           {" "}
-          <BentoBlock size="w-[30%]">bento two</BentoBlock>
-          <BentoBlock size="w-[33%]">bento two</BentoBlock>
-          <BentoBlock size="w-[33%]">bento two</BentoBlock>
+          <BentoBlock size="w-[30%]">
+            <p className="text-menu-green p-8 mt-5">{heroConstants.contact}</p>
+          </BentoBlock>
+          <BentoBlock size="w-[33%]">
+            <p className="text-menu-green p-8 mt-5">{heroConstants.skills}</p>
+          </BentoBlock>
+          <BentoBlock size="w-[33%]">
+            <p className="text-menu-green p-8 mt-5">{heroConstants.projects}</p>
+          </BentoBlock>
         </section>
       </div>
       <section className="flex flex-wrap h-full gap-2 w-3/12  ">
         {" "}
         <div className="h-[48%] flex gap-[2%] flex-wrap">
-          <BentoBlock size="w-[48%] h-[48%]">bento two</BentoBlock>
-          <BentoBlock size="w-[48%] h-[48%]">bento two</BentoBlock>
-          <BentoBlock size="w-[48%] h-[48%]">bento two</BentoBlock>
-          <BentoBlock size="w-[48%] h-[48%]">bento two</BentoBlock>
+          <BentoBlock size="w-[48%] h-[48%] p-12">
+            {" "}
+            <TbBrandGithub className="text-5xl w-full mx-auto flex items-center h-full" />
+          </BentoBlock>
+          <BentoBlock size="w-[48%] h-[48%] p-12">
+            <TbBrandLinkedin className="text-5xl w-full mx-auto flex items-center h-full" />
+          </BentoBlock>
+          <BentoBlock size="w-[48%] h-[48%] p-12">
+            <TbBrandTwitter className="text-5xl mx-auto w-full flex items-center h-full" />
+          </BentoBlock>
+          <BentoBlock size="w-[48%] h-[48%] p-12">
+            {" "}
+            <TbBrandGmail className="text-2xl mx-auto flex w-full items-center h-full" />
+          </BentoBlock>
         </div>
-        <BentoBlock size="w-full h-[50%]">bento two</BentoBlock>
+        <BentoBlock size="w-full h-[50%]">
+          {" "}
+          <p className="text-menu-green p-8 mt-5">{heroConstants.experience}</p>
+        </BentoBlock>
       </section>
     </main>
   );

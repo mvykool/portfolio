@@ -10,7 +10,7 @@ module.exports = {
   ],
   theme: {
     extend: {
-      spacing: { 45: "180px", 70: "300px", 140: "622px" },
+      spacing: { 45: "180px", 70: "300px", 140: "608px" },
       colors: {
         "deep-blue": "#0a0d11",
         "menu-green": "#77d4a2",

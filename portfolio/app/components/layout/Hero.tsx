@@ -10,6 +10,7 @@ import {
 } from "react-icons/tb";
 import SkillRadio from "../ui/SkillsRadio";
 import ExpOverview from "../ui/ExpOverview";
+import Card from "../ui/Card";
 
 const Hero = () => {
   const [items, setItems] = useState();
@@ -55,7 +56,9 @@ const Hero = () => {
             <p className="text-menu-green p-8 mt-5">{heroConstants.skills}</p>
             <SkillRadio />
           </BentoBlock>
-          <BentoBlock size="w-[33%]">s</BentoBlock>
+          <BentoBlock size="w-[33%]">
+            <Card />
+          </BentoBlock>
         </section>
       </div>
       <section className="flex flex-wrap h-full gap-2 w-3/12  ">

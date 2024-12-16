@@ -14,7 +14,7 @@ export default function Card() {
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
           viewBox="0 0 24 24"
-          className="icon"
+          className="icon w-10 mx-auto mt-5"
         >
           <path
             fill="currentColor"

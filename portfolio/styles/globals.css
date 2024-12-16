@@ -1,12 +1,8 @@
-
-
-  @import url('https://fonts.googleapis.com/css2?family=Orbitron&family=Poppins&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Orbitron&family=Poppins&display=swap");
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
 
 /*scroll bar*/
 
@@ -20,18 +16,17 @@
   background-color: transparent;
   border-radius: 1px;
 }
- 
+
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #5B8FB9; 
+  background: #5b8fb9;
   border-radius: 1px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background:#59CE8F; 
+  background: #59ce8f;
 }
-
 
 html,
 body,
@@ -39,29 +34,29 @@ body,
 .app {
   height: 100%;
   background-color: #0d1118;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   letter-spacing: 1px;
   scroll-behavior: smooth;
   @apply text-white;
 }
 
-.bg-wrapper{
-  background-color: rgba(0,0,0, 0.3);
+.bg-wrapper {
+  background-color: rgba(0, 0, 0, 0.3);
   backdrop-filter: blur(2px);
 }
 
 /*back to top btn*/
 
-.top-to-btm{
+.top-to-btm {
   position: absolute;
 }
-.icon-position{
+.icon-position {
   position: fixed;
   bottom: 40px;
   right: 25px;
   z-index: 20;
 }
-.icon-style{
+.icon-style {
   background-color: #31be73;
   border-radius: 5%;
   height: 50px;
@@ -69,16 +64,16 @@ body,
   color: #fff;
   cursor: pointer;
   animation: movebtn 3s ease-in-out infinite;
-  transition: all .5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
-.icon-style:hover{
+.icon-style:hover {
   animation: none;
-  background: #5B8FB9;
+  background: #5b8fb9;
   color: var(--app-second-col);
   border: 2px solid var(--app-second-col);
 }
 
-.loader{
+.loader {
   width: 100% !important;
   height: 100vh !important;
   display: flex;
@@ -93,4 +88,3 @@ body,
   -ms-touch-action: none;
   height: 100%;
 }
-

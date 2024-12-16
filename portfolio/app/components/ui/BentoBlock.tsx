@@ -1,26 +1,21 @@
 import React, { ReactNode } from "react";
-import { useMotionValue, Reorder } from "framer-motion";
+import { Reorder, useMotionValue } from "framer-motion";
 
 interface BlockProps {
-  size: "large" | "largeV" | "small";
-  item: string;
+  size: "large" | "main" | "largeV" | "small" | "xs";
+  children: ReactNode;
 }
-const BentoBlock: React.FC<BlockProps> = ({ size, item }) => {
+const BentoBlock: React.FC<BlockProps> = ({ size, children }) => {
   const sizeClass = {
-    large: "w-6/12 h-70",
-    largeV: "w-70 h-96",
+    large: "w-140 h-70",
+    largeV: "w-70 h-140",
     small: "w-70 h-70",
+    xs: "w-70 h-56",
+    main: "w-full h-full",
   }[size];
-  const x = useMotionValue(0);
 
   return (
-    <Reorder.Item
-      value={item}
-      className={`border border-gray-300 p-4 ${sizeClass}`}
-      style={{ x }}
-    >
-      {item}
-    </Reorder.Item>
+    <div className={`border border-gray-300 p-4 ${sizeClass}`}>{children}</div>
   );
 };
 

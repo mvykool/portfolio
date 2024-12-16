@@ -12,6 +12,7 @@ import Contact from "./Conctact";
 import About from "./About";
 import Experience from "./Experience";
 import ScrollToTop from "./ScrollTop";
+import ExpOne from "@/app/components/layout/ExpOne";
 import Hero from "@/app/components/layout/Hero";
 
 interface Props {
@@ -49,6 +50,8 @@ const Layout = ({ children }: Props) => {
       />
 
       <Hero />
+
+      <ExpOne />
 
       <div className="w-3/6 mx-auto md:h-full">
         {isAboveMediumScreens && (

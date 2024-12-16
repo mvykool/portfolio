@@ -3,7 +3,7 @@ export const heroConstants = {
   name: "I'm Maicol Hernandez",
   about: "About",
   aboutInfo:
-    "I'm a highly driven, and focused web developer, I enjoy crafting stunning UIs and creates cool programs that make the digital world come alive.",
+    "I'm a highly driven, and focused Software Developer, I enjoy crafting stunning UIs and creates cool programs that make the digital world come alive.",
   experience: "Experience",
   projects: "Projects",
   skills: "Skills",

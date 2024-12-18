@@ -3,8 +3,8 @@ import React from "react";
 export default function MusicPlayer() {
   return (
     /* From Uiverse.io by Praashoo7 */
-    <div className="bg-gray-500 relative h-full">
-      <div className="currentplaying">
+    <div className="bg-gray-500 relative h-full w-4/12 rounded-lg">
+      <div className="flex ml-5 my-3">
         <svg
           height="50px"
           width="50px"
@@ -12,19 +12,6 @@ export default function MusicPlayer() {
           xmlns="http://www.w3.org/2000/svg"
           className="spotify"
         >
-          <radialGradient
-            gradientUnits="userSpaceOnUse"
-            gradientTransform="translate(0 -534)"
-            r="43.888"
-            cy="572.064"
-            cx="33.34"
-            id="ipdIa4~cOclR8yt_ClW93a"
-          >
-            <stop stop-color="#f4e9c3" offset="0"></stop>
-            <stop stop-color="#f8eecd" offset=".219"></stop>
-            <stop stop-color="#fdf4dc" offset=".644"></stop>
-            <stop stop-color="#fff6e1" offset="1"></stop>
-          </radialGradient>
           <path
             d="M51.03,37.34c0.16,0.98,1.08,1.66,2.08,1.66h5.39c2.63,0,4.75,2.28,4.48,4.96	C62.74,46.3,60.64,48,58.29,48H49c-1.22,0-2.18,1.08-1.97,2.34c0.16,0.98,1.08,1.66,2.08,1.66h8.39c1.24,0,2.37,0.5,3.18,1.32	C61.5,54.13,62,55.26,62,56.5c0,2.49-2.01,4.5-4.5,4.5h-49c-1.52,0-2.9-0.62-3.89-1.61C3.62,58.4,3,57.02,3,55.5	C3,52.46,5.46,50,8.5,50H14c1.22,0,2.18-1.08,1.97-2.34C15.81,46.68,14.89,44,13.89,44H5.5c-2.63,0-4.75-2.28-4.48-4.96	C1.26,36.7,3.36,35,5.71,35H8c1.71,0,3.09-1.43,3-3.16C10.91,30.22,9.45,29,7.83,29H4.5c-2.63,0-4.75-2.28-4.48-4.96	C0.26,21.7,2.37,20,4.71,20H20c0.83,0,1.58-0.34,2.12-0.88C22.66,18.58,23,17.83,23,17c0-1.66-1.34-3-3-3h-1.18	c-0.62-0.09-1.43,0-2.32,0h-9c-1.52,0-2.9-0.62-3.89-1.61S2,10.02,2,8.5C2,5.46,4.46,3,7.5,3h49c3.21,0,5.8,2.79,5.47,6.06	C61.68,11.92,60.11,14,57.24,14H52c-2.76,0-5,2.24-5,5c0,1.38,0.56,2.63,1.46,3.54C49.37,23.44,50.62,24,52,24h6.5	c3.21,0,5.8,2.79,5.47,6.06C63.68,32.92,61.11,35,58.24,35H53C51.78,35,50.82,36.08,51.03,37.34z"
             fill="url(#ipdIa4~cOclR8yt_ClW93a)"
@@ -51,12 +38,14 @@ export default function MusicPlayer() {
             fill="#fff"
           ></path>
         </svg>
-        <p className="heading">Currently Playing</p>
+        <p className="text-lg flex items-center justify-end font-bold">
+          Currently Playing
+        </p>
       </div>
-      <div className="flex rotate-180 justify-end ml-5 transition-all ease-in-out">
+      <div className="flex rotate-180 justify-end my-1 ml-7 transition-all ease-in-out">
         <div className="relative rotate-180">
-          <p className="text-white">Time in a Bottle</p>
-          <p className="text-white">Jim Corce</p>
+          <p className="my-1 text-md">Time in a Bottle</p>
+          <p className="text-xs">Jim Corce</p>
         </div>
         <div className="relative rounded-md bg-red w-10 h-10 flex items-center justify-center my-auto mx-3"></div>
         <div className="loading">
@@ -66,18 +55,18 @@ export default function MusicPlayer() {
           <div className="load"></div>
         </div>
       </div>
-      <div className="flex rotate-180 justify-end ml-5 transition-all ease-in-out">
+      <div className="flex rotate-180 justify-end ml-7 my-1 transition-all ease-in-out">
         <div className="relative rotate-180">
-          <p className="my-2">My Way</p>
-          <p className="text-sm">Frank Sinatra</p>
+          <p className="my-1 text-md font-bold">My Way</p>
+          <p className="text-xs">Frank Sinatra</p>
         </div>
         <div className="relative rounded-md bg-red w-10 h-10 flex items-center justify-center my-auto mx-3"></div>
         <div className="play"></div>
       </div>
-      <div className="flex rotate-180 justify-end ml-5 transition-all ease-in-out">
+      <div className="flex rotate-180 justify-end ml-7 my-1 transition-all ease-in-out">
         <div className="relative rotate-180">
-          <p className="my-2">Lemon Tree</p>
-          <p className="artist">Fools Garden</p>
+          <p className="my-1 text-md font-bold">Lemon Tree</p>
+          <p className="text-xs">Fools Garden</p>
         </div>
         <div className="relative rounded-md bg-red w-10 h-10 flex items-center justify-center my-auto mx-3"></div>
         <div className="play"></div>

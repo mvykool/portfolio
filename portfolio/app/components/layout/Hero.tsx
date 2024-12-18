@@ -11,6 +11,7 @@ import {
 import SkillRadio from "../ui/SkillsRadio";
 import ExpOverview from "../ui/ExpOverview";
 import Card from "../ui/Card";
+import MusicPlayer from "../ui/MusicPlayer";
 
 const Hero = () => {
   const [items, setItems] = useState();
@@ -26,7 +27,7 @@ const Hero = () => {
             </div>
           </BentoBlock>
           <BentoBlock size="w-[30%] h-full">
-            <div className="w-full h-full bg-red"></div>
+            <Card />
           </BentoBlock>
         </section>
         <section className="flex  relative gap-[2%] h-[33%] mx-auto flex-wrap w-full  flex-w ">
@@ -56,9 +57,7 @@ const Hero = () => {
             <p className="text-menu-green p-8 mt-5">{heroConstants.skills}</p>
             <SkillRadio />
           </BentoBlock>
-          <BentoBlock size="w-[33%]">
-            <Card />
-          </BentoBlock>
+          <MusicPlayer />
         </section>
       </div>
       <section className="flex flex-wrap h-full gap-2 w-3/12  ">

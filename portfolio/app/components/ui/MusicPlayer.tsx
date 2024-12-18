@@ -67,24 +67,40 @@ export default function MusicPlayer() {
           <div className="load"></div>
         </div>
       </div>
-      <div className="flex rotate-180 justify-end ml-7 my-1 transition-all ease-in-out">
+      <div className="flex rotate-180 justify-end ml-7 mb-2 transition-all ease-in-out">
         <div className="relative rotate-180">
-          <p className="my-1 text-md font-bold">
+          <p className=" text-md font-bold">
             {heroConstants.spotify.secondSong.title}
           </p>
           <p className="text-xs">{heroConstants.spotify.secondSong.artist}</p>
         </div>
-        <div className="relative rounded-md bg-red w-10 h-10 flex items-center justify-center my-auto mx-3"></div>
+        <div className="relative rounded-md w-10 h-10 flex items-center justify-center my-auto mx-3">
+          <Image
+            width={40}
+            height={40}
+            alt="profile"
+            className="rounded-md rotate-180"
+            src="/PearlJam-Ten.jpg"
+          />
+        </div>
         <div className="play"></div>
       </div>
-      <div className="flex rotate-180 justify-end ml-7 my-1 transition-all ease-in-out">
+      <div className="flex rotate-180 justify-end ml-7 mt-3 transition-all ease-in-out">
         <div className="relative rotate-180">
-          <p className="my-1 text-md font-bold">
-            {heroConstants.spotify.thridSong.title}
+          <p className=" text-md font-bold">
+            {heroConstants.spotify.thirdSong.title}
           </p>
-          <p className="text-xs">{heroConstants.spotify.thridSong.artist}</p>
+          <p className="text-xs">{heroConstants.spotify.thirdSong.artist}</p>
         </div>
-        <div className="relative rounded-md bg-red w-10 h-10 flex items-center justify-center my-auto mx-3"></div>
+        <div className="relative rounded-md w-10 h-10 flex items-center justify-center my-auto mx-3">
+          <Image
+            width={40}
+            height={40}
+            alt="profile"
+            className="rounded-md rotate-180"
+            src="/OceanCover.jpeg"
+          />
+        </div>
         <div className="play"></div>
       </div>
     </div>

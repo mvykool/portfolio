@@ -14,13 +14,13 @@ export const heroConstants = {
       title: "505",
       artist: "Artic Monkeys",
     },
-    thridSong: {
-      title: "Nro 2",
-      artist: "s",
-    },
     secondSong: {
-      title: "Nro 3",
-      artist: "s",
+      title: "Black",
+      artist: "Pearl Jam",
+    },
+    thirdSong: {
+      title: "Pink + White",
+      artist: "Frank Ocean",
     },
   },
 };

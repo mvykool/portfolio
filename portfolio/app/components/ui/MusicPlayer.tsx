@@ -1,4 +1,6 @@
 import React from "react";
+import { heroConstants } from "@/app/constants/hero-constants";
+import Image from "next/image";
 
 export default function MusicPlayer() {
   return (
@@ -39,15 +41,25 @@ export default function MusicPlayer() {
           ></path>
         </svg>
         <p className="text-lg flex items-center justify-end font-bold">
-          Currently Playing
+          {heroConstants.spotify.current}
         </p>
       </div>
-      <div className="flex rotate-180 justify-end my-1 ml-7 transition-all ease-in-out">
+      <div className="flex rotate-180 justify-end mb-2 ml-7 transition-all ease-in-out">
         <div className="relative rotate-180">
-          <p className="my-1 text-md">Time in a Bottle</p>
-          <p className="text-xs">Jim Corce</p>
+          <p className="mb-1 text-md font-bold">
+            {heroConstants.spotify.fistSong.title}
+          </p>
+          <p className="text-xs">{heroConstants.spotify.fistSong.artist}</p>
         </div>
-        <div className="relative rounded-md bg-red w-10 h-10 flex items-center justify-center my-auto mx-3"></div>
+        <div className="relative rounded-md w-10 h-10 flex items-center justify-center my-auto mx-3">
+          <Image
+            width={40}
+            height={40}
+            alt="profile"
+            className="rounded-md"
+            src="/Favourite_Worst_Nightmare.jpg"
+          />
+        </div>
         <div className="loading">
           <div className="load"></div>
           <div className="load"></div>
@@ -57,16 +69,20 @@ export default function MusicPlayer() {
       </div>
       <div className="flex rotate-180 justify-end ml-7 my-1 transition-all ease-in-out">
         <div className="relative rotate-180">
-          <p className="my-1 text-md font-bold">My Way</p>
-          <p className="text-xs">Frank Sinatra</p>
+          <p className="my-1 text-md font-bold">
+            {heroConstants.spotify.secondSong.title}
+          </p>
+          <p className="text-xs">{heroConstants.spotify.secondSong.artist}</p>
         </div>
         <div className="relative rounded-md bg-red w-10 h-10 flex items-center justify-center my-auto mx-3"></div>
         <div className="play"></div>
       </div>
       <div className="flex rotate-180 justify-end ml-7 my-1 transition-all ease-in-out">
         <div className="relative rotate-180">
-          <p className="my-1 text-md font-bold">Lemon Tree</p>
-          <p className="text-xs">Fools Garden</p>
+          <p className="my-1 text-md font-bold">
+            {heroConstants.spotify.thridSong.title}
+          </p>
+          <p className="text-xs">{heroConstants.spotify.thridSong.artist}</p>
         </div>
         <div className="relative rounded-md bg-red w-10 h-10 flex items-center justify-center my-auto mx-3"></div>
         <div className="play"></div>

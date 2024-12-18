@@ -8,4 +8,19 @@ export const heroConstants = {
   projects: "Projects",
   skills: "Skills",
   contact: "Contact",
+  spotify: {
+    current: "Currently Playing",
+    fistSong: {
+      title: "505",
+      artist: "Artic Monkeys",
+    },
+    thridSong: {
+      title: "Nro 2",
+      artist: "s",
+    },
+    secondSong: {
+      title: "Nro 3",
+      artist: "s",
+    },
+  },
 };

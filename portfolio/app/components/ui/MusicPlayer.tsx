@@ -5,7 +5,7 @@ import Image from "next/image";
 export default function MusicPlayer() {
   return (
     /* From Uiverse.io by Praashoo7 */
-    <div className="bg-transparent border-2 border-gray-300 relative h-full w-4/12 rounded-xl">
+    <div className="bg-transparent relative h-full w-full rounded-xl">
       <div className="flex ml-5 my-3">
         <svg
           height="50px"

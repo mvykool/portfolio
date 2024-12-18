@@ -27,7 +27,7 @@ const Hero = () => {
             </div>
           </BentoBlock>
           <BentoBlock size="w-[30%] h-full">
-            <Card />
+            <div>s</div>
           </BentoBlock>
         </section>
         <section className="flex  relative gap-[2%] h-[33%] mx-auto flex-wrap w-full  flex-w ">
@@ -57,7 +57,9 @@ const Hero = () => {
             <p className="text-menu-green p-8 mt-5">{heroConstants.skills}</p>
             <SkillRadio />
           </BentoBlock>
-          <MusicPlayer />
+          <BentoBlock size="w-[33%]">
+            <MusicPlayer />
+          </BentoBlock>
         </section>
       </div>
       <section className="flex flex-wrap h-full gap-2 w-3/12  ">

@@ -70,7 +70,7 @@ export default function SkillCarousel() {
         className="flex animate-scroll-left"
         style={{
           width: `${allFrontendIcons.length * 50}px`,
-          animation: "scrollLeft 20s linear infinite",
+          animation: "scrollLeft 30s linear infinite",
         }}
       >
         {allFrontendIcons.map(({ Icon, color }, index) => (
@@ -91,7 +91,7 @@ export default function SkillCarousel() {
         className="flex animate-scroll-right"
         style={{
           width: `${allBackendIcons.length * 50}px`,
-          animation: "scrollRight 20s linear infinite",
+          animation: "scrollRight 30s linear infinite",
         }}
       >
         {allBackendIcons.map(({ Icon, color }, index) => (

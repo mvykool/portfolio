@@ -16,6 +16,7 @@ import { TwitterCard } from "../ui/TwitterCard";
 import { GithubCard } from "../ui/GithubCard";
 import { BlueskyCard } from "../ui/BlueskyCard";
 import { ProjectCard } from "../ui/ProjectCard";
+import { ThemeSwitch } from "../ui/ThemeSwitch";
 
 const Hero = () => {
   return (
@@ -30,7 +31,7 @@ const Hero = () => {
             </div>
           </BentoBlock>
           <BentoBlock size="w-[30%] h-full">
-            <div>s</div>
+            <ThemeSwitch />
           </BentoBlock>
         </section>
         <section className="flex  relative gap-[2%] h-[33%] mx-auto flex-wrap w-full  flex-w ">

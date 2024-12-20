@@ -14,6 +14,7 @@ import MusicPlayer from "../ui/MusicPlayer";
 import { LinkedInCard } from "../ui/LinkedInCard";
 import { TwitterCard } from "../ui/TwitterCard";
 import { GithubCard } from "../ui/GithubCard";
+import { BlueskyCard } from "../ui/BlueskyCard";
 
 const Hero = () => {
   return (
@@ -66,10 +67,10 @@ const Hero = () => {
       <section className="flex flex-wrap h-full gap-2 w-3/12  ">
         {" "}
         <BentoBlock size="w-full h-[28%]">s</BentoBlock>
+        <GithubCard />
         <LinkedInCard />
+        <BlueskyCard />
         <TwitterCard />
-        <GithubCard />
-        <GithubCard />
         <BentoBlock size="w-full h-[60%]">
           {" "}
           <p className="text-menu-green p-8 mt-5">{heroConstants.experience}</p>

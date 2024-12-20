@@ -1,19 +1,30 @@
+import { strings } from "@/app/constants/social-media-cards-constants";
 import React from "react";
 import { TbBrandX } from "react-icons/tb";
+import Image from "next/image";
 
 export const TwitterCard = (props: {}) => {
   return (
     <div className="tooltip-container">
       <div className="tooltip">
-        <div className="profile">
+        <div className="w-64 p-3 rounded-xl bg-gray-800">
           <div className="user">
-            <div className="img">Ui</div>
+            <Image
+              width={50}
+              height={50}
+              alt="profile"
+              className="rounded-xl transition duration-500"
+              src="/yusuke.jpeg"
+            />
+
             <div className="details">
-              <div className="name">User</div>
-              <div className="username">@username</div>
+              <div className="text-blue-500 text-xs font-extrabold">
+                {strings.x.name}
+              </div>
+              <div className="text-sm mt-2">{strings.x.username}</div>
             </div>
           </div>
-          <div className="about">500+ Connections</div>
+          <div className="about">{strings.x.followers}</div>
         </div>
       </div>
       <div className="text">

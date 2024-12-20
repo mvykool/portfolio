@@ -1,9 +1,9 @@
 import React from "react";
 import { strings } from "@/app/constants/social-media-cards-constants";
-import { TbBrandGithub } from "react-icons/tb";
+import { TbBrandBluesky } from "react-icons/tb";
 import Image from "next/image";
 
-export const GithubCard = (props: {}) => {
+export const BlueskyCard = (props: {}) => {
   return (
     <div className="tooltip-container">
       <div className="tooltip">
@@ -14,17 +14,17 @@ export const GithubCard = (props: {}) => {
               height={50}
               alt="profile"
               className="rounded-xl transition duration-500"
-              src="/yusuke.jpeg"
+              src="/bsy.jpg"
             />
 
             <div className="details">
               <div className="text-blue-500 text-xs font-extrabold">
-                {strings.github.name}
+                {strings.bluesky.name}
               </div>
-              <div className="text-sm mt-2">{strings.github.username}</div>
+              <div className="text-sm mt-2">{strings.bluesky.username}</div>
             </div>
           </div>
-          <div className="about">{strings.github.followers}</div>
+          <div className="about">{strings.bluesky.followers}</div>
         </div>
       </div>
       <div className="text">
@@ -35,7 +35,7 @@ export const GithubCard = (props: {}) => {
             <span></span>
             <span></span>
             <span className="fab fa-linkedin">
-              <TbBrandGithub className="text-5xl p-3 mx-auto w-full flex items-center h-full" />
+              <TbBrandBluesky className="text-5xl p-3 mx-auto w-full flex items-center h-full" />
             </span>
           </div>
           <div className="text">LinkedIn</div>

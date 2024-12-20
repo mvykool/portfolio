@@ -15,6 +15,7 @@ import { LinkedInCard } from "../ui/LinkedInCard";
 import { TwitterCard } from "../ui/TwitterCard";
 import { GithubCard } from "../ui/GithubCard";
 import { BlueskyCard } from "../ui/BlueskyCard";
+import { ProjectCard } from "../ui/ProjectCard";
 
 const Hero = () => {
   return (
@@ -54,6 +55,7 @@ const Hero = () => {
           {" "}
           <BentoBlock size="w-[30%]">
             <p className="text-menu-green p-8 mt-5">{heroConstants.projects}</p>
+            <ProjectCard />
           </BentoBlock>
           <BentoBlock size="w-[33%]">
             <p className="text-menu-green p-8 mt-5">{heroConstants.skills}</p>

@@ -1,18 +1,30 @@
 import React from "react";
+import { strings } from "@/app/constants/social-media-cards-constants";
+import { TbBrandLinkedin } from "react-icons/tb";
+import Image from "next/image";
 
 export const LinkedInCard = (props: {}) => {
   return (
     <div className="tooltip-container">
       <div className="tooltip">
-        <div className="profile">
+        <div className="w-64 p-3 rounded-xl bg-gray-800">
           <div className="user">
-            <div className="img">Ui</div>
+            <Image
+              width={50}
+              height={50}
+              alt="profile"
+              className="rounded-xl transition duration-500"
+              src="/profile.png"
+            />
+
             <div className="details">
-              <div className="name">User</div>
-              <div className="username">@username</div>
+              <div className="text-blue-500 text-xs font-extrabold">
+                {strings.linkedin.name}
+              </div>
+              <div className="text-sm mt-2">{strings.linkedin.username}</div>
             </div>
           </div>
-          <div className="about">500+ Connections</div>
+          <div className="about">{strings.linkedin.connections}</div>
         </div>
       </div>
       <div className="text">
@@ -23,9 +35,7 @@ export const LinkedInCard = (props: {}) => {
             <span></span>
             <span></span>
             <span className="fab fa-linkedin">
-              <svg viewBox="0 0 448 512" height="1em">
-                <path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"></path>
-              </svg>
+              <TbBrandLinkedin className="text-5xl p-3 mx-auto w-full flex items-center h-full" />
             </span>
           </div>
           <div className="text">LinkedIn</div>

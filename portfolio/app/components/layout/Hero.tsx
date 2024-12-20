@@ -12,6 +12,8 @@ import SkillRadio from "../ui/SkillsRadio";
 import ExpOverview from "../ui/ExpOverview";
 import MusicPlayer from "../ui/MusicPlayer";
 import { LinkedInCard } from "../ui/LinkedInCard";
+import { TwitterCard } from "../ui/TwitterCard";
+import { GithubCard } from "../ui/GithubCard";
 
 const Hero = () => {
   return (
@@ -63,22 +65,11 @@ const Hero = () => {
       </div>
       <section className="flex flex-wrap h-full gap-2 w-3/12  ">
         {" "}
-        <div className="h-[38%] flex gap-[2%] flex-wrap">
-          <BentoBlock size="w-[48%] h-[48%] p-12">
-            {" "}
-            <TbBrandGithub className="text-5xl w-full mx-auto flex items-center h-full" />
-          </BentoBlock>
-          <BentoBlock size="w-[48%] h-[48%] p-12">
-            <LinkedInCard />
-          </BentoBlock>
-          <BentoBlock size="w-[48%] h-[48%] p-12">
-            <TbBrandTwitter className="text-5xl mx-auto w-full flex items-center h-full" />
-          </BentoBlock>
-          <BentoBlock size="w-[48%] h-[48%] p-12">
-            {" "}
-            <TbBrandGmail className="text-2xl mx-auto flex w-full items-center h-full" />
-          </BentoBlock>
-        </div>
+        <BentoBlock size="w-full h-[28%]">s</BentoBlock>
+        <LinkedInCard />
+        <TwitterCard />
+        <GithubCard />
+        <GithubCard />
         <BentoBlock size="w-full h-[60%]">
           {" "}
           <p className="text-menu-green p-8 mt-5">{heroConstants.experience}</p>

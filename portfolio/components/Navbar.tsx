@@ -5,6 +5,7 @@ import { TiThMenu, TiTimes } from "react-icons/ti";
 import { motion } from "framer-motion";
 
 import Link from "next/link";
+import { Logo } from "@/app/components/ui/Logo";
 
 /**framer motion variants */
 
@@ -59,11 +60,7 @@ const Navbar = ({ topPage, setSelectedPage, selectedPage }: Props) => {
     <nav className="bg-app-gray fixed  z-40 w-full top-0">
       <div className="flex items-center justify-between mx-auto px-2 md:px-9">
         <Link href={`/`}>
-          <img
-            src="/logo.png"
-            alt="logo"
-            className="h-14 object-cover md:h-16 md:w-16 w-14 p-1"
-          />
+          <Logo />
         </Link>
 
         {/** desktop view */}
@@ -218,4 +215,3 @@ const Navbar = ({ topPage, setSelectedPage, selectedPage }: Props) => {
 };
 
 export default Navbar;
-

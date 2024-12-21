@@ -2,12 +2,6 @@ import React from "react";
 import BentoBlock from "../ui/BentoBlock";
 import Image from "next/image";
 import { heroConstants } from "@/app/constants/hero-constants";
-import {
-  TbBrandGithub,
-  TbBrandGmail,
-  TbBrandLinkedin,
-  TbBrandTwitter,
-} from "react-icons/tb";
 import SkillRadio from "../ui/SkillsRadio";
 import ExpOverview from "../ui/ExpOverview";
 import MusicPlayer from "../ui/MusicPlayer";
@@ -18,6 +12,7 @@ import { BlueskyCard } from "../ui/BlueskyCard";
 import { ProjectCard } from "../ui/ProjectCard";
 import { ThemeSwitch } from "../ui/ThemeSwitch";
 import { CodingTracker } from "../ui/CodingTracker";
+import GotoPage from "../ui/GotoPage";
 
 const Hero = () => {
   return (
@@ -47,7 +42,11 @@ const Hero = () => {
             />
           </BentoBlock>
           <BentoBlock size="h-full w-[68%]">
-            <p className="text-menu-green p-8 mt-5">{heroConstants.about}</p>
+            <div className="flex items-center justify-between mr-8">
+              {" "}
+              <p className="text-menu-green p-8 mt-5">{heroConstants.about}</p>
+              <GotoPage />
+            </div>
             <p className="px-8 break-words text-lg mt-2">
               {heroConstants.aboutInfo}
             </p>

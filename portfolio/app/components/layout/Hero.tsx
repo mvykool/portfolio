@@ -57,15 +57,22 @@ const Hero = () => {
         <section className="flex w-full gap-[2%] relative flex-w h-[33%] ">
           {" "}
           <BentoBlock size="w-[30%]">
-            <p className="text-white font-semibold text-lg p-8 mt-5">
-              {heroConstants.projects}
-            </p>
+            <div className="flex items-center my-2 p-5 justify-between">
+              <p className="text-white font-semibold text-lg ">
+                {heroConstants.projects}
+              </p>
+              <GotoPage />
+            </div>
             <ProjectCard />
           </BentoBlock>
           <BentoBlock size="w-[33%]">
-            <p className="text-white font-semibold text-lg p-8 mt-5">
-              {heroConstants.skills}
-            </p>
+            <div className="flex items-center my-2 p-5 justify-between">
+              <p className="text-white font-semibold text-lg ">
+                {heroConstants.skills}
+              </p>
+              <GotoPage />
+            </div>
+
             <SkillRadio />
           </BentoBlock>
           <BentoBlock size="w-[33%]">
@@ -84,9 +91,12 @@ const Hero = () => {
         <TwitterCard />
         <BentoBlock size="w-full h-[60%]">
           {" "}
-          <p className="text-white font-bold text-lg p-8 mt-3 tracking-widest">
-            {heroConstants.experience}
-          </p>
+          <div className="flex justify-between my-3 p-5 items-center">
+            <p className="text-white font-bold text-lg tracking-widest">
+              {heroConstants.experience}
+            </p>
+            <GotoPage />
+          </div>
           <ExpOverview />
         </BentoBlock>
       </section>

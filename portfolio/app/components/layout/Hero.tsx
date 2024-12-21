@@ -84,7 +84,7 @@ const Hero = () => {
         <TwitterCard />
         <BentoBlock size="w-full h-[60%]">
           {" "}
-          <p className="text-white font-semibold text-lg p-8 mt-5">
+          <p className="text-white font-bold text-lg p-8 mt-3 tracking-widest">
             {heroConstants.experience}
           </p>
           <ExpOverview />

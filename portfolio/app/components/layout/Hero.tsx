@@ -16,7 +16,7 @@ import GotoPage from "../ui/GotoPage";
 
 const Hero = () => {
   return (
-    <main className="flex  w-9/12 h-[88vh] justify-between gap-3  mx-auto mt-20 bg-black">
+    <main className="flex  w-9/12 h-[88vh] justify-between gap-3  mx-auto mt-20 bg-app">
       <div className="flex flex-col h-full w-9/12 gap-3  ">
         <section className="flex flex-wrap relative  gap-[2%] h-[33%] ">
           {" "}
@@ -37,17 +37,19 @@ const Hero = () => {
               width={800}
               height={800}
               alt="profile"
-              className="hover:filter hover:saturate-150 transition duration-500"
+              className="hover:filter object-cover w-full h-full hover:saturate-150 transition duration-500"
               src="/profile.png"
             />
           </BentoBlock>
           <BentoBlock size="h-full w-[68%]">
             <div className="flex items-center justify-between mr-8">
               {" "}
-              <p className="text-menu-green p-8 mt-5">{heroConstants.about}</p>
+              <p className="text-white font-semibold p-8 mt-5 text-lg">
+                {heroConstants.about}
+              </p>
               <GotoPage />
             </div>
-            <p className="px-8 break-words text-lg mt-2">
+            <p className="px-8 break-words text-md text-gray-400 mt-2">
               {heroConstants.aboutInfo}
             </p>
           </BentoBlock>
@@ -55,11 +57,15 @@ const Hero = () => {
         <section className="flex w-full gap-[2%] relative flex-w h-[33%] ">
           {" "}
           <BentoBlock size="w-[30%]">
-            <p className="text-menu-green p-8 mt-5">{heroConstants.projects}</p>
+            <p className="text-white font-semibold text-lg p-8 mt-5">
+              {heroConstants.projects}
+            </p>
             <ProjectCard />
           </BentoBlock>
           <BentoBlock size="w-[33%]">
-            <p className="text-menu-green p-8 mt-5">{heroConstants.skills}</p>
+            <p className="text-white font-semibold text-lg p-8 mt-5">
+              {heroConstants.skills}
+            </p>
             <SkillRadio />
           </BentoBlock>
           <BentoBlock size="w-[33%]">
@@ -78,7 +84,9 @@ const Hero = () => {
         <TwitterCard />
         <BentoBlock size="w-full h-[60%]">
           {" "}
-          <p className="text-menu-green p-8 mt-5">{heroConstants.experience}</p>
+          <p className="text-white font-semibold text-lg p-8 mt-5">
+            {heroConstants.experience}
+          </p>
           <ExpOverview />
         </BentoBlock>
       </section>

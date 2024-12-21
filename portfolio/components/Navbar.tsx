@@ -29,7 +29,7 @@ const Links = ({ page, selectedPage, setSelectedPage }: Props) => {
 
   return (
     <AnchorLink
-      className={`${selectedPage === lowerCasePage ? "text-menu-green" : ""} hover:text-menu-green transition duration-150  md:text-xs `}
+      className={`${selectedPage === lowerCasePage ? "text-dark-app" : ""} hover:text-dark-app transition duration-150  md:text-md `}
       href={`#${lowerCasePage}`}
       onClick={() => setSelectedPage(lowerCasePage)}
     >
@@ -57,8 +57,8 @@ const Navbar = ({ topPage, setSelectedPage, selectedPage }: Props) => {
   }
 
   return (
-    <nav className="bg-app-gray fixed  z-40 w-full top-0">
-      <div className="flex items-center justify-between mx-auto px-2 md:px-9">
+    <nav className=" fixed  z-40 w-full top-0">
+      <div className="flex items-center justify-between mx-auto mt-3 px-2 md:px-9">
         <Link href={`/`}>
           <Logo />
         </Link>
@@ -66,37 +66,7 @@ const Navbar = ({ topPage, setSelectedPage, selectedPage }: Props) => {
         {/** desktop view */}
 
         {isAboveSmallScreens ? (
-          <div className="flex text-app-blue justify-between gap-10 font-opensans font-semibold">
-            <Links
-              page="Home"
-              selectedPage={selectedPage}
-              setSelectedPage={setSelectedPage}
-              topPage={undefined}
-            />
-            <Links
-              page="About"
-              selectedPage={selectedPage}
-              setSelectedPage={setSelectedPage}
-              topPage={undefined}
-            />
-            <Links
-              page="Experience"
-              selectedPage={selectedPage}
-              setSelectedPage={setSelectedPage}
-              topPage={undefined}
-            />
-            <Links
-              page="Skills"
-              selectedPage={selectedPage}
-              setSelectedPage={setSelectedPage}
-              topPage={undefined}
-            />
-            <Links
-              page="Projects"
-              selectedPage={selectedPage}
-              setSelectedPage={setSelectedPage}
-              topPage={undefined}
-            />
+          <div className="flex text-dark-app bg-gray-200 px-5 py-3 rounded-lg justify-between gap-10 font-opensans font-semibold">
             <Links
               page="Contact"
               selectedPage={selectedPage}

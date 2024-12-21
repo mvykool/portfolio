@@ -34,7 +34,7 @@ export const LinkedInCard = (props: {}) => {
             <span></span>
             <span></span>
             <span></span>
-            <span className="fab fa-linkedin">
+            <span className="bg-dark-card">
               <TbBrandLinkedin className="text-5xl p-3 mx-auto w-full flex items-center h-full" />
             </span>
           </div>

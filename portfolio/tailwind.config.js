@@ -21,6 +21,8 @@ module.exports = {
       },
       spacing: { 45: "180px", 70: "300px", 140: "608px" },
       colors: {
+        "dark-app": "#090909",
+        "dark-card": "#151515",
         "deep-blue": "#0a0d11",
         "menu-green": "#77d4a2",
         "app-green": "#31be73",

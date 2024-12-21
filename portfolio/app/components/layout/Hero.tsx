@@ -17,6 +17,7 @@ import { GithubCard } from "../ui/GithubCard";
 import { BlueskyCard } from "../ui/BlueskyCard";
 import { ProjectCard } from "../ui/ProjectCard";
 import { ThemeSwitch } from "../ui/ThemeSwitch";
+import { CodingTracker } from "../ui/CodingTracker";
 
 const Hero = () => {
   return (
@@ -69,7 +70,9 @@ const Hero = () => {
       </div>
       <section className="flex flex-wrap h-full gap-2 w-3/12  ">
         {" "}
-        <BentoBlock size="w-full h-[28%]">s</BentoBlock>
+        <BentoBlock size="w-full h-[28%]">
+          <CodingTracker />
+        </BentoBlock>
         <GithubCard />
         <LinkedInCard />
         <BlueskyCard />

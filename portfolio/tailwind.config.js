@@ -10,15 +10,6 @@ module.exports = {
   ],
   theme: {
     extend: {
-      keyframes: {
-        shake: {
-          "0%, 100%": { transform: "translateX(0) rotate(-12deg)" },
-          "50%": { transform: "translateX(-5px) rotate(-12deg)" },
-        },
-      },
-      animation: {
-        shake: "shake 2s infinite",
-      },
       spacing: { 45: "180px", 70: "300px", 140: "608px" },
       colors: {
         "dark-app": "#090909",

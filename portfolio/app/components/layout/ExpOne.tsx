@@ -6,7 +6,7 @@ import { Reorder } from "framer-motion";
 const ExpOne = () => {
   const [items, setItems] = useState();
   return (
-    <main className="flex  w-9/12 h-[88vh] justify-between gap-3  mx-auto mt-20 bg-black">
+    <main className="flex  w-9/12 h-[88vh] justify-between gap-3  mx-auto mt-20 bg-dark-app">
       <div className="flex flex-col h-full w-9/12 gap-3">
         <div className="flex h-5/6 gap-3">
           <section className="flex flex-wrap relative overflow-hidden gap-[2%] w-4/12 ">

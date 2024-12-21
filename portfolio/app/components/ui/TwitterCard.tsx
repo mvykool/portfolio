@@ -1,9 +1,9 @@
-import React from "react";
 import { strings } from "@/app/constants/social-media-cards-constants";
-import { TbBrandLinkedin } from "react-icons/tb";
+import React from "react";
+import { TbBrandX } from "react-icons/tb";
 import Image from "next/image";
 
-export const LinkedInCard = (props: {}) => {
+export const TwitterCard = (props: {}) => {
   return (
     <div className="tooltip-container">
       <div className="tooltip">
@@ -14,17 +14,17 @@ export const LinkedInCard = (props: {}) => {
               height={50}
               alt="profile"
               className="rounded-xl transition duration-500"
-              src="/profile.png"
+              src="/yusuke.jpeg"
             />
 
             <div className="details">
               <div className="text-blue-500 text-xs font-extrabold">
-                {strings.linkedin.name}
+                {strings.x.name}
               </div>
-              <div className="text-sm mt-2">{strings.linkedin.username}</div>
+              <div className="text-sm mt-2">{strings.x.username}</div>
             </div>
           </div>
-          <div className="about">{strings.linkedin.connections}</div>
+          <div className="about">{strings.x.followers}</div>
         </div>
       </div>
       <div className="text">
@@ -35,7 +35,7 @@ export const LinkedInCard = (props: {}) => {
             <span></span>
             <span></span>
             <span className="bg-dark-card">
-              <TbBrandLinkedin className="text-5xl p-3 mx-auto w-full flex items-center h-full" />
+              <TbBrandX className="text-5xl p-3 mx-auto w-full flex items-center h-full" />
             </span>
           </div>
           <div className="text">LinkedIn</div>

@@ -20,7 +20,6 @@
   transform: translateX(-50%);
   padding: 10px;
   opacity: 0;
-  z-index: 1000;
   pointer-events: none;
   transition: all 0.3s;
   border-radius: 15px;
@@ -52,8 +51,8 @@
   position: relative;
 }
 .layer {
-  width: 55px;
-  height: 55px;
+  width: 70px;
+  height: 70px;
   transition: transform 0.3s;
 }
 .icon:hover .layer {
@@ -65,15 +64,9 @@
   left: 0;
   height: 100%;
   width: 100%;
-  border: 1px solid #fff;
-  border-radius: 5px;
+  border: 0.5px solid #374151;
+  border-radius: 10px;
   transition: all 0.3s;
-}
-
-.layer span,
-.text {
-  color: #1da1f2;
-  border-color: #1da1f2;
 }
 
 .icon:hover.layer span {
@@ -220,118 +213,12 @@
   }
 }
 
-/*scroll bar*/
-/* From Uiverse.io by MikeAndrewDesigner */
-.e-card {
-  margin: auto;
-  background: transparent;
-  box-shadow: 0px 8px 28px -9px rgba(0, 0, 0, 0.45);
-  position: relative;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-}
-
-.wave {
-  position: absolute;
-  width: 540px;
-  height: 700px;
-  opacity: 0.6;
-  left: 0;
-  top: 0;
-  margin-left: -50%;
-  margin-top: -50%;
-  background: linear-gradient(744deg, #af40ff, #5b42f3 60%, #00ddeb);
-}
-
-.infotop {
-  text-align: center;
-  font-size: 20px;
-  position: absolute;
-  top: 1rem;
-  left: 0;
-  right: 0;
-  color: rgb(255, 255, 255);
-  font-weight: 600;
-}
-
-.name {
-  font-size: 14px;
-  font-weight: 100;
-  position: relative;
-  top: 1em;
-  text-transform: lowercase;
-}
-
-.wave:nth-child(2),
-.wave:nth-child(3) {
-  top: 210px;
-}
-
-.playing .wave {
-  border-radius: 40%;
-  animation: wave 3000ms infinite linear;
-}
-
-.wave {
-  border-radius: 40%;
-  animation: wave 55s infinite linear;
-}
-
-.playing .wave:nth-child(2) {
-  animation-duration: 4000ms;
-}
-
-.wave:nth-child(2) {
-  animation-duration: 50s;
-}
-
-.playing .wave:nth-child(3) {
-  animation-duration: 5000ms;
-}
-
-.wave:nth-child(3) {
-  animation-duration: 45s;
-}
-
-@keyframes wave {
-  0% {
-    transform: rotate(0deg);
-  }
-
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
-/* width */
-::-webkit-scrollbar {
-  width: 7px;
-}
-
-/* Track */
-::-webkit-scrollbar-track {
-  background-color: transparent;
-  border-radius: 1px;
-}
-
-/* Handle */
-::-webkit-scrollbar-thumb {
-  background: #5b8fb9;
-  border-radius: 1px;
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: #59ce8f;
-}
-
 html,
 body,
 #root,
 .app {
   height: 100%;
-  background-color: #0d1118;
+  background-color: #090909;
   font-family: "Poppins", sans-serif;
   letter-spacing: 1px;
   scroll-behavior: smooth;
@@ -385,4 +272,158 @@ body,
   touch-action: none;
   -ms-touch-action: none;
   height: 100%;
+}
+
+/* From Uiverse.io by juanpabl0svn */
+/* The switch - the box around the slider */
+.switch {
+  font-size: 17px;
+  position: relative;
+  display: inline-block;
+  width: 3.5em;
+  height: 2em;
+  cursor: pointer;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  --background: #20262c;
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--background);
+  transition: 0.5s;
+  border-radius: 30px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 1.4em;
+  width: 1.4em;
+  border-radius: 50%;
+  left: 10%;
+  bottom: 15%;
+  box-shadow:
+    inset 8px -4px 0px 0px #ececd9,
+    -4px 1px 4px 0px #dadada;
+  background: var(--background);
+  transition: 0.5s;
+}
+
+.decoration {
+  position: absolute;
+  content: "";
+  height: 2px;
+  width: 2px;
+  border-radius: 50%;
+  right: 20%;
+  top: 15%;
+  background: #e5f041e6;
+  backdrop-filter: blur(10px);
+  transition: all 0.5s;
+  box-shadow:
+    -7px 10px 0 #e5f041e6,
+    8px 15px 0 #e5f041e6,
+    -17px 1px 0 #e5f041e6,
+    -20px 10px 0 #e5f041e6,
+    -7px 23px 0 #e5f041e6,
+    -15px 25px 0 #e5f041e6;
+}
+
+input:checked ~ .decoration {
+  transform: translateX(-20px);
+  width: 10px;
+  height: 10px;
+  background: white;
+  box-shadow:
+    -12px 0 0 white,
+    -6px 0 0 1.6px white,
+    5px 15px 0 1px white,
+    1px 17px 0 white,
+    10px 17px 0 white;
+}
+
+input:checked + .slider {
+  background-color: #5494de;
+}
+
+input:checked + .slider:before {
+  transform: translateX(100%);
+  box-shadow:
+    inset 15px -4px 0px 15px #efdf2b,
+    0 0 10px 0px #efdf2b;
+}
+
+/* From Uiverse.io by kennyotsu-monochromia */
+.Btn {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 45px;
+  height: 45px;
+  border-radius: 20px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition-duration: 0.3s;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.199);
+  background-color: var(--af-white);
+}
+
+/* plus sign */
+.sign {
+  width: 100%;
+  transition-duration: 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sign svg {
+  width: 30px;
+  height: 30px;
+}
+/* text */
+.texts {
+  position: absolute;
+  right: 0%;
+  width: 80%;
+  opacity: 0;
+  color: var(--night-rider);
+  font-size: 0.8em;
+  transition-duration: 0.2s;
+}
+/* hover effect on button width */
+.Btn:hover {
+  width: 130px;
+  border-radius: 20px;
+  transition-duration: 0.6s;
+}
+
+.Btn:hover .sign {
+  width: 30%;
+  transition-duration: 0.6s;
+  padding-left: 20px;
+}
+/* hover effect button's text */
+.Btn:hover .texts {
+  opacity: 1;
+  width: 80%;
+  transition-duration: 1.5s;
+  padding-right: 10px;
+}
+/* button click effect*/
+.Btn:active {
+  transform: translate(2px, 2px);
 }

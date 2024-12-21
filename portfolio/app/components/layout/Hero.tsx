@@ -16,7 +16,7 @@ import GotoPage from "../ui/GotoPage";
 
 const Hero = () => {
   return (
-    <main className="flex  w-9/12 h-[88vh] justify-between gap-3  mx-auto mt-20 bg-app">
+    <main className="flex bg-white dark:bg-dark-app w-9/12 h-[88vh] justify-between gap-3  mx-auto mt-20 bg-app">
       <div className="flex flex-col h-full w-9/12 gap-3  ">
         <section className="flex flex-wrap relative  gap-[2%] h-[33%] ">
           {" "}

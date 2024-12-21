@@ -217,17 +217,10 @@ html,
 body,
 #root,
 .app {
-  height: 100%;
-  background-color: #090909;
   font-family: "Poppins", sans-serif;
   letter-spacing: 1px;
   scroll-behavior: smooth;
   @apply text-white;
-}
-
-.bg-wrapper {
-  background-color: rgba(0, 0, 0, 0.3);
-  backdrop-filter: blur(2px);
 }
 
 /*back to top btn*/

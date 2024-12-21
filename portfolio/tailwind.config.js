@@ -8,6 +8,7 @@ module.exports = {
     // Or if using `src` directory:
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
+  darkMode: "selector",
   theme: {
     extend: {
       spacing: { 45: "180px", 70: "300px", 140: "608px" },
@@ -50,4 +51,5 @@ module.exports = {
     },
   },
   plugins: [],
+  darkMode: "class",
 };

@@ -34,12 +34,12 @@ const ExpOverview = () => {
             </svg>
           </div>
           <div data-child="body">
-            <span className="font-extrabold text-sm leading-none font-mono text-gray-100">
+            <span className="font-extrabold text-sm leading-none font-mono text-black dark:text-gray-100">
               Software Engineer - UI
             </span>
             <div className="mt-0" role="group">
               <p className="flex flex-row flex-nowrap items-center gap-2 text-zinc-600 dark:text-zinc-500">
-                <span className="text-sm text-gray-300 my-3 font-normal font-mono line-clamp-1">
+                <span className="text-sm text-gray-700 dark:text-gray-300 my-3 font-normal font-mono line-clamp-1">
                   Wazoku
                 </span>
               </p>
@@ -48,7 +48,7 @@ const ExpOverview = () => {
               className="relative text-sm flex flex-row items-center gap-2 w-max [text-align:inherit] "
               role="group"
             >
-              <time className="flex flex-row items-center text-xs text-gray-500 gap-2 font-mono">
+              <time className="flex flex-row items-center text-xs text-gray-400 dark:text-gray-500 gap-2 font-mono">
                 Aug 2023 - Current
               </time>
             </div>
@@ -80,12 +80,12 @@ const ExpOverview = () => {
             </svg>
           </div>
           <div data-child="body">
-            <span className="font-extrabold text-sm leading-none font-mono text-gray-100">
+            <span className="font-extrabold text-sm leading-none font-mono text-black dark:text-gray-100">
               Frontend Developer
             </span>
             <div className="mt-0" role="group">
               <p className="flex flex-row flex-nowrap items-center gap-2 text-zinc-600 dark:text-zinc-500">
-                <span className="text-sm text-gray-300 my-3 font-normal font-mono line-clamp-1">
+                <span className="text-sm text-gray-700 dark:text-gray-300 my-3 font-normal font-mono line-clamp-1">
                   Presik Smart Tech
                 </span>
               </p>
@@ -94,7 +94,7 @@ const ExpOverview = () => {
               className="relative text-sm flex flex-row items-center gap-2 w-max [text-align:inherit] "
               role="group"
             >
-              <time className="flex text-gray-500 text-xs flex-row items-center gap-2 font-mono">
+              <time className="flex text-gray-400 dark:text-gray-500 text-xs flex-row items-center gap-2 font-mono">
                 Feb 2023 - Jun 2023
               </time>
             </div>
@@ -126,12 +126,12 @@ const ExpOverview = () => {
             </svg>
           </div>
           <div data-child="body">
-            <span className="font-extrabold text-sm leading-none font-mono text-gray-100">
+            <span className="font-extrabold text-sm leading-none font-mono text-black dark:text-gray-100">
               Frontend Developer
             </span>
             <div className="mt-0" role="group">
               <p className="flex flex-row flex-nowrap items-center gap-2 text-zinc-600 dark:text-zinc-500">
-                <span className="text-sm text-gray-300 my-3 font-normal font-mono line-clamp-1">
+                <span className="text-sm text-gray-700 dark:text-gray-300 my-3 font-normal font-mono line-clamp-1">
                   peac Software
                 </span>
               </p>
@@ -140,7 +140,7 @@ const ExpOverview = () => {
               className="relative text-sm flex flex-row items-center gap-2 w-max [text-align:inherit] "
               role="group"
             >
-              <time className="flex flex-row items-center text-xs text-gray-500 gap-2 font-mono">
+              <time className="flex flex-row items-center text-xs text-gray-400 dark:text-gray-500 gap-2 font-mono">
                 Feb 2021 - Jan 2023
               </time>
             </div>

@@ -7,7 +7,7 @@ export const LinkedInCard = (props: {}) => {
   return (
     <div className="tooltip-container">
       <div className="tooltip">
-        <div className="w-64 p-3 rounded-xl bg-gray-800">
+        <div className="w-64 p-3 rounded-xl bg-white dark:bg-gray-800 border-2 border-gray-700">
           <div className="user">
             <Image
               width={50}
@@ -21,10 +21,14 @@ export const LinkedInCard = (props: {}) => {
               <div className="text-blue-500 text-xs font-extrabold">
                 {strings.linkedin.name}
               </div>
-              <div className="text-sm mt-2">{strings.linkedin.username}</div>
+              <div className="text-sm mt-2 text-black dark:text-white font-black">
+                {strings.linkedin.username}
+              </div>
             </div>
           </div>
-          <div className="about">{strings.linkedin.connections}</div>
+          <div className="text-black dark:text-gray-300 mt-2">
+            {strings.linkedin.connections}
+          </div>
         </div>
       </div>
       <div className="text">
@@ -34,11 +38,13 @@ export const LinkedInCard = (props: {}) => {
             <span></span>
             <span></span>
             <span></span>
-            <span className="bg-dark-card">
-              <TbBrandLinkedin className="text-5xl p-3 mx-auto w-full flex items-center h-full" />
+            <span className="bg-white dark:bg-dark-card">
+              <TbBrandLinkedin className="text-5xl text-black dark:text-white p-3 mx-auto w-full flex items-center h-full" />
             </span>
           </div>
-          <div className="text">LinkedIn</div>
+          <div className="text text-black dark:text-white">
+            {strings.linkedin.app}
+          </div>
         </a>
       </div>
     </div>

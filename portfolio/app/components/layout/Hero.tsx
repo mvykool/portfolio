@@ -16,12 +16,12 @@ import GotoPage from "../ui/GotoPage";
 
 const Hero = () => {
   return (
-    <main className="flex bg-white dark:bg-dark-app w-9/12 h-[88vh] justify-between gap-3  mx-auto mt-20 bg-app">
+    <main className="flex w-9/12 h-[85vh] justify-between gap-3  mx-auto bg-app">
       <div className="flex flex-col h-full w-9/12 gap-3  ">
         <section className="flex flex-wrap relative  gap-[2%] h-[33%] ">
           {" "}
           <BentoBlock size="w-[68%] h-[full]">
-            <div className="justify-center flex flex-col ml-10 text-4xl break-words items-start h-full">
+            <div className="justify-center flex flex-col ml-10 text-4xl break-words text-black dark:text-white items-start h-full">
               <p> {heroConstants.hi}</p>
               <p> {heroConstants.name}</p>
             </div>
@@ -44,12 +44,13 @@ const Hero = () => {
           <BentoBlock size="h-full w-[68%]">
             <div className="flex items-center justify-between mr-8">
               {" "}
-              <p className="text-white font-semibold p-8 mt-5 text-lg">
+              <p className=" text-black dark:text-white font-black p-8 mt-5 text-xl">
+                {" "}
                 {heroConstants.about}
               </p>
               <GotoPage />
             </div>
-            <p className="px-8 break-words text-md text-gray-400 mt-2">
+            <p className="px-8 break-words text-md text-gray-500 dark:text-gray-400 mt-2">
               {heroConstants.aboutInfo}
             </p>
           </BentoBlock>
@@ -58,7 +59,7 @@ const Hero = () => {
           {" "}
           <BentoBlock size="w-[30%]">
             <div className="flex items-center my-2 p-5 justify-between">
-              <p className="text-white font-semibold text-lg ">
+              <p className="text-black dark:text-white font-black text-xl ">
                 {heroConstants.projects}
               </p>
               <GotoPage />
@@ -67,7 +68,7 @@ const Hero = () => {
           </BentoBlock>
           <BentoBlock size="w-[33%]">
             <div className="flex items-center my-2 p-5 justify-between">
-              <p className="text-white font-semibold text-lg ">
+              <p className="text-black dark:text-white font-black text-xl ">
                 {heroConstants.skills}
               </p>
               <GotoPage />
@@ -92,7 +93,7 @@ const Hero = () => {
         <BentoBlock size="w-full h-[60%]">
           {" "}
           <div className="flex justify-between my-3 p-5 items-center">
-            <p className="text-white font-bold text-lg tracking-widest">
+            <p className="text-black dark:text-white font-black text-xl tracking-widest">
               {heroConstants.experience}
             </p>
             <GotoPage />

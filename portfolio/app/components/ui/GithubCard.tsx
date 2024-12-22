@@ -7,7 +7,7 @@ export const GithubCard = (props: {}) => {
   return (
     <div className="tooltip-container">
       <div className="tooltip">
-        <div className="w-64 p-3 rounded-xl bg-gray-800">
+        <div className="w-64 p-3 rounded-xl bg-white border-2 border-gray-700 dark:bg-gray-800">
           <div className="user">
             <Image
               width={50}
@@ -21,10 +21,14 @@ export const GithubCard = (props: {}) => {
               <div className="text-blue-500 text-xs font-extrabold">
                 {strings.github.name}
               </div>
-              <div className="text-sm mt-2">{strings.github.username}</div>
+              <div className="text-sm mt-2 font-black text-black dark:text-white">
+                {strings.github.username}
+              </div>
             </div>
           </div>
-          <div className="about">{strings.github.followers}</div>
+          <div className="text-black dark:text-gray-300 mt-2">
+            {strings.github.followers}
+          </div>
         </div>
       </div>
       <div className="text">
@@ -34,11 +38,13 @@ export const GithubCard = (props: {}) => {
             <span></span>
             <span></span>
             <span></span>
-            <span className="bg-dark-card">
-              <TbBrandGithub className="text-5xl p-3 mx-auto w-full flex items-center h-full" />
+            <span className="bg-white dark:bg-dark-card">
+              <TbBrandGithub className="text-5xl text-black dark:text-white p-3 mx-auto w-full flex items-center h-full" />
             </span>
           </div>
-          <div className="text">LinkedIn</div>
+          <div className="text text-black dark:text-white">
+            {strings.github.app}
+          </div>
         </a>
       </div>
     </div>

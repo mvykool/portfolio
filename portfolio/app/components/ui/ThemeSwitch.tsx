@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 
 export const ThemeSwitch = (props: {}) => {
-  const [theme, setTheme] = useState("light");
+  const [theme, setTheme] = useState("dark");
 
   useEffect(() => {
     // On mount, read the theme from localStorage or system preference
@@ -17,7 +17,7 @@ export const ThemeSwitch = (props: {}) => {
   }, []);
 
   const toggleTheme = () => {
-    const newTheme = theme === "dark" ? "light" : "dark";
+    const newTheme = theme === "light" ? "dark" : "light";
     setTheme(newTheme);
     document.documentElement.classList.toggle("dark");
     localStorage.setItem("theme", newTheme);
@@ -27,7 +27,7 @@ export const ThemeSwitch = (props: {}) => {
     <div className="w-full h-full flex justify-center items-center">
       <label
         htmlFor="switch"
-        className="switch rounded-3xl ring dark:bg-blue-300 ring-offset-black ring-offset-4 ring-opacity-70"
+        className="switch rounded-3xl ring ring-blue-400 dark:ring-gray-300 dark:ring-offset-black ring-offset-4 ring-opacity-70"
       >
         <input id="switch" type="checkbox" onClick={toggleTheme} />
         <span className="slider"></span>

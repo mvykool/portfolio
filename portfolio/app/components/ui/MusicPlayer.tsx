@@ -39,11 +39,11 @@ export default function MusicPlayer() {
             fill="#000"
           ></path>
         </svg>
-        <p className="text-lg flex items-center justify-end font-bold">
+        <p className="text-lg text-black dark:text-white flex items-center justify-end font-bold">
           {heroConstants.spotify.current}
         </p>
       </div>
-      <div className="flex rotate-180 justify-end mb-2 ml-7 transition-all ease-in-out">
+      <div className="flex rotate-180 justify-end mb-2 ml-7 text-black dark:text-white transition-all ease-in-out">
         <div className="relative rotate-180">
           <p className="mb-1 text-md font-bold">
             {heroConstants.spotify.fistSong.title}
@@ -66,7 +66,7 @@ export default function MusicPlayer() {
           <div className="load"></div>
         </div>
       </div>
-      <div className="flex rotate-180 justify-end ml-7 mb-2 transition-all ease-in-out">
+      <div className="flex rotate-180 text-black dark:text-white justify-end ml-7 mb-2 transition-all ease-in-out">
         <div className="relative rotate-180">
           <p className=" text-md font-bold">
             {heroConstants.spotify.secondSong.title}
@@ -82,9 +82,9 @@ export default function MusicPlayer() {
             src="/PearlJam-Ten.jpg"
           />
         </div>
-        <div className="play"></div>
+        <div className="play bg-black dark:bg-white"></div>
       </div>
-      <div className="flex rotate-180 justify-end ml-7 mt-3 transition-all ease-in-out">
+      <div className="flex rotate-180 text-black dark:text-white justify-end ml-7 mt-3 transition-all ease-in-out">
         <div className="relative rotate-180">
           <p className=" text-md font-bold">
             {heroConstants.spotify.thirdSong.title}
@@ -100,7 +100,7 @@ export default function MusicPlayer() {
             src="/OceanCover.jpeg"
           />
         </div>
-        <div className="play"></div>
+        <div className="play bg-black dark:bg-white"></div>
       </div>
     </div>
   );

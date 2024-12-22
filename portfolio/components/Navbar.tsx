@@ -57,7 +57,7 @@ const Navbar = ({ topPage, setSelectedPage, selectedPage }: Props) => {
   }
 
   return (
-    <nav className=" fixed  z-40 w-full top-0">
+    <nav className=" block top-0 h-20 relative w-full">
       <div className="flex items-center justify-between mx-auto mt-3 px-2 md:px-9">
         <Link href={`/`}>
           <Logo />

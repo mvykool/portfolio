@@ -8,7 +8,7 @@ interface BlockProps {
 const BentoBlock: React.FC<BlockProps> = ({ size, children }) => {
   return (
     <div
-      className={`bg-dark-card border-[0.5px] border-gray-700 hover:cursor-pointer transition-all ease-out duration-300 overflow-hidden rounded-xl ${size}`}
+      className={`bg-white dark:bg-dark-card border-[0.5px] border-gray-700 hover:cursor-pointer transition-all ease-out duration-300 overflow-hidden rounded-xl ${size}`}
     >
       {children}
     </div>

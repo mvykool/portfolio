@@ -38,20 +38,20 @@ export default function SkillCarousel() {
     { Icon: SiAstro, color: "text-orange-500" },
     { Icon: SiVite, color: "text-purple-300" },
     { Icon: SiTailwindcss, color: "text-cyan-300" },
-    { Icon: SiNextdotjs, color: "text-gray-300" },
+    { Icon: SiNextdotjs, color: "text-gray-400 dark:text-gray-200" },
     { Icon: SiStorybook, color: "text-pink-500" },
   ];
 
   const backendIcons = [
-    { Icon: SiLinux, color: "text-white" },
+    { Icon: SiLinux, color: "text-black dark:text-white" },
     { Icon: SiNodedotjs, color: "text-green-500" },
-    { Icon: SiExpress, color: "text-white" },
+    { Icon: SiExpress, color: "text-black dark:text-white" },
     { Icon: SiNestjs, color: "text-red" },
     { Icon: SiPostgresql, color: "text-blue-400" },
     { Icon: SiFirebase, color: "text-yellow" },
-    { Icon: SiMysql, color: "text-blue-200" },
+    { Icon: SiMysql, color: "text-blue-600 dark:text-blue-200" },
     { Icon: SiDocker, color: "text-blue-500" },
-    { Icon: SiGnubash, color: "text-white" },
+    { Icon: SiGnubash, color: "text-black dark:text-white" },
     { Icon: SiGit, color: "text-orange-600" },
   ];
 

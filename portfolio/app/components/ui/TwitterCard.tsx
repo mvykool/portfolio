@@ -7,7 +7,7 @@ export const TwitterCard = (props: {}) => {
   return (
     <div className="tooltip-container">
       <div className="tooltip">
-        <div className="w-64 p-3 rounded-xl bg-gray-800">
+        <div className="w-64 p-3 rounded-xl bg-white border-2 border-gray-700 dark:bg-gray-800">
           <div className="user">
             <Image
               width={50}
@@ -21,10 +21,14 @@ export const TwitterCard = (props: {}) => {
               <div className="text-blue-500 text-xs font-extrabold">
                 {strings.x.name}
               </div>
-              <div className="text-sm mt-2">{strings.x.username}</div>
+              <div className="text-sm mt-2 text-black dark:text-white font-black">
+                {strings.x.username}
+              </div>
             </div>
           </div>
-          <div className="about">{strings.x.followers}</div>
+          <div className="text-black dark:text-white  mt-2">
+            {strings.x.followers}
+          </div>
         </div>
       </div>
       <div className="text">
@@ -34,11 +38,11 @@ export const TwitterCard = (props: {}) => {
             <span></span>
             <span></span>
             <span></span>
-            <span className="bg-dark-card">
-              <TbBrandX className="text-5xl p-3 mx-auto w-full flex items-center h-full" />
+            <span className="bg-white dark:bg-dark-card">
+              <TbBrandX className="text-5xl text-black dark:bg-white p-3 mx-auto w-full flex items-center h-full" />
             </span>
           </div>
-          <div className="text">LinkedIn</div>
+          <div className="text text-black dark:text-white">{strings.x.app}</div>
         </a>
       </div>
     </div>

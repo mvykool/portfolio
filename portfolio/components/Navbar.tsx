@@ -66,7 +66,7 @@ const Navbar = ({ topPage, setSelectedPage, selectedPage }: Props) => {
         {/** desktop view */}
 
         {isAboveSmallScreens ? (
-          <div className="flex text-dark-app bg-gray-200 px-5 py-3 rounded-lg justify-between gap-10 font-opensans font-semibold">
+          <div className="flex text-dark-app bg-white border-[0.5px] border-gray-700 dark:bg-gray-200 px-5 py-3 rounded-lg justify-between gap-10 font-opensans font-semibold">
             <Links
               page="Contact"
               selectedPage={selectedPage}

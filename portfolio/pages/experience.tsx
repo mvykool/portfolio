@@ -28,7 +28,7 @@ const Experience = () => {
           >
             <div className="flex justify-center space-x-4 mx-auto">
               <p className="text-4xl text-app-green font-playfair z-10 text-center md:text-start">
-                Exper<span className="text-white">ience</span>
+                Exper<span className="text-black dark:text-white">ience</span>
               </p>
             </div>
           </motion.div>

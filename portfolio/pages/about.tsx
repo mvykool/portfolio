@@ -4,13 +4,15 @@ import React from "react";
 import useMediaQuery from "../hooks/useMediaQuery";
 import { motion } from "framer-motion";
 import Image from "next/image";
+import GoPreviousPage from "@/app/components/ui/GoPreviouspage";
 
 const About = () => {
   const isAboveLarge = useMediaQuery("(min-width: 1060px)");
 
   return (
-    <div className="w-4/6 md:w-3/6 mx-auto mt-2 md:mt-0 h-screen">
-      <section className="bg-white dark:bg-dark-app md:flex md:justify-between md:items-center md:w-full md:h-full gap-8 pb-5">
+    <div className="w-4/6 md:w-3/6 mx-auto mt-2 md:mt-0">
+      <GoPreviousPage />
+      <section className="bg-white dark:bg-dark-app md:flex md:justify-between md:items-start md:w-full md:h-auto gap-8 md:mt-28">
         {/* IMAGE SECTION */}
         <div className="basis-3/5 z-10 mt-5 flex justify-center md:order-2">
           {isAboveLarge ? (

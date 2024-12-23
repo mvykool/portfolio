@@ -6,7 +6,12 @@ import Image from "next/image";
 export const TwitterCard = (props: {}) => {
   return (
     <div className="tooltip-container">
-      <div className="tooltip">
+      <a
+        href={`${strings.x.link}`}
+        target="_blank"
+        rel="noreferrer"
+        className="tooltip"
+      >
         <div className="w-64 p-3 rounded-xl bg-white dark:bg-gray-800 border-2 border-gray-700">
           <div className="user">
             <Image
@@ -30,9 +35,9 @@ export const TwitterCard = (props: {}) => {
             {strings.x.followers}
           </div>
         </div>
-      </div>
+      </a>
       <div className="text">
-        <a className="icon" href="https://freecodez.com/">
+        <div className="icon">
           <div className="layer">
             <span></span>
             <span></span>
@@ -43,7 +48,7 @@ export const TwitterCard = (props: {}) => {
             </span>
           </div>
           <div className="text text-black dark:text-white">{strings.x.app}</div>
-        </a>
+        </div>
       </div>
     </div>
   );

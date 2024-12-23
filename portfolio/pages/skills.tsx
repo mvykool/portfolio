@@ -1,3 +1,5 @@
+"use client";
+
 import useMediaQuery from "../hooks/useMediaQuery";
 import { motion } from "framer-motion";
 import {
@@ -27,12 +29,15 @@ import {
   SiPostman,
   SiGnubash,
 } from "react-icons/si";
+import GoPreviousPage from "@/app/components/ui/GoPreviouspage";
 
 const MySkills = () => {
   const isAboveLarge = useMediaQuery("(min-width: 1060px)");
 
   return (
     <div className="w-6/6 md:w-3/6 pt-20 md:pt-0  mx-auto mt-5 md:mt-0">
+      <GoPreviousPage />
+
       <section id="skills" className="pt-5 pb-5 px-5 md:px-0">
         {/* HEADER AND IMAGE SECTION */}
         <div>

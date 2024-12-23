@@ -1,14 +1,18 @@
+"use client";
+
 import React from "react";
 import useMediaQuery from "../hooks/useMediaQuery";
 import { motion } from "framer-motion";
 import { FaLink } from "react-icons/fa";
 import { TbMapPin } from "react-icons/tb";
+import GoPreviousPage from "@/app/components/ui/GoPreviouspage";
 
 const Experience = () => {
   const isAboveLarge = useMediaQuery("(min-width: 1060px)");
 
   return (
     <div className="w-3/6 mx-auto">
+      <GoPreviousPage />
       <section className="md:flex md:justify-center md:items-center md:h-full gap-8 py-5">
         <div className="z-30 basis-2/5 md:ml-10 mt-12 md:mt-5">
           {/* HEADINGS */}

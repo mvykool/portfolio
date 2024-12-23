@@ -37,7 +37,7 @@ const Hero = () => {
               width={800}
               height={800}
               alt="profile"
-              className="hover:filter object-cover w-full h-full hover:saturate-150 transition duration-500"
+              className=" object-cover w-full h-full transition duration-500"
               src="/profile.png"
             />
           </BentoBlock>
@@ -48,7 +48,7 @@ const Hero = () => {
                 {" "}
                 {heroConstants.about}
               </p>
-              <GotoPage />
+              <GotoPage link={heroConstants.links.about} />
             </div>
             <p className="px-8 break-words text-md text-gray-500 dark:text-gray-400 mt-2">
               {heroConstants.aboutInfo}
@@ -62,7 +62,7 @@ const Hero = () => {
               <p className="text-black dark:text-white font-black text-xl ">
                 {heroConstants.projects}
               </p>
-              <GotoPage />
+              <GotoPage link={heroConstants.links.projects} />
             </div>
             <ProjectCard />
           </BentoBlock>
@@ -71,7 +71,7 @@ const Hero = () => {
               <p className="text-black dark:text-white font-black text-xl ">
                 {heroConstants.skills}
               </p>
-              <GotoPage />
+              <GotoPage link={heroConstants.links.skills} />
             </div>
 
             <SkillRadio />
@@ -96,7 +96,7 @@ const Hero = () => {
             <p className="text-black dark:text-white font-black text-xl tracking-widest">
               {heroConstants.experience}
             </p>
-            <GotoPage />
+            <GotoPage link={heroConstants.links.experience} />
           </div>
           <ExpOverview />
         </BentoBlock>

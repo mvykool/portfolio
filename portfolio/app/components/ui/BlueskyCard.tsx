@@ -26,8 +26,11 @@ export const BlueskyCard = (props: {}) => {
               </div>
             </div>
           </div>
-          <div className="text-black dark:text-white mt-2">
+          <div className="text-black dark:text-white mt-2 flex gap-2 items-center">
             {strings.bluesky.followers}
+            <span className="bg-app-green bg-opacity-30 px-2  rounded-xl text-app-green">
+              {strings.bluesky.new}
+            </span>
           </div>
         </div>
       </div>

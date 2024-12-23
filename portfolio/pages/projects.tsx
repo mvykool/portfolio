@@ -1,7 +1,10 @@
+"use client";
+
 import { motion } from "framer-motion";
 import { HiOutlineExternalLink } from "react-icons/hi";
 import { TbBrandGithub } from "react-icons/tb";
 import Image from "next/image";
+import GoPreviousPage from "@/app/components/ui/GoPreviouspage";
 
 const container = {
   hidden: {},
@@ -19,7 +22,9 @@ const Projects = () => {
   const titleEnd: string = "</projects>";
 
   return (
-    <>
+    <div className="w-6/6 md:w-3/6 pt-20 md:pt-0  mx-auto mt-5 md:mt-0">
+      <GoPreviousPage />
+
       <section id="projects" className="py-5 mx-7">
         {/* HEADINGS */}
         <motion.div
@@ -335,7 +340,7 @@ const Projects = () => {
           </motion.div>
         </div>
       </section>
-    </>
+    </div>
   );
 };
 

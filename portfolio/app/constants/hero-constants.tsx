@@ -8,6 +8,16 @@ export const heroConstants = {
   projects: "Projects",
   skills: "Skills",
   contact: "Contact",
+  links: {
+    about: "about",
+    aboutText: "About me",
+    projects: "projects",
+    projectsText: "Personal projects",
+    experience: "experience",
+    experieceText: "Professional experience",
+    skills: "skills",
+    skillsText: "Skill set",
+  },
   spotify: {
     current: "Currently Playing",
     fistSong: {

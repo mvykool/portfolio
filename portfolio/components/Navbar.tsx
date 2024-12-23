@@ -5,6 +5,7 @@ import { TiThMenu, TiTimes } from "react-icons/ti";
 import { motion } from "framer-motion";
 
 import Link from "next/link";
+import { Logo } from "@/app/components/ui/Logo";
 
 /**framer motion variants */
 
@@ -28,7 +29,7 @@ const Links = ({ page, selectedPage, setSelectedPage }: Props) => {
 
   return (
     <AnchorLink
-      className={`${selectedPage === lowerCasePage ? "text-menu-green" : ""} hover:text-menu-green transition duration-150  md:text-xs `}
+      className={`${selectedPage === lowerCasePage ? "text-dark-app" : ""} hover:text-dark-app transition duration-150  md:text-md `}
       href={`#${lowerCasePage}`}
       onClick={() => setSelectedPage(lowerCasePage)}
     >
@@ -56,50 +57,16 @@ const Navbar = ({ topPage, setSelectedPage, selectedPage }: Props) => {
   }
 
   return (
-    <nav className="bg-app-gray fixed  z-40 w-full top-0">
-      <div className="flex items-center justify-between mx-auto px-2 md:px-9">
+    <nav className=" block top-0 h-20 relative w-full">
+      <div className="flex items-center justify-between mx-auto mt-3 px-2 md:px-9">
         <Link href={`/`}>
-          <img
-            src="/logo.png"
-            alt="logo"
-            className="h-14 object-cover md:h-16 md:w-16 w-14 p-1"
-          />
+          <Logo />
         </Link>
 
         {/** desktop view */}
 
         {isAboveSmallScreens ? (
-          <div className="flex text-app-blue justify-between gap-10 font-opensans font-semibold">
-            <Links
-              page="Home"
-              selectedPage={selectedPage}
-              setSelectedPage={setSelectedPage}
-              topPage={undefined}
-            />
-            <Links
-              page="About"
-              selectedPage={selectedPage}
-              setSelectedPage={setSelectedPage}
-              topPage={undefined}
-            />
-            <Links
-              page="Experience"
-              selectedPage={selectedPage}
-              setSelectedPage={setSelectedPage}
-              topPage={undefined}
-            />
-            <Links
-              page="Skills"
-              selectedPage={selectedPage}
-              setSelectedPage={setSelectedPage}
-              topPage={undefined}
-            />
-            <Links
-              page="Projects"
-              selectedPage={selectedPage}
-              setSelectedPage={setSelectedPage}
-              topPage={undefined}
-            />
+          <div className="flex text-dark-app bg-white border-[0.5px] border-gray-700 dark:bg-gray-200 px-5 py-3 rounded-lg justify-between gap-10 font-opensans font-semibold">
             <Links
               page="Contact"
               selectedPage={selectedPage}
@@ -218,4 +185,3 @@ const Navbar = ({ topPage, setSelectedPage, selectedPage }: Props) => {
 };
 
 export default Navbar;
-

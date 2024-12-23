@@ -1,3 +1,4 @@
+import Hero from "@/app/components/layout/Hero";
 import Head from "next/head";
 import { useState } from "react";
 // import LineGradient from "@/app/components/LineGradient";
@@ -15,6 +16,7 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/logo.png" />
       </Head>
+      <Hero />
     </main>
   );
 }

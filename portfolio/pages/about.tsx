@@ -1,18 +1,18 @@
+"use client";
+
 import React from "react";
 import useMediaQuery from "../hooks/useMediaQuery";
 import { motion } from "framer-motion";
 import Image from "next/image";
+import GoPreviousPage from "@/app/components/ui/GoPreviouspage";
 
-interface Props {
-  setSelectedPage: any;
-}
-
-const About = ({ setSelectedPage }: Props) => {
+const About = () => {
   const isAboveLarge = useMediaQuery("(min-width: 1060px)");
 
   return (
-    <>
-      <section className="md:flex md:justify-between md:items-center md:h-full gap-8 py-5">
+    <div className="w-4/6 md:w-3/6 mx-auto mt-2 md:mt-0">
+      <GoPreviousPage />
+      <section className="bg-white dark:bg-dark-app md:flex md:justify-between md:items-start md:w-full md:h-auto gap-8 md:mt-28">
         {/* IMAGE SECTION */}
         <div className="basis-3/5 z-10 mt-5 flex justify-center md:order-2">
           {isAboveLarge ? (
@@ -39,7 +39,7 @@ const About = ({ setSelectedPage }: Props) => {
           )}
         </div>
 
-        <div className="z-30 basis-2/5 md:ml-10 mt-12 md:mt-5">
+        <div className="z-30 basis-2/5 md:ml-10 mt-12 md:mt-0">
           {/* HEADINGS */}
           <motion.div
             initial="hidden"
@@ -52,7 +52,7 @@ const About = ({ setSelectedPage }: Props) => {
             }}
           >
             <div className="flex justify-center md:justify-start space-x-4 mx-auto">
-              <p className="text-4xl font-playfair z-10 text-center md:text-start">
+              <p className="text-4xl text-black dark:text-white font-playfair z-10 text-center md:text-start">
                 About
               </p>
               <p className="text-4xl font-playfair z-10 text-center md:text-start text-app-green">
@@ -60,12 +60,12 @@ const About = ({ setSelectedPage }: Props) => {
               </p>
             </div>
 
-            <p className="mt-10 mb-2 text-sm md:text-sm text-center md:text-start">
+            <p className="mt-10 mb-2  text-black dark:text-white text-sm md:text-sm text-center md:text-start">
               Hi there! I&apos;m Maicol, and I&apos;m a highly driven, and
               focused web developer, I enjoy crafting stunning UIs and creates
               cool programs that make the digital world come alive.
             </p>
-            <p className="mt-5 mb-7 text-sm md:text-sm text-center md:text-start">
+            <p className="mt-5 mb-7 text-sm md:text-sm  text-black dark:text-white text-center md:text-start">
               I blend artistry and technology to design immersive user
               experiences that leave a lasting impression. I like to explore new
               design trends, fueling my creativity and learning all kinds of
@@ -74,9 +74,8 @@ const About = ({ setSelectedPage }: Props) => {
           </motion.div>
         </div>
       </section>
-    </>
+    </div>
   );
 };
 
 export default About;
-

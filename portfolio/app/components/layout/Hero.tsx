@@ -2,31 +2,32 @@ import React from "react";
 import BentoBlock from "../ui/BentoBlock";
 import Image from "next/image";
 import { heroConstants } from "@/app/constants/hero-constants";
-import {
-  TbBrandGithub,
-  TbBrandGmail,
-  TbBrandLinkedin,
-  TbBrandTwitter,
-} from "react-icons/tb";
 import SkillRadio from "../ui/SkillsRadio";
 import ExpOverview from "../ui/ExpOverview";
 import MusicPlayer from "../ui/MusicPlayer";
 import { LinkedInCard } from "../ui/LinkedInCard";
+import { TwitterCard } from "../ui/TwitterCard";
+import { GithubCard } from "../ui/GithubCard";
+import { BlueskyCard } from "../ui/BlueskyCard";
+import { ProjectCard } from "../ui/ProjectCard";
+import { ThemeSwitch } from "../ui/ThemeSwitch";
+import { CodingTracker } from "../ui/CodingTracker";
+import GotoPage from "../ui/GotoPage";
 
 const Hero = () => {
   return (
-    <main className="flex  w-9/12 h-[88vh] justify-between gap-3  mx-auto mt-20 bg-black">
+    <main className="flex w-9/12 h-[85vh] justify-between gap-3  mx-auto bg-app">
       <div className="flex flex-col h-full w-9/12 gap-3  ">
         <section className="flex flex-wrap relative  gap-[2%] h-[33%] ">
           {" "}
           <BentoBlock size="w-[68%] h-[full]">
-            <div className="justify-center flex flex-col ml-10 text-4xl break-words items-start h-full">
+            <div className="justify-center flex flex-col ml-10 text-4xl break-words text-black dark:text-white items-start h-full">
               <p> {heroConstants.hi}</p>
               <p> {heroConstants.name}</p>
             </div>
           </BentoBlock>
           <BentoBlock size="w-[30%] h-full">
-            <div>s</div>
+            <ThemeSwitch />
           </BentoBlock>
         </section>
         <section className="flex  relative gap-[2%] h-[33%] mx-auto flex-wrap w-full  flex-w ">
@@ -36,13 +37,20 @@ const Hero = () => {
               width={800}
               height={800}
               alt="profile"
-              className="hover:filter hover:saturate-150 transition duration-500"
+              className=" object-cover w-full h-full transition duration-500"
               src="/profile.png"
             />
           </BentoBlock>
           <BentoBlock size="h-full w-[68%]">
-            <p className="text-menu-green p-8 mt-5">{heroConstants.about}</p>
-            <p className="px-8 break-words text-lg mt-2">
+            <div className="flex items-center justify-between mr-8">
+              {" "}
+              <p className=" text-black dark:text-white font-black p-8 mt-5 text-xl">
+                {" "}
+                {heroConstants.about}
+              </p>
+              <GotoPage link={heroConstants.links.about} />
+            </div>
+            <p className="px-8 break-words text-md text-gray-500 dark:text-gray-400 mt-2">
               {heroConstants.aboutInfo}
             </p>
           </BentoBlock>
@@ -50,10 +58,22 @@ const Hero = () => {
         <section className="flex w-full gap-[2%] relative flex-w h-[33%] ">
           {" "}
           <BentoBlock size="w-[30%]">
-            <p className="text-menu-green p-8 mt-5">{heroConstants.projects}</p>
+            <div className="flex items-center my-2 p-5 justify-between">
+              <p className="text-black dark:text-white font-black text-xl ">
+                {heroConstants.projects}
+              </p>
+              <GotoPage link={heroConstants.links.projects} />
+            </div>
+            <ProjectCard />
           </BentoBlock>
           <BentoBlock size="w-[33%]">
-            <p className="text-menu-green p-8 mt-5">{heroConstants.skills}</p>
+            <div className="flex items-center my-2 p-5 justify-between">
+              <p className="text-black dark:text-white font-black text-xl ">
+                {heroConstants.skills}
+              </p>
+              <GotoPage link={heroConstants.links.skills} />
+            </div>
+
             <SkillRadio />
           </BentoBlock>
           <BentoBlock size="w-[33%]">
@@ -63,25 +83,21 @@ const Hero = () => {
       </div>
       <section className="flex flex-wrap h-full gap-2 w-3/12  ">
         {" "}
-        <div className="h-[38%] flex gap-[2%] flex-wrap">
-          <BentoBlock size="w-[48%] h-[48%] p-12">
-            {" "}
-            <TbBrandGithub className="text-5xl w-full mx-auto flex items-center h-full" />
-          </BentoBlock>
-          <BentoBlock size="w-[48%] h-[48%] p-12">
-            <LinkedInCard />
-          </BentoBlock>
-          <BentoBlock size="w-[48%] h-[48%] p-12">
-            <TbBrandTwitter className="text-5xl mx-auto w-full flex items-center h-full" />
-          </BentoBlock>
-          <BentoBlock size="w-[48%] h-[48%] p-12">
-            {" "}
-            <TbBrandGmail className="text-2xl mx-auto flex w-full items-center h-full" />
-          </BentoBlock>
-        </div>
+        <BentoBlock size="w-full h-[28%]">
+          <CodingTracker />
+        </BentoBlock>
+        <GithubCard />
+        <LinkedInCard />
+        <BlueskyCard />
+        <TwitterCard />
         <BentoBlock size="w-full h-[60%]">
           {" "}
-          <p className="text-menu-green p-8 mt-5">{heroConstants.experience}</p>
+          <div className="flex justify-between my-3 p-5 items-center">
+            <p className="text-black dark:text-white font-black text-xl tracking-widest">
+              {heroConstants.experience}
+            </p>
+            <GotoPage link={heroConstants.links.experience} />
+          </div>
           <ExpOverview />
         </BentoBlock>
       </section>

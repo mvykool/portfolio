@@ -48,7 +48,7 @@ const Contact = () => {
   }, 4000);
 
   return (
-    <>
+    <div className="w-6/6 md:w-3/6 pt-20 md:pt-0  mx-auto mt-5 md:mt-0">
       <section
         id="contact"
         className="contact pt-5 w-full overflow-hidden px-5 md:px-0"
@@ -140,9 +140,8 @@ const Contact = () => {
           </motion.div>
         </div>
       </section>
-    </>
+    </div>
   );
 };
 
 export default Contact;
-

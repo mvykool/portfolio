@@ -4,15 +4,11 @@ import { motion } from "framer-motion";
 import { FaLink } from "react-icons/fa";
 import { TbMapPin } from "react-icons/tb";
 
-interface Props {
-  setSelectedPage: any;
-}
-
-const Experience = ({ setSelectedPage }: Props) => {
+const Experience = () => {
   const isAboveLarge = useMediaQuery("(min-width: 1060px)");
 
   return (
-    <>
+    <div className="w-3/6 mx-auto">
       <section className="md:flex md:justify-center md:items-center md:h-full gap-8 py-5">
         <div className="z-30 basis-2/5 md:ml-10 mt-12 md:mt-5">
           {/* HEADINGS */}
@@ -355,9 +351,8 @@ const Experience = ({ setSelectedPage }: Props) => {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 
 export default Experience;
-

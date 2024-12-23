@@ -3,19 +3,6 @@ import React, { useEffect, useState } from "react";
 export const ThemeSwitch = (props: {}) => {
   const [theme, setTheme] = useState("dark");
 
-  useEffect(() => {
-    // On mount, read the theme from localStorage or system preference
-    const savedTheme = localStorage.getItem("theme");
-    const systemTheme = window.matchMedia("(prefers-color-scheme: dark)")
-      .matches
-      ? "dark"
-      : "light";
-    const initialTheme = savedTheme || systemTheme;
-
-    setTheme(initialTheme);
-    document.documentElement.classList.toggle("dark", initialTheme === "dark");
-  }, []);
-
   const toggleTheme = () => {
     const newTheme = theme === "light" ? "dark" : "light";
     setTheme(newTheme);

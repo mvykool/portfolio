@@ -7,7 +7,7 @@ export const TwitterCard = (props: {}) => {
   return (
     <div className="tooltip-container">
       <div className="tooltip">
-        <div className="w-64 p-3 rounded-xl bg-white border-2 border-gray-700 dark:bg-gray-800">
+        <div className="w-64 p-3 rounded-xl bg-white dark:bg-gray-800 border-2 border-gray-700">
           <div className="user">
             <Image
               width={50}
@@ -39,7 +39,7 @@ export const TwitterCard = (props: {}) => {
             <span></span>
             <span></span>
             <span className="bg-white dark:bg-dark-card">
-              <TbBrandX className="text-5xl text-black dark:bg-white p-3 mx-auto w-full flex items-center h-full" />
+              <TbBrandX className="text-5xl text-black dark:text-white p-3 mx-auto w-full flex items-center h-full" />
             </span>
           </div>
           <div className="text text-black dark:text-white">{strings.x.app}</div>

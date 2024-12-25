@@ -120,31 +120,6 @@ export default function SkillCarousel() {
           </div>
         </div>
       </div>
-
-      <style jsx>{`
-        .animate-scroll-left {
-          animation: scrollLeft 20s linear infinite;
-        }
-        .animate-scroll-right {
-          animation: scrollRight 20s linear infinite;
-        }
-        @keyframes scrollLeft {
-          0% {
-            transform: translateX(0);
-          }
-          100% {
-            transform: translateX(-100%);
-          }
-        }
-        @keyframes scrollRight {
-          0% {
-            transform: translateX(-100%);
-          }
-          100% {
-            transform: translateX(0);
-          }
-        }
-      `}</style>
     </div>
   );
 }

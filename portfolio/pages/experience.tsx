@@ -49,7 +49,7 @@ const Experience = () => {
                 hidden: { opacity: 0, x: -50 },
                 visible: { opacity: 1, x: 0 },
               }}
-              className="bg-app-gray rounded-sm p-4 h-auto md:h-auto relative"
+              className="bg-white dark:bg-dark-card rounded-sm p-4 h-auto md:h-auto relative"
             >
               <h3 className="text-xl mb-2 ml-2">
                 Waz<span className="text-app-green">oku</span>
@@ -185,7 +185,7 @@ const Experience = () => {
                 hidden: { opacity: 0, x: 50 },
                 visible: { opacity: 1, x: 0 },
               }}
-              className="bg-app-gray rounded-sm p-4 h-auto relative"
+              className="bg-white dark:bg-dark-card rounded-sm p-4 h-auto relative"
             >
               <h2 className="text-2xl mb-2 text-app-green ml-2">
                 Pres<span className="text-white">ik SAS</span>

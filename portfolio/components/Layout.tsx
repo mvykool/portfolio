@@ -55,7 +55,7 @@ const Layout = ({ children }: Props) => {
       />
 
       <div>
-        <main className="w-4/6 md:w-full mx-auto mt-2 md:mt-0 h-auto">
+        <main className="w-10/12 md:w-full mx-auto mt-2 md:mt-0 h-auto">
           {children}
         </main>
       </div>

@@ -16,11 +16,11 @@ import GotoPage from "../ui/GotoPage";
 
 const Hero = () => {
   return (
-    <main className="flex w-9/12 h-[85vh] justify-between gap-3  mx-auto bg-app">
-      <div className="flex flex-col h-full w-9/12 gap-3  ">
+    <main className="flex flex-col md:flex-row w-full md:w-9/12 h-[85vh] justify-between gap-3  mx-auto bg-app">
+      <div className="flex flex-col h-full w-full md:w-9/12 gap-3  ">
         <section className="flex flex-wrap relative  gap-[2%] h-[33%] ">
           {" "}
-          <BentoBlock size="w-[68%] h-[full]">
+          <BentoBlock size="w-full md:w-[68%] h-[full]">
             <div className="justify-center flex flex-col ml-10 text-4xl break-words text-black dark:text-white items-start h-full">
               <p> {heroConstants.hi}</p>
               <p> {heroConstants.name}</p>

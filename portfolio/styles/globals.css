@@ -4,7 +4,6 @@
 @tailwind components;
 @tailwind utilities;
 
-/* From Uiverse.io by vikas7754 */
 .tooltip-container {
   position: relative;
   cursor: pointer;
@@ -344,7 +343,6 @@ input:checked + .slider:before {
     0 0 10px 0px #efdf2b;
 }
 
-/* From Uiverse.io by kennyotsu-monochromia */
 .Btn {
   display: flex;
   align-items: center;
@@ -355,7 +353,7 @@ input:checked + .slider:before {
   cursor: pointer;
   position: relative;
   overflow: hidden;
-  transition-duration: 0.3s;
+  transition-duration: 0.2s;
   background-color: var(--af-white);
 }
 

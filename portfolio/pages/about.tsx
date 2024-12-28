@@ -69,7 +69,7 @@ const About = () => {
               I blend artistry and technology to design immersive user
               experiences that leave a lasting impression. I like to explore new
               design trends, fueling my creativity and learning all kinds of
-              crazy new stuff.
+              crazy new stuff
             </p>
           </motion.div>
         </div>

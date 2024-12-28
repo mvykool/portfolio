@@ -260,7 +260,7 @@ const Experience = () => {
                 hidden: { opacity: 0, x: -50 },
                 visible: { opacity: 1, x: 0 },
               }}
-              className="bg-app-gray rounded-sm p-4 h-auto md:h-auto relative"
+              className="bg-white dark:bg-dark-app rounded-sm p-4 h-auto md:h-auto relative"
             >
               <h3 className="text-xl mb-2 ml-2">
                 Peac Soft<span className="text-app-green">ware SA</span>

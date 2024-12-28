@@ -4,7 +4,7 @@ export const strings = [
   { type: "lua", name: "Lua", color: "#000080" },
   { type: "sh", name: "sh", color: "#787878" },
   { type: "css", name: "CSS", color: "#461aa3" },
-  { type: "yaml", name: "YAML", color: "#c94b10" },
-  { type: "nix", name: "Nix", color: "#82A597" },
+  { type: "yaml", name: "YAML", color: "#CA181D" },
+  { type: "nix", name: "Nix", color: "#7E7EFF" },
   { type: "typescriptreact", name: "TSX", color: "#4d8ddb" },
 ];

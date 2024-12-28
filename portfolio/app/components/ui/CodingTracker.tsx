@@ -3,6 +3,7 @@ import React from "react";
 import { SiNeovim } from "react-icons/si";
 import { strings } from "@/app/constants/coding-tracker";
 import { excludeFileTypes } from "@/app/constants/coding-tracker-filter";
+import Loader from "@/components/Loader";
 
 export const CodingTracker = (props: {}) => {
   const { data, loading, error } = useFetch(
@@ -35,7 +36,11 @@ export const CodingTracker = (props: {}) => {
   };
 
   if (loading) {
-    return <div>Loading...</div>;
+    return (
+      <div className="flex justify-center items-center h-full">
+        <Loader />
+      </div>
+    );
   }
 
   if (error) {
@@ -46,12 +51,12 @@ export const CodingTracker = (props: {}) => {
 
   return (
     <>
-      <div className="flex mt-8 mb-2 items-center">
+      <div className="flex mt-7 mb-3 items-center">
         <SiNeovim className="text-green-500 text-4xl ml-10" />
         <div>
           <div className="flex flex-col ml-3">
-            <span className="text-green-500">Coding Session:</span>
-            <span className="text-green-500">
+            <span className="text-green-600 text-sm">Coding Session:</span>
+            <span className="text-green-600 text-sm">
               {data?.total_duration
                 ? formatDuration(data?.total_duration)
                 : "No session duration recorded"}
@@ -82,7 +87,7 @@ export const CodingTracker = (props: {}) => {
                   className="rounded-lg px-2"
                 >
                   <span>{fileName}</span>:{" "}
-                  <span className="text-sm"> {formattedDuration}</span>
+                  <span className="text-xs"> {formattedDuration}</span>
                 </li>
               );
             })

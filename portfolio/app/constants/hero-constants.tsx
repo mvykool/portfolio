@@ -4,7 +4,7 @@ export const heroConstants = {
   about: "About",
   gobackBtn: "Go back",
   aboutInfo:
-    "I'm a highly driven, and focused Software Developer, I enjoy crafting stunning UIs and creates cool programs that make the digital world come alive.",
+    "I'm a highly driven, and focused Software Developer, I enjoy crafting stunning UIs and creates cool things.",
   experience: "Experience",
   projects: "Projects",
   skills: "Skills",

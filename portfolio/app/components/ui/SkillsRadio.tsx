@@ -56,11 +56,11 @@ export default function SkillCarousel() {
             {Icons.map(({ Icon, color }, index) => (
               <div
                 key={`front-1-${index}`}
-                className="flex-shrink-0 mx-3 my-1"
+                className="flex-shrink-0 mx-2 md:mx-3 my-1"
                 style={{ width: "32px" }}
               >
                 <Icon
-                  className={`${color} h-7 w-7 md:h-5 md:w-5 transition-transform hover:scale-110`}
+                  className={`${color} h-6 md:h-5 md:w-5 transition-transform hover:scale-110`}
                 />
               </div>
             ))}

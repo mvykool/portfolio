@@ -39,13 +39,13 @@ export default function MusicPlayer() {
             fill="#000"
           ></path>
         </svg>
-        <p className="text-lg text-black dark:text-white flex items-center justify-end font-bold">
+        <p className="text-sm md:text-lg text-black dark:text-white flex items-center justify-end font-bold">
           {heroConstants.spotify.current}
         </p>
       </div>
-      <div className="flex rotate-180 justify-end mb-2 ml-7 text-black dark:text-white transition-all ease-in-out">
+      <div className="flex rotate-180 justify-end mb-4 mt-2 md:mt-0 md:mb-2 ml-4 md:ml-7 text-black dark:text-white transition-all ease-in-out">
         <div className="relative rotate-180">
-          <p className="mb-1 text-md font-bold">
+          <p className=" text-sm md:text-md font-bold">
             {heroConstants.spotify.fistSong.title}
           </p>
           <p className="text-xs">{heroConstants.spotify.fistSong.artist}</p>
@@ -66,9 +66,9 @@ export default function MusicPlayer() {
           <div className="load"></div>
         </div>
       </div>
-      <div className="flex rotate-180 text-black dark:text-white justify-end ml-7 mb-2 transition-all ease-in-out">
+      <div className="flex rotate-180 justify-end mb-1 mt-5 md:mt-0 md:mb-2 ml-4 md:ml-7 text-black dark:text-white transition-all ease-in-out">
         <div className="relative rotate-180">
-          <p className=" text-md font-bold">
+          <p className="text-sm md:text-md font-bold">
             {heroConstants.spotify.secondSong.title}
           </p>
           <p className="text-xs">{heroConstants.spotify.secondSong.artist}</p>
@@ -84,7 +84,7 @@ export default function MusicPlayer() {
         </div>
         <div className="play bg-black dark:bg-white"></div>
       </div>
-      <div className="flex rotate-180 text-black dark:text-white justify-end ml-7 mt-3 transition-all ease-in-out">
+      <div className="hidden md:flex rotate-180 text-black dark:text-white justify-end ml-7 mt-3 transition-all ease-in-out">
         <div className="relative rotate-180">
           <p className=" text-md font-bold">
             {heroConstants.spotify.thirdSong.title}

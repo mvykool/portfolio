@@ -1,51 +1,62 @@
-import { useState, useEffect } from "react";
+import useSWR from "swr";
 
-const useFetch = (url: string, excludeFileTypes: any = []) => {
-  const [data, setData] = useState<any>(null);
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState(null);
+interface FileType {
+  type: string;
+  duration: number;
+}
 
-  // Helper function to convert seconds to hours and minutes
-  const convertDuration = (seconds: number) => {
-    const hours = Math.floor(seconds / 3600);
-    const minutes = Math.floor((seconds % 3600) / 60);
-    return { hours, minutes };
-  };
+interface DailyData {
+  _id: string;
+  file_types: FileType[];
+  total_duration: number;
+}
 
-  useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const response = await fetch(url);
-        if (!response.ok) {
-          throw new Error("Failed to fetch data");
-        }
-        const result = await response.json();
+const fetcher = async (
+  url: string,
+  excludeTypes: string[],
+): Promise<DailyData | null> => {
+  try {
+    const res = await fetch(url);
+    if (!res.ok) throw new Error("Failed to fetch data");
 
-        // Extract the first entry
-        const firstEntry = result[0];
-        // Filter out the file types you don't want
+    const data: DailyData[] = await res.json();
 
-        const filteredFileTypes = firstEntry.file_types.filter(
-          (file: any) => !excludeFileTypes.includes(file.type),
-        );
+    // Get the most recent day's data (first item in array)
+    if (!data || !Array.isArray(data) || data.length === 0) {
+      console.error("No data available");
+      return null;
+    }
 
-        // Convert total duration
+    const todayData = data[0];
 
-        setData({
-          ...firstEntry,
-          file_types: filteredFileTypes,
-        });
-      } catch (err: any) {
-        setError(err.message);
-      } finally {
-        setLoading(false);
-      }
+    // Filter out excluded file types
+    return {
+      ...todayData,
+      file_types: todayData.file_types.filter(
+        (file) => !excludeTypes.includes(file.type),
+      ),
     };
-
-    fetchData();
-  }, [url]); // Re-fetch when the URL or excludeFileTypes changes
-
-  return { data, loading, error };
+  } catch (error) {
+    console.error("Fetch error:", error);
+    throw error;
+  }
 };
 
-export default useFetch;
+export const useCodingTracker = (url: string, excludeTypes: string[]) => {
+  const { data, error, isLoading } = useSWR(
+    url ? [url, excludeTypes] : null,
+    () => fetcher(url, excludeTypes),
+    {
+      revalidateOnFocus: false,
+      revalidateOnReconnect: false,
+      refreshInterval: 300000, // Refresh every 5 minutes
+      dedupingInterval: 300000, // Dedupe requests within 5 minutes
+    },
+  );
+
+  return {
+    data: data || { _id: "", total_duration: 0, file_types: [] },
+    loading: isLoading,
+    error: error?.message,
+  };
+};

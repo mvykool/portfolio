@@ -24,7 +24,7 @@ const About = () => {
                 width={800}
                 height={800}
                 alt="profile"
-                className="rounded-lg transition duration-500 z-10 w-full max-w-[400px] md:w-[18vw] md:h-[35vh] "
+                className="rounded-lg border-[0.5px] border-gray-700 transition duration-500 z-10 w-full max-w-[400px] md:w-[18vw] md:h-[35vh] "
                 src="/profile.png"
               />
             </div>

@@ -52,10 +52,10 @@ const MySkills = () => {
               visible: { opacity: 1, x: 0 },
             }}
           >
-            <p className=" text-4xl md:text-4xl  flex justify-center">
+            <p className=" text-4xl md:text-4xl text-black dark:text-white  flex justify-center">
               My <span className="text-app-green md:text-4xl mx-2">Skills</span>
             </p>
-            <p className="mt-5 text-center mb-10 md:text-sm md:flex justify-center">
+            <p className="mt-5 text-center mb-10 md:text-sm md:flex text-black dark:text-white justify-center">
               Tools, Libraries, & Programming languages that I use:
             </p>
           </motion.div>

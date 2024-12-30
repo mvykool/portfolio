@@ -22,8 +22,16 @@ const Hero = () => {
           {" "}
           <BentoBlock size="w-[59%] md:w-[68%] h-[full]">
             <div className="justify-center p-5 md:p-0 flex flex-col ml-0 md:ml-10 text-4xl break-words text-black dark:text-white items-start h-full">
-              <p className="text-base md:text-4xl"> {heroConstants.hi}</p>
-              <p className="text-lg md:text-4xl"> {heroConstants.name}</p>
+              <p className="text-base md:text-4xl">
+                {" "}
+                {heroConstants.hi}{" "}
+                <span className="text-app-green">{heroConstants.there}</span>
+              </p>
+              <p className="text-lg md:text-4xl">
+                {" "}
+                {heroConstants.name}{" "}
+                <span className="text-app-green">{heroConstants.lastName}</span>
+              </p>
             </div>
           </BentoBlock>
           <BentoBlock size="w-[39%] md:w-[30%] h-full">
@@ -73,8 +81,8 @@ const Hero = () => {
 
             <SkillRadio />
           </BentoBlock>
-          <BentoBlock size="w-full h-[50%] md:h-full md:w-[30%]">
-            <div className="flex items-center my-2 p-5 justify-between">
+          <BentoBlock size="w-full h-[50%] md:h-full relative md:w-[30%]">
+            <div className="flex absolute z-40 items-center my-2 p-5 w-full justify-between">
               <p className="text-black dark:text-white font-black text-xl ">
                 {heroConstants.projects}
               </p>

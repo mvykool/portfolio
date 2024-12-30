@@ -35,7 +35,7 @@ const ExpOverview = () => {
           </div>
           <div data-child="body">
             <span className="font-extrabold text-sm leading-none font-mono text-black dark:text-gray-100">
-              Software Engineer - UI
+              Software Developer UI
             </span>
             <div className="mt-0" role="group">
               <p className="flex flex-row flex-nowrap items-center gap-2 text-zinc-600 dark:text-zinc-500">

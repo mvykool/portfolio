@@ -399,3 +399,43 @@ input:checked + .slider:before {
 .Btn:active {
   transform: translate(2px, 2px);
 }
+
+.e-card {
+  background: transparent;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.wave {
+  position: absolute;
+  width: 540px;
+  height: 700px;
+  left: 0;
+  top: 0;
+  margin-left: -50%;
+  margin-top: -70%;
+}
+.wave:nth-child(4) {
+  top: 280px;
+  background: #ffb38e;
+  transform: rotate(140deg);
+  z-index: 32;
+}
+
+.wave:nth-child(5) {
+  top: 330px;
+  background: #dd3c5f;
+  transform: rotate(130deg);
+  z-index: 33;
+}
+
+.playing .wave {
+  border-radius: 40%;
+  animation: wave 3000ms infinite linear;
+}
+
+.wave {
+  background: #bfecff;
+}

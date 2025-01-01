@@ -67,12 +67,7 @@ const Navbar = ({ topPage, setSelectedPage, selectedPage }: Props) => {
 
         {isAboveSmallScreens ? (
           <div className="flex text-dark-app bg-white border-[0.5px] border-gray-700 dark:bg-gray-200 px-5 py-3 rounded-lg justify-between gap-10 font-opensans font-semibold">
-            <Links
-              page="Contact"
-              selectedPage={selectedPage}
-              setSelectedPage={setSelectedPage}
-              topPage={undefined}
-            />
+            <Link href={"/contact"}>Contact</Link>
           </div>
         ) : (
           <button

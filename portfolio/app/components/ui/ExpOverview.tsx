@@ -49,7 +49,7 @@ const ExpOverview = () => {
               role="group"
             >
               <time className="flex flex-row items-center text-xs text-gray-400 dark:text-gray-500 gap-2 font-mono">
-                Aug 2023 - Current
+                Aug 2023 - Present
               </time>
             </div>
           </div>

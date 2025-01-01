@@ -9,7 +9,7 @@ export const heroConstants = {
     "I'm a highly driven, and focused Software Developer, I enjoy crafting stunning UIs and creates cool things.",
   experience: "Experience",
   projects: "Projects",
-  skills: "Skills",
+  skills: "Skills, & tools",
   contact: "Contact",
   links: {
     about: "about",

@@ -62,7 +62,7 @@ const Layout = ({ children }: Props) => {
 
       <ScrollToTop />
 
-      <footer className="">
+      <footer>
         <Footer />
       </footer>
     </>

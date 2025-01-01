@@ -1,6 +1,7 @@
 import React, { useState, useRef } from "react";
 import emailjs from "@emailjs/browser";
 import { motion } from "framer-motion";
+import GoPreviousPage from "@/app/components/ui/GoPreviouspage";
 
 /**framer motion variants */
 
@@ -49,9 +50,11 @@ const Contact = () => {
 
   return (
     <div className="w-6/6 md:w-3/6 pt-20 md:pt-0  mx-auto mt-5 md:mt-0">
+      <GoPreviousPage />
+
       <section
         id="contact"
-        className="contact pt-5 w-full overflow-hidden px-5 md:px-0"
+        className="contact pt-5 w-full overflow-hidden px-5 md:px-0 mt-0 md:mt-10"
       >
         <div className="md:flex md:justify-center">
           <motion.div
@@ -66,7 +69,7 @@ const Contact = () => {
             className="flex justify-center w-full"
           >
             <div>
-              <p className="font-playfair mb-5 font-semibold text-4xl">
+              <p className="font-playfair mb-5 md:mb-14 font-semibold text-black dark:text-white text-4xl">
                 <span className="text-app-green">Contact</span> Me
               </p>
             </div>
@@ -95,7 +98,7 @@ const Contact = () => {
             initial="hidden"
             whileInView="show"
             viewport={{ once: true }}
-            className="md:flex md:justify-center md:py-5 rounded-sm md:mx-20 px-1 md:px-5 bg-app-gray"
+            className="md:flex md:justify-center md:py-5 rounded-lg md:mx-20 px-1 md:px-5 bg-white dark:bg-dark-card border-[0.5px] border-gray-700 "
           >
             <form
               ref={form}
@@ -109,7 +112,7 @@ const Contact = () => {
                   id="name"
                   required
                   placeholder="Your Name"
-                  className="px-3 py-3  w-full relative bg-deep-blue md:text-sm text-white rounded-sm outline-none"
+                  className="px-3 py-3 w-full  dark:bg-deep-blue md:text-sm text-gray-500 dark:text-white border border-gray-500 dark:border-gray-300 bg-white rounded-lg outline-none"
                 />
                 <input
                   type="text"
@@ -117,7 +120,7 @@ const Contact = () => {
                   id="email"
                   required
                   placeholder="Email Address"
-                  className="px-3 py-3 w-full  bg-deep-blue md:text-sm text-white rounded-sm outline-none"
+                  className="px-3 py-3 w-full  dark:bg-deep-blue md:text-sm text-gray-500 dark:text-white border border-gray-500 dark:border-gray-300 bg-white rounded-lg outline-none"
                 />
               </div>
 
@@ -127,10 +130,10 @@ const Contact = () => {
                 id="message"
                 required
                 placeholder="Message"
-                className="px-3 py-3  bg-deep-blue pb-20 md:text-sm text-white rounded-sm outline-none"
+                className="px-3 py-3 border dark:border-gray-300 border-gray-500 bg-white dark:bg-deep-blue pb-20 md:text-sm text-gray-500 dark:text-white rounded-lg outline-none"
               />
               <button
-                className="my-5 py-2 rounded-sm cursor-pointer border-app-green border-2 text-white font-bold p-1 hover:bg-gray-800 hover:scale-105 duration-300"
+                className="my-5 py-2 rounded-lg cursor-pointer border-app-green border-2 text-black dark:text-white font-bold p-1 hover:bg-gray-800 hover:scale-105 duration-300"
                 type="submit"
                 value="send"
               >

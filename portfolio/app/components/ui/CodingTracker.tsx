@@ -71,7 +71,7 @@ export const CodingTracker = memo(() => {
                 <li
                   key={index}
                   style={{ backgroundColor }}
-                  className="rounded-lg px-1 md:px-2 py-1 w-auto md:w-auto flex items-start md:items-center gap-0 md:gap-2"
+                  className="rounded-lg px-1 md:px-1 py-1 w-auto md:w-auto flex items-start md:items-center gap-0 md:gap-1"
                 >
                   <span className="text-xs md:text-sm">{fileName}:</span>
                   <span className="text-xs md:text-sm">

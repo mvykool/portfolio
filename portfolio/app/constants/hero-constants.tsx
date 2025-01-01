@@ -6,7 +6,7 @@ export const heroConstants = {
   about: "About",
   gobackBtn: "Go back",
   aboutInfo:
-    "I'm a highly driven, and focused Software Developer, I enjoy crafting stunning UIs and creates cool things.",
+    "I am a developer with nearly four years of experience crafting accessible, user-friendly web applications. I’m passionate about building beautiful interfaces and constantly learning to refine my craft. Accessibility and aesthetics are at the heart of everything I create.",
   experience: "Experience",
   projects: "Projects",
   skills: "Skills, & tools",

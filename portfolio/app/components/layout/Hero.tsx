@@ -61,7 +61,7 @@ const Hero = () => {
               </p>
               <GotoPage link={heroConstants.links.about} />
             </div>
-            <p className="px-8 break-words text-sm md:text-md text-gray-500 dark:text-gray-400 mt-2">
+            <p className="px-8 break-words text-xs md:text-sm text-gray-500 tracking-wider dark:text-gray-400 mt-2 md:mt-0">
               {heroConstants.aboutInfo}
             </p>
           </BentoBlock>

@@ -27,7 +27,7 @@ const formatDuration = (seconds: number): string | null => {
 };
 
 export const CodingTracker = memo(() => {
-  const { data, loading, error } = useCodingTracker(
+  const { data, loading, error, isStale } = useCodingTracker(
     process.env.NEXT_PUBLIC_API_URL as string,
     excludeFileTypes,
   );
@@ -57,6 +57,7 @@ export const CodingTracker = memo(() => {
           </span>
         </div>
       </div>
+      {isStale && <div>Showing cached data...</div>}
       <div className="w-full flex-col px-2 md:px-8 mt-2 flex gap-2 flex-wrap">
         <ul className="flex flex-wrap gap-2">
           {data.file_types.length > 0 ? (

@@ -1,0 +1,82 @@
+import {
+  SiHtml5,
+  SiCss3,
+  SiJavascript,
+  SiRedux,
+  SiReact,
+  SiTailwindcss,
+  SiNextdotjs,
+  SiVite,
+  SiGit,
+  SiFirebase,
+  SiTypescript,
+  SiMongodb,
+  SiAstro,
+  SiMysql,
+  SiNodedotjs,
+  SiExpress,
+  SiDocker,
+  SiAngular,
+  SiSass,
+  SiStorybook,
+  SiNestjs,
+  SiFigma,
+  SiLinux,
+  SiPostman,
+  SiGnubash,
+  SiJest,
+  SiVitest,
+  SiPostgresql,
+  SiNixos,
+} from "react-icons/si";
+
+export const IconsFE = [
+  { Icon: SiHtml5, color: "text-orange-600", name: "HTML" },
+  { Icon: SiCss3, color: "text-blue-500", name: "CSS" },
+  { Icon: SiJavascript, color: "text-yellow", name: "JavaScript" },
+  { Icon: SiTypescript, color: "text-blue-600", name: "TypeScript" },
+  { Icon: SiReact, color: "text-cyan-400", name: "React" },
+  { Icon: SiAngular, color: "text-rose-700", name: "Angular" },
+  { Icon: SiRedux, color: "text-purple-500", name: "Redux" },
+  { Icon: SiSass, color: "text-pink-500", name: "SCSS" },
+  { Icon: SiJest, color: "text-rose-900", name: "Jest" },
+  { Icon: SiVitest, color: "text-lime-400", name: "Vitest" },
+  { Icon: SiVite, color: "text-violet-400", name: "Vite" },
+  { Icon: SiAstro, color: "text-orange-500", name: "Astro" },
+  { Icon: SiTailwindcss, color: "text-cyan-300", name: "Tailwind" },
+  {
+    Icon: SiNextdotjs,
+    color: "text-gray-400 dark:text-gray-200",
+    name: "Next",
+  },
+  { Icon: SiStorybook, color: "text-pink-500", name: "Storybook" },
+];
+
+export const IconsBE = [
+  { Icon: SiNodedotjs, color: "text-green-700", name: "Node" },
+  { Icon: SiNestjs, color: "text-rose-600", name: "Nest" },
+  {
+    Icon: SiExpress,
+    color: "text-gray-700 dark:text-gray-300",
+    name: "Express",
+  },
+  { Icon: SiFirebase, color: "text-yellow", name: "Firebase" },
+  { Icon: SiMongodb, color: "text-green-400", name: "MongoDB" },
+  { Icon: SiMysql, color: "text-blue-600 dark:text-blue-400", name: "MySQL" },
+  { Icon: SiPostgresql, color: "text-blue-700", name: "Postgres" },
+];
+
+export const IconsTools = [
+  { Icon: SiLinux, color: "text-black dark:text-white", name: "GNU/Linux" },
+  { Icon: SiGit, color: "text-orange-600", name: "Git" },
+  {
+    Icon: SiGnubash,
+    color: "text-gray-800 dark:text-gray-300",
+    name: "Bash",
+  },
+  { Icon: SiPostman, color: "text-orange-400", name: "Postman" },
+
+  { Icon: SiDocker, color: "text-blue-700", name: "Docker" },
+  { Icon: SiFigma, color: "text-pink-400", name: "Figma" },
+  { Icon: SiNixos, color: "text-indigo-600 dark:text-indigo-300", name: "Nix" },
+];

@@ -12,7 +12,7 @@ export const TwitterCard = (props: {}) => {
         rel="noreferrer"
         className="tooltip"
       >
-        <div className="w-64 p-3 rounded-xl bg-white dark:bg-gray-800 border-2 border-gray-700">
+        <div className="w-64 p-3 rounded-xl bg-white dark:bg-dark-app border-2 border-gray-700">
           <div className="user">
             <Image
               width={50}

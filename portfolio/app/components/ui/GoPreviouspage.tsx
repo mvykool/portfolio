@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "next/link";
+import { heroConstants } from "@/app/constants/hero-constants";
 
 export default function GoPreviousPage() {
   return (
@@ -26,7 +27,7 @@ export default function GoPreviousPage() {
           </svg>
         </div>
         <p className="translate-x-2 text-sm text-black dark:text-white">
-          Go Back
+          {heroConstants.gobackBtn}
         </p>
       </button>
     </Link>

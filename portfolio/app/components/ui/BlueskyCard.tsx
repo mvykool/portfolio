@@ -7,7 +7,7 @@ export const BlueskyCard = (props: {}) => {
   return (
     <div className="tooltip-container">
       <div className="tooltip">
-        <div className="w-64 p-3 rounded-xl bg-white border-2 border-gray-700 dark:bg-gray-800">
+        <div className="w-64 p-3 rounded-xl bg-white border-2 border-gray-700 dark:bg-dark-app">
           <div className="user">
             <Image
               width={50}

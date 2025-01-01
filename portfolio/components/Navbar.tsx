@@ -67,16 +67,11 @@ const Navbar = ({ topPage, setSelectedPage, selectedPage }: Props) => {
 
         {isAboveSmallScreens ? (
           <div className="flex text-dark-app bg-white border-[0.5px] border-gray-700 dark:bg-gray-200 px-5 py-3 rounded-lg justify-between gap-10 font-opensans font-semibold">
-            <Links
-              page="Contact"
-              selectedPage={selectedPage}
-              setSelectedPage={setSelectedPage}
-              topPage={undefined}
-            />
+            <Link href={"/contact"}>Contact</Link>
           </div>
         ) : (
           <button
-            className="rounded-lg bg-app-menu"
+            className="rounded-lg bg-app-green"
             onClick={() => setMenuToggle(!menuToggle)}
           >
             <TiThMenu className="h-9 p-2 w-9" />
@@ -96,7 +91,7 @@ const Navbar = ({ topPage, setSelectedPage, selectedPage }: Props) => {
               variants={sectionVariant}
               initial="hidden"
               animate="show"
-              className="fixed z-[50] right-0 bottom-0 h-full bg-app-menu w-[60vw]"
+              className="fixed z-[50] right-0 bottom-0 h-full bg-app-green w-[60vw]"
             >
               {/**close icon */}
               <div className="flex justify-end p-5">
@@ -107,52 +102,22 @@ const Navbar = ({ topPage, setSelectedPage, selectedPage }: Props) => {
               {/** menu mobile */}
               <div className="flex flex-col gap-5 ml-[30%] text-xl text-deep-blue mt-20">
                 <div onClick={() => setMenuToggle(!menuToggle)}>
-                  <Links
-                    page="Home"
-                    selectedPage={selectedPage}
-                    setSelectedPage={setSelectedPage}
-                    topPage={undefined}
-                  />
+                  <Link href={"/"}>Home</Link>
                 </div>
                 <div onClick={() => setMenuToggle(!menuToggle)}>
-                  <Links
-                    page="About"
-                    selectedPage={selectedPage}
-                    setSelectedPage={setSelectedPage}
-                    topPage={undefined}
-                  />
+                  <Link href={"/about"}>About</Link>
                 </div>
                 <div onClick={() => setMenuToggle(!menuToggle)}>
-                  <Links
-                    page="Experience"
-                    selectedPage={selectedPage}
-                    setSelectedPage={setSelectedPage}
-                    topPage={undefined}
-                  />
+                  <Link href={"/experience"}>Experience</Link>
                 </div>
                 <div onClick={() => setMenuToggle(!menuToggle)}>
-                  <Links
-                    page="Skills"
-                    selectedPage={selectedPage}
-                    setSelectedPage={setSelectedPage}
-                    topPage={undefined}
-                  />
+                  <Link href={"/skills"}>Skills</Link>
                 </div>
                 <div onClick={() => setMenuToggle(!menuToggle)}>
-                  <Links
-                    page="Projects"
-                    selectedPage={selectedPage}
-                    setSelectedPage={setSelectedPage}
-                    topPage={undefined}
-                  />
+                  <Link href={"/projects"}>Projects</Link>
                 </div>
                 <div onClick={() => setMenuToggle(!menuToggle)}>
-                  <Links
-                    page="Contact"
-                    selectedPage={selectedPage}
-                    setSelectedPage={setSelectedPage}
-                    topPage={undefined}
-                  />
+                  <Link href={"/contact"}>Contact</Link>
                 </div>
 
                 <div>

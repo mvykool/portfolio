@@ -12,19 +12,19 @@ const About = () => {
   return (
     <div className="w-4/6 md:w-3/6 mx-auto mt-2 md:mt-0">
       <GoPreviousPage />
-      <section className="bg-white dark:bg-dark-app md:flex md:justify-between md:items-start md:w-full md:h-auto gap-8 md:mt-28">
+      <section className="md:flex md:justify-between md:items-start md:w-full md:h-auto gap-8 md:mt-28">
         {/* IMAGE SECTION */}
         <div className="basis-3/5 z-10 mt-5 flex justify-center md:order-2">
           {isAboveLarge ? (
             <div
               className="relative z-0 ml-40 before:absolute before:-top-10 before:-left-10 
-          before:w-full before:max-w-[400px] md:before:max-w-[600px] before:h-full before:border-2 before:border-app-green before:z-[-1] "
+          before:w-full before:max-w-[400px] before:rounded-lg md:before:max-w-[600px] before:h-full before:border-2 before:border-app-green before:z-[-1] "
             >
               <Image
                 width={800}
                 height={800}
                 alt="profile"
-                className="hover:filter hover:saturate-200 transition duration-500 z-10 w-full max-w-[400px] md:w-[18vw] md:h-[35vh] "
+                className="rounded-lg border-[0.5px] border-gray-700 transition duration-500 z-10 w-full max-w-[400px] md:w-[18vw] md:h-[35vh] "
                 src="/profile.png"
               />
             </div>
@@ -69,7 +69,7 @@ const About = () => {
               I blend artistry and technology to design immersive user
               experiences that leave a lasting impression. I like to explore new
               design trends, fueling my creativity and learning all kinds of
-              crazy new stuff.
+              crazy new stuff
             </p>
           </motion.div>
         </div>

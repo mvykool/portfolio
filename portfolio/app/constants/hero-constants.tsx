@@ -1,12 +1,15 @@
 export const heroConstants = {
-  hi: "Hi there,",
-  name: "I'm Maicol Hernandez",
+  hi: "Hey",
+  there: "there,",
+  name: "I'm Maicol",
+  lastName: "Hernandez",
   about: "About",
+  gobackBtn: "Go back",
   aboutInfo:
-    "I'm a highly driven, and focused Software Developer, I enjoy crafting stunning UIs and creates cool programs that make the digital world come alive.",
+    "I am a developer with nearly four years of experience crafting accessible, user-friendly web applications. I’m passionate about building beautiful interfaces and constantly learning to refine my craft. Accessibility and aesthetics are at the heart of everything I create.",
   experience: "Experience",
   projects: "Projects",
-  skills: "Skills",
+  skills: "Skills, & tools",
   contact: "Contact",
   links: {
     about: "about",

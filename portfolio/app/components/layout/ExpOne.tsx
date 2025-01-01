@@ -11,26 +11,44 @@ const ExpOne = () => {
         <div className="flex h-5/6 gap-3">
           <section className="flex flex-wrap relative overflow-hidden gap-[2%] w-4/12 ">
             {" "}
-            <BentoBlock size="w-full h-[59%]">bento one</BentoBlock>
-            <BentoBlock size="w-full h-[39%]">bento one</BentoBlock>
+            <BentoBlock size="w-full h-[59%]" duration={0.4}>
+              bento one
+            </BentoBlock>
+            <BentoBlock size="w-full h-[39%]" duration={0.4}>
+              bento one
+            </BentoBlock>
           </section>
           <section className="flex justify-between overflow-hidden relative gap-[2%] mx-auto flex-wrap w-8/12  flex-w ">
             {" "}
-            <BentoBlock size="h-[40%] w-[49%]">bento two</BentoBlock>
-            <BentoBlock size="h-[40%] w-[49%]">bento two</BentoBlock>
-            <BentoBlock size="w-full h-[58%]">bento two</BentoBlock>
+            <BentoBlock size="h-[40%] w-[49%]" duration={0.4}>
+              bento two
+            </BentoBlock>
+            <BentoBlock size="h-[40%] w-[49%]" duration={0.4}>
+              bento two
+            </BentoBlock>
+            <BentoBlock size="w-full h-[58%]" duration={0.4}>
+              bento two
+            </BentoBlock>
           </section>
         </div>
         <section className="flex w-full h-2/6 gap-[1%] relative overflow-hidden flex-w ">
           {" "}
-          <BentoBlock size="h-full w-[69%]">bento two</BentoBlock>
-          <BentoBlock size="w-[30%]">bento two</BentoBlock>
+          <BentoBlock size="h-full w-[69%]" duration={0.4}>
+            bento two
+          </BentoBlock>
+          <BentoBlock size="w-[30%]" duration={0.4}>
+            bento two
+          </BentoBlock>
         </section>
       </div>
       <section className="flex flex-col h-full gap-2 w-3/12  ">
         {" "}
-        <BentoBlock size="w-full h-3/6">bento two</BentoBlock>
-        <BentoBlock size="w-full h-3/6">bento two</BentoBlock>
+        <BentoBlock size="w-full h-3/6" duration={0.4}>
+          bento two
+        </BentoBlock>
+        <BentoBlock size="w-full h-3/6" duration={0.4}>
+          bento two
+        </BentoBlock>
       </section>
     </main>
   );

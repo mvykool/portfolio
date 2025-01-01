@@ -12,11 +12,27 @@ interface DailyData {
   total_duration: number;
 }
 
-const TIMEOUT_DURATION = 5000; // 5 seconds timeout
+const TIMEOUT_DURATION = 3000;
 const FALLBACK_DATA: DailyData = {
-  _id: "",
+  _id: new Date()
+    .toLocaleDateString("en-US", {
+      month: "2-digit",
+      day: "2-digit",
+      year: "numeric",
+    })
+    .replace(/\//g, "-"),
   total_duration: 0,
   file_types: [],
+};
+
+const getTodayString = () => {
+  return new Date()
+    .toLocaleDateString("en-US", {
+      month: "2-digit",
+      day: "2-digit",
+      year: "numeric",
+    })
+    .replace(/\//g, "-");
 };
 
 const fetcher = async (
@@ -33,7 +49,14 @@ const fetcher = async (
       return null;
     }
 
-    const todayData = data[0];
+    const todayString = getTodayString();
+    const todayData = data.find((entry) => entry._id === todayString);
+
+    if (!todayData) {
+      console.log(`No data found for today (${todayString})`);
+      return null;
+    }
+
     return {
       ...todayData,
       file_types: todayData.file_types.filter(
@@ -57,8 +80,8 @@ export const useCodingTracker = (url: string, excludeTypes: string[]) => {
     {
       revalidateOnFocus: false,
       revalidateOnReconnect: false,
-      refreshInterval: 300000, // Refresh every 5 minutes
-      dedupingInterval: 300000, // Dedupe requests within 5 minutes
+      refreshInterval: 300000,
+      dedupingInterval: 300000,
       loadingTimeout: TIMEOUT_DURATION,
       onLoadingSlow: () => {
         setShouldUseFallback(true);
@@ -66,7 +89,6 @@ export const useCodingTracker = (url: string, excludeTypes: string[]) => {
     },
   );
 
-  // Set up timeout
   useEffect(() => {
     if (isLoading) {
       const timeoutId = setTimeout(() => {
@@ -80,14 +102,16 @@ export const useCodingTracker = (url: string, excludeTypes: string[]) => {
     }
   }, [isLoading]);
 
-  // Get cached data using the key
   const cacheKey = JSON.stringify([url, excludeTypes]);
   const cachedData = cache.get(cacheKey)?.data as DailyData | undefined;
+
+  const validCachedData =
+    cachedData?._id === getTodayString() ? cachedData : FALLBACK_DATA;
 
   return {
     data:
       shouldUseFallback && timeoutReached
-        ? cachedData || FALLBACK_DATA
+        ? validCachedData
         : data || FALLBACK_DATA,
     loading: isLoading && !timeoutReached,
     error: error?.message,

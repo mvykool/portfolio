@@ -19,6 +19,7 @@ const REFRESH_INTERVAL = 300000;
 const PLACEHOLDER_DATA: DailyData = {
   _id: new Date()
     .toLocaleDateString("en-US", {
+      timeZone: "America/New_York",
       month: "2-digit",
       day: "2-digit",
       year: "numeric",
@@ -39,6 +40,7 @@ const FALLBACK_DATA: DailyData = {
 const getTodayString = () => {
   return new Date()
     .toLocaleDateString("en-US", {
+      timeZone: "America/New_York",
       month: "2-digit",
       day: "2-digit",
       year: "numeric",

@@ -13,7 +13,10 @@ interface DailyData {
 }
 
 const TIMEOUT_DURATION = 3000;
-const FALLBACK_DATA: DailyData = {
+const REFRESH_INTERVAL = 300000;
+
+// Placeholder data to show immediately during cold starts
+const PLACEHOLDER_DATA: DailyData = {
   _id: new Date()
     .toLocaleDateString("en-US", {
       month: "2-digit",
@@ -22,6 +25,14 @@ const FALLBACK_DATA: DailyData = {
     })
     .replace(/\//g, "-"),
   total_duration: 0,
+  file_types: [
+    { type: "typescript", duration: 0 },
+    { type: "typescriptreact", duration: 0 },
+  ],
+};
+
+const FALLBACK_DATA: DailyData = {
+  ...PLACEHOLDER_DATA,
   file_types: [],
 };
 
@@ -45,7 +56,6 @@ const fetcher = async (
     const data: DailyData[] = await res.json();
 
     if (!data || !Array.isArray(data) || data.length === 0) {
-      console.error("No data available");
       return null;
     }
 
@@ -53,8 +63,7 @@ const fetcher = async (
     const todayData = data.find((entry) => entry._id === todayString);
 
     if (!todayData) {
-      console.log(`No data found for today (${todayString})`);
-      return null;
+      return FALLBACK_DATA;
     }
 
     return {
@@ -65,7 +74,7 @@ const fetcher = async (
     };
   } catch (error) {
     console.error("Fetch error:", error);
-    throw error;
+    return FALLBACK_DATA;
   }
 };
 
@@ -74,18 +83,25 @@ export const useCodingTracker = (url: string, excludeTypes: string[]) => {
   const [timeoutReached, setTimeoutReached] = useState(false);
   const { cache } = useSWRConfig();
 
+  // Start with placeholder data immediately
+  const [immediateData, setImmediateData] =
+    useState<DailyData>(PLACEHOLDER_DATA);
+
   const { data, error, isLoading, mutate } = useSWR(
     url ? [url, excludeTypes] : null,
     () => fetcher(url, excludeTypes),
     {
       revalidateOnFocus: false,
       revalidateOnReconnect: false,
-      refreshInterval: 300000,
-      dedupingInterval: 300000,
+      refreshInterval: REFRESH_INTERVAL,
+      dedupingInterval: REFRESH_INTERVAL,
       loadingTimeout: TIMEOUT_DURATION,
       onLoadingSlow: () => {
         setShouldUseFallback(true);
       },
+      isPaused: () => document.hidden,
+      // Use fallback data immediately
+      fallbackData: PLACEHOLDER_DATA,
     },
   );
 
@@ -94,7 +110,6 @@ export const useCodingTracker = (url: string, excludeTypes: string[]) => {
       const timeoutId = setTimeout(() => {
         setTimeoutReached(true);
       }, TIMEOUT_DURATION);
-
       return () => clearTimeout(timeoutId);
     } else {
       setTimeoutReached(false);
@@ -104,18 +119,21 @@ export const useCodingTracker = (url: string, excludeTypes: string[]) => {
 
   const cacheKey = JSON.stringify([url, excludeTypes]);
   const cachedData = cache.get(cacheKey)?.data as DailyData | undefined;
-
   const validCachedData =
-    cachedData?._id === getTodayString() ? cachedData : FALLBACK_DATA;
+    cachedData?._id === getTodayString() ? cachedData : PLACEHOLDER_DATA;
+
+  // If we're in a cold start (loading is slow), show "Session starting..."
+  const isInColdStart = isLoading && timeoutReached;
 
   return {
     data:
       shouldUseFallback && timeoutReached
         ? validCachedData
-        : data || FALLBACK_DATA,
+        : data || PLACEHOLDER_DATA,
     loading: isLoading && !timeoutReached,
     error: error?.message,
     isStale: shouldUseFallback && timeoutReached && !!data,
+    isColdStart: isInColdStart,
     refresh: () => mutate(),
   };
 };

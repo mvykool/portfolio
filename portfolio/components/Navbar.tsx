@@ -3,6 +3,7 @@ import AnchorLink from "react-anchor-link-smooth-scroll";
 import useMediaQuery from "../hooks/useMediaQuery";
 import { TiThMenu, TiTimes } from "react-icons/ti";
 import { motion } from "framer-motion";
+import { strings } from "@/app/constants/links-constants";
 
 import Link from "next/link";
 import { Logo } from "@/app/components/ui/Logo";
@@ -67,7 +68,7 @@ const Navbar = ({ topPage, setSelectedPage, selectedPage }: Props) => {
 
         {isAboveSmallScreens ? (
           <div className="flex text-dark-app bg-white border-[0.5px] border-gray-700 dark:bg-gray-200 px-5 py-3 rounded-lg justify-between gap-10 font-opensans font-semibold">
-            <Link href={"/contact"}>Contact</Link>
+            <Link href={"/contact"}>{strings.contact}</Link>
           </div>
         ) : (
           <button
@@ -102,22 +103,22 @@ const Navbar = ({ topPage, setSelectedPage, selectedPage }: Props) => {
               {/** menu mobile */}
               <div className="flex flex-col gap-5 ml-[30%] text-xl text-deep-blue mt-20">
                 <div onClick={() => setMenuToggle(!menuToggle)}>
-                  <Link href={"/"}>Home</Link>
+                  <Link href={"/"}>{strings.home}</Link>
                 </div>
                 <div onClick={() => setMenuToggle(!menuToggle)}>
-                  <Link href={"/about"}>About</Link>
+                  <Link href={"/about"}>{strings.about}</Link>
                 </div>
                 <div onClick={() => setMenuToggle(!menuToggle)}>
-                  <Link href={"/experience"}>Experience</Link>
+                  <Link href={"/experience"}>{strings.experience}</Link>
                 </div>
                 <div onClick={() => setMenuToggle(!menuToggle)}>
-                  <Link href={"/skills"}>Skills</Link>
+                  <Link href={"/skills"}>{strings.skills}</Link>
                 </div>
                 <div onClick={() => setMenuToggle(!menuToggle)}>
-                  <Link href={"/projects"}>Projects</Link>
+                  <Link href={"/projects"}>{strings.projects}</Link>
                 </div>
                 <div onClick={() => setMenuToggle(!menuToggle)}>
-                  <Link href={"/contact"}>Contact</Link>
+                  <Link href={"/contact"}>{strings.contact}</Link>
                 </div>
 
                 <div>

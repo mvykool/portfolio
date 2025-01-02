@@ -4,6 +4,7 @@ import useMediaQuery from "../hooks/useMediaQuery";
 import { motion } from "framer-motion";
 import { IconsBE, IconsFE, IconsTools } from "@/app/utils/icons";
 import GoPreviousPage from "@/app/components/ui/GoPreviouspage";
+import { strings } from "@/app/constants/pages-constants";
 
 const MySkills = () => {
   const isAboveLarge = useMediaQuery("(min-width: 1060px)");
@@ -27,16 +28,19 @@ const MySkills = () => {
             }}
           >
             <p className=" text-4xl md:text-4xl text-black dark:text-white  flex justify-center">
-              My <span className="text-app-green md:text-4xl mx-2">Skills</span>
+              {strings.skills.my}{" "}
+              <span className="text-app-green md:text-4xl mx-2">
+                {strings.skills.skills}
+              </span>
             </p>
-            <p className="mt-5 text-center mb-10 md:text-sm md:flex text-black dark:text-white justify-center">
-              Tools, Libraries, & Programming languages that I use:
+            <p className="mt-5 text-center mb-10 md:text-base md:mt-10 md:flex text-black dark:text-white justify-center">
+              {strings.skills.text}
             </p>
           </motion.div>
 
           <div className="">
             <h3 className="md:mx-5 text-2xl text-black dark:text-white my-2">
-              Front-end:
+              {strings.skills.fe}
             </h3>
             <motion.div
               className="grid grid-cols-2 md:grid md:grid-cols-4 flex-col gap-2 mx-auto md:mx-5"
@@ -67,7 +71,7 @@ const MySkills = () => {
 
           <div className="my-8">
             <h3 className="md:mx-5 text-2xl text-black dark:text-white my-2">
-              Back-end, and Databases:
+              {strings.skills.be}
             </h3>
 
             <motion.div
@@ -99,7 +103,7 @@ const MySkills = () => {
 
           <div className="my-8">
             <h3 className="md:mx-5 text-2xl text-black dark:text-white my-2">
-              Tools, and more:
+              {strings.skills.tools}
             </h3>
 
             <motion.div

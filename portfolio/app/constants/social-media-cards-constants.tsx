@@ -10,7 +10,7 @@ export const strings = {
     app: "X",
     name: "Mvykool",
     username: "@Mvyk0l",
-    followers: "7 followers",
+    followers: "9 followers",
     link: "https://x.com/mvyk0l",
   },
   github: {
@@ -18,14 +18,13 @@ export const strings = {
     name: "Michael Hernandez",
     username: "@Mvykool",
     link: "https://github.com/mvykool",
-    followers: "90 + followers",
+    followers: "100 + followers",
   },
-  bluesky: {
-    app: "Bluesky",
-    name: "Michael Hernandez",
-    username: "@Mvykol.bsky.social",
+  gitlab: {
+    app: "Gitlab",
+    name: "Maicol Hernandez",
+    username: "@mvykol",
     followers: "1 followers",
-    link: "https://bsky.app/profile/mvykol.bsky.social",
-    new: "New!",
+    link: "https://gitlab.com/mvykol",
   },
 };

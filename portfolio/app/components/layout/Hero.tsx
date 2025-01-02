@@ -8,7 +8,7 @@ import MusicPlayer from "../ui/MusicPlayer";
 import { LinkedInCard } from "../ui/LinkedInCard";
 import { TwitterCard } from "../ui/TwitterCard";
 import { GithubCard } from "../ui/GithubCard";
-import { BlueskyCard } from "../ui/BlueskyCard";
+import { GitLabCard } from "../ui/GitlabCard";
 import { ProjectCard } from "../ui/ProjectCard";
 import { ThemeSwitch } from "../ui/ThemeSwitch";
 import { CodingTracker } from "../ui/CodingTracker";
@@ -130,7 +130,7 @@ const Hero = () => {
           {" "}
           <GithubCard />
           <LinkedInCard />
-          <BlueskyCard />
+          <GitLabCard />
           <TwitterCard />
         </motion.div>
         <BentoBlock size="w-full h-[60%]" duration={1.1}>

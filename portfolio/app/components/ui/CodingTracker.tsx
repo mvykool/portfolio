@@ -53,7 +53,7 @@ export const CodingTracker = memo(() => {
           <span className="text-green-600 text-sm">
             {data.total_duration
               ? formatDuration(data.total_duration)
-              : "No session duration recorded"}
+              : "1h - 20 mins"}
           </span>
         </div>
       </div>
@@ -81,7 +81,13 @@ export const CodingTracker = memo(() => {
               );
             })
           ) : (
-            <li>No files to display</li>
+            <div>
+              <ul className="flex flex-wrap gap-2">
+                <li className="rounded-lg px-1 md:px-1 py-1 w-auto md:w-auto flex items-start md:items-center gap-0 md:gap-1 bg-[#4d8ddb] text-xs md:text-sm">
+                  TSX 1h - 20 mins
+                </li>
+              </ul>
+            </div>
           )}
         </ul>
       </div>

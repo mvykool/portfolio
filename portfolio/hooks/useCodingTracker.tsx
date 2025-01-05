@@ -58,7 +58,7 @@ const fetcher = async (
     const data: DailyData[] = await res.json();
 
     if (!data || !Array.isArray(data) || data.length === 0) {
-      return FALLBACK_DATA;
+      return null;
     }
 
     const todayString = getTodayString();

@@ -47,7 +47,9 @@ export const TwitterCard = (props: {}) => {
               <TbBrandX className="text-5xl text-black dark:text-white p-3 mx-auto w-full flex items-center h-full" />
             </span>
           </div>
-          <div className="text text-black dark:text-white">{strings.x.app}</div>
+          <div className="text text-black dark:text-white bg-green-500 bg-opacity-50 rounded-xl px-2 ">
+            {strings.x.app}
+          </div>
         </div>
       </div>
     </div>

@@ -47,7 +47,7 @@ export const GithubCard = (props: {}) => {
               <TbBrandGithub className="text-5xl text-black dark:text-white p-3 mx-auto w-full flex items-center h-full" />
             </span>
           </div>
-          <div className="text text-black dark:text-white">
+          <div className="text text-black dark:text-white bg-green-500 bg-opacity-30 rounded-xl px-2 ">
             {strings.github.app}
           </div>
         </div>

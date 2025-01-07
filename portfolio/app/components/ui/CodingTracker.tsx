@@ -44,6 +44,10 @@ export const CodingTracker = memo(() => {
     return <div>Error: {error}</div>;
   }
 
+  const hasValidFileTypes =
+    data.file_types.length > 0 &&
+    data.file_types.some((file) => !excludeFileTypes.includes(file.type));
+
   return (
     <section>
       <div className="flex mt-3 md:mt-7 mb-3 items-center">
@@ -60,7 +64,7 @@ export const CodingTracker = memo(() => {
       {isStale && <div>Showing cached data...</div>}
       <div className="w-full flex-col px-2 md:px-8 mt-2 flex gap-2 flex-wrap">
         <ul className="flex flex-wrap gap-2">
-          {data.file_types.length > 0 ? (
+          {hasValidFileTypes ? (
             data.file_types.map((file, index) => {
               const fileInfo = strings.find((info) => info.type === file.type);
               const fileName = fileInfo ? fileInfo.name : file.type;

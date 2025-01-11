@@ -10,7 +10,7 @@ const GotoPage = ({ link }: LinkProps) => {
   return (
     <Link
       href={`/${link}`}
-      className="Btn hover:scale-125 bg-transparent border-[1px] border-gray-700 dark:border-gray-200"
+      className="Btn size-9 md:size-12 hover:scale-125 bg-transparent border-[1px] border-gray-700 dark:border-gray-200"
     >
       <div className="sign">
         <TbArrowUpRight className="text-gray-700 dark:text-gray-200 text-xs" />

@@ -32,7 +32,7 @@ export const GitLabCard = (props: {}) => {
         </div>
       </div>
       <div className="text">
-        <a className="icon" href="https://freecodez.com/">
+        <div className="icon">
           <div className="layer">
             <span></span>
             <span></span>
@@ -45,7 +45,7 @@ export const GitLabCard = (props: {}) => {
           <div className="text text-black dark:text-white bg-green-500 bg-opacity-30 rounded-xl px-2 ">
             {strings.gitlab.app}
           </div>
-        </a>
+        </div>
       </div>
     </div>
   );

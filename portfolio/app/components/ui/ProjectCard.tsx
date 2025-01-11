@@ -17,7 +17,7 @@ export const ProjectCard = (props: {}) => {
           width={500}
           height={500}
           alt="project"
-          className="rounded-lg z-50 absolute -rotate-12 mt-28 ml-20 object-contain"
+          className="rounded-lg z-10 absolute -rotate-12 mt-28 ml-20 object-contain"
           src="/project.png"
         />
       </div>

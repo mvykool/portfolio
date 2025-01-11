@@ -72,7 +72,7 @@ const Navbar = ({ topPage, setSelectedPage, selectedPage }: Props) => {
           </div>
         ) : (
           <button
-            className="rounded-lg bg-app-green"
+            className="rounded-lg bg-green-700"
             onClick={() => setMenuToggle(!menuToggle)}
           >
             <TiThMenu className="h-9 p-2 w-9" />
@@ -92,7 +92,7 @@ const Navbar = ({ topPage, setSelectedPage, selectedPage }: Props) => {
               variants={sectionVariant}
               initial="hidden"
               animate="show"
-              className="fixed z-[50] right-0 bottom-0 h-full bg-app-green w-[60vw]"
+              className="fixed z-[50] right-0 bottom-0 h-full bg-green-700 w-[60vw]"
             >
               {/**close icon */}
               <div className="flex justify-end p-5">

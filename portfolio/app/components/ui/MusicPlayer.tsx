@@ -45,17 +45,19 @@ export default function MusicPlayer() {
       </div>
       <div className="flex rotate-180 justify-end mb-4 mt-2 md:mt-0 md:mb-2 ml-4 md:ml-7 text-black dark:text-white transition-all ease-in-out">
         <div className="relative rotate-180">
-          <p className=" text-sm md:text-md font-bold">
+          <p className=" text-xs md:text-base font-bold">
             {heroConstants.spotify.fistSong.title}
           </p>
-          <p className="text-xs">{heroConstants.spotify.fistSong.artist}</p>
+          <p className="text-xs w-8 md:w-auto">
+            {heroConstants.spotify.fistSong.artist}
+          </p>
         </div>
         <div className="relative rounded-md w-10 h-10 flex items-center justify-center my-auto mx-3">
           <Image
             width={40}
             height={40}
             alt="profile"
-            className="rounded-md"
+            className="rounded-md w-7 h-7 md:w-full md:h-full rotate-180"
             src="/Favourite_Worst_Nightmare.jpg"
           />
         </div>
@@ -68,17 +70,19 @@ export default function MusicPlayer() {
       </div>
       <div className="flex rotate-180 justify-end mb-1 mt-5 md:mt-0 md:mb-2 ml-4 md:ml-7 text-black dark:text-white transition-all ease-in-out">
         <div className="relative rotate-180">
-          <p className="text-sm md:text-md font-bold">
+          <p className="text-xs md:text-base font-bold">
             {heroConstants.spotify.secondSong.title}
           </p>
-          <p className="text-xs">{heroConstants.spotify.secondSong.artist}</p>
+          <p className="text-xs w-8 md:w-auto">
+            {heroConstants.spotify.secondSong.artist}
+          </p>
         </div>
         <div className="relative rounded-md w-10 h-10 flex items-center justify-center my-auto mx-3">
           <Image
             width={40}
             height={40}
             alt="profile"
-            className="rounded-md rotate-180"
+            className="rounded-md w-7 h-7 md:w-full md:h-full rotate-180"
             src="/PearlJam-Ten.jpg"
           />
         </div>
@@ -86,7 +90,7 @@ export default function MusicPlayer() {
       </div>
       <div className="hidden md:flex rotate-180 text-black dark:text-white justify-end ml-7 mt-3 transition-all ease-in-out">
         <div className="relative rotate-180">
-          <p className=" text-md font-bold">
+          <p className=" text-base font-bold">
             {heroConstants.spotify.thirdSong.title}
           </p>
           <p className="text-xs">{heroConstants.spotify.thirdSong.artist}</p>

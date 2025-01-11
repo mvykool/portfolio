@@ -12,7 +12,7 @@ export const GithubCard = (props: {}) => {
         rel="noreferrer"
         className="tooltip"
       >
-        <div className="w-64 p-3 rounded-xl bg-white border-2 border-gray-700 dark:bg-dark-app">
+        <div className="w-64 p-3 rounded-xl ml-36 z-50 md:ml-0 bg-white border-2 border-gray-700 dark:bg-dark-app">
           <div className="user">
             <Image
               width={50}
@@ -47,7 +47,7 @@ export const GithubCard = (props: {}) => {
               <TbBrandGithub className="text-5xl text-black dark:text-white p-3 mx-auto w-full flex items-center h-full" />
             </span>
           </div>
-          <div className="text text-black dark:text-white bg-green-500 bg-opacity-30 rounded-xl px-2 ">
+          <div className="text text-black dark:text-white bg-green-500 bg-opacity-20 rounded-xl px-2 ">
             {strings.github.app}
           </div>
         </div>

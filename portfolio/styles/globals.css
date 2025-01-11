@@ -44,7 +44,7 @@
   position: relative;
 }
 .layer {
-  width: 70px;
+  width: 75px;
   height: 70px;
   transition: transform 0.3s;
 }
@@ -346,8 +346,6 @@ input:checked + .slider:before {
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  width: 40px;
-  height: 40px;
   border-radius: 50%;
   cursor: pointer;
   position: relative;

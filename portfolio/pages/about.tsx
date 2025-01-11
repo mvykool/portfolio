@@ -60,12 +60,12 @@ const About = () => {
               </p>
             </div>
 
-            <p className="mt-10 mb-2  text-black dark:text-white text-sm md:text-sm text-center md:text-start">
+            <p className="mt-10 mb-2  text-black dark:text-white text-sm md:text-base text-center md:text-start">
               Hi there! I&apos;m Maicol, and I&apos;m a highly driven, and
               focused web developer, I enjoy crafting stunning UIs and creates
               cool programs that make the digital world come alive.
             </p>
-            <p className="mt-5 mb-7 text-sm md:text-sm  text-black dark:text-white text-center md:text-start">
+            <p className="mt-5 mb-7 text-sm md:text-base  text-black dark:text-white text-center md:text-start">
               I blend artistry and technology to design immersive user
               experiences that leave a lasting impression. I like to explore new
               design trends, fueling my creativity and learning all kinds of

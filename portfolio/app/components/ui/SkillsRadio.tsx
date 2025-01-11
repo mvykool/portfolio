@@ -52,15 +52,26 @@ export default function SkillCarousel() {
       <div className="relative">
         {/* First row - moving left */}
         <div className="flex">
-          <div className="flex justify-center gap-1 flex-wrap">
+          <div className=" hidden md:flex justify-center gap-1 flex-wrap">
             {Icons.map(({ Icon, color }, index) => (
               <div
                 key={`front-1-${index}`}
-                className="flex-shrink-0 mx-2 md:mx-3 my-1"
-                style={{ width: "32px" }}
+                className="flex-shrink-0 w-10 mx-2 mt-3"
               >
                 <Icon
-                  className={`${color} h-6 md:h-5 md:w-5 transition-transform hover:scale-110`}
+                  className={`${color} h-4 w-4 md:h-5 md:w-5 transition-transform hover:scale-110`}
+                />
+              </div>
+            ))}
+          </div>
+          <div className=" flex md:hidden justify-center gap-1 flex-wrap">
+            {Icons.slice(0, 12).map(({ Icon, color }, index) => (
+              <div
+                key={`front-1-${index}`}
+                className="flex-shrink-0 mx-2 md:mx-3 my-1"
+              >
+                <Icon
+                  className={`${color} h-4 w-4 md:h-5 md:w-5 transition-transform hover:scale-110`}
                 />
               </div>
             ))}

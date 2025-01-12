@@ -16,26 +16,22 @@ const Contact = () => {
   const [result, setResult] = useState(false);
 
   const form = useRef<HTMLFormElement>(null);
+  const service: string = process.env.NEXT_PUBLIC_EMAIL_SERVICE_ID as string;
+  const template: string = process.env.NEXT_PUBLIC_EMAIL_TEMPLATE as string;
+  const key: string = process.env.NEXT_PUBLIC_EMAIL_KEY as string;
 
   const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
     if (form.current) {
-      emailjs
-        .sendForm(
-          "service_li998zs",
-          "template_owr2bld",
-          form.current,
-          "YznX3U0AWopqVewR_",
-        )
-        .then(
-          (result: any) => {
-            console.log(result.text);
-          },
-          (error: any) => {
-            console.log(error.text);
-          },
-        );
+      emailjs.sendForm(service, template, form.current, key).then(
+        (result: any) => {
+          console.log(result.text);
+        },
+        (error: any) => {
+          console.log(error.text);
+        },
+      );
     }
 
     form.current!.reset(); // Reset the form
@@ -49,12 +45,12 @@ const Contact = () => {
   }, 4000);
 
   return (
-    <div className="w-6/6 md:w-3/6 pt-20 md:pt-0  mx-auto mt-5 md:mt-0">
+    <div className="w-6/6 md:w-3/6 pt-0 md:pt-0  mx-auto mt-5 md:mt-0">
       <GoPreviousPage />
 
       <section
         id="contact"
-        className="contact pt-5 w-full overflow-hidden px-5 md:px-0 mt-0 md:mt-10"
+        className="contact pt-20 md:pt-10 w-full overflow-hidden px-5 md:px-0 mt-0 md:mt-10"
       >
         <div className="md:flex md:justify-center">
           <motion.div

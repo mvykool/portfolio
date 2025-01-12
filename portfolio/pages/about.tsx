@@ -12,7 +12,7 @@ const About = () => {
   return (
     <div className="w-4/6 md:w-3/6 mx-auto mt-2 md:mt-0">
       <GoPreviousPage />
-      <section className="md:flex md:justify-between md:items-start md:w-full md:h-auto gap-8 md:mt-28">
+      <section className="md:flex md:justify-between md:items-start md:w-full md:h-auto gap-8 mt-10 md:mt-28">
         {/* IMAGE SECTION */}
         <div className="basis-3/5 z-10 mt-5 flex justify-center md:order-2">
           {isAboveLarge ? (

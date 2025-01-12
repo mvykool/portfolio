@@ -413,19 +413,19 @@ input:checked + .slider:before {
   left: 0;
   top: 0;
   margin-left: -50%;
-  margin-top: -70%;
+  margin-top: -63%;
 }
 .wave:nth-child(4) {
-  top: 280px;
+  top: 290px;
   background: #ffb38e;
-  transform: rotate(140deg);
+  transform: rotate(170deg);
   z-index: 32;
 }
 
 .wave:nth-child(5) {
-  top: 330px;
+  top: 340px;
   background: #dd3c5f;
-  transform: rotate(130deg);
+  transform: rotate(170deg);
   z-index: 33;
 }
 

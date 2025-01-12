@@ -101,7 +101,7 @@ const Navbar = ({ topPage, setSelectedPage, selectedPage }: Props) => {
                 </button>
               </div>
               {/** menu mobile */}
-              <div className="flex flex-col gap-5 ml-[30%] text-xl text-deep-blue mt-20">
+              <div className="flex flex-col gap-5 ml-[30%] text-xl text-white mt-20">
                 <div onClick={() => setMenuToggle(!menuToggle)}>
                   <Link href={"/"}>{strings.home}</Link>
                 </div>

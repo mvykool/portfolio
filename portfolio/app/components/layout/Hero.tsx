@@ -127,7 +127,7 @@ const Hero = () => {
             hidden: { opacity: 0 },
             visible: { opacity: 1 },
           }}
-          className="flex w-full flex-wrap relative z-40 justify-center md:justify-between mx-auto md:mx-0"
+          className="flex w-full flex-wrap relative z-40 justify-between mx-auto md:mx-0"
         >
           {" "}
           <GithubCard />

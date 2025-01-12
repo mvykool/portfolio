@@ -6,10 +6,10 @@ export default function GoPreviousPage() {
   return (
     <Link href="/">
       <button
-        className="border border-black dark:border-white text-center w-36 rounded-2xl h-14 relative text-black text-xl font-semibold group"
+        className="border border-black dark:border-white text-center w-36 rounded-2xl h-10 md:h-14 relative text-black text-xl font-semibold group"
         type="button"
       >
-        <div className="bg-green-400 rounded-xl h-12 w-1/4 flex items-center justify-center absolute left-1 top-[3px] group-hover:w-[135px] z-10 duration-500">
+        <div className="bg-green-400 rounded-xl h-8 md:h-12 w-1/4 flex items-center justify-center absolute left-1 top-[3px] group-hover:w-[135px] z-10 duration-500">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 1024 1024"

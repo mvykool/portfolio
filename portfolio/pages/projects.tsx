@@ -68,7 +68,171 @@ const Projects = () => {
                 visible: { opacity: 1, x: 0 },
               }}
             >
-              <div className="hover:scale-95 duration-200 transition bg-white dark:bg-dark-card border-[0.5px] border-gray-700 rounded-lg  p-3 relative md:h-[65vh] xl:h-[55vh] cursor-pointer">
+              <div className="hover:scale-95 duration-200 transition bg-white dark:bg-dark-card border-[0.5px] border-gray-700 rounded-lg  p-2 relative md:h-[65vh] xl:h-[55vh] cursor-pointer">
+                <Image
+                  width={700}
+                  height={500}
+                  src="/landing.png"
+                  alt="airman"
+                  className="object-left object-cover rounded-sm  h-[40vh] md:h-[20vh] border-black border"
+                />
+                <div className="flex items-center justify-center gap-3">
+                  <p className="my-5 flex justify-center font-bold text-2xl text-black dark:text-white">
+                    Neb<span className="text-app-green">u</span>la{" "}
+                  </p>
+                  <p className="my-5 flex justify-center font-bold text-2xl text-black dark:text-white">
+                    landing
+                  </p>
+                </div>
+
+                <div
+                  className="flex flex-col md:flex-row md:space-x-3
+              my-5 ml-2 md:text-xs md:justify-center text-black dark:text-white"
+                >
+                  <small className="text-white bg-orange-500 rounded-lg px-2 text-sm">
+                    Astro
+                  </small>
+                  <small className="text-sm bg-blue-500 rounded-lg px-2">
+                    React
+                  </small>
+                  <small className="text-sm bg-sky-500 rounded-lg px-2">
+                    Tailwind
+                  </small>
+                </div>
+
+                <p className="text-sm mb-2 text-gray-700 dark:text-gray-300 mx-2">
+                  Main landing page for Nebula, built with the{" "}
+                  <span className="text-app-green font-semibold">
+                    best stack for landing pages
+                  </span>
+                  .
+                </p>
+
+                <p className="text-sm mb-2 text-gray-700 dark:text-gray-300 mx-2">
+                  Main entry point to Nebula,{" "}
+                  <span className="text-app-green font-semibold">
+                    Basic, simple, straight to the point.
+                  </span>
+                </p>
+
+                <div className="flex justify-center mt-5 md:bottom-0 md:absolute md:w-full">
+                  <a
+                    href="https://nebula-landing-ivory.vercel.app/"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="flex text-black dark:text-white items-center m-5 border-2 border-black dark:border-white rounded-sm justify-center md:text-sm py-1 px-2 hover:scale-125 duration-200 transition "
+                  >
+                    Live
+                    <HiOutlineExternalLink className="mx-2" />
+                  </a>
+                  <a
+                    href="https://github.com/mvykool/nebula-landing"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="flex items-center m-5 border-2 text-black dark:text-white border-black dark:border-white rounded-sm justify-center md:text-sm py-1 px-2 hover:scale-125 duration-200 transition"
+                  >
+                    Code
+                    <TbBrandGithub className="mx-2" />
+                  </a>
+                </div>
+              </div>
+            </motion.div>
+            {/**project 1 */}
+
+            <motion.div
+              initial="hidden"
+              className="mt-10"
+              whileInView="visible"
+              viewport={{ once: true, amount: 0.5 }}
+              transition={{ duration: 0.5 }}
+              variants={{
+                hidden: { opacity: 0, x: -50 },
+                visible: { opacity: 1, x: 0 },
+              }}
+            >
+              <div className="hover:scale-95 duration-200 transition bg-white dark:bg-dark-card border-[0.5px] border-gray-700 rounded-lg  p-2 relative md:h-[65vh] xl:h-[55vh] cursor-pointer">
+                <Image
+                  width={700}
+                  height={500}
+                  src="/nebula.png"
+                  alt="airman"
+                  className="object-left object-cover rounded-sm  h-[40vh] md:h-[20vh] border-black border"
+                />
+                <p className="my-5 flex justify-center font-bold text-2xl text-black dark:text-white">
+                  Neb<span className="text-app-green">u</span>la{" "}
+                </p>
+
+                <div
+                  className="flex flex-col md:flex-row md:space-x-3
+              my-5 ml-2 md:text-xs md:justify-center text-black dark:text-white"
+                >
+                  <small className="text-white bg-blue-500 rounded-lg px-2 text-sm">
+                    React
+                  </small>
+                  <small className="text-sm bg-red rounded-lg px-2">
+                    Nestjs
+                  </small>
+                  <small className="text-sm bg-sky-500 rounded-lg px-2">
+                    Tailwind
+                  </small>
+                  <small className="text-sm bg-gray-500 rounded-lg px-2">
+                    Postgres
+                  </small>
+                </div>
+
+                <p className="text-sm mb-2 text-gray-700 dark:text-gray-300 mx-2">
+                  Notion-esque project creation web-
+                  <span className="text-app-green font-semibold">
+                    app, with full authentication
+                  </span>
+                  .
+                </p>
+
+                <p className="text-sm mb-2 text-gray-700 dark:text-gray-300 mx-2">
+                  Allows user to create, customize, and even publish share their
+                  projects as static sites,{" "}
+                  <span className="text-app-green font-semibold">
+                    ideal for documentation, or guidelines
+                  </span>
+                </p>
+
+                <div className="flex justify-center mt-5 md:bottom-0 md:absolute md:w-full">
+                  <a
+                    href="https://nebula-client.vercel.app/"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="flex text-black dark:text-white items-center m-5 border-2 border-black dark:border-white rounded-sm justify-center md:text-sm py-1 px-2 hover:scale-125 duration-200 transition "
+                  >
+                    Live
+                    <HiOutlineExternalLink className="mx-2" />
+                  </a>
+                  <a
+                    href="https://github.com/mvykool/nebula"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="flex items-center m-5 border-2 text-black dark:text-white border-black dark:border-white rounded-sm justify-center md:text-sm py-1 px-2 hover:scale-125 duration-200 transition "
+                  >
+                    Code
+                    <TbBrandGithub className="mx-2" />
+                  </a>
+                </div>
+              </div>
+            </motion.div>
+
+            {/**project 1 */}
+
+            <motion.div
+              initial="hidden"
+              className="mt-10"
+              whileInView="visible"
+              viewport={{ once: true, amount: 0.5 }}
+              transition={{ duration: 0.5 }}
+              variants={{
+                hidden: { opacity: 0, x: -50 },
+                visible: { opacity: 1, x: 0 },
+              }}
+            >
+              <div className="hover:scale-95 duration-200 transition bg-white dark:bg-dark-card border-[0.5px] border-gray-700 rounded-lg  p-2 relative md:h-[65vh] xl:h-[55vh] cursor-pointer">
                 <Image
                   width={700}
                   height={500}
@@ -84,10 +248,15 @@ const Projects = () => {
                   className="flex flex-col md:flex-row md:space-x-3
               my-5 ml-2 md:text-xs md:justify-center text-black dark:text-white"
                 >
-                  <small>-Nextjs</small>
-                  <small>-Sanity.io</small>
-                  <small>-Tailwind</small>
-                  <small>-TypeScript</small>
+                  <small className="text-black bg-white rounded-lg px-2 text-sm">
+                    Nextjs
+                  </small>
+                  <small className="text-sm bg-red rounded-lg px-2">
+                    Sanity.io
+                  </small>
+                  <small className="text-sm bg-sky-500 rounded-lg px-2">
+                    Tailwind
+                  </small>
                 </div>
 
                 <p className="text-sm mb-2 text-gray-700 dark:text-gray-300 mx-2">
@@ -111,7 +280,7 @@ const Projects = () => {
                     href="https://airman-23.vercel.app/"
                     target="_blank"
                     rel="noreferrer"
-                    className="flex text-black dark:text-white items-center m-5 border-2 border-black dark:border-white rounded-sm justify-center md:text-sm py-1 px-2 hover:scale-125 duration-200 transition hover:bg-white hover:text-deep-blue"
+                    className="flex text-black dark:text-white items-center m-5 border-2 border-black dark:border-white rounded-sm justify-center md:text-sm py-1 px-2 hover:scale-125 duration-200 transition "
                   >
                     Live
                     <HiOutlineExternalLink className="mx-2" />
@@ -120,7 +289,7 @@ const Projects = () => {
                     href="https://github.com/mvykool/Airman-23/tree/main/airman-23"
                     target="_blank"
                     rel="noreferrer"
-                    className="flex items-center m-5 border-2 text-black dark:text-white border-black dark:border-white rounded-sm justify-center md:text-sm py-1 px-2 hover:scale-125 duration-200 transition hover:bg-white hover:text-deep-blue"
+                    className="flex items-center m-5 border-2 text-black dark:text-white border-black dark:border-white rounded-sm justify-center md:text-sm py-1 px-2 hover:scale-125 duration-200 transition "
                   >
                     Code
                     <TbBrandGithub className="mx-2" />
@@ -142,7 +311,7 @@ const Projects = () => {
                 visible: { opacity: 1, x: 0 },
               }}
             >
-              <div className="hover:scale-95 duration-200 transition bg-white dark:bg-dark-card border-[0.5px] border-gray-700 rounded-lg p-3 relative md:h-[65vh] xl:h-[55vh] cursor-pointer">
+              <div className="hover:scale-95 duration-200 transition bg-white dark:bg-dark-card border-[0.5px] border-gray-700 rounded-lg p-2 relative md:h-[65vh] xl:h-[55vh] cursor-pointer">
                 <Image
                   width={700}
                   height={500}
@@ -158,10 +327,18 @@ const Projects = () => {
                   className="flex flex-col md:flex-row md:space-x-3 text-black dark:text-white
               my-5 ml-2 md:text-xs md:justify-center"
                 >
-                  <small>-React</small>
-                  <small>-Vite</small>
-                  <small>-Firebase</small>
-                  <small>-Chakra UI</small>
+                  <small className="bg-blue-500 text-white px-2 rounded-lg text-sm">
+                    React
+                  </small>
+                  <small className="bg-purple-400 text-white px-2 rounded-lg text-sm">
+                    Vite
+                  </small>
+                  <small className="bg-amber-600 text-white px-2 rounded-lg text-sm">
+                    Firebase
+                  </small>
+                  <small className="bg-green-600 text-white px-2 rounded-lg text-sm">
+                    Chakra UI
+                  </small>
                 </div>
 
                 <p className="text-sm mb-2 text-gray-700 dark:text-gray-300 mx-2">
@@ -184,7 +361,7 @@ const Projects = () => {
                     href="https://libello.netlify.app/"
                     target="_blank"
                     rel="noreferrer"
-                    className="flex items-center m-5 border-2 text-black dark:text-white border-black dark:border-white rounded-sm justify-center md:text-sm py-1 px-2 hover:scale-125 duration-200 transition hover:bg-white hover:text-deep-blue"
+                    className="flex items-center m-5 border-2 text-black dark:text-white border-black dark:border-white rounded-sm justify-center md:text-sm py-1 px-2 hover:scale-125 duration-200 transition "
                   >
                     Live
                     <HiOutlineExternalLink className="mx-2" />
@@ -193,7 +370,7 @@ const Projects = () => {
                     href="https://github.com/mvykool/Libello"
                     target="_blank"
                     rel="noreferrer"
-                    className="flex items-center m-5 border-2 text-black dark:text-white border-black dark:border-white rounded-sm justify-center md:text-sm py-1 px-2 hover:scale-125 duration-200 transition hover:bg-white hover:text-deep-blue"
+                    className="flex items-center m-5 border-2 text-black dark:text-white border-black dark:border-white rounded-sm justify-center md:text-sm py-1 px-2 hover:scale-125 duration-200 transition "
                   >
                     Code
                     <TbBrandGithub className="mx-2" />
@@ -215,7 +392,7 @@ const Projects = () => {
                 visible: { opacity: 1, x: 0 },
               }}
             >
-              <div className="hover:scale-95 duration-200 transition  rounded-lg bg-white  dark:bg-dark-card border-[0.5px] border-gray-700 p-3 relative md:h-[65vh] xl:h-[55vh] cursor-pointer">
+              <div className="hover:scale-95 duration-200 transition  rounded-lg bg-white  dark:bg-dark-card border-[0.5px] border-gray-700 p-2 relative md:h-[65vh] xl:h-[55vh] cursor-pointer">
                 <Image
                   width={700}
                   height={500}
@@ -231,9 +408,15 @@ const Projects = () => {
                   className="flex flex-col md:flex-row md:space-x-3 text-black dark:text-white
               my-5 ml-2 md:text-xs md:justify-center"
                 >
-                  <small>-AstroJS</small>
-                  <small>-React</small>
-                  <small>-Tailwind</small>
+                  <small className="bg-orange-600 px-2 rounded-lg text-sm">
+                    AstroJS
+                  </small>
+                  <small className="bg-blue-500 px-2 rounded-lg text-sm">
+                    React
+                  </small>
+                  <small className="bg-sky-500 px-2 rounded-lg text-sm">
+                    Tailwind
+                  </small>
                 </div>
 
                 <p className="text-sm  mb-2 text-gray-700 dark:text-gray-300 mx-2">
@@ -256,7 +439,7 @@ const Projects = () => {
                     href="https://oh-my-dog.netlify.app/"
                     target="_blank"
                     rel="noreferrer"
-                    className="flex items-center m-5 border-2 text-black dark:text-white border-black dark:border-white rounded-sm justify-center md:text-sm py-1 px-2 hover:scale-125 duration-200 transition hover:bg-white hover:text-deep-blue"
+                    className="flex items-center m-5 border-2 text-black dark:text-white border-black dark:border-white rounded-sm justify-center md:text-sm py-1 px-2 hover:scale-125 duration-200 transition "
                   >
                     Live
                     <HiOutlineExternalLink className="mx-2" />
@@ -265,7 +448,7 @@ const Projects = () => {
                     href="https://github.com/mvykool/omd/tree/main/oh-my-dog"
                     target="_blank"
                     rel="noreferrer"
-                    className="flex items-center m-5 border-2 text-black dark:text-white border-black dark:border-white rounded-sm justify-center md:text-sm py-1 px-2 hover:scale-125 duration-200 transition hover:bg-white hover:text-deep-blue"
+                    className="flex items-center m-5 border-2 text-black dark:text-white border-black dark:border-white rounded-sm justify-center md:text-sm py-1 px-2 hover:scale-125 duration-200 transition "
                   >
                     Code
                     <TbBrandGithub className="mx-2" />
@@ -275,68 +458,6 @@ const Projects = () => {
             </motion.div>
 
             {/**project 4 */}
-
-            <motion.div
-              initial="hidden"
-              className="mt-10 "
-              whileInView="visible"
-              viewport={{ once: true, amount: 0.5 }}
-              transition={{ duration: 0.5 }}
-              variants={{
-                hidden: { opacity: 0, x: -50 },
-                visible: { opacity: 1, x: 0 },
-              }}
-            >
-              <div className="hover:scale-95 bg-white  duration-200 transition  rounded-lg dark:bg-dark-card border-[0.5px] border-gray-700 p-3 relative md:h-[65vh] xl:h-[55vh]  cursor-pointer">
-                <Image
-                  width={700}
-                  height={500}
-                  src="/open-sesamo.png"
-                  alt="airman"
-                  className=" object-fill rounded-sm  h-[40vh] md:h-[20vh] border border-black"
-                />
-                <p className="my-5 flex justify-center font-bold text-2xl gap-2 text-black dark:text-white">
-                  Open<span className="text-app-green">Sesamo</span>{" "}
-                </p>
-
-                <div
-                  className="flex flex-col md:flex-row md:space-x-3 text-black dark:text-white
-              my-5 ml-2 md:text-xs md:justify-center"
-                >
-                  <small>-Angular</small>
-                  <small>-Firebase</small>
-                  <small>-Tailwind</small>
-                </div>
-
-                <p className="text-sm mb-2 text-gray-700 dark:text-gray-300 mx-2">
-                  Website that allows you{" "}
-                  <span className="text-app-green font-semibold">
-                    to save usernames and passwords.
-                  </span>
-                </p>
-
-                <p className="text-sm  mb-2 text-gray-700 dark:text-gray-300 mx-2">
-                  Password encyption, login using Fireauth
-                  <span className="text-app-green font-semibold">
-                    , totally responsive, & secured
-                  </span>
-                </p>
-                <div className="flex justify-center mt-5 md:bottom-3 md:absolute md:w-full">
-                  <button className="flex items-center m-5 border-2 border-gray-400 cursor-not-allowed rounded-sm justify-center md:text-sm py-1 px-2  duration-200 transition bg-gray-400">
-                    Development
-                  </button>
-                  <a
-                    href="https://github.com/mvykool/open-sesame"
-                    target="_blank"
-                    rel="noreferrer"
-                    className="flex items-center m-5 border-2 border-black dark:border-white text-black dark:text-white rounded-sm justify-center md:text-sm py-1 px-2 hover:scale-125 duration-200 transition hover:bg-white hover:text-deep-blue"
-                  >
-                    Code
-                    <TbBrandGithub className="mx-2" />
-                  </a>
-                </div>
-              </div>
-            </motion.div>
           </motion.div>
         </div>
       </section>

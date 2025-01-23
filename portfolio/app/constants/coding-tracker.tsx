@@ -7,6 +7,7 @@ export const strings = [
   { type: "yaml", name: "YAML", color: "#CA181D" },
   { type: "nix", name: "Nix", color: "#7E7EFF" },
   { type: "typescriptreact", name: "TSX", color: "#4d8ddb" },
+  { type: "javascriptreact", name: "JSX", color: "#00B8DB" },
   { type: "json", name: "JSON", color: "#4f4e4d" },
   { type: "dockerfile", name: "Dockerfile", color: "#647e9e" },
   { type: "javascript", name: "JS", color: "#fcb50d" },

@@ -86,7 +86,7 @@ const Projects = () => {
                 </div>
 
                 <div
-                  className="flex flex-col md:flex-row md:space-x-3
+                  className="flex gap-2 md:gap-0 flex-row md:space-x-3
               my-5 ml-2 md:text-xs md:justify-center text-black dark:text-white"
                 >
                   <small className="text-white bg-orange-500 rounded-lg px-2 text-sm">
@@ -163,7 +163,7 @@ const Projects = () => {
                 </p>
 
                 <div
-                  className="flex flex-col md:flex-row md:space-x-3
+                  className="flex gap-2 md:gap-0 flex-row md:space-x-3
               my-5 ml-2 md:text-xs md:justify-center text-black dark:text-white"
                 >
                   <small className="text-white bg-blue-500 rounded-lg px-2 text-sm">
@@ -245,7 +245,7 @@ const Projects = () => {
                 </p>
 
                 <div
-                  className="flex flex-col md:flex-row md:space-x-3
+                  className="flex gap-2 md:gap-0 flex-row md:space-x-3
               my-5 ml-2 md:text-xs md:justify-center text-black dark:text-white"
                 >
                   <small className="text-black bg-white rounded-lg px-2 text-sm">
@@ -324,7 +324,8 @@ const Projects = () => {
                 </p>
 
                 <div
-                  className="flex flex-col md:flex-row md:space-x-3 text-black dark:text-white
+                  className="flex gap-2 md:gap-0 flex-row md:space-x-3 
+                  text-black dark:text-white
               my-5 ml-2 md:text-xs md:justify-center"
                 >
                   <small className="bg-blue-500 text-white px-2 rounded-lg text-sm">
@@ -405,7 +406,8 @@ const Projects = () => {
                 </p>
 
                 <div
-                  className="flex flex-col md:flex-row md:space-x-3 text-black dark:text-white
+                  className="flex gap-2 md:gap-0 flex-row md:space-x-3
+                  text-black dark:text-white
               my-5 ml-2 md:text-xs md:justify-center"
                 >
                   <small className="bg-orange-600 px-2 rounded-lg text-sm">

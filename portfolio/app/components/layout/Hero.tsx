@@ -67,7 +67,7 @@ const Hero = () => {
           >
             <div className="flex items-center justify-between mr-8">
               {" "}
-              <p className=" text-black dark:text-white font-black p-5 md:p-8 mt-1 md:mt-4 text-xl">
+              <p className=" text-black dark:text-white font-black p-5 md:p-7 mt-1 md:mt-4 text-xl">
                 {" "}
                 {heroConstants.about}
               </p>

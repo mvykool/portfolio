@@ -1,10 +1,10 @@
 export const strings = {
   linkedin: {
     app: "linkedin",
-    name: "Maicol Hernandez",
-    username: "@maicolhernandez",
+    name: "Michael Hernandez",
+    username: "@michaelhernandezz",
     connections: "100 + connections",
-    link: "https://www.linkedin.com/in/maicolhernandez/",
+    link: "https://www.linkedin.com/in/michaelhernandezz/",
   },
   x: {
     app: "X",
@@ -22,7 +22,7 @@ export const strings = {
   },
   gitlab: {
     app: "Gitlab",
-    name: "Maicol Hernandez",
+    name: "Michael Hernandez",
     username: "@mvykol",
     followers: "1 followers",
     link: "https://gitlab.com/mvykol",

@@ -33,7 +33,7 @@ const About = () => {
               width={500}
               height={500}
               alt="profile"
-              className="z-10 w-full max-w-[400px] md:max-w-[600px]"
+              className="z-10 w-full saturate-100 max-w-[400px] md:max-w-[600px]"
               src="/profile.png"
             />
           )}
@@ -61,7 +61,7 @@ const About = () => {
             </div>
 
             <p className="mt-10 mb-2  text-black dark:text-white text-sm md:text-base text-center md:text-start">
-              Hi there! I&apos;m Maicol, and I&apos;m a highly driven, and
+              Hi there! I&apos;m Michael, and I&apos;m a highly driven, and
               focused web developer, I enjoy crafting stunning UIs and creates
               cool programs that make the digital world come alive.
             </p>

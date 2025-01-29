@@ -1,7 +1,7 @@
 export const heroConstants = {
   hi: "Hey",
   there: "there,",
-  name: "I'm Maicol",
+  name: "I'm Michael",
   lastName: "Hernandez",
   about: "About",
   gobackBtn: "Go back",

@@ -9,7 +9,7 @@ const Footer = () => {
             <Logo />
           </div>
           <p className="font-playfair text-base my-2 md:text-sm text-black dark:text-white">
-            Made By <span className="text-app-green">Maicol Hernandez</span>
+            Made By <span className="text-app-green">Michael Hernandez</span>
           </p>
           <p className="mt-0 text-sm text-gray-400">
             ©2025 | All Rights Reserved.

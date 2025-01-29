@@ -37,7 +37,7 @@ export default function Card() {
         <br />
         Software Developer
         <br />
-        <div className="name">maicol hernandez</div>
+        <div className="name">Michael hernandez</div>
       </div>
     </div>
   );

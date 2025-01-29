@@ -134,7 +134,7 @@ const Navbar = ({ topPage, setSelectedPage, selectedPage }: Props) => {
                 <div>
                   <a
                     className=" hover:text-app-green"
-                    href="https://www.linkedin.com/in/maicol-hernandez/"
+                    href="https://www.linkedin.com/in/michaelhernandezz/"
                     rel="noreferrer"
                     target="_blank"
                   >

@@ -51,7 +51,7 @@ const Hero = () => {
               alt="profile"
               priority
               loading="eager"
-              className=" object-cover w-full h-full transition duration-500"
+              className=" object-cover saturate-100 w-full h-full transition duration-500"
               src="/profile.png"
             />
           </BentoBlock>

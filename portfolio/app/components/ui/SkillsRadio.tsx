@@ -20,6 +20,7 @@ import {
   SiNestjs,
   SiLinux,
   SiGnubash,
+  SiArchlinux,
 } from "react-icons/si";
 
 export default function SkillCarousel() {
@@ -37,6 +38,7 @@ export default function SkillCarousel() {
     { Icon: SiNextdotjs, color: "text-gray-400 dark:text-gray-200" },
     { Icon: SiStorybook, color: "text-pink-500" },
 
+    { Icon: SiArchlinux, color: "text-blue-400" },
     { Icon: SiLinux, color: "text-black dark:text-white" },
     { Icon: SiNodedotjs, color: "text-green-500" },
     { Icon: SiExpress, color: "text-black dark:text-white" },
@@ -56,7 +58,7 @@ export default function SkillCarousel() {
             {Icons.map(({ Icon, color }, index) => (
               <div
                 key={`front-1-${index}`}
-                className="flex-shrink-0 w-10 mx-2 mt-2"
+                className="flex-shrink-0 mx-2 justify-center mt-2"
               >
                 <Icon
                   className={`${color} size-4 md:size-5 transition-transform hover:scale-110`}

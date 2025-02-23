@@ -62,7 +62,10 @@ const fetcher = async (
     }
 
     const todayString = getTodayString();
-    const todayData = data.find((entry) => entry._id === todayString);
+
+    const todayData = data.find(
+      (entry) => entry._id.replace(/\//g, "-") === todayString,
+    );
 
     if (!todayData) {
       return FALLBACK_DATA;
@@ -85,7 +88,6 @@ export const useCodingTracker = (url: string, excludeTypes: string[]) => {
   const [timeoutReached, setTimeoutReached] = useState(false);
   const { cache } = useSWRConfig();
 
-  // Start with placeholder data immediately
   const [immediateData, setImmediateData] =
     useState<DailyData>(PLACEHOLDER_DATA);
 

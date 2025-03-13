@@ -232,9 +232,9 @@ const Projects = () => {
                 <Image
                   width={700}
                   height={500}
-                  src="/project3.png"
+                  src="/homeomd.png"
                   alt="airman"
-                  className=" object-cover rounded-sm object-right h-[40vh] border border-black md:h-[20vh]"
+                  className=" object-cover rounded-sm object-top h-[40vh] border border-black md:h-[20vh]"
                 />
                 <p className="my-5 flex justify-center font-bold text-2xl text-black dark:text-white">
                   Oh M<span className="text-app-green">y Dog</span>{" "}
@@ -245,11 +245,15 @@ const Projects = () => {
                   text-black dark:text-white
               my-5 ml-2 md:text-xs md:justify-center"
                 >
-                  <small className="bg-orange-600 px-2 rounded-lg text-sm">
-                    AstroJS
-                  </small>
                   <small className="bg-blue-500 px-2 rounded-lg text-sm">
                     React
+                  </small>
+                  <small className="bg-purple-400 px-2 rounded-lg text-sm">
+                    Vite
+                  </small>
+
+                  <small className="bg-lime-600 px-2 rounded-lg text-sm">
+                    Vitest
                   </small>
                   <small className="bg-sky-500 px-2 rounded-lg text-sm">
                     Tailwind
@@ -257,23 +261,22 @@ const Projects = () => {
                 </div>
 
                 <p className="text-sm  mb-2 text-gray-700 dark:text-gray-300 mx-2">
-                  Brochure static website dedicated to{" "}
+                  App that helps users find and match with {""}
                   <span className="text-app-green font-semibold">
-                    dog&apos;s care.
+                    dogs for adoption.
                   </span>
                 </p>
 
                 <p className="text-sm  mb-2 text-gray-700 dark:text-gray-300 mx-2">
-                  Responsive Website,{" "}
+                  Users can search, filter, and mark {""}
                   <span className="text-app-green font-semibold">
-                    with soft color palette
+                    dogs as favorites to find the perfect match.
                   </span>
-                  , and smooth animations.
                 </p>
 
                 <div className="flex justify-center mt-5 md:bottom-3 md:absolute md:w-full">
                   <a
-                    href="https://oh-my-dog.netlify.app/"
+                    href="https://fetch-app-eta.vercel.app/login"
                     target="_blank"
                     rel="noreferrer"
                     className="flex items-center m-5 border-2 text-black dark:text-white border-black dark:border-white rounded-sm justify-center md:text-sm py-1 px-2 hover:scale-125 duration-200 transition "
@@ -282,7 +285,7 @@ const Projects = () => {
                     <HiOutlineExternalLink className="mx-2" />
                   </a>
                   <a
-                    href="https://github.com/mvykool/omd/tree/main/oh-my-dog"
+                    href="https://github.com/mvykool/Fetch-app"
                     target="_blank"
                     rel="noreferrer"
                     className="flex items-center m-5 border-2 text-black dark:text-white border-black dark:border-white rounded-sm justify-center md:text-sm py-1 px-2 hover:scale-125 duration-200 transition "
@@ -295,6 +298,81 @@ const Projects = () => {
             </motion.div>
 
             {/**project 4 */}
+            <motion.div
+              initial="hidden"
+              className="mt-10 "
+              whileInView="visible"
+              transition={{ duration: 0.5 }}
+              viewport={{ once: true, amount: 0.5 }}
+              variants={{
+                hidden: { opacity: 0, x: -50 },
+                visible: { opacity: 1, x: 0 },
+              }}
+            >
+              <div className="hover:scale-95 duration-200 transition  rounded-lg bg-white  dark:bg-dark-card border-[0.5px] border-gray-700 p-2 relative md:h-[65vh] xl:h-[55vh] cursor-pointer">
+                <Image
+                  width={700}
+                  height={500}
+                  src="/ambient.png"
+                  alt="airman"
+                  className=" object-cover rounded-sm object-center h-[40vh] border border-black md:h-[20vh]"
+                />
+                <p className="my-5 flex justify-center font-bold text-2xl text-black dark:text-white">
+                  Amb<span className="text-app-green">ient</span>{" "}
+                </p>
+
+                <div
+                  className="flex gap-2 md:gap-0 flex-row md:space-x-3
+                  text-black dark:text-white
+              my-5 ml-2 md:text-xs md:justify-center"
+                >
+                  <small className="bg-blue-500 px-2 rounded-lg text-sm">
+                    React
+                  </small>
+                  <small className="bg-rose-400 px-2 rounded-lg text-sm">
+                    Framer-motion
+                  </small>
+                  <small className="bg-sky-500 px-2 rounded-lg text-sm">
+                    Tailwind
+                  </small>
+                </div>
+
+                <p className="text-sm  mb-2 text-gray-700 dark:text-gray-300 mx-2">
+                  Eco-fiendly themed landing page with {""}
+                  <span className="text-app-green font-semibold">
+                    beautiful animations
+                  </span>
+                </p>
+
+                <p className="text-sm  mb-2 text-gray-700 dark:text-gray-300 mx-2">
+                  Focused on performance and {""}
+                  <span className="text-app-green font-semibold">
+                    accessibility
+                  </span>
+                </p>
+
+                <div className="flex justify-center mt-5 md:bottom-3 md:absolute md:w-full">
+                  <a
+                    href="https://ambient-iota.vercel.app/"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="flex items-center m-5 border-2 text-black dark:text-white border-black dark:border-white rounded-sm justify-center md:text-sm py-1 px-2 hover:scale-125 duration-200 transition "
+                  >
+                    Live
+                    <HiOutlineExternalLink className="mx-2" />
+                  </a>
+                  <a
+                    href="https://github.com/mvykool/Ambient"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="flex items-center m-5 border-2 text-black dark:text-white border-black dark:border-white rounded-sm justify-center md:text-sm py-1 px-2 hover:scale-125 duration-200 transition "
+                  >
+                    Code
+                    <TbBrandGithub className="mx-2" />
+                  </a>
+                </div>
+              </div>
+            </motion.div>
           </motion.div>
         </div>
       </section>

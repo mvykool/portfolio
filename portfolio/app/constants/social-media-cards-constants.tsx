@@ -10,7 +10,7 @@ export const strings = {
     app: "X",
     name: "Mvykool",
     username: "@Mvyk0l",
-    followers: "27 followers",
+    followers: "42 followers",
     link: "https://x.com/mvyk0l",
   },
   github: {

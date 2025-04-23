@@ -1,12 +1,12 @@
 import React, { useState } from "react";
 import AnchorLink from "react-anchor-link-smooth-scroll";
-import useMediaQuery from "../hooks/useMediaQuery";
 import { TiThMenu, TiTimes } from "react-icons/ti";
 import { motion } from "framer-motion";
 import { strings } from "@/app/constants/links-constants";
 
 import Link from "next/link";
 import { Logo } from "@/app/components/ui/Logo";
+import useMediaQuery from "@/hooks/useMediaQuery";
 
 /**framer motion variants */
 

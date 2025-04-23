@@ -2,8 +2,8 @@ import { memo } from "react";
 import { SiNeovim } from "react-icons/si";
 import { strings } from "@/app/constants/coding-tracker";
 import { excludeFileTypes } from "@/app/constants/coding-tracker-filter";
-import Loader from "@/components/Loader";
 import { useCodingTracker } from "@/hooks/useCodingTracker";
+import Loader from "../layout/Loader";
 
 const formatDuration = (seconds: number): string | null => {
   const hours = Math.floor(seconds / 3600);

@@ -2,9 +2,9 @@ import Head from "next/head";
 import React, { useState } from "react";
 import Footer from "./Footer";
 import Navbar from "./Navbar";
-import useMediaQuery from "../hooks/useMediaQuery";
 import { useEffect } from "react";
 import ScrollToTop from "./ScrollTop";
+import useMediaQuery from "@/hooks/useMediaQuery";
 
 interface Props {
   children: any;

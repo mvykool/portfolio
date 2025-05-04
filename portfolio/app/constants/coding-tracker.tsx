@@ -15,4 +15,6 @@ export const strings = [
   { type: "scss", name: "SCSS", color: "#f030b0" },
   { type: "python", name: "Python", color: "#1c7ae6" },
   { type: "astro", name: "Astro", color: "#e36927" },
+  { type: "rust", name: "Rust", color: "#dda484" },
+  { type: "toml", name: "Toml", color: "#9c4121" },
 ];

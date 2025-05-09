@@ -17,5 +17,5 @@ export const strings = [
   { type: "astro", name: "Astro", color: "#e36927" },
   { type: "rust", name: "Rust", color: "#dda484" },
   { type: "toml", name: "Toml", color: "#9c4121" },
-  { type: "markdown.mdx", name: "MDX", color: "##999999" },
+  { type: "markdown.mdx", name: "MDX", color: "#999999" },
 ];

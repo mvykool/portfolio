@@ -18,4 +18,5 @@ export const strings = [
   { type: "rust", name: "Rust", color: "#dda484" },
   { type: "toml", name: "Toml", color: "#9c4121" },
   { type: "markdown.mdx", name: "MDX", color: "#999999" },
+  { type: "c", name: "C", color: "#A6AEBF" },
 ];

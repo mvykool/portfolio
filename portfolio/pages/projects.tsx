@@ -85,7 +85,7 @@ const Projects = () => {
 
                 <div
                   className="flex gap-2 md:gap-0 flex-row md:space-x-3
-              my-5 ml-2 md:text-xs md:justify-center text-black dark:text-white"
+              my-5 ml-2 md:text-xs md:justify-center  dark:text-white"
                 >
                   <small className="text-white bg-orange-500 rounded-lg px-2 text-sm">
                     Astro
@@ -162,7 +162,7 @@ const Projects = () => {
 
                 <div
                   className="flex gap-2 md:gap-0 flex-row md:space-x-3
-              my-5 ml-2 md:text-xs md:justify-center text-black dark:text-white"
+              my-5 ml-2 md:text-xs md:justify-center  dark:text-white"
                 >
                   <small className="text-white bg-blue-500 rounded-lg px-2 text-sm">
                     React
@@ -242,7 +242,7 @@ const Projects = () => {
 
                 <div
                   className="flex gap-2 md:gap-0 flex-row md:space-x-3
-                  text-black dark:text-white
+                   dark:text-white
               my-5 ml-2 md:text-xs md:justify-center"
                 >
                   <small className="bg-blue-500 px-2 rounded-lg text-sm">
@@ -323,7 +323,7 @@ const Projects = () => {
 
                 <div
                   className="flex gap-2 md:gap-0 flex-row md:space-x-3
-                  text-black dark:text-white
+                   dark:text-white
               my-5 ml-2 md:text-xs md:justify-center"
                 >
                   <small className="bg-blue-500 px-2 rounded-lg text-sm">

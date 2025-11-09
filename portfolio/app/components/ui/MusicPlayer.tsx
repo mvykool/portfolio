@@ -1,8 +1,15 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { heroConstants } from "@/app/constants/hero-constants";
 import Image from "next/image";
+import { useSpotify } from "@/hooks/useSpotify";
 
 export default function MusicPlayer() {
+  const { currentSong, getSong } = useSpotify();
+
+  useEffect((): void => {
+    getSong();
+  }, []);
+
   return (
     <div className="bg-transparent relative h-full w-full rounded-xl">
       <div className="flex ml-5 my-3">
@@ -42,10 +49,14 @@ export default function MusicPlayer() {
       <div className="flex rotate-180 justify-end mb-4 mt-2 md:mt-0 md:mb-2 ml-4 md:ml-7 text-black dark:text-white transition-all ease-in-out">
         <div className="relative rotate-180">
           <p className=" text-xs md:text-base font-bold">
-            {heroConstants.spotify.fistSong.title}
+            {currentSong?.isPlaying
+              ? currentSong.title
+              : heroConstants.spotify.fistSong.title}
           </p>
           <p className="text-xs w-8 md:w-auto">
-            {heroConstants.spotify.fistSong.artist}
+            {currentSong?.isPlaying
+              ? currentSong.artist
+              : heroConstants.spotify.fistSong.artist}
           </p>
         </div>
         <div className="relative rounded-md w-10 h-10 flex items-center justify-center my-auto mx-3">
@@ -54,7 +65,11 @@ export default function MusicPlayer() {
             height={40}
             alt="profile"
             className="rounded-md w-7 h-7 md:w-full md:h-full rotate-180"
-            src="/Favourite_Worst_Nightmare.jpg"
+            src={
+              currentSong?.isPlaying
+                ? currentSong.albumImageUrl
+                : "/Favourite_Worst_Nightmare.jpg"
+            }
           />
         </div>
         <div className="loading">

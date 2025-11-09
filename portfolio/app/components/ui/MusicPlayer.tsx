@@ -61,8 +61,8 @@ export default function MusicPlayer() {
         </div>
         <div className="relative rounded-md w-10 h-10 flex items-center justify-center my-auto mx-3">
           <Image
-            width={40}
-            height={40}
+            width={50}
+            height={50}
             alt="profile"
             className="rounded-md w-7 h-7 md:w-full md:h-full rotate-180"
             src={

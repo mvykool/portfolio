@@ -39,7 +39,7 @@ export const CodingTracker = memo(() => {
               <li className="rounded-lg px-1 md:px-1 py-1 w-auto md:w-auto flex items-start md:items-center gap-0 md:gap-1 bg-[#4d8ddb] text-xs md:text-sm">
                 TSX 1h - 20 mins
               </li>
-              <li className="rounded-lg px-1 md:px-1 py-1 w-auto md:w-auto flex items-start md:items-center gap-0 md:gap-1 bg-[#4d8ddb] text-xs md:text-sm">
+              <li className="rounded-lg px-1 md:px-1 py-1 w-auto md:w-auto flex items-start md:items-center gap-0 md:gap-1 bg-[#dda484] text-xs md:text-sm">
                 Rust 2h - 02 mins
               </li>
             </ul>
